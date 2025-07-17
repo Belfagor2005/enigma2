@@ -14,6 +14,11 @@
 		"exec"s code.
 -->
 
+
+
+	<!-- Main Menu -->
+	<menu key="mainmenu" text="Main Menu" title="Main Menu">
+
 	<!-- Menu /	 by lululla-->
 	<menu key="menu_Menu" level="0" text="Corvoboys Menu">
 		<item key="LSAddon" weight="0" level="0" text="Addon Panel">
@@ -26,18 +31,6 @@ self.session.open(LinuxsatPanel)
 			<code>
 from Plugins.Extensions.tvManager.plugin import tvManager
 self.session.open(tvManager)	
-</code>
-		</item>
-		<item weight="12" level="0" text="EPGImport" key="EPGImport">
-			<code>
-from Plugins.Extensions.EPGImport.plugin import EPGImportConfig
-self.session.open(EPGImportConfig)
-</code>
-		</item>
-		<item weight="12" level="0" text="LCN" key="Terrestrial">
-			<code>
-from Screens.Terrestrial import PluginSetup
-self.session.open(PluginSetup)  
 </code>
 		</item>
 		<item weight="13" level="0" text="Vavoo Stream Live" key="vavoo">
@@ -58,12 +51,6 @@ from Plugins.Extensions.Aglare.plugin import AglareSetup
 self.session.open(AglareSetup)	
 </code>
 		</item>
-		<item weight="20" level="0" text="Plugin Browser Style" key="BrowserStyle">
-			<setup id="usage"/>
-		</item>
-		<item weight="21" level="0" text="Picon Path" key="SetPiconPath">
-			<setup id="userinterface"/>
-		</item>
 		<item weight="22" level="0" text="CrashLog Viewer" key="CrashLog">
 			<code>
 from Screens.crashlog import CrashLogScreen
@@ -75,8 +62,6 @@ self.session.open(CrashLogScreen)
 	<!-- Menu /	 by lululla-->
 
 
-	<!-- Main Menu -->
-	<menu key="mainmenu" text="Main Menu" title="Main Menu">
 		<!-- Menu / Information -->
 		<menu key="information" level="0" text="Information" description="This menu contains selections to display information about the receiver." weight="5">
 			<item key="distribution_info_screen" level="0" text="About OpenATV" weight="5"><screen module="Information" screen="DistributionInformation" /></item>
