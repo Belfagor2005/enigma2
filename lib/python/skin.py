@@ -935,12 +935,12 @@ class AttributeParser:
 			self.guiObject.setBackgroundColorSelected(parseColor(value, 0x00000000))
 
 	# def backgroundCrypted(self, value):  # This appears to be unused.
-	# 	self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
-	# 	attribDeprecationWarning("backgroundCrypted", "backgroundColor")
+	#   self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
+	#   attribDeprecationWarning("backgroundCrypted", "backgroundColor")
 
 	# def backgroundEncrypted(self, value):  # This appears to be unused.
-	# 	self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
-	# 	attribDeprecationWarning("backgroundEncrypted", "backgroundColor")
+	#   self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
+	#   attribDeprecationWarning("backgroundEncrypted", "backgroundColor")
 
 	def backgroundGradient(self, value):
 		self.guiObject.setBackgroundGradient(*parseGradient(value))
@@ -951,8 +951,8 @@ class AttributeParser:
 		attribDeprecationWarning("backgroundGradientSelected", "backgroundColorSelected")
 
 	# def backgroundNotCrypted(self, value):  # This appears to be unused.
-	# 	self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
-	# 	attribDeprecationWarning("backgroundNotCrypted", "backgroundColor")
+	#   self.guiObject.setBackgroundColor(parseColor(value, 0x00000000))
+	#   attribDeprecationWarning("backgroundNotCrypted", "backgroundColor")
 
 	def backgroundPixmap(self, value):
 		self.guiObject.setBackgroundPixmap(parsePixmap(value, self.desktop))
@@ -1008,20 +1008,20 @@ class AttributeParser:
 		self.guiObject.setForegroundColorSelected(parseColor(value, 0x00FFFFFF))
 
 	# def foregroundCrypted(self, value):  # This appears to be unused.
-	# 	self.guiObject.setForegroundColor(parseColor(value, 0x00FFFFFF))
-	# 	attribDeprecationWarning("foregroundCrypted", "foregroundColor")
+	#   self.guiObject.setForegroundColor(parseColor(value, 0x00FFFFFF))
+	#   attribDeprecationWarning("foregroundCrypted", "foregroundColor")
 
 	# def foregroundEncrypted(self, value):  # This appears to be unused.
-	# 	self.guiObject.setForegroundColor(parseColor(value, 0x00FFFFFF))
-	# 	attribDeprecationWarning("foregroundEncrypted", "foregroundColor")
+	#   self.guiObject.setForegroundColor(parseColor(value, 0x00FFFFFF))
+	#   attribDeprecationWarning("foregroundEncrypted", "foregroundColor")
 
 	def foregroundGradient(self, value):
 		self.guiObject.setForegroundGradient(*parseGradient(value))
 		attribDeprecationWarning("foregroundGradient", "foregroundColor")
 
 	# def foregroundNotCrypted(self, value):  # This appears to be unused.
-	# 	self.guiObject.setForegroundColor(parseColor(value, 0x00FFFFFF))
-	# 	attribDeprecationWarning("foregroundNotCrypted", "foregroundColor")
+	#   self.guiObject.setForegroundColor(parseColor(value, 0x00FFFFFF))
+	#   attribDeprecationWarning("foregroundNotCrypted", "foregroundColor")
 
 	def hAlign(self, value):  # This typo catcher definition uses an inconsistent name, use 'horizontalAlignment' instead!
 		self.horizontalAlignment(value)
@@ -2442,5 +2442,5 @@ def getScrollLabelStyle(element):
 def getSkinFactor(screen=GUI_SKIN_ID):
 	skinfactor = getDesktop(screen).size().height() / 720.0
 	# if skinfactor not in [0.8, 1, 1.5, 3, 6]:
-	# 	print(f"[Skin] Warning: Unexpected result for getSkinFactor '{skinfactor:.4f}'!")
+	#   print(f"[Skin] Warning: Unexpected result for getSkinFactor '{skinfactor:.4f}'!")
 	return skinfactor
