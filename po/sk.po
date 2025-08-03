@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 17:20+0000\n"
-"PO-Revision-Date: 2025-07-18 21:03+0000\n"
+"POT-Creation-Date: 2025-07-27 15:35+0000\n"
+"PO-Revision-Date: 2025-07-28 20:51+0000\n"
 "Last-Translator: Marián Hikaník <podnety@mojepreklady.net>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sk/>\n"
 "Language: sk\n"
@@ -101,7 +101,7 @@ msgstr " aktualizované"
 msgid "!! Boot loader Upgrade !!"
 msgstr "!!Upgrade zavádzača!!"
 
-msgid "# = Reboot Required"
+msgid "# = Reboot required if this item is changed."
 msgstr "# = Vyžaduje sa reštart"
 
 msgid "%-H:%M"
@@ -1346,7 +1346,7 @@ msgstr "(prázdne)"
 msgid "(show optional DVD audio menu)"
 msgstr "(zobraziť doplnkové menu zvuku DVD)"
 
-msgid "* = Restart Required"
+msgid "* = Restart required if this item is changed."
 msgstr "* = vyžaduje sa reštart"
 
 msgid "* Only available if more than one interface is active."
@@ -2233,6 +2233,9 @@ msgstr "Poskytovateľ všetkých služieb"
 msgid "All supported"
 msgstr "Všetky podporované"
 
+msgid "All up/down"
+msgstr "všetko nahor/nadol"
+
 msgid "Allocate"
 msgstr "Prideliť"
 
@@ -2506,6 +2509,9 @@ msgstr "Naozaj chcete vymazať tento záznam:\n"
 msgid "Are you sure you want to delete this?"
 msgstr "Naozaj to chcete vymazať?"
 
+msgid "Are you sure you want to disable Chkroot Multiboot?"
+msgstr "Naozaj chcete deaktivovať Chkroot Multiboot?"
+
 msgid "Are you sure you want to exit this wizard?"
 msgstr "Naozaj chcete ukončiť tohto sprievodcu?"
 
@@ -2575,10 +2581,10 @@ msgstr "Vzostupne"
 msgid "Ask user"
 msgstr "Opýtať sa používateľa"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr "Opýtať sa používateľa (predvolené: 'nie')"
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr "Opýtať sa používateľa (predvolené: 'áno')"
 
 msgid "Aspect"
@@ -2689,9 +2695,6 @@ msgstr "Režim authoringu"
 msgid "Auto"
 msgstr "Auto"
 
-msgid "Auto Detect"
-msgstr "Automatická detekcia"
-
 msgid "Auto Language"
 msgstr "Automatický jazyk"
 
@@ -2715,6 +2718,9 @@ msgstr "Automaticky rozdeľovať kapitoly každých ? minút (0 = nikdy)"
 
 msgid "Auto deep standby"
 msgstr "Automatické vypnutie"
+
+msgid "Auto detect"
+msgstr "Automatická detekcia"
 
 msgid "Auto flesh"
 msgstr "Automatická pleťová farba"
@@ -3092,7 +3098,7 @@ msgstr "Bitrate"
 msgid "Black"
 msgstr "Čierna"
 
-msgid "Black Screen"
+msgid "Black screen"
 msgstr "Čierna obrazovka"
 
 msgid "Black screen till locked"
@@ -3104,7 +3110,7 @@ msgstr "Čierna listina"
 msgid "Blinking REC"
 msgstr "Blikajúce REC"
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr "Blikajúci symbol REC"
 
 msgid "Block device"
@@ -3854,7 +3860,7 @@ msgstr "Kanál/Stanica"
 msgid "Channel 1"
 msgstr "Kanál 1"
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Kanál 1 s časom primetime"
 
 msgid "Channel Info"
@@ -3862,9 +3868,6 @@ msgstr "Info o kanáli"
 
 msgid "Channel List"
 msgstr "Zoznam kanálov"
-
-msgid "Channel Number"
-msgstr "Číslo kanála"
 
 msgid "Channel Selection"
 msgstr "Výber kanála"
@@ -3925,6 +3928,9 @@ msgstr "Typ zoznamu kanálov"
 
 msgid "Channel name"
 msgstr "Názov kanála"
+
+msgid "Channel number"
+msgstr "Číslo kanála"
 
 msgid "Channel preview mode"
 msgstr "Režim náhľadu kanála"
@@ -4292,6 +4298,9 @@ msgstr "Zatvoriť správcu MultiBoot Kexec"
 msgid "Close the Plugin Browser screen"
 msgstr "Zatvoriť obrazovku prehliadača pluginov"
 
+msgid "Close the SeekBar after returning to the starting point"
+msgstr "Zatvoriť vyhľadávací panel po návrate na počiatočný bod"
+
 msgid "Close the choice box"
 msgstr "Zatvoriť box s výberom"
 
@@ -4355,7 +4364,7 @@ msgstr "Formát farby"
 msgid "Color space"
 msgstr "Farebný priestor"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr "Farebný text"
 
 msgid "Combined"
@@ -6334,6 +6343,9 @@ msgstr "Vypnutý PiP.\n"
 
 msgid "Disabled or WPA/WPA2"
 msgstr "Deaktivované alebo WPA/WPA2"
+
+msgid "Disabling Chkroot failed!"
+msgstr "Nepodarilo sa deaktivovať Chkroot!"
 
 msgid "Dish"
 msgstr "Parabola"
@@ -10006,6 +10018,9 @@ msgstr "Interný SSD"
 msgid "Internal USB"
 msgstr "Interné USB"
 
+msgid "Internal disk only"
+msgstr "Len interný disk"
+
 msgid "Internal flash"
 msgstr "Vnútorná flash"
 
@@ -10016,9 +10031,6 @@ msgstr "Vnútorná flash:  %s %s "
 #, python-format
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr "Vnútorná flash: %s %s ako USB pre obnovu"
-
-msgid "Internal hdd only"
-msgstr "Len interný disk"
 
 msgid "Internet"
 msgstr "Internet"
@@ -10501,7 +10513,7 @@ msgstr "Zoraďovanie priečinkov v ľavom stĺpci"
 msgid "Left column file sort"
 msgstr "Zoraďovanie súborov v ľavom stĺpci"
 
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr "Vľavo od názvu stanice"
 
 msgid "Left, back USB"
@@ -10789,10 +10801,10 @@ msgstr "Umiestnenie denníkov"
 msgid "Logs older then the set no of days will be deleted."
 msgstr "Denníky staršie ako nastavený počet dní budú vymazané."
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr "<< / >> dlho"
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr "Doľava/doprava – dlho"
 
 msgid "Long filenames"
@@ -12343,10 +12355,10 @@ msgstr "Nie, nikdy"
 msgid "No, scan later manually"
 msgstr "Nie, neskôr vyhľadať ručne"
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr "Nie, vždy zobraziť prehliadač pluginov"
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr "Nie, vždy zobraziť zoznam časovačov"
 
 msgid "NodeID"
@@ -12357,6 +12369,9 @@ msgstr "Určite, koľko IP adries sa má kontrolovať na aktívne pripojenia."
 
 msgid "Non-Linear"
 msgstr "Nelineárne"
+
+msgid "Non-flashing"
+msgstr "Žiadne flashovanie"
 
 msgid "None"
 msgstr "Žiadny"
@@ -12414,9 +12429,6 @@ msgstr "Neklasifikované"
 
 msgid "Not Defined"
 msgstr "Nedefinované"
-
-msgid "Not Flashing"
-msgstr "Žiadne flashovanie"
 
 msgid "Not Installed"
 msgstr "Nie je nainštalované"
@@ -13304,7 +13316,7 @@ msgstr "Pikona"
 msgid "Picon Packages"
 msgstr "Balíčky pikon"
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr "Pikona a názov stanice"
 
 msgid "Picon install location"
@@ -14025,6 +14037,9 @@ msgstr "Stlačte OK pre použitie týchto miestnych nastavení:  [%s]"
 msgid "Press the UP/DOWN buttons to select a slot and press OK or GREEN to reboot to that image. If available, YELLOW will either delete or wipe the image. A deleted image can be restored with the BLUE button. A wiped image is completely removed and cannot be restored!"
 msgstr "Tlačidlami HORE/DOLU vyberte slot a stlačením ZELENÉHO tlačidla alebo OK spustíte reštart do príslušného image. ŽLTÝM tlačidlom sa image vymaže alebo vyčistí. Vymazaný image je možné obnoviť pomocou MODRÉHO tlačidla. Vyčistenie image znamená úplné odstránenie bez možnosti obnovenia!"
 
+msgid "Press the UP/DOWN buttons to select a slot, then press OK or GREEN to reboot into that image. If available, YELLOW will disable Multiboot, delete, or wipe the selected image. Press BLUE to add more slots."
+msgstr "Stlačením tlačidiel HORE/DOLU vyberte slot, potom stlačte OK alebo ZELENÉ tlačidlo pre reštartovanie do daného image. Ak je k dispozícii, ŽLTÉ tlačidlo deaktivuje Multiboot, odstráni alebo vymaže vybraný image. Stlačením MODRÉHO tlačidla pridáte ďalšie sloty."
+
 msgid "Press this button to emulate a long press on a button pressed afterwards (this also overrides any other actions assigned to emulation button)."
 msgstr "Stlačte toto tlačidlo na emuláciu dlhého stlačenia nasledujúceho tlačidla (táto funkcia ignoruje akékoľvek iné akcie priradené emulovaciemu tlačidlu)."
 
@@ -14365,14 +14380,14 @@ msgstr "REC"
 msgid "REC "
 msgstr "REC "
 
-msgid "REC Symbol"
-msgstr "Symbol REC"
-
 msgid "REC Symbol in Standby"
 msgstr "Symbol REC v pohotovostnom režime"
 
 msgid "REC Symbol in use"
 msgstr "Aktívny symbol REC"
+
+msgid "REC symbol"
+msgstr "Symbol REC"
 
 msgid "RED button"
 msgstr "Červené tlačidlo"
@@ -14528,7 +14543,7 @@ msgstr "Nahrať – rovnaké ako tlačidlo nahrávania"
 msgid "Record Actions"
 msgstr "Akcie nahrávania"
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr "Ikona nahrávania"
 
 msgid "Record next"
@@ -15244,7 +15259,7 @@ msgstr "Zoraďovanie priečinkov v pravom stĺpci"
 msgid "Right column file sort"
 msgstr "Zoraďovanie súborov v pravom stĺpci"
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr "Vpravo od názvu stanice"
 
 msgid "Right, back USB"
@@ -15715,14 +15730,14 @@ msgstr "Prehľad časovačov napájania"
 msgid "Scheduler Settings"
 msgstr "Nastavenia plánovača"
 
-msgid "Scheduler Standby"
-msgstr "Časovač napájania – pohotovostný režim"
-
 msgid "Scheduler deep standby"
 msgstr "Časovač napájania – vypnutie"
 
 msgid "Scheduler log"
 msgstr "Denník časovača napájania"
+
+msgid "Scheduler standby"
+msgstr "Časovač napájania – pohotovostný režim"
 
 msgid "Sci-Fi"
 msgstr "Sci-Fi"
@@ -15808,8 +15823,8 @@ msgstr "Posun"
 msgid "Seek Actions"
 msgstr "Akcie posunu"
 
-msgid "Seek back short"
-msgstr "Krátky posun dozadu"
+msgid "Seek Bar"
+msgstr "Vyhľadávací panel"
 
 msgid "Seek backward"
 msgstr "Posun dozadu"
@@ -15820,22 +15835,19 @@ msgstr "Posun dozadu (zadať čas)"
 msgid "Seek forward"
 msgstr "Posun dopredu"
 
-msgid "Seek forward  short"
-msgstr "Krátky posun dopredu"
-
 msgid "Seek forward (enter time)"
 msgstr "Posun dopredu (zadať čas)"
 
-msgid "Seek forward long"
-msgstr "Dlhý posun dopredu"
+msgid "SeekBar"
+msgstr "Vyhľadávací panel"
+
+msgid "SeekBar Actions"
+msgstr "Akcie vyhľadávacieho panela"
 
 msgid "SeekBar activation"
 msgstr "Aktivácia vyhľadávacieho panela"
 
-msgid "Seekbar"
-msgstr "Vyhľadávací panel"
-
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr "Citlivosť vyhľadávacieho panela"
 
 msgid "Seeking connected events"
@@ -15907,7 +15919,7 @@ msgstr "Ak je nastavené na 'Áno', pri pozastavení prehrávania médií zostan
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr "Vyberte 'Áno', ak chcete povoliť automatické exportovanie každého zisteného úložného zariadenia ako zdieľania Samba."
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr "Ak je nastavené 'Áno', bude možné použitie vyhľadávacieho panela na skok na vybraný bod v rámci udalosti."
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -17012,15 +17024,6 @@ msgstr "Servisná informácia"
 msgid "Service Information Actions"
 msgstr "Akcie pre servisnú informáciu"
 
-msgid "Service Name"
-msgstr "Názov stanice"
-
-msgid "Service Number and Service Name"
-msgstr "Číslo stanice a názov stanice"
-
-msgid "Service Number, Picon and Service Name"
-msgstr "Číslo stanice, pikona a názov stanice"
-
 msgid "Service Scan"
 msgstr "Vyhľadávanie staníc alebo služieb"
 
@@ -17069,8 +17072,14 @@ msgstr ""
 "Stanica sa nenašla!\n"
 "(SID nenájdený v PAT)"
 
+msgid "Service number and service name"
+msgstr "Číslo stanice a názov stanice"
+
 msgid "Service number font size"
 msgstr "Veľkosť písma čísla stanice"
+
+msgid "Service number, picon and service name"
+msgstr "Číslo stanice, pikona a názov stanice"
 
 msgid "Service off-air"
 msgstr "Služba off-air"
@@ -17245,8 +17254,8 @@ msgstr "Nastavenie predvolenej metódy zoradenia."
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr "Nastavenie času oneskorenia medzi opakovanými slučkami, ktoré v niektorých vzhľadoch používa softvérový renderer."
 
-msgid "Set the jump-size of the seekbar."
-msgstr "Nastavenie veľkosti skoku v paneli posunu."
+msgid "Set the jump-size of the SeekBar."
+msgstr "Nastavenie veľkosti skoku vo vyhľadávacom paneli."
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr "Nastavenie počtu riadkov, ktoré sa majú uložiť pre výstup 'stout' a 'sterr' v skriptoch."
@@ -18424,10 +18433,10 @@ msgstr "Balíčky so súčasťami vzhľadu"
 msgid "Skin Packages"
 msgstr "Balíčky vzhľadu"
 
-msgid "Skin Setting"
+msgid "Skin Settings"
 msgstr "Nastavenie vzhľadu"
 
-msgid "Skin Settings"
+msgid "Skin setting"
 msgstr "Nastavenie vzhľadu"
 
 msgid "SkinSelection"
@@ -18439,17 +18448,43 @@ msgstr "Preskočiť dozadu"
 msgid "Skip backward"
 msgstr "Preskočiť dozadu"
 
+#, python-format
+msgid "Skip backward %d second"
+msgid_plural "Skip backward %d seconds"
+msgstr[0] "Preskočiť dozadu o %d sekundu"
+msgstr[1] "Preskočiť dozadu o %d sekundy"
+msgstr[2] "Preskočiť dozadu o %d sekúnd"
+
+#, python-format
+msgid "Skip backward %s%%"
+msgstr "Preskočiť dozadu %s%%"
+
 msgid "Skip backward (enter time)"
-msgstr "skok dozadu (zadať čas)"
+msgstr "Preskočiť dozadu (zadajte čas)"
 
 msgid "Skip empty services"
 msgstr "Preskočiť prázdne stanice"
 
+#, python-format
+msgid "Skip for '%s' is disabled"
+msgstr "Preskočenie pre '%s' je deaktivované"
+
 msgid "Skip forward"
 msgstr "Preskočiť dopredu"
 
+#, python-format
+msgid "Skip forward %d second"
+msgid_plural "Skip forward %d seconds"
+msgstr[0] "Preskočiť dopredu o %d sekundu"
+msgstr[1] "Preskočiť dopredu o %d sekundy"
+msgstr[2] "Preskočiť dopredu o %d sekúnd"
+
+#, python-format
+msgid "Skip forward %s%%"
+msgstr "Preskočiť dopredu %s%%"
+
 msgid "Skip forward (enter time)"
-msgstr "skok dopredu (zadať čas)"
+msgstr "Preskočiť dopredu (zadajte čas)"
 
 msgid "Skip jumping to live while timeshifting with plugins"
 msgstr "Nepreskočiť na živé vysielanie pri timeshifte so zásuvnými modulmi"
@@ -18468,6 +18503,13 @@ msgstr "Čas preskočenia pre tlačidlo '%s'"
 
 msgid "Skip time for '%s'/'%s' buttons"
 msgstr "Čas preskočenia pre tlačidlá '%s'/'%s'"
+
+#, python-format
+msgid "Skip to %s0%% position (Add %s%% on second press)"
+msgstr "Preskočiť na pozíciu %s0%% (pri druhom stlačení pridať %s%%)"
+
+msgid "Skip to 0% (start) position"
+msgstr "Preskočiť na počiatočnú pozíciu 0 %"
 
 msgid "Sleep"
 msgstr "Uspať"
@@ -18598,6 +18640,10 @@ msgstr "Slot R: Úplná záloha koreňového slotu (aktuálny image)"
 
 msgid "Slot count"
 msgstr "Počet slotov"
+
+#, python-format
+msgid "Slots have been extended by %d..\n"
+msgstr "Sloty boli rozšírené o %d.\n"
 
 msgid "Slovak"
 msgstr "slovenčina"
@@ -19026,6 +19072,9 @@ msgstr "Čas začiatku"
 
 msgid "Starts in a few seconds"
 msgstr "Spustí sa o niekoľko sekúnd"
+
+msgid "Startup device not found!"
+msgstr "Nenašlo sa spúšťacie zariadenie!"
 
 #. TRANSLATORS: "State" is location information and not condition based information.
 msgid "State"
@@ -21141,6 +21190,9 @@ msgstr "Algoritmus ladenia"
 msgid "Tunisia"
 msgstr "Tunisko"
 
+msgid "Turbo"
+msgstr "Turbo"
+
 msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
 msgstr "Turbo: jeden reštart po flashovaní; Rýchlo: jeden reštart po flashovaní, jeden reštart po obnovení; Pomaly: jeden reštart po flashovaní, jeden reštart po obnovení v GUI."
 
@@ -21751,7 +21803,7 @@ msgid "Use time jumps for fast forward/backward"
 msgstr "Použiť časové skoky pretáčania dopredu/dozadu"
 
 msgid "Use time shift SeekBar while time shifting"
-msgstr "Používať vyhľadávací panel s funkciou timeshift"
+msgstr "Počas posúvania času používať vyhľadávací panel pre funkciu timeshift"
 
 msgid "Use viewer for unknown files"
 msgstr "Používať prehliadač aj pre neznáme súbory"
@@ -22698,7 +22750,7 @@ msgstr "Pri vypnutom režime T2MI RAW (predvolené nastavenie) sa môže použi�
 msgid "With errors:"
 msgstr "S chybami:"
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "Dlhým stlačením OK"
 
 msgid "With pop up"
@@ -23249,9 +23301,6 @@ msgstr "dobrodružný/western/vojnový"
 msgid "advertisement/shopping"
 msgstr "reklama/nakupovanie"
 
-msgid "all up/down"
-msgstr "všetko nahor/nadol"
-
 msgid "alpha then oldest"
 msgstr "alfa, potom najstaršie"
 
@@ -23509,9 +23558,6 @@ msgstr "neúspešné"
 
 msgid "fashion"
 msgstr "móda"
-
-msgid "fast"
-msgstr "rýchlo"
 
 msgid "file can not displayed - file not found"
 msgstr "súbor nie je možné zobraziť – súbor sa nenašiel"
@@ -23783,9 +23829,6 @@ msgstr "žiadna karta alebo neznáma karta"
 msgid "no storage devices found"
 msgstr "nenašli sa žiadne úložné zariadenia"
 
-msgid "normal"
-msgstr "normálne"
-
 msgid "not"
 msgstr "nie"
 
@@ -23980,9 +24023,6 @@ msgstr "skok dozadu"
 msgid "skip forward"
 msgstr "preskočiť dopredu"
 
-msgid "slow"
-msgstr "pomaly"
-
 msgid "soap/melodrama/folkloric"
 msgstr "soap/melodráma/folklór"
 
@@ -24085,9 +24125,6 @@ msgstr "tradičné (rýchle), znovu naladiť"
 msgid "tree delete"
 msgstr "vymazať strom"
 
-msgid "turbo"
-msgstr "turbo"
-
 msgid "uShare"
 msgstr "uShare"
 
@@ -24178,6 +24215,27 @@ msgstr "áno (zachovať zdroje)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Black Screen"
+#~ msgstr "Čierna obrazovka"
+
+#~ msgid "Seek back short"
+#~ msgstr "Krátky posun dozadu"
+
+#~ msgid "Seek forward  short"
+#~ msgstr "Krátky posun dopredu"
+
+#~ msgid "Seek forward long"
+#~ msgstr "Dlhý posun dopredu"
+
+#~ msgid "Service Name"
+#~ msgstr "Názov stanice"
+
+#~ msgid "normal"
+#~ msgstr "normálne"
+
+#~ msgid "slow"
+#~ msgstr "pomaly"
 
 #~ msgid "DVB API version"
 #~ msgstr "Verzia DVB API"
@@ -26244,6 +26302,3 @@ msgstr "®"
 
 #~ msgid "use_hdmi_cacenter"
 #~ msgstr "use_hdmi_cacenter"
-
-#~ msgid "Black screen"
-#~ msgstr "Čierna obrazovka"

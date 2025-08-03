@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 17:20+0000\n"
-"PO-Revision-Date: 2025-07-17 20:17+0000\n"
+"POT-Creation-Date: 2025-07-27 15:35+0000\n"
+"PO-Revision-Date: 2025-07-28 20:51+0000\n"
 "Last-Translator: jbleyel <jbleyel@gmx.net>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/de/>\n"
 "Language: de\n"
@@ -107,7 +107,7 @@ msgstr " installiert"
 msgid "!! Boot loader Upgrade !!"
 msgstr "!! Bootloader-Update !!"
 
-msgid "# = Reboot Required"
+msgid "# = Reboot required if this item is changed."
 msgstr "# = Neustart erforderlich"
 
 msgid "%-H:%M"
@@ -1328,7 +1328,7 @@ msgstr "(leer)"
 msgid "(show optional DVD audio menu)"
 msgstr "(DVD-Audiomenü anzeigen, falls vorhanden)"
 
-msgid "* = Restart Required"
+msgid "* = Restart required if this item is changed."
 msgstr "* = GUI-Neustart erforderlich"
 
 #
@@ -2320,6 +2320,9 @@ msgstr "Alle Sendergruppen"
 msgid "All supported"
 msgstr "Alle unterstützten"
 
+msgid "All up/down"
+msgstr "Alle Hoch/Runter"
+
 msgid "Allocate"
 msgstr "Zuweisen"
 
@@ -2601,6 +2604,9 @@ msgstr "Dieses Log löschen:\n"
 msgid "Are you sure you want to delete this?"
 msgstr "Wirklich dies löschen?"
 
+msgid "Are you sure you want to disable Chkroot Multiboot?"
+msgstr "Chkroot Multiboot wirklich deaktivieren?"
+
 #
 msgid "Are you sure you want to exit this wizard?"
 msgstr "Diesen Assistenten verlassen?"
@@ -2677,10 +2683,10 @@ msgstr "Aufsteigend"
 msgid "Ask user"
 msgstr "Benutzer fragen"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr "Fragen ('Nein' voreingestellt)"
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr "Fragen ('Ja' voreingestellt)"
 
 msgid "Aspect"
@@ -2799,9 +2805,6 @@ msgstr "Autoren-Modus"
 msgid "Auto"
 msgstr "Auto"
 
-msgid "Auto Detect"
-msgstr "Automatische Erkennung"
-
 #
 msgid "Auto Language"
 msgstr "Automatische Sprachauswahl"
@@ -2827,6 +2830,9 @@ msgstr "Automatischer Kapitelwechsel alle x Minuten (0=nie)"
 
 msgid "Auto deep standby"
 msgstr "Automatisch in Deep-Standby"
+
+msgid "Auto detect"
+msgstr "Automatische Erkennung"
 
 #
 msgid "Auto flesh"
@@ -3226,7 +3232,7 @@ msgstr "Bitrate"
 msgid "Black"
 msgstr "Schwarz"
 
-msgid "Black Screen"
+msgid "Black screen"
 msgstr "Schwarzer Bildschirm"
 
 msgid "Black screen till locked"
@@ -3238,7 +3244,7 @@ msgstr "Sperrliste"
 msgid "Blinking REC"
 msgstr "Blinkendes REC"
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr "Blinkendes Aufnahmesymbol"
 
 msgid "Block device"
@@ -4021,7 +4027,7 @@ msgstr "Kanal / Service"
 msgid "Channel 1"
 msgstr "Kanal 1"
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Kanal 1 mit Primetime"
 
 msgid "Channel Info"
@@ -4029,9 +4035,6 @@ msgstr "Programm-Informationen"
 
 msgid "Channel List"
 msgstr "Senderliste"
-
-msgid "Channel Number"
-msgstr "Sendernummer"
 
 msgid "Channel Selection"
 msgstr "Senderliste"
@@ -4096,6 +4099,9 @@ msgstr "Typ der Senderliste"
 
 msgid "Channel name"
 msgstr "Kanalname"
+
+msgid "Channel number"
+msgstr "Sendernummer"
 
 #
 msgid "Channel preview mode"
@@ -4480,6 +4486,9 @@ msgstr "Kexec-MultiBoot-Verwaltung beenden"
 msgid "Close the Plugin Browser screen"
 msgstr "Plugin-Manager beenden"
 
+msgid "Close the SeekBar after returning to the starting point"
+msgstr "Suchleiste nach Rückkehr zum Startpunkt schließen"
+
 msgid "Close the choice box"
 msgstr "Auswahlbox schließen"
 
@@ -4547,7 +4556,7 @@ msgstr "Farbformat"
 msgid "Color space"
 msgstr "Farbraum"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr "Farbiger Text"
 
 msgid "Combined"
@@ -6623,6 +6632,9 @@ msgstr "Bild-im-Bild wurde deaktiviert.\n"
 
 msgid "Disabled or WPA/WPA2"
 msgstr "Deaktiviert oder WPA/WPA2"
+
+msgid "Disabling Chkroot failed!"
+msgstr "Deaktivieren von Chkroot fehlgeschlagen!"
 
 #
 msgid "Dish"
@@ -10477,6 +10489,9 @@ msgstr "Interne SSD"
 msgid "Internal USB"
 msgstr "USB intern"
 
+msgid "Internal disk only"
+msgstr "Nur interne Festplatte"
+
 #
 msgid "Internal flash"
 msgstr "Interner Flash"
@@ -10488,9 +10503,6 @@ msgstr "Interner Flash: %s %s"
 #, python-format
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr "Interner Flash: %s %s als USB-Wiederherstellung"
-
-msgid "Internal hdd only"
-msgstr "Nur interne Festplatte"
 
 msgid "Internet"
 msgstr "Internet"
@@ -10996,7 +11008,7 @@ msgid "Left column file sort"
 msgstr "Dateisortierung linke Spalte"
 
 #
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr "Links vom Sendernamen"
 
 msgid "Left, back USB"
@@ -11307,10 +11319,10 @@ msgstr "Speicherort für Logs"
 msgid "Logs older then the set no of days will be deleted."
 msgstr "Logdateien, die älter sind als diese Anzahl von Tagen, werden gelöscht."
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr "Lang << / >>"
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr "Lang Links/Rechts"
 
 msgid "Long filenames"
@@ -12993,10 +13005,10 @@ msgstr "Nein, niemals"
 msgid "No, scan later manually"
 msgstr "Nein, Suchlauf später manuell durchführen."
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr "Nein, immer den Plugin-Manager anzeigen"
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr "Nein, immer die Timerliste anzeigen"
 
 msgid "NodeID"
@@ -13007,6 +13019,9 @@ msgstr "Eingeben, wie viele IP-Adressen auf aktive Verbindungen überprüft werd
 
 msgid "Non-Linear"
 msgstr "Nicht-Linear"
+
+msgid "Non-flashing"
+msgstr "Feststehendes Icon"
 
 #
 msgid "None"
@@ -13067,9 +13082,6 @@ msgstr "Nicht klassifiziert"
 
 msgid "Not Defined"
 msgstr "Nicht definiert"
-
-msgid "Not Flashing"
-msgstr "Feststehendes Icon"
 
 #
 msgid "Not Installed"
@@ -14024,7 +14036,7 @@ msgid "Picon Packages"
 msgstr "Picons"
 
 #
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr "Picon und Sendername"
 
 msgid "Picon install location"
@@ -14820,6 +14832,9 @@ msgstr ""
 msgid "Press the UP/DOWN buttons to select a slot and press OK or GREEN to reboot to that image. If available, YELLOW will either delete or wipe the image. A deleted image can be restored with the BLUE button. A wiped image is completely removed and cannot be restored!"
 msgstr "Mit Hoch/Runter einen Slot auswählen, dann OK oder GRÜN drücken, um zu diesem Image zu wechseln. Mit GELB ('Löschen' / 'Schreddern' - falls verfügbar) das Image entfernen. Ein gelöschtes Image kann mit BLAU wiederhergestellt werden, ein geschreddertes dagegen NICHT!"
 
+msgid "Press the UP/DOWN buttons to select a slot, then press OK or GREEN to reboot into that image. If available, YELLOW will disable Multiboot, delete, or wipe the selected image. Press BLUE to add more slots."
+msgstr "Mit Hoch/Runter einen Slot auswählen, dann OK oder GRÜN drücken, um dortiges Image zu booten. Falls vorhanden, mit GELB Multiboot deaktivieren, löschen, oder das gewählte Image schreddern. Mit BLAU können mehr Slots hinzugefügt werden."
+
 msgid "Press this button to emulate a long press on a button pressed afterwards (this also overrides any other actions assigned to emulation button)."
 msgstr "Diese hier eingestellte Taste emuliert einen langen Tastendruck, gefolgt von der ausgewählten Taste (diese Funktion hat Vorrang vor anderen Tastenzuweisungen)."
 
@@ -15176,14 +15191,14 @@ msgstr "REC"
 msgid "REC "
 msgstr "REC "
 
-msgid "REC Symbol"
-msgstr "Aufnahmesymbol"
-
 msgid "REC Symbol in Standby"
 msgstr "Blinkendes Aufnahmesymbol im Standby"
 
 msgid "REC Symbol in use"
 msgstr "Blinkendes Aufnahmesymbol im Betrieb"
+
+msgid "REC symbol"
+msgstr "Aufnahmesymbol"
 
 msgid "RED button"
 msgstr "Taste ROT"
@@ -15351,7 +15366,7 @@ msgstr "Aufnahme - wie Aufnahmetaste"
 msgid "Record Actions"
 msgstr "Aufnahmeaktionen"
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr "Aufnahmesymbol"
 
 msgid "Record next"
@@ -16130,7 +16145,7 @@ msgid "Right column file sort"
 msgstr "Dateisortierung rechte Spalte"
 
 #
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr "Rechts vom Sendernamen"
 
 msgid "Right, back USB"
@@ -16630,15 +16645,15 @@ msgstr "Zeitplaner-Übersicht"
 msgid "Scheduler Settings"
 msgstr "Aufgaben-Einstellungen"
 
-msgid "Scheduler Standby"
-msgstr "Aufgabe-Standby"
-
 msgid "Scheduler deep standby"
 msgstr "Aufgabe-Deep-Standby"
 
 #
 msgid "Scheduler log"
 msgstr "Aufgaben-Planer-Log"
+
+msgid "Scheduler standby"
+msgstr "Aufgabe-Standby"
 
 msgid "Sci-Fi"
 msgstr "Sci-Fi"
@@ -16731,9 +16746,8 @@ msgstr "Ermitteln"
 msgid "Seek Actions"
 msgstr "Suche Aktionen"
 
-#
-msgid "Seek back short"
-msgstr "Suche rückwärts kurz"
+msgid "Seek Bar"
+msgstr "Suchleiste"
 
 #
 msgid "Seek backward"
@@ -16748,24 +16762,19 @@ msgid "Seek forward"
 msgstr "Vorwärts suchen"
 
 #
-msgid "Seek forward  short"
-msgstr "Suche vorwärts kurz"
-
-#
 msgid "Seek forward (enter time)"
 msgstr "Vorwärts suchen (Zeit eingeben)"
 
-#
-msgid "Seek forward long"
-msgstr "Suche vorwärts lang"
+msgid "SeekBar"
+msgstr "Suchleiste"
+
+msgid "SeekBar Actions"
+msgstr "Suchleiste Aktionen"
 
 msgid "SeekBar activation"
 msgstr "Aktivierung der Suchleiste"
 
-msgid "Seekbar"
-msgstr "Suchleiste"
-
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr "Sprungweite der Suchleiste"
 
 msgid "Seeking connected events"
@@ -16839,7 +16848,7 @@ msgstr "Bei 'Ja' wird die Infoleiste im pausierten Zustand nicht ausgeblendet, s
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr "Bei 'Ja' wird jeder Datenträger automatisch als Samba Share erstellt."
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr "Bei 'Ja' kann innerhalb der Suchleiste zu jedem beliebigen Zeitpunkt vor- oder zurückgesprungen werden."
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -17985,18 +17994,6 @@ msgstr "Senderinformation"
 msgid "Service Information Actions"
 msgstr "Senderinformation Aktionen"
 
-#
-msgid "Service Name"
-msgstr "Sendername"
-
-#
-msgid "Service Number and Service Name"
-msgstr "Sendernummer und Sendername"
-
-#
-msgid "Service Number, Picon and Service Name"
-msgstr "Sendernummer, Picon und Sendername"
-
 msgid "Service Scan"
 msgstr "Sendersuche"
 
@@ -18048,8 +18045,16 @@ msgstr ""
 "Kanal nicht gefunden!\n"
 "(SID nicht in PAT gefunden)"
 
+#
+msgid "Service number and service name"
+msgstr "Sendernummer und Sendername"
+
 msgid "Service number font size"
 msgstr "Schriftgröße für Sendernummern"
+
+#
+msgid "Service number, picon and service name"
+msgstr "Sendernummer, Picon und Sendername"
 
 #
 msgid "Service off-air"
@@ -18252,7 +18257,7 @@ msgstr "Die Standardsortiermethode auswählen."
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr "Die Verzögerungszeit zwischen Scrolldurchläufen einstellen (wird vom Software-Renderer in einigen Skins verwendet)."
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr "Die Sprungweite für die Suchleiste einstellen."
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -19495,11 +19500,11 @@ msgstr "Skinkomponenten"
 msgid "Skin Packages"
 msgstr "Skins"
 
-msgid "Skin Setting"
-msgstr "Skin-Einstellungen"
-
 msgid "Skin Settings"
 msgstr "Skinauswahl"
+
+msgid "Skin setting"
+msgstr "Skin-Einstellungen"
 
 msgid "SkinSelection"
 msgstr "Skinauswahl"
@@ -19510,6 +19515,16 @@ msgstr "Rückwärts spulen"
 msgid "Skip backward"
 msgstr "Rückwärts springen"
 
+#, python-format
+msgid "Skip backward %d second"
+msgid_plural "Skip backward %d seconds"
+msgstr[0] "%d Sekunde zurück springen"
+msgstr[1] "%d Sekunden zurück springen"
+
+#, python-format
+msgid "Skip backward %s%%"
+msgstr "%s%% zurück springen"
+
 #
 msgid "Skip backward (enter time)"
 msgstr "Rückwärts springen (Zeit eingeben)"
@@ -19518,8 +19533,22 @@ msgstr "Rückwärts springen (Zeit eingeben)"
 msgid "Skip empty services"
 msgstr "Überspringen leerer Dienste"
 
+#, python-format
+msgid "Skip for '%s' is disabled"
+msgstr "Sprung für '%s' ist deaktiviert"
+
 msgid "Skip forward"
 msgstr "Vorwärts spulen"
+
+#, python-format
+msgid "Skip forward %d second"
+msgid_plural "Skip forward %d seconds"
+msgstr[0] "%d Sekunde vorwärts springen"
+msgstr[1] "%d Sekunden vorwärts springen"
+
+#, python-format
+msgid "Skip forward %s%%"
+msgstr "%s%% vorwärts springen"
 
 #
 msgid "Skip forward (enter time)"
@@ -19542,6 +19571,13 @@ msgstr "Sprungzeit für die Taste '%s'"
 
 msgid "Skip time for '%s'/'%s' buttons"
 msgstr "Sprungzeit für die Tasten '%s'/'%s'"
+
+#, python-format
+msgid "Skip to %s0%% position (Add %s%% on second press)"
+msgstr "Zur %s0%%-Position springen (plus %s%% beim zweiten Druck)"
+
+msgid "Skip to 0% (start) position"
+msgstr "Nach 0% Position (Start) springen"
 
 msgid "Sleep"
 msgstr "Sleeptimer"
@@ -19674,6 +19710,10 @@ msgstr "Slot R: Root Slot Komplettsicherung (aktuelles Image)"
 
 msgid "Slot count"
 msgstr "Anzahl der Slots"
+
+#, python-format
+msgid "Slots have been extended by %d..\n"
+msgstr "Slots wurden um %d erweitert.\n"
 
 msgid "Slovak"
 msgstr "Slowakisch"
@@ -20127,6 +20167,9 @@ msgstr "Kontroll-Vorlaufzeit in Minuten"
 
 msgid "Starts in a few seconds"
 msgstr "Startet in wenigen Sekunden"
+
+msgid "Startup device not found!"
+msgstr "Start-Gerät nicht gefunden!"
 
 #. TRANSLATORS: "State" is location information and not condition based information.
 msgid "State"
@@ -22370,6 +22413,9 @@ msgstr "Tuning-Algorithmus"
 msgid "Tunisia"
 msgstr "Tunesien"
 
+msgid "Turbo"
+msgstr "Turbo"
+
 # SoftwareManager/plugin.py
 msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
 msgstr "Turbo: Ein Neustart nach dem Flashen; Schnell: Ein Neustart nach dem Flashen, ein weiterer nach Wiederherstellung; Langsam: Ein Neustart nach dem Flashen, ein weiterer nach Wiederherstellung in der Benutzeroberfläche."
@@ -24029,7 +24075,7 @@ msgstr "Ist der T2MI-RAW-Modus deaktiviert (Standard), kann man eine einzelne T2
 msgid "With errors:"
 msgstr "Mit Fehlern:"
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "Taste OK lang"
 
 #
@@ -24624,9 +24670,6 @@ msgstr "Abenteuer/Western/Krieg"
 msgid "advertisement/shopping"
 msgstr "Werbung/Verkauf"
 
-msgid "all up/down"
-msgstr "Alle Hoch/Runter"
-
 msgid "alpha then oldest"
 msgstr "Alphabetisch, dann älteste"
 
@@ -24914,9 +24957,6 @@ msgstr "Fehlgeschlagen!"
 
 msgid "fashion"
 msgstr "Mode"
-
-msgid "fast"
-msgstr "Schnell"
 
 msgid "file can not displayed - file not found"
 msgstr "Datei kann nicht angezeigt werden! Datei nicht gefunden!"
@@ -25215,9 +25255,6 @@ msgstr "Keine oder unbekannte Karte eingesteckt"
 msgid "no storage devices found"
 msgstr "Keine Datenträger gefunden!"
 
-msgid "normal"
-msgstr "Normal"
-
 msgid "not"
 msgstr "nicht"
 
@@ -25429,9 +25466,6 @@ msgstr "Rückwärts springen"
 msgid "skip forward"
 msgstr "Vorwärts springen"
 
-msgid "slow"
-msgstr "Langsam"
-
 msgid "soap/melodrama/folkloric"
 msgstr "Soap/Melodram/Folklore"
 
@@ -25545,9 +25579,6 @@ msgstr "Klassisch (schnell), neu Abstimmen"
 msgid "tree delete"
 msgstr "Baum Löschen"
 
-msgid "turbo"
-msgstr "Turbo"
-
 msgid "uShare"
 msgstr "uShare"
 
@@ -25645,6 +25676,31 @@ msgstr "Ja (Feeds beibehalten)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Black Screen"
+#~ msgstr "Schwarzer Bildschirm"
+
+#
+#~ msgid "Seek back short"
+#~ msgstr "Suche rückwärts kurz"
+
+#
+#~ msgid "Seek forward  short"
+#~ msgstr "Suche vorwärts kurz"
+
+#
+#~ msgid "Seek forward long"
+#~ msgstr "Suche vorwärts lang"
+
+#
+#~ msgid "Service Name"
+#~ msgstr "Sendername"
+
+#~ msgid "normal"
+#~ msgstr "Normal"
+
+#~ msgid "slow"
+#~ msgstr "Langsam"
 
 #~ msgid "DVB API version"
 #~ msgstr "DVB-API-Version"
@@ -27887,9 +27943,6 @@ msgstr "®"
 
 #~ msgid "Add bouquet"
 #~ msgstr "Bouquet hinzu"
-
-#~ msgid "Black screen"
-#~ msgstr "Schwarzer Bildschirm"
 
 #~ msgid "no"
 #~ msgstr "Nein"

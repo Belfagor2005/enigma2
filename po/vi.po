@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-17 17:20+0000\n"
+"POT-Creation-Date: 2025-07-27 15:35+0000\n"
 "PO-Revision-Date: 2019-07-27 12:19+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -97,7 +97,7 @@ msgstr " cập nhật"
 msgid "!! Boot loader Upgrade !!"
 msgstr "!! Nâng cấp bộ nạp khởi động !!"
 
-msgid "# = Reboot Required"
+msgid "# = Reboot required if this item is changed."
 msgstr ""
 
 msgid "%-H:%M"
@@ -1308,7 +1308,7 @@ msgstr "(trống)"
 msgid "(show optional DVD audio menu)"
 msgstr "(hiển thị menu âm thanh DVD tùy chọn)"
 
-msgid "* = Restart Required"
+msgid "* = Restart required if this item is changed."
 msgstr "* = Yêu cầu khởi động lại"
 
 msgid "* Only available if more than one interface is active."
@@ -2208,6 +2208,9 @@ msgstr "Tất cả các nhà cung cấp dịch vụ"
 msgid "All supported"
 msgstr "không được hỗ trợ"
 
+msgid "All up/down"
+msgstr "tất cả lên / xuống"
+
 msgid "Allocate"
 msgstr "Chỉ định"
 
@@ -2483,6 +2486,9 @@ msgstr "Bạn có chắc chắn muốn xóa nhật ký này:\n"
 msgid "Are you sure you want to delete this?"
 msgstr ""
 
+msgid "Are you sure you want to disable Chkroot Multiboot?"
+msgstr ""
+
 msgid "Are you sure you want to exit this wizard?"
 msgstr "Bạn có chắc chắn muốn thoát khỏi thuật sĩ này?"
 
@@ -2553,10 +2559,10 @@ msgstr ""
 msgid "Ask user"
 msgstr "Hỏi người dùng"
 
-msgid "Ask user (with default as 'No')"
+msgid "Ask user (with default of 'No')"
 msgstr "Người dùng sk (với mặc định là 'không')"
 
-msgid "Ask user (with default as 'Yes')"
+msgid "Ask user (with default of 'Yes')"
 msgstr "Hỏi người dùng (với mặc định là 'có')"
 
 msgid "Aspect"
@@ -2670,10 +2676,6 @@ msgstr "Chế độ ủy quyền"
 msgid "Auto"
 msgstr "Tự động"
 
-#, fuzzy
-msgid "Auto Detect"
-msgstr "Tự động chờ"
-
 msgid "Auto Language"
 msgstr "Chọn ngôn ngữ tự động"
 
@@ -2696,6 +2698,10 @@ msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Chương tự động chia mỗi? phút (0 = không bao giờ)"
 
 msgid "Auto deep standby"
+msgstr "Tự động chờ"
+
+#, fuzzy
+msgid "Auto detect"
 msgstr "Tự động chờ"
 
 msgid "Auto flesh"
@@ -3078,8 +3084,8 @@ msgstr "Tốc độ bit"
 msgid "Black"
 msgstr "Đen"
 
-msgid "Black Screen"
-msgstr ""
+msgid "Black screen"
+msgstr "Màn hình đen"
 
 msgid "Black screen till locked"
 msgstr "Màn hình đen cho đến khi bị khóa"
@@ -3090,7 +3096,7 @@ msgstr ""
 msgid "Blinking REC"
 msgstr "Nhấp nháy khi ghi"
 
-msgid "Blinking REC Symbol"
+msgid "Blinking REC symbol"
 msgstr "Nhấp nháy khi ghi"
 
 msgid "Block device"
@@ -3840,7 +3846,7 @@ msgstr ""
 msgid "Channel 1"
 msgstr "Kênh 1"
 
-msgid "Channel 1 with Prime time"
+msgid "Channel 1 with prime time"
 msgstr "Kênh 1 với Primetime"
 
 msgid "Channel Info"
@@ -3848,9 +3854,6 @@ msgstr "Thông tin kênh"
 
 msgid "Channel List"
 msgstr "Danh sách kênh"
-
-msgid "Channel Number"
-msgstr ""
 
 msgid "Channel Selection"
 msgstr "Chọn kênh"
@@ -3911,6 +3914,9 @@ msgstr "Loại danh sách kênh"
 
 msgid "Channel name"
 msgstr "Tên kênh"
+
+msgid "Channel number"
+msgstr ""
 
 msgid "Channel preview mode"
 msgstr "Chế độ xem trước kênh"
@@ -4280,6 +4286,9 @@ msgstr ""
 msgid "Close the Plugin Browser screen"
 msgstr ""
 
+msgid "Close the SeekBar after returning to the starting point"
+msgstr ""
+
 msgid "Close the choice box"
 msgstr ""
 
@@ -4343,7 +4352,7 @@ msgstr "Định dạng màu"
 msgid "Color space"
 msgstr "Không gian màu"
 
-msgid "Colored Text"
+msgid "Colored text"
 msgstr ""
 
 msgid "Combined"
@@ -6341,6 +6350,9 @@ msgid "Disabled PiP.\n"
 msgstr "PIP bị vô hiệu hóa.\n"
 
 msgid "Disabled or WPA/WPA2"
+msgstr ""
+
+msgid "Disabling Chkroot failed!"
 msgstr ""
 
 msgid "Dish"
@@ -10048,6 +10060,9 @@ msgstr ""
 msgid "Internal USB"
 msgstr "USB nội bộ"
 
+msgid "Internal disk only"
+msgstr "Chỉ hdd nội bộ"
+
 msgid "Internal flash"
 msgstr "Đèn flash bên trong"
 
@@ -10058,9 +10073,6 @@ msgstr ""
 #, python-format
 msgid "Internal flash: %s %s as USB Recovery"
 msgstr ""
-
-msgid "Internal hdd only"
-msgstr "Chỉ hdd nội bộ"
 
 msgid "Internet"
 msgstr "Internet"
@@ -10551,7 +10563,7 @@ msgstr ""
 msgid "Left column file sort"
 msgstr ""
 
-msgid "Left from service name"
+msgid "Left of service name"
 msgstr "Còn lại từ tên dịch vụ"
 
 msgid "Left, back USB"
@@ -10843,10 +10855,10 @@ msgstr "Nhật ký vị trí"
 msgid "Logs older then the set no of days will be deleted."
 msgstr "Nhật ký cũ hơn sau đó bộ không có ngày sẽ bị xóa."
 
-msgid "Long << / >>"
+msgid "Long <</>>"
 msgstr "Dài << / >>"
 
-msgid "Long Left/Right"
+msgid "Long LEFT/RIGHT"
 msgstr "Dài trái / phải"
 
 msgid "Long filenames"
@@ -12449,10 +12461,10 @@ msgstr "Không bao giờ"
 msgid "No, scan later manually"
 msgstr "Không, quét sau"
 
-msgid "No, show the Plugin Browser"
+msgid "No, show Plugin Browser"
 msgstr "Không, hiển thị luôn trình duyệt plugin"
 
-msgid "No, show the RecordTimer Overview"
+msgid "No, show RecordTimer Overview"
 msgstr "Không, hiển thị luôn danh sách hẹn giờ"
 
 msgid "NodeID"
@@ -12463,6 +12475,9 @@ msgstr ""
 
 msgid "Non-Linear"
 msgstr ""
+
+msgid "Non-flashing"
+msgstr "Không nhấp nháy"
 
 msgid "None"
 msgstr "Không"
@@ -12524,9 +12539,6 @@ msgstr "Không liên quan"
 
 msgid "Not Defined"
 msgstr "Không xác định"
-
-msgid "Not Flashing"
-msgstr "Không nhấp nháy"
 
 #, fuzzy
 msgid "Not Installed"
@@ -13440,7 +13452,7 @@ msgstr "Picon"
 msgid "Picon Packages"
 msgstr ""
 
-msgid "Picon and Service Name"
+msgid "Picon and service name"
 msgstr "Tên dịch vụ và Picon"
 
 msgid "Picon install location"
@@ -14155,6 +14167,9 @@ msgstr ""
 msgid "Press the UP/DOWN buttons to select a slot and press OK or GREEN to reboot to that image. If available, YELLOW will either delete or wipe the image. A deleted image can be restored with the BLUE button. A wiped image is completely removed and cannot be restored!"
 msgstr ""
 
+msgid "Press the UP/DOWN buttons to select a slot, then press OK or GREEN to reboot into that image. If available, YELLOW will disable Multiboot, delete, or wipe the selected image. Press BLUE to add more slots."
+msgstr ""
+
 msgid "Press this button to emulate a long press on a button pressed afterwards (this also overrides any other actions assigned to emulation button)."
 msgstr "Nhấn nút này để mô phỏng nhấn lâu vào nút được nhấn sau đó (thao tác này cũng ghi đè mọi hành động khác được gán cho nút mô phỏng)."
 
@@ -14505,14 +14520,14 @@ msgstr "GHI"
 msgid "REC "
 msgstr ""
 
-msgid "REC Symbol"
-msgstr "Biểu tượng REC"
-
 msgid "REC Symbol in Standby"
 msgstr "Biểu tượng REC trong chế độ chờ"
 
 msgid "REC Symbol in use"
 msgstr "Biểu tượng REC đang sử dụng"
+
+msgid "REC symbol"
+msgstr "Biểu tượng REC"
 
 msgid "RED button"
 msgstr "Nút màu đỏ"
@@ -14668,7 +14683,7 @@ msgstr "Ghi - giống như nút ghi"
 msgid "Record Actions"
 msgstr ""
 
-msgid "Record Icon"
+msgid "Record icon"
 msgstr ""
 
 msgid "Record next"
@@ -15394,7 +15409,7 @@ msgstr ""
 msgid "Right column file sort"
 msgstr ""
 
-msgid "Right from service name"
+msgid "Right of service name"
 msgstr "Ngay từ tên dịch vụ"
 
 msgid "Right, back USB"
@@ -15868,14 +15883,14 @@ msgstr "Tổng quan về PowerTimer"
 msgid "Scheduler Settings"
 msgstr ""
 
-msgid "Scheduler Standby"
-msgstr "Chế độ chờ PowerTimer"
-
 msgid "Scheduler deep standby"
 msgstr "Thời gian chờ quyền lực"
 
 msgid "Scheduler log"
 msgstr "Nhật ký PowerManager"
+
+msgid "Scheduler standby"
+msgstr "Chế độ chờ PowerTimer"
 
 msgid "Sci-Fi"
 msgstr ""
@@ -15962,9 +15977,8 @@ msgstr "Tìm kiếm"
 msgid "Seek Actions"
 msgstr "Thao tác nhanh"
 
-#, fuzzy
-msgid "Seek back short"
-msgstr "Tìm kiếm lạc hậu"
+msgid "Seek Bar"
+msgstr ""
 
 msgid "Seek backward"
 msgstr "Tìm kiếm lạc hậu"
@@ -15975,24 +15989,19 @@ msgstr "Tìm kiếm ngược (nhập thời gian)"
 msgid "Seek forward"
 msgstr "Tìm kiếm về phía trước"
 
-#, fuzzy
-msgid "Seek forward  short"
-msgstr "Tìm kiếm về phía trước"
-
 msgid "Seek forward (enter time)"
 msgstr "Tìm kiếm về phía trước (nhập thời gian)"
 
-#, fuzzy
-msgid "Seek forward long"
-msgstr "Tìm kiếm về phía trước"
+msgid "SeekBar"
+msgstr "Tìm kiếm quán bar"
+
+msgid "SeekBar Actions"
+msgstr ""
 
 msgid "SeekBar activation"
 msgstr "Tìm kiếm kích hoạt"
 
-msgid "Seekbar"
-msgstr "Tìm kiếm quán bar"
-
-msgid "Seekbar sensibility"
+msgid "SeekBar sensibility"
 msgstr "Tìm kiếm sự nhạy cảm"
 
 msgid "Seeking connected events"
@@ -16064,7 +16073,7 @@ msgstr "Nếu được đặt thành 'có; infobar sẽ vẫn hiển thị vĩnh
 msgid "Select 'Yes' to allow each storage device detected to be automatically exported as samba share."
 msgstr ""
 
-msgid "Select 'Yes' to allow use of the seek bar to jump to a selected point within the event."
+msgid "Select 'Yes' to allow use of the SeekBar to jump to a selected point within the event."
 msgstr "Nếu được đặt thành 'có', cho phép bạn sử dụng thanh tìm kiếm để chuyển đến một điểm trong sự kiện."
 
 msgid "Select 'Yes' to always show the bouquet screen first when opening the channel list. Select 'No' to open the channel list using the current bouquet."
@@ -17168,15 +17177,6 @@ msgstr ""
 msgid "Service Information Actions"
 msgstr ""
 
-msgid "Service Name"
-msgstr "Tên dịch vụ"
-
-msgid "Service Number and Service Name"
-msgstr "Số dịch vụ và tên dịch vụ"
-
-msgid "Service Number, Picon and Service Name"
-msgstr "Số dịch vụ, Picon và Tên dịch vụ"
-
 msgid "Service Scan"
 msgstr ""
 
@@ -17226,8 +17226,14 @@ msgstr ""
 "Không tìm thấy dịch vụ!\n"
 "(Không tìm thấy SID trong PAT)"
 
+msgid "Service number and service name"
+msgstr "Số dịch vụ và tên dịch vụ"
+
 msgid "Service number font size"
 msgstr "Cỡ chữ số dịch vụ"
+
+msgid "Service number, picon and service name"
+msgstr "Số dịch vụ, Picon và Tên dịch vụ"
 
 #, fuzzy
 msgid "Service off-air"
@@ -17403,7 +17409,7 @@ msgstr "Đặt phương thức sắp xếp mặc định."
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr "Đặt thời gian trễ giữa các vòng lặp lặp lại, điều này được sử dụng bởi trình kết xuất phần mềm trong một số giao diện."
 
-msgid "Set the jump-size of the seekbar."
+msgid "Set the jump-size of the SeekBar."
 msgstr "Đặt kích thước bước nhảy của thanh tìm kiếm."
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
@@ -18586,11 +18592,11 @@ msgstr ""
 msgid "Skin Packages"
 msgstr ""
 
-msgid "Skin Setting"
-msgstr "Thiết lập da"
-
 msgid "Skin Settings"
 msgstr "Thiết lập giao diện"
+
+msgid "Skin setting"
+msgstr "Thiết lập da"
 
 msgid "SkinSelection"
 msgstr ""
@@ -18601,14 +18607,36 @@ msgstr "Bỏ lại"
 msgid "Skip backward"
 msgstr ""
 
+#, python-format
+msgid "Skip backward %d second"
+msgid_plural "Skip backward %d seconds"
+msgstr[0] ""
+
+#, python-format
+msgid "Skip backward %s%%"
+msgstr ""
+
 msgid "Skip backward (enter time)"
 msgstr "bỏ qua lùi lại (nhập thời gian)"
 
 msgid "Skip empty services"
 msgstr "Bỏ qua các dịch vụ trống"
 
+#, python-format
+msgid "Skip for '%s' is disabled"
+msgstr ""
+
 msgid "Skip forward"
 msgstr "Bỏ qua"
+
+#, python-format
+msgid "Skip forward %d second"
+msgid_plural "Skip forward %d seconds"
+msgstr[0] ""
+
+#, python-format
+msgid "Skip forward %s%%"
+msgstr ""
 
 msgid "Skip forward (enter time)"
 msgstr "bỏ qua phía trước (nhập thời gian)"
@@ -18629,6 +18657,13 @@ msgid "Skip time for '%s' button"
 msgstr ""
 
 msgid "Skip time for '%s'/'%s' buttons"
+msgstr ""
+
+#, python-format
+msgid "Skip to %s0%% position (Add %s%% on second press)"
+msgstr ""
+
+msgid "Skip to 0% (start) position"
 msgstr ""
 
 msgid "Sleep"
@@ -18755,6 +18790,10 @@ msgid "Slot R: Root Slot Image Backup (Current image)"
 msgstr ""
 
 msgid "Slot count"
+msgstr ""
+
+#, python-format
+msgid "Slots have been extended by %d..\n"
 msgstr ""
 
 msgid "Slovak"
@@ -19191,6 +19230,9 @@ msgstr ""
 #, fuzzy
 msgid "Starts in a few seconds"
 msgstr "Bắt đầu giải mã ngoại tuyến"
+
+msgid "Startup device not found!"
+msgstr ""
 
 #. TRANSLATORS: "State" is location information and not condition based information.
 msgid "State"
@@ -21300,6 +21342,9 @@ msgstr "Thuật toán điều chỉnh"
 msgid "Tunisia"
 msgstr "Tunisia"
 
+msgid "Turbo"
+msgstr "Turbo"
+
 msgid "Turbo: One reboot after flash; Fast: One reboot after flash, one reboot after restore; Slow: One reboot after flash, one reboot after restore in GUI."
 msgstr "Turbo: Một lần khởi động lại sau khi flash; Nhanh: Một lần khởi động lại sau khi flash, một lần khởi động lại sau khi khôi phục; Chậm: Một lần khởi động lại sau khi flash, một lần khởi động lại sau khi khôi phục trong GUI"
 
@@ -22839,7 +22884,7 @@ msgstr "Với chế độ RAW T2MI bị tắt (mặc định), chúng ta có th�
 msgid "With errors:"
 msgstr "Có lỗi:"
 
-msgid "With long OK press"
+msgid "With long OK button"
 msgstr "nhấn OK lâu"
 
 msgid "With pop up"
@@ -23394,9 +23439,6 @@ msgstr "phiêu lưu / tây / chiến tranh"
 msgid "advertisement/shopping"
 msgstr "quảng cáo / mua sắm"
 
-msgid "all up/down"
-msgstr "tất cả lên / xuống"
-
 msgid "alpha then oldest"
 msgstr "alpha rồi"
 
@@ -23662,9 +23704,6 @@ msgstr "thất bại"
 
 msgid "fashion"
 msgstr "thời trang"
-
-msgid "fast"
-msgstr "nhanh"
 
 msgid "file can not displayed - file not found"
 msgstr "tập tin không thể hiển thị - không tìm thấy tập tin"
@@ -23942,9 +23981,6 @@ msgstr "không có hoặc không biết thẻ được chèn"
 msgid "no storage devices found"
 msgstr "không tìm thấy thiết bị lưu trữ"
 
-msgid "normal"
-msgstr ""
-
 msgid "not"
 msgstr "không có gì"
 
@@ -24139,9 +24175,6 @@ msgstr "bỏ qua lạc hậu"
 msgid "skip forward"
 msgstr "bỏ qua"
 
-msgid "slow"
-msgstr "chậm"
-
 msgid "soap/melodrama/folkloric"
 msgstr "xà phòng / melodram / dân gian"
 
@@ -24247,9 +24280,6 @@ msgstr "truyền thống (nhanh), nghỉ hưu"
 msgid "tree delete"
 msgstr ""
 
-msgid "turbo"
-msgstr "turbo"
-
 msgid "uShare"
 msgstr "uShare"
 
@@ -24338,6 +24368,24 @@ msgstr "có (giữ thức ăn)"
 
 msgid "®"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Seek back short"
+#~ msgstr "Tìm kiếm lạc hậu"
+
+#, fuzzy
+#~ msgid "Seek forward  short"
+#~ msgstr "Tìm kiếm về phía trước"
+
+#, fuzzy
+#~ msgid "Seek forward long"
+#~ msgstr "Tìm kiếm về phía trước"
+
+#~ msgid "Service Name"
+#~ msgstr "Tên dịch vụ"
+
+#~ msgid "slow"
+#~ msgstr "chậm"
 
 #~ msgid "Open DreamPlex"
 #~ msgstr "Hiển thị trình phát DreamPlex ..."
@@ -25937,6 +25985,3 @@ msgstr ""
 
 #~ msgid "use_hdmi_cacenter"
 #~ msgstr "sử dụng_hdmi_cacenter"
-
-#~ msgid "Black screen"
-#~ msgstr "Màn hình đen"
