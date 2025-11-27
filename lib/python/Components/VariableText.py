@@ -5,15 +5,18 @@ class VariableText:
 		object.__init__(self)
 		self.message = ""
 		self.instance = None
+		self.onChanged = []
 
 	def setText(self, text):
 		try:
 			self.message = text
 			if self.instance:
 				self.instance.setText(self.message or "")
-		except:
+		except Exception:
 			self.message = ""
 			self.instance.setText(self.message or "")
+		for method in self.onChanged:
+			method()
 
 	def setMarkedPos(self, pos):
 		if self.instance:
@@ -27,5 +30,5 @@ class VariableText:
 	def postWidgetCreate(self, instance):
 		try:
 			instance.setText(self.message or "")
-		except:
+		except Exception:
 			pass

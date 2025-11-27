@@ -1,9 +1,9 @@
-from os.path import isdir, isfile
+from os.path import isfile
 
 from enigma import eRCInput, eTimer, eWindow, getDesktop
 
 from skin import GUI_SKIN_ID, applyAllAttributes, menus, screens, setups
-from Components.ActionMap import ActionMap
+from Components.ActionMap import HelpableActionMap
 from Components.config import config
 from Components.GUIComponent import GUIComponent
 from Components.Pixmap import Pixmap
@@ -34,6 +34,7 @@ class Screen(dict):
 		self.onExecEnd = []
 		self.onClose = []
 		self.onLayoutFinish = []
+		self.onContentChanged = []
 		self.onShown = []
 		self.onShow = []
 		self.onHide = []
@@ -56,9 +57,10 @@ class Screen(dict):
 		if self.screenImage:
 			self["Image"] = Pixmap()
 		if enableHelp:
-			self["helpActions"] = ActionMap(["HelpActions"], {
+			self["helpActions"] = HelpableActionMap(self, ["HelpAction"], {
+				# "displayHelp": (self.showHelp, _("Display the context sensitive help screen"))
 				"displayHelp": self.showHelp
-			}, prio=0)
+			}, prio=0, description=_("Help Action"))
 			self["key_help"] = StaticText(_("HELP"))
 
 	def __repr__(self):
@@ -188,8 +190,9 @@ class Screen(dict):
 				"menu": menus,
 				"setup": setups
 			}.get(source, screens)
-			defaultImage = images.get("default", "")
-			screenImage = images.get(image, defaultImage)
+			if not isinstance(self, ScreenSummary):  # Ignore Summary Screens
+				defaultImage = images.get("default", "")
+				screenImage = images.get(image, defaultImage)
 			if screenImage:
 				screenImage = resolveFilename(SCOPE_GUISKIN, screenImage)
 				msg = f"{'Default' if screenImage == defaultImage and image != 'default' else 'Specified'} {source if source else 'screen'} image for '{image}' is '{screenImage}'"
@@ -266,6 +269,13 @@ class Screen(dict):
 		self.__callLaterTimer.callback.append(method)
 		self.__callLaterTimer.start(0, True)
 
+	def screenContentChanged(self):
+		for method in self.onContentChanged:
+			if not isinstance(method, type(self.close)):
+				exec(method, globals(), locals())
+			else:
+				method()
+
 	def applySkin(self):
 		bounds = (getDesktop(GUI_SKIN_ID).size().width(), getDesktop(GUI_SKIN_ID).size().height())
 		resolution = bounds
@@ -292,10 +302,20 @@ class Screen(dict):
 		self.createGUIScreen(self.instance, self.desktop)
 
 	def createGUIScreen(self, parent, desktop, updateonly=False):
+		def addToStack(widget):
+			if hasattr(widget, "stackIndex") and widget.stackIndex != -1:
+				stack = self.stacks[widget.stackIndex]
+				stack.instance.addChild(widget.instance)
+
+		for widget in self.stacks:
+			widget.instance = widget.widget(parent, widget.layout)
+			applyAllAttributes(widget.instance, desktop, widget.skinAttributes, self.scale)
+			addToStack(widget)
 		for value in self.renderer:
 			if isinstance(value, GUIComponent):
 				if not updateonly:
 					value.GUIcreate(parent)
+					addToStack(value)
 				if not value.applySkin(desktop, self):
 					print(f"[Screen] Warning: Skin is missing renderer '{value}' in {str(self)}.")
 		for key in self:
@@ -303,6 +323,7 @@ class Screen(dict):
 			if isinstance(value, GUIComponent):
 				if not updateonly:
 					value.GUIcreate(parent)
+					addToStack(value)
 				deprecated = value.deprecationInfo
 				if value.applySkin(desktop, self):
 					if deprecated:
@@ -317,6 +338,7 @@ class Screen(dict):
 			if not updateonly:
 				widget.instance = widget.widget(parent)
 			applyAllAttributes(widget.instance, desktop, widget.skinAttributes, self.scale)
+			addToStack(widget)
 		if self.screenImage:
 			screenImage = LoadPixmap(self.screenImage)
 			self["Image"].instance.setPixmap(screenImage)

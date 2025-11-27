@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-27 15:35+0000\n"
+"POT-Creation-Date: 2025-11-06 08:27+0000\n"
 "PO-Revision-Date: 2025-06-17 15:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/ta/>\n"
@@ -1542,6 +1542,9 @@ msgstr "<கடைசி நேரங்குறிகருவி இடம்
 msgid "<Select a device>"
 msgstr "<ஒரு சாதனத்தைத் தேர்ந்தெடுக்கவும்>"
 
+msgid "<no capabilities found>"
+msgstr ""
+
 msgid "<no log found>"
 msgstr "<பதிவு இல்லை>"
 
@@ -2323,7 +2326,7 @@ msgstr "எப்போதும் பூங்கொத்துகளைக�
 msgid "Always use smart1080p mode"
 msgstr "எப்போதும் அறிவுள்ள 1080p பயன்முறையைப் பயன்படுத்துங்கள்"
 
-msgid "American Football"
+msgid "American football"
 msgstr "அமெரிக்க கால்பந்து"
 
 msgid "American Samoa"
@@ -3086,6 +3089,9 @@ msgstr "நீலம்"
 msgid "Bluetooth"
 msgstr "ஊடலை"
 
+msgid "Bluetooth Audio"
+msgstr ""
+
 msgid "Bluetooth Setup"
 msgstr "ஊடலை அமைப்பு"
 
@@ -3698,6 +3704,10 @@ msgstr "எந்த சமிக்ஞையையும் கண்டுப�
 msgid "Cape Verde"
 msgstr "பச்சை கேப்"
 
+#, python-format
+msgid "Card reader %d"
+msgstr ""
+
 msgid "Cards: "
 msgstr "அட்டைகள்:"
 
@@ -4024,9 +4034,6 @@ msgstr "ஈபிசி நிகழ்வுகளில் மதிப்ப�
 
 msgid "Choose a label that will identify this device within IceTV services."
 msgstr "ICETV சேவைகளில் இந்த சாதனத்தை அடையாளம் காணும் லேபிளைத் தேர்வுசெய்க."
-
-msgid "Choose how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful when you need information about an event which has recently finished."
-msgstr "ஈ.பி.சி தற்காலிக சேமிப்பில் வைத்திருக்க எவ்வளவு ஈபிசி வரலாறு, ஏதேனும் இருந்தால். இந்த வரலாற்று தரவை எந்த ஈபிசி பார்வைகளிலும் உலாவலாம். அண்மைக் காலத்தில் முடிந்த ஒரு நிகழ்வைப் பற்றிய செய்தி உங்களுக்குத் தேவைப்படும்போது இது பயனுள்ளதாக இருக்கும்."
 
 msgid "Choose how often to connect to IceTV server to check for updates."
 msgstr "புதுப்பிப்புகளைச் சரிபார்க்க ICETV சேவையகத்துடன் எத்தனை முறை இணைக்க வேண்டும் என்பதைத் தேர்வுசெய்க."
@@ -4886,6 +4893,9 @@ msgstr "கன்சோல் தொகுப்புகள்"
 msgid "Console Utility Packages"
 msgstr "பயன்பாட்டு தொகுப்புகள்"
 
+msgid "Constcw"
+msgstr ""
+
 msgid "Constellation"
 msgstr "விண்மீன்"
 
@@ -5231,7 +5241,7 @@ msgstr "மின்னோட்ட்ம், ஓட்டம்"
 msgid "Current 1/1"
 msgstr "தற்போதைய 1/1"
 
-msgid "Current Affairs"
+msgid "Current affairs"
 msgstr "நடப்பு விவகாரங்கள்"
 
 msgid "Current CEC address"
@@ -5285,9 +5295,6 @@ msgstr "தற்போதைய பயன்முறை: %s\n"
 
 msgid "Current settings:"
 msgstr "தற்போதைய அமைப்புகள்:"
-
-msgid "Current status"
-msgstr "தற்போதைய நிலை"
 
 msgid "Current time"
 msgstr "தற்போதைய நேரம்"
@@ -6273,6 +6280,9 @@ msgstr "நகர்வு பயன்முறையை முடக்கு"
 msgid "Disable Picture in Picture"
 msgstr "படத்தில் படத்தை முடக்கு"
 
+msgid "Disable ServiceHiSilicon"
+msgstr ""
+
 msgid "Disable background scanning"
 msgstr "பின்னணி ச்கேனிங்கை முடக்கு"
 
@@ -6823,6 +6833,9 @@ msgstr "ஈபிசி பொத்தான் பயன்முறை"
 msgid "EPG filename"
 msgstr "ஈபிசி கோப்பு பெயர்"
 
+msgid "EPG history"
+msgstr "ஈபிசி வரலாற்றை வைத்திருங்கள் (நிமிடங்களில்)"
+
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -6984,6 +6997,9 @@ msgstr "காலி"
 
 msgid "Empty file"
 msgstr "வெற்று கோப்பு"
+
+msgid "Emulator"
+msgstr ""
 
 msgid "Enable"
 msgstr "இயக்கு"
@@ -7187,6 +7203,9 @@ msgstr "கணினி துவக்கத்தின் போது கண
 
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr "பிழைத்திருத்த பதிவு கோப்பில் செயல் வரைபடம் / ரிமோட் கண்ட்ரோல் மேப்பிங் தரவைச் சேர்க்க இந்த விருப்பத்தை இயக்கவும்."
+
+msgid "Enable this option to add bouquet database information to the debug log file."
+msgstr ""
 
 msgid "Enable this option to add extra DVB details to the debug log file."
 msgstr "பிழைத்திருத்த பதிவு கோப்பில் கூடுதல் டிவிபி விவரங்களைச் சேர்க்க இந்த விருப்பத்தை இயக்கவும்."
@@ -7396,6 +7415,9 @@ msgstr "முள் குறியீட்டை உள்ளிடவும�
 msgid "Enter text via an attached keyboard"
 msgstr "இணைக்கப்பட்ட விசைப்பலகை வழியாக உரையை உள்ளிடவும்"
 
+msgid "Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space."
+msgstr ""
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the specifications of your LNB."
 msgstr "குறைந்த இசைக்குழு மற்றும் உயர் இசைக்குழுவுக்கு இடையில் நீங்கள் எல்.என்.பி மாறும் அதிர்வெண்ணை உள்ளிடவும். மேலும் தகவலுக்கு உங்கள் LNB இன் விவரக்குறிப்புகளைப் பார்க்கவும்."
 
@@ -7537,6 +7559,12 @@ msgstr "பிழை '%s' '%s' கமிட் பதிவை மீட்ட�
 
 msgid "Error Download Setting"
 msgstr "பிழை பதிவிறக்க அமைப்பு"
+
+msgid "Error Retry count"
+msgstr ""
+
+msgid "Error Retry delay"
+msgstr ""
 
 msgid "Error code"
 msgstr "பிழைக் குறியீடு"
@@ -8344,7 +8372,7 @@ msgstr "காப்புப்பிரதியிலிருந்து �
 msgid "Fill in channel EPGs from the broadcast EPG where there is no IceTV EPG for the channel"
 msgstr "சேனலுக்கு ICETV EPG இல்லாத ஒளிபரப்பு EPG இலிருந்து சேனல் EPG களை நிரப்பவும்"
 
-msgid "Film-Noir"
+msgid "Film-noir"
 msgstr "நிர்வாண படம்"
 
 msgid "Filter extensions"
@@ -8690,7 +8718,7 @@ msgstr "காலிசியன்"
 msgid "Gambia"
 msgstr "கம்பியா"
 
-msgid "Game Show"
+msgid "Game show"
 msgstr "விளையாட்டு நிகழ்ச்சி"
 
 msgid "Ganda"
@@ -9081,6 +9109,9 @@ msgstr "உயரம்"
 msgid "Help"
 msgstr "உதவி"
 
+msgid "Help Action"
+msgstr ""
+
 msgid "Help Screen Information"
 msgstr "திரை தகவலுக்கு உதவுங்கள்"
 
@@ -9279,7 +9310,7 @@ msgstr "கிடைமட்ட திருப்புமுனை விர�
 msgid "Horror"
 msgstr "அதிர்ச்சி"
 
-msgid "Horse Racing"
+msgid "Horse racing"
 msgstr "குதிரை பந்தயம்"
 
 msgid "Host"
@@ -9584,6 +9615,9 @@ msgstr "டி.வி.பி-எச் பெயர்வெளி துணை 
 msgid "Ignore DVB-T namespace sub network"
 msgstr "டி.வி.பி-டி பெயர்வெளி துணை நெட்வொர்க்கை புறக்கணிக்கவும்"
 
+msgid "Ignore Standby"
+msgstr ""
+
 msgid "Ignore unexpectedly wake up and stay in standby"
 msgstr "எதிர்பாராத விதமாக எழுந்து காத்திருப்புடன் இருங்கள்"
 
@@ -9714,6 +9748,9 @@ msgstr "HTTP ச்ட்ரீம்களில் SDT, BAT ஐ சேர்�
 
 msgid "Include action map data"
 msgstr "செயல் வரைபடத் தரவைச் சேர்க்கவும்"
+
+msgid "Include bouquet DB data"
+msgstr ""
 
 msgid "Include international data *"
 msgstr "பன்னாட்டு தரவைச் சேர்க்கவும் *"
@@ -10182,9 +10219,6 @@ msgstr "கசாக்"
 
 msgid "Kazakhstan"
 msgstr "கசகிச்தான்"
-
-msgid "Keep EPG history (in minutes)"
-msgstr "ஈபிசி வரலாற்றை வைத்திருங்கள் (நிமிடங்களில்)"
 
 msgid "Keep service"
 msgstr "சேவையை வைத்திருங்கள்"
@@ -11182,7 +11216,7 @@ msgstr "நடுத்தர"
 msgid "Middle - Lite image"
 msgstr "நடுத்தர - லைட் படம்"
 
-msgid "Mini Series"
+msgid "Mini series"
 msgstr "மினி தொடர்"
 
 msgid "MiniDLNA"
@@ -11973,6 +12007,9 @@ msgstr "பதிவு செய்யும் போது உள்ளடக
 msgid "Never decrypt while recording"
 msgstr "பதிவு செய்யும் போது ஒருபோதும் மறைகுறியாக்க வேண்டாம்"
 
+msgid "Never in Standby"
+msgstr ""
+
 msgid "New"
 msgstr "புதிய"
 
@@ -12021,7 +12058,7 @@ msgstr "புதிய அடைவு"
 msgid "News"
 msgstr "செய்தி"
 
-msgid "News/Current Affairs"
+msgid "News/Current affairs"
 msgstr "செய்தி/நடப்பு விவகாரங்கள்"
 
 msgid "Next"
@@ -12524,12 +12561,18 @@ msgstr "OSCAM Webif முடக்கப்பட்டுள்ளது"
 msgid "OSCamInfo Actions"
 msgstr "ஆச்காமின்ஃபோ செயல்கள்"
 
+msgid "OSCamInfo Capability Actions"
+msgstr ""
+
 msgid "OSCamInfo Log Actions"
 msgstr "ஆச்காமின்ஃபோ பதிவு செயல்கள்"
 
 #, python-format
 msgid "OSCamInfo: %s Entitlements for '%s'"
 msgstr "OSCAMINFO: ' %s' க்கான %s உரிமைகள்"
+
+msgid "OSCamInfo: Capabilities"
+msgstr ""
 
 #, python-format
 msgid "OSCamInfo: Entitlements for '%s'"
@@ -12637,7 +12680,7 @@ msgstr "HD மட்டுமே"
 msgid "Only free scan"
 msgstr "இலவச ச்கேன் மட்டுமே"
 
-msgid "Only in standby"
+msgid "Only in Standby"
 msgstr "காத்திருப்பு மட்டுமே"
 
 msgid "Only log debug information of GStreamer category. * means all categories."
@@ -12672,6 +12715,9 @@ msgstr "பூச்செண்டு பட்டியல்"
 
 msgid "Open Box Portal"
 msgstr "பெட்டி போர்ட்டலைக் காட்டு"
+
+msgid "Open Capability"
+msgstr ""
 
 msgid "Open EPG"
 msgstr "EPG ஐக் காட்டு ..."
@@ -12994,6 +13040,9 @@ msgstr "பி.சி.ஆர் பிஐடி"
 
 msgid "PDC"
 msgstr "பி.டி.சி."
+
+msgid "PG - Parental Guidance"
+msgstr ""
 
 msgid "PGS file"
 msgstr "பிசிஎச் கோப்பு"
@@ -14398,7 +14447,7 @@ msgstr "\"%s\" நிறுவ தயாரா?"
 msgid "Ready to remove \"%s\"?"
 msgstr "\"%s\" ஐ அகற்ற தயாரா?"
 
-msgid "Real Life"
+msgid "Real life"
 msgstr "உண்மையான வாழ்க்கை"
 
 msgid "Real or pseudo recordings"
@@ -15265,7 +15314,7 @@ msgstr "ரோயிங்"
 msgid "Rugby"
 msgstr "ரக்பி"
 
-msgid "Rugby League"
+msgid "Rugby league"
 msgstr "ரக்பி லீக்"
 
 msgid "Run"
@@ -15883,6 +15932,9 @@ msgstr "எல்லா படங்களையும் ஒரு சுழற
 msgid "Select 'Yes' to disable multi-selection mode after each operation. Select 'No' to leave multi-selection mode active and the selections unchanged."
 msgstr "ஒவ்வொரு செயல்பாட்டிற்கும் பிறகு பல தேர்வு பயன்முறையை முடக்க 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும். மல்டி-டெக்சன் பயன்முறையை செயலில் வைக்க 'இல்லை' என்பதைத் தேர்ந்தெடுக்கவும் மற்றும் தேர்வுகள் மாறாமல் உள்ளன."
 
+msgid "Select 'Yes' to disable the ServiceHiSilicon plugin to allow use of the default internal media player code."
+msgstr ""
+
 msgid "Select 'Yes' to display a small TV image (PiG - Picture in Graphic) within the EPG screen."
 msgstr "ஈபிசி திரையில் ஒரு சிறிய டிவி படத்தை (பன்றி - கிராஃபிக் படத்தில்) காட்ட 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும்."
 
@@ -15969,6 +16021,9 @@ msgstr "தோல் தரவின் அனைத்து பயனர் �
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr "அனைத்து பயனர் இடைமுக தரவையும் அகற்ற 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும். இந்த விருப்பத்தைத் தேர்ந்தெடுப்பது அனைத்து முக்கிய வரைபடம், பட்டியல் மற்றும் அமைவு மேலெழுதும் தரவை அகற்றி இயல்புநிலை வரையறைகளை மீட்டெடுக்கும்."
+
+msgid "Select 'Yes' to reschedule the task to when the receiver goes in to/out of Standby mode. The state change must happen within the task schedule window or else the task will not be run."
+msgstr ""
 
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
 msgstr "பிணையம் உள்ளமைவை இயல்புநிலைக்கு மீட்டமைக்க 'ஆம்' என்பதைத் தேர்ந்தெடுக்கவும். இது ஈத்தர்நெட் போர்ட்டை இருந்தால் அது உதவும் மற்றும் ரிசீவரை DHCP ஐப் பயன்படுத்த அமைக்கும். மற்ற அனைத்து பிணைய இடைமுகங்களும் நீக்கப்படும்."
@@ -16281,6 +16336,9 @@ msgstr "பணி மற்றும் ச்கிரிப்ட் செய
 msgid "Select how long, in seconds, that the volume and mute displays are shown before they automatically hide."
 msgstr "தானாகவே மறைப்பதற்கு முன்பு தொகுதி மற்றும் முடக்கு காட்சிகள் எவ்வளவு காலம் மற்றும் முடக்கு காட்சிகள் காண்பிக்கப்படுகின்றன என்பதைத் தேர்ந்தெடுக்கவும்."
 
+msgid "Select how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful for information about an event which has finished."
+msgstr "ஈ.பி.சி தற்காலிக சேமிப்பில் வைத்திருக்க எவ்வளவு ஈபிசி வரலாறு, ஏதேனும் இருந்தால். இந்த வரலாற்று தரவை எந்த ஈபிசி பார்வைகளிலும் உலாவலாம். அண்மைக் காலத்தில் முடிந்த ஒரு நிகழ்வைப் பற்றிய செய்தி உங்களுக்குத் தேவைப்படும்போது இது பயனுள்ளதாக இருக்கும்."
+
 msgid "Select how often this timer is to be repeated."
 msgstr "இந்த நேரங்குறிகருவி மீண்டும் மீண்டும் செய்யப்பட வேண்டும் என்பதைத் தேர்ந்தெடுக்கவும்."
 
@@ -16295,6 +16353,9 @@ msgstr "தேடல் செயல்களின் போது எண் �
 
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr "செயற்கைக்கோள் டிச் எவ்வாறு அமைக்கப்பட்டுள்ளது என்பதைத் தேர்ந்தெடுக்கவும். அதாவது நிலையான டிச், ஒற்றை எல்.என்.பி, டி.இ.இ.கியூ.சி சுவிட்ச், டச்டெர், முதலியன."
+
+msgid "Select how the schedule is handled with respect to Standby mode."
+msgstr ""
 
 msgid "Select how to activate the Quick EPG mode."
 msgstr "விரைவான ஈபிசி பயன்முறையை எவ்வாறு செயல்படுத்துவது என்பதைத் தேர்ந்தெடுக்கவும்."
@@ -16446,6 +16507,9 @@ msgstr "'%s' க்கான செயலைத் தேர்ந்தெட�
 msgid "Select the action to perform when the timer ends."
 msgstr "நேரங்குறிகருவி முடிவடையும் போது செய்ய செயலைத் தேர்ந்தெடுக்கவும்."
 
+msgid "Select the amount of time to wait, after a task error, before trying to run the task again."
+msgstr ""
+
 msgid "Select the animation speed of the button indicators in the help screens. 'Disabled' turns off animation so that indicators jump between buttons."
 msgstr "உதவித் திரைகளில் உள்ள பொத்தானை குறிகாட்டிகளின் அனிமேசன் வேகத்தைத் தேர்ந்தெடுக்கவும். 'முடக்கப்பட்டவை' அனிமேசனை அணைக்கின்றன, இதனால் குறிகாட்டிகள் பொத்தான்களுக்கு இடையில் குதிக்கின்றன."
 
@@ -16542,6 +16606,9 @@ msgstr "முன்னர் பார்வையிட்ட சேவைக�
 msgid "Select the duration of inactivity before the screen saver will be displayed."
 msgstr "திரை சேவர் காண்பிக்கப்படுவதற்கு முன்பு செயலற்ற காலத்தைத் தேர்ந்தெடுக்கவும்."
 
+msgid "Select the end time before which this timer can be activated.  After this time the timer won't be activated even if other conditions are met."
+msgstr ""
+
 #, python-format
 msgid "Select the file sort order for the %s column:"
 msgstr "%s நெடுவரிசைக்கு கோப்பு வரிசை வரிசையைத் தேர்ந்தெடுக்கவும்:"
@@ -16637,6 +16704,9 @@ msgstr "பட்டியலில் அடுத்த உருப்பட�
 msgid "Select the next item in the list"
 msgstr "பட்டியலில் அடுத்த உருப்படியைத் தேர்ந்தெடுக்கவும்"
 
+msgid "Select the number of times to retry a task if an error occurs when running the task."
+msgstr ""
+
 msgid "Select the preferred service information to display, in addition to the service number, for the service selection pop up screen."
 msgstr "பணி எண்ணுக்கு கூடுதலாக, பணி தேர்வு பாப் அப் திரைக்கு காண்பிக்க விருப்பமான பணி தகவல்களைத் தேர்ந்தெடுக்கவும்."
 
@@ -16711,6 +16781,9 @@ msgstr "மேம்படுத்தல் கோப்புகளை எங�
 
 msgid "Select the source of the default DNS settings."
 msgstr "இயல்புநிலை DNS அமைப்புகளின் மூலத்தைத் தேர்ந்தெடுக்கவும்."
+
+msgid "Select the start time after which this timer can be activated.  Before this time the timer won't be activated even if other conditions are met."
+msgstr ""
 
 msgid "Select the starting/initial column to be activated on File Commander start up."
 msgstr "கோப்பு தளபதி தொடக்கத்தில் செயல்படுத்தப்பட வேண்டிய தொடக்க/ஆரம்ப நெடுவரிசையைத் தேர்ந்தெடுக்கவும்."
@@ -17528,7 +17601,7 @@ msgstr "சோனா"
 msgid "Shopping"
 msgstr "சாப்பிங்"
 
-msgid "Short Film"
+msgid "Short film"
 msgstr "குறும்படம்"
 
 msgid "Short filenames"
@@ -17599,6 +17672,9 @@ msgstr "CCCAM தகவலைக் காட்டு"
 
 msgid "Show CI messages"
 msgstr "தொஒ செய்திகளைக் காட்டு"
+
+msgid "Show Capabilities"
+msgstr ""
 
 msgid "Show Default Backup Files"
 msgstr "இயல்புநிலை காப்பு கோப்புகளைக் காட்டு"
@@ -18232,7 +18308,7 @@ msgstr "நேர மாற்றத்தை நிறுத்தும்ப�
 msgid "Show watch status"
 msgstr "வாட்ச் நிலையைக் காட்டு"
 
-msgid "Show/Games show"
+msgid "Show/Game show"
 msgstr "சோ/கேம்ச் சோ"
 
 msgid "Show/Hide Actions"
@@ -18638,7 +18714,7 @@ msgstr "மென்மையான"
 msgid "SoC family"
 msgstr "SOC குடும்பம்"
 
-msgid "Soap Opera"
+msgid "Soap opera"
 msgstr "சோப் ஓபரா"
 
 msgid "Soccer"
@@ -18874,6 +18950,9 @@ msgstr "சிறப்பு 2"
 msgid "Special Features Settings"
 msgstr "சிறப்பு நற்பொருத்தங்கள் அமைப்புகள்"
 
+msgid "Special characteristics"
+msgstr ""
+
 msgid "Specify the directory to use when starting Media Player."
 msgstr "மீடியா பிளேயரைத் தொடங்கும்போது பயன்படுத்த வேண்டிய கோப்பகத்தைக் குறிப்பிடவும்."
 
@@ -18915,6 +18994,9 @@ msgstr "காத்திருப்பு"
 
 msgid "Standby / Restart"
 msgstr "காத்திருப்பு / மறுதொடக்கம்"
+
+msgid "Standby execution"
+msgstr ""
 
 msgid "Standby without TV shut down"
 msgstr "டிவி இல்லாமல் காத்திருப்பு மூடப்பட்டது"
@@ -18966,6 +19048,9 @@ msgstr "சேவையைத் தொடங்கவும் அல்லத�
 
 msgid "Start recording current event"
 msgstr "தற்போதைய நிகழ்வைப் பதிவு செய்யத் தொடங்குங்கள்"
+
+msgid "Start retry"
+msgstr ""
 
 msgid "Start teletext"
 msgstr "டெலிடெக்ச்ட் தொடங்கவும்"
@@ -19045,6 +19130,9 @@ msgstr "காத்திருப்பு பயன்முறையில�
 
 msgid "Status unavailable!"
 msgstr "நிலை கிடைக்கவில்லை!"
+
+msgid "Status:"
+msgstr "நிலை:"
 
 msgid "Step"
 msgstr "படி"
@@ -19212,6 +19300,9 @@ msgstr "ச்ட்ரீமிங் ட்யூனர் செய்தி"
 msgid "Streaming recording ended"
 msgstr "ச்ட்ரீமிங் பதிவு முடிந்தது"
 
+msgid "Streaming recovery delay"
+msgstr ""
+
 #, python-format
 msgid "Streaming tuner information for %s %s"
 msgstr "%s %s க்கான ட்யூனர் செய்தி ச்ட்ரீமிங்"
@@ -19309,6 +19400,15 @@ msgstr "செய் பெற்றார்:"
 
 msgid "Sudan"
 msgstr "சூடான்"
+
+msgid "Suitable for ages 12+"
+msgstr ""
+
+msgid "Suitable for ages 15+"
+msgstr ""
+
+msgid "Suitable only for Adults"
+msgstr ""
 
 msgid "Sun"
 msgstr "சூரியன்"
@@ -19601,7 +19701,7 @@ msgstr "தசிக்"
 msgid "Tajikistan"
 msgstr "தசிக்கிசுதான்"
 
-msgid "Talk Show"
+msgid "Talk show"
 msgstr "பேச்சு நிகழ்ச்சி"
 
 msgid "Tamil"
@@ -20729,6 +20829,9 @@ msgstr "மணிநேர திருத்து"
 msgid "Timer editor"
 msgstr "நேரங்குறிகருவி ஆசிரியர்"
 
+msgid "Timer end window"
+msgstr ""
+
 msgid "Timer entry"
 msgstr "நேரங்குறிகருவி நுழைவு"
 
@@ -20752,6 +20855,9 @@ msgstr "நேரங்குறிகருவி ரெக்கார்ட�
 
 msgid "Timer selection"
 msgstr "நேரங்குறிகருவி தேர்வு"
+
+msgid "Timer start window"
+msgstr ""
 
 msgid "Timer type"
 msgstr "நேரங்குறிகருவி வகை"
@@ -21209,6 +21315,9 @@ msgstr "சாதன வகை"
 msgid "Type of scan"
 msgstr "ச்கேன் வகை"
 
+msgid "U - Suitable for all"
+msgstr ""
+
 #, python-format
 msgid "UBI slot %s%s"
 msgstr ""
@@ -21242,6 +21351,10 @@ msgstr "யூ.எச்.பி 3.0 (பின், வெளிப்புற�
 
 msgid "USB Stick"
 msgstr "யூ.எச்.பி ச்டிக்"
+
+#, python-format
+msgid "USB reader %d"
+msgstr ""
 
 #, python-format
 msgid "USB slot %s%s"
@@ -23233,16 +23346,16 @@ msgstr "செயல்படுத்தவும்"
 msgid "address:"
 msgstr "முகவரி:"
 
-msgid "adult movie/drama"
+msgid "Adult movie/Drama"
 msgstr "வயதுவந்த திரைப்படம்/நாடகம்"
 
 msgid "advanced"
 msgstr "மேம்பட்ட"
 
-msgid "adventure/western/war"
+msgid "Adventure/Western/War"
 msgstr "சாகச/மேற்கத்திய/போர்"
 
-msgid "advertisement/shopping"
+msgid "Advertisement/Shopping"
 msgstr "விளம்பரம்/சாப்பிங்"
 
 msgid "alpha then oldest"
@@ -23276,7 +23389,7 @@ msgstr "கலை/கலாச்சாரம் (பொது)"
 msgid "arts/culture (without music, general)"
 msgstr "கலை/கலாச்சாரம் (இசை இல்லாமல், பொது)"
 
-msgid "arts/culture magazine"
+msgid "Arts/Culture magazines"
 msgstr "கலை/கலாச்சார இதழ்"
 
 msgid "athletics"
@@ -23318,13 +23431,13 @@ msgstr "சிறந்தது"
 msgid "black"
 msgstr "கருப்பு"
 
-msgid "black & white"
+msgid "Black & White"
 msgstr "கருப்பு & வெள்ளை"
 
 msgid "blue"
 msgstr "நீலம்"
 
-msgid "broadcasting/press"
+msgid "Broadcasting/Press"
 msgstr "ஒளிபரப்பு/பத்திரிகை"
 
 #, python-format
@@ -23346,7 +23459,7 @@ msgstr "அட்டை"
 msgid "card reader"
 msgstr "அட்டை வாசகர்"
 
-msgid "cartoon/puppets"
+msgid "Cartoons/Puppets"
 msgstr "கார்ட்டூன்/பொம்மலாட்டங்கள்"
 
 msgid "chapters"
@@ -23406,7 +23519,7 @@ msgstr "நீக்கு"
 msgid "delete cut"
 msgstr "வெட்டு நீக்கு"
 
-msgid "detective/thriller"
+msgid "Detective/Thriller"
 msgstr "துப்பறியும்/த்ரில்லர்"
 
 msgid "disabled"
@@ -23415,7 +23528,7 @@ msgstr "முடக்கப்பட்டது"
 msgid "disconnected"
 msgstr "துண்டிக்கப்பட்டது"
 
-msgid "discussion/interview/debate"
+msgid "Discussion/Interview/Debate"
 msgstr "கலந்துரையாடல்/நேர்காணல்/விவாதம்"
 
 msgid "documentary"
@@ -23446,7 +23559,7 @@ msgstr "ECM நேரம்:"
 msgid "ecm.info"
 msgstr "ecm.info"
 
-msgid "economics/social advisory"
+msgid "Economics/Social advisory"
 msgstr "பொருளாதாரம்/சமூக அறிவுரை"
 
 msgid "education/information (general)"
@@ -23482,7 +23595,7 @@ msgstr "பொழுதுபோக்கு"
 msgid "equal to"
 msgstr "சமமான"
 
-msgid "equestrian"
+msgid "Equestrian"
 msgstr "குதிரையேற்றம்"
 
 msgid "execute cuts (requires MovieCut plugin)"
@@ -23491,7 +23604,7 @@ msgstr "வெட்டுக்களை இயக்கவும் (MovieCut 
 msgid "exit DVD player or return to file browser"
 msgstr "டிவிடி பிளேயரை விட்டு வெளியேறவும் அல்லது கோப்பு உலாவிக்கு திரும்பவும்"
 
-msgid "experimental film/video"
+msgid "Experimental film/video"
 msgstr "சோதனை படம்/வீடியோ"
 
 msgid "externally loopthrough to"
@@ -23500,7 +23613,7 @@ msgstr "வெளிப்புற வளையத்திற்கு"
 msgid "failed"
 msgstr "தோல்வியுற்றது"
 
-msgid "fashion"
+msgid "Fashion"
 msgstr "ஃபேசன்"
 
 msgid "file can not displayed - file not found"
@@ -23512,13 +23625,13 @@ msgstr "FileFormats (BMP, PNG, JPG, GIF)"
 msgid "filename"
 msgstr "கோப்புப்பெயர்"
 
-msgid "film/cinema"
+msgid "Film/Cinema"
 msgstr "படம்/சினிமா"
 
-msgid "fine arts"
+msgid "Fine arts"
 msgstr "நுண்கலை"
 
-msgid "fitness & health"
+msgid "Fitness and Health"
 msgstr "உடற்பயிற்சி மற்றும் உடல்நலம்"
 
 msgid "flat alphabetic"
@@ -23527,13 +23640,13 @@ msgstr "தட்டையான அகரவரிசை"
 msgid "flat alphabetic reverse"
 msgstr "தட்டையான அகரவரிசை தலைகீழ்"
 
-msgid "folk/traditional music"
+msgid "Folk/Traditional music"
 msgstr "நாட்டுப்புற/பாரம்பரிய இசை"
 
-msgid "football/soccer"
+msgid "Football/Soccer"
 msgstr "கால்பந்து/கால்பந்து"
 
-msgid "foreign countries/expeditions"
+msgid "Foreign countries/Expeditions"
 msgstr "வெளிநாட்டு நாடுகள்/பயணங்கள்"
 
 msgid "forward to the next chapter"
@@ -23548,10 +23661,10 @@ msgstr "இலவச வட்டு இடம்"
 msgid "from"
 msgstr "இருந்து"
 
-msgid "further education"
+msgid "Further education"
 msgstr "மேலும் கல்வி"
 
-msgid "game show/quiz/contest"
+msgid "Game show/Quiz/Contest"
 msgstr "விளையாட்டு நிகழ்ச்சி/வினாடி வினா/போட்டி"
 
 msgid "gardening"
@@ -23584,7 +23697,7 @@ msgstr "எச்: MMAM/PM"
 msgid "h:mmam/pm"
 msgstr "எச்: MMAM/PM"
 
-msgid "handicraft"
+msgid "Handicraft"
 msgstr "கைவினைப்பொருட்கள்"
 
 msgid "handled"
@@ -23671,10 +23784,10 @@ msgstr "நீளம்"
 msgid "lime"
 msgstr "சுண்ணாம்பு"
 
-msgid "literature"
+msgid "Literature"
 msgstr "இலக்கியம்"
 
-msgid "live broadcast"
+msgid "Live broadcast"
 msgstr "நேரடி ஒளிபரப்பு"
 
 msgid "locked"
@@ -23686,16 +23799,16 @@ msgstr "நீண்ட"
 msgid "loopthrough to"
 msgstr "loopThrough பெறுநர்"
 
-msgid "magazines/reports/documentary"
+msgid "Magazines/Reports/Documentary"
 msgstr "பத்திரிகைகள்/அறிக்கைகள்/ஆவணப்படங்கள்"
 
 msgid "manual"
 msgstr "கையேடு"
 
-msgid "martial sports"
+msgid "Martial sports"
 msgstr "தற்காப்பு விளையாட்டு"
 
-msgid "medicine/physiology/psychology"
+msgid "Medicine/Physiology/Psychology"
 msgstr "மருத்துவம்/உடலியல்/உளவியல்"
 
 msgid "min"
@@ -23710,7 +23823,7 @@ msgstr "மாதம்"
 msgid "motor sport"
 msgstr "மின்னோடி விளையாட்டு"
 
-msgid "motoring"
+msgid "Motoring"
 msgstr "மின்னோடி ஓட்டுதல்"
 
 msgid "move"
@@ -23731,7 +23844,7 @@ msgstr "இசை (பொது)"
 msgid "music/ballet/dance (general)"
 msgstr "இசை/பாலே/நடனம் (பொது)"
 
-msgid "musical/opera"
+msgid "Musical/Opera"
 msgstr "இசை/ஓபரா"
 
 msgid "n/a"
@@ -23740,22 +23853,22 @@ msgstr "இதற்கில்லை"
 msgid "name"
 msgstr "பெயர்"
 
-msgid "nature/animals/environment"
+msgid "Nature/Animals/Environment"
 msgstr "இயற்கை/விலங்குகள்/சூழல்"
 
-msgid "new media"
+msgid "New media"
 msgstr "புதிய ஊடகங்கள்"
 
 msgid "news (general)"
 msgstr "செய்தி (பொது)"
 
-msgid "news magazine"
+msgid "News magazine"
 msgstr "செய்தி இதழ்"
 
 msgid "news/current affairs (general)"
 msgstr "செய்தி/நடப்பு விவகாரங்கள் (பொது)"
 
-msgid "news/weather report"
+msgid "News/Weather report"
 msgstr "செய்தி/வானிலை அறிக்கை"
 
 msgid "no CAId selected"
@@ -23821,7 +23934,7 @@ msgstr "தொகுப்பு"
 msgid "packages"
 msgstr "தொகுப்பு"
 
-msgid "performing arts"
+msgid "Performing arts"
 msgstr "கலை நிகழ்ச்சிகள்"
 
 msgid "pid:"
@@ -23842,7 +23955,7 @@ msgstr "செருகுநிரல்கள்"
 msgid "pm"
 msgstr "பி.எம்"
 
-msgid "popular culture/traditional arts"
+msgid "Popular culture/Traditional arts"
 msgstr "பிரபலமான கலாச்சாரம்/பாரம்பரிய கலைகள்"
 
 msgid "pre-school children's program"
@@ -23869,7 +23982,7 @@ msgstr "மத, கடன்"
 msgid "religion"
 msgstr "மதம்"
 
-msgid "remarkable people"
+msgid "Remarkable people"
 msgstr "குறிப்பிடத்தக்க மக்கள்"
 
 msgid "remove after this position"
@@ -23893,7 +24006,7 @@ msgstr "முந்தைய அத்தியாயத்திற்கு �
 msgid "right"
 msgstr "வலது"
 
-msgid "rock/pop"
+msgid "Rock/Pop"
 msgstr "ராக்/பாப்"
 
 msgid "romance"
@@ -23916,7 +24029,7 @@ msgstr ""
 msgid "scan state"
 msgstr "ச்கேன் நிலை"
 
-msgid "science fiction/fantasy/horror"
+msgid "Science fiction/Fantasy/Horror"
 msgstr "அறிவியல் புனைகதை/கற்பனை/திகில்"
 
 msgid "search EPG..."
@@ -23925,10 +24038,10 @@ msgstr "EPG ஐத் தேடுங்கள் ..."
 msgid "select CAId's"
 msgstr "கெய்ட்சைத் தேர்ந்தெடுக்கவும்"
 
-msgid "serious music/classic music"
+msgid "Serious music/Classic music"
 msgstr "தீவிர இசை/கிளாசிக் இசை"
 
-msgid "serious/classical/religious/historical movie/drama"
+msgid "Serious/Classical/Religious/Historical/Drama"
 msgstr "தீவிர/கிளாசிக்கல்/மத/வரலாற்று திரைப்படம்/நாடகம்"
 
 msgid "service PIN"
@@ -23967,13 +24080,13 @@ msgstr "பின்தங்கிய நிலையில் தவிர்�
 msgid "skip forward"
 msgstr "முன்னோக்கி செல்லுங்கள்"
 
-msgid "soap/melodrama/folkloric"
+msgid "Soap/Melodrama/Folkloric"
 msgstr "சோப்பு/மெலோட்ராமா/நாட்டுப்புற வண்ணம்"
 
 msgid "social/political issues/economics (general)"
 msgstr "சமூக/அரசியல் பிரச்சினைகள்/பொருளாதாரம் (பொது)"
 
-msgid "social/spiritual science"
+msgid "Social/Spiritual sciences"
 msgstr "சமூக/ஆன்மீக அறிவியல்"
 
 msgid "softcam"
@@ -23994,7 +24107,7 @@ msgstr "விளையாட்டு (பொது)"
 msgid "sports (general)"
 msgstr "விளையாட்டு (பொது)"
 
-msgid "sports magazine"
+msgid "Sports magazines"
 msgstr "விளையாட்டு இதழ்"
 
 msgid "standard"
@@ -24036,7 +24149,7 @@ msgstr "பேச்சு நிகழ்ச்சி"
 msgid "team sports"
 msgstr "அணி விளையாட்டு"
 
-msgid "technology/natural science"
+msgid "Technology/Natural sciences"
 msgstr "தொழில்நுட்பம்/இயற்கை அறிவியல்"
 
 msgid "teletext"
@@ -24045,7 +24158,7 @@ msgstr "டெலிடெக்ச்ட்"
 msgid "template file"
 msgstr "வார்ப்புரு கோப்பு"
 
-msgid "tennis/squash"
+msgid "Tennis/Squash"
 msgstr "டென்னிச்/ச்குவாச்"
 
 msgid "text"
@@ -24057,7 +24170,7 @@ msgstr "இந்த பதிவு"
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "நேரம், அத்தியாயம், ஆடியோ, வசன வரிகளை மாற்றவும்"
 
-msgid "tourism/travel"
+msgid "Tourism/Travel"
 msgstr "சுற்றுலா/பயணம்"
 
 msgid "traditional (fast)"
@@ -24096,7 +24209,7 @@ msgstr "தெரியவில்லை"
 msgid "unknown error"
 msgstr "தெரியாத பிழை"
 
-msgid "unpublished"
+msgid "Unpublished"
 msgstr "வெளியிடப்படாதது"
 
 msgid "untestable"
@@ -24108,7 +24221,7 @@ msgstr "புதுப்பிப்பு"
 msgid "using:"
 msgstr "பயன்படுத்துகிறது:"
 
-msgid "variety show"
+msgid "Variety show"
 msgstr "வெரைட்டி சோ"
 
 msgid "violet"
@@ -24120,7 +24233,7 @@ msgstr "தொஒ காத்திருங்கள் ..."
 msgid "wait for mmi..."
 msgstr "MMI க்காக காத்திருங்கள் ..."
 
-msgid "water sport"
+msgid "Water sport"
 msgstr "நீர் விளையாட்டு"
 
 msgid "west"
@@ -24132,7 +24245,7 @@ msgstr "வெள்ளை"
 msgid "width"
 msgstr "அகலம்"
 
-msgid "winter sport"
+msgid "Winter sport"
 msgstr "குளிர்கால விளையாட்டு"
 
 msgid "wireless network interface"
@@ -24156,8 +24269,14 @@ msgstr "மஞ்சள்"
 msgid "yes (keep feeds)"
 msgstr "ஆம் (ஊட்டங்களை வைத்திருங்கள்)"
 
+msgid "Languages"
+msgstr ""
+
 msgid "®"
 msgstr "®"
+
+#~ msgid "Current status"
+#~ msgstr "தற்போதைய நிலை"
 
 #~ msgid "Black Screen"
 #~ msgstr "கருப்பு திரை"
@@ -24342,9 +24461,6 @@ msgstr "®"
 
 #~ msgid "Signal strength:"
 #~ msgstr "சிக்னல் வலிமை:"
-
-#~ msgid "Status:"
-#~ msgstr "நிலை:"
 
 #~ msgid "Timer selection..."
 #~ msgstr "நேரங்குறிகருவி தேர்வு ..."

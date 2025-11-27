@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apachi70 (OpenATV),(Teamblue)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-27 15:35+0000\n"
+"POT-Creation-Date: 2025-11-06 08:27+0000\n"
 "PO-Revision-Date: 2025-04-14 12:33+0000\n"
 "Last-Translator: tanerkaderli <taner.kaderli@live.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/tr/>\n"
@@ -1553,6 +1553,9 @@ msgstr "<Son zamanlayıcı konumu>"
 msgid "<Select a device>"
 msgstr "Giriş aygıtı seç"
 
+msgid "<no capabilities found>"
+msgstr ""
+
 msgid "<no log found>"
 msgstr "<log bulunamadı>"
 
@@ -2393,7 +2396,7 @@ msgstr "Buketleri hep göster"
 msgid "Always use smart1080p mode"
 msgstr "Her zaman smart1080p modunu kullanın"
 
-msgid "American Football"
+msgid "American football"
 msgstr "Amerikan Futbolu"
 
 msgid "American Samoa"
@@ -3196,6 +3199,9 @@ msgstr "Mavi"
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
+msgid "Bluetooth Audio"
+msgstr ""
+
 msgid "Bluetooth Setup"
 msgstr "Bluetooth Kurulumu"
 
@@ -3824,6 +3830,10 @@ msgstr "Hiç sinyol bulunamadı..., durduruluyor!"
 msgid "Cape Verde"
 msgstr "Cape Verde"
 
+#, python-format
+msgid "Card reader %d"
+msgstr ""
+
 msgid "Cards: "
 msgstr "Kartlar: "
 
@@ -4165,9 +4175,6 @@ msgstr "EPG olaylarında derecelendirme bilgilerinin kodunu çözmek için bir �
 
 msgid "Choose a label that will identify this device within IceTV services."
 msgstr "IceTV hizmetlerinde bu cihazı tanımlayacak bir etiket seçin."
-
-msgid "Choose how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful when you need information about an event which has recently finished."
-msgstr "Varsa, EPG önbelleğinde ne kadar EPG geçmişi tutulacağını seçin. Bu geçmiş veriler EPG görünümlerinden herhangi birinde taranabilir. Bu, yakın zamanda bitmiş bir etkinlik hakkında bilgiye ihtiyaç duyduğunuzda faydalı olabilir."
 
 msgid "Choose how often to connect to IceTV server to check for updates."
 msgstr "Güncellemeleri kontrol etmek için IceTV sunucusuna ne sıklıkla bağlanacağınızı seçin."
@@ -5059,6 +5066,9 @@ msgstr "Konsol Paketleri"
 msgid "Console Utility Packages"
 msgstr "Konsol Yardımcı Program Paketleri"
 
+msgid "Constcw"
+msgstr ""
+
 msgid "Constellation"
 msgstr "takımyıldız"
 
@@ -5415,7 +5425,7 @@ msgstr "Akım"
 msgid "Current 1/1"
 msgstr "Güncel 1/1"
 
-msgid "Current Affairs"
+msgid "Current affairs"
 msgstr "Haber / güncel olaylar (genel)"
 
 msgid "Current CEC address"
@@ -5470,9 +5480,6 @@ msgstr "Mevcut kip: %s \n"
 #
 msgid "Current settings:"
 msgstr "Geçerli ayarlar:"
-
-msgid "Current status"
-msgstr "Mevcut durum"
 
 msgid "Current time"
 msgstr "Geçerli zaman"
@@ -6506,6 +6513,9 @@ msgstr "Hareket modunu devre dışı bırakın"
 msgid "Disable Picture in Picture"
 msgstr "Resim içinde resim (PIP) kapat"
 
+msgid "Disable ServiceHiSilicon"
+msgstr ""
+
 msgid "Disable background scanning"
 msgstr "Arkaplan taramasını kapat"
 
@@ -7083,6 +7093,9 @@ msgstr "EPG button mode"
 msgid "EPG filename"
 msgstr "EPG dosya adı"
 
+msgid "EPG history"
+msgstr "EPG geçmişini tut (dakika olarak)"
+
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -7252,6 +7265,9 @@ msgstr "Boş"
 
 msgid "Empty file"
 msgstr "Boş dosya"
+
+msgid "Emulator"
+msgstr ""
 
 #
 msgid "Enable"
@@ -7464,6 +7480,9 @@ msgstr "Sistem önyüklemesi sırasında algılanan MultiBoot bilgilerini hata a
 
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr "Hata ayıklama günlük dosyasına eylem haritası / uzaktan kumanda eşleme verileri eklemek için bu seçeneği etkinleştirin."
+
+msgid "Enable this option to add bouquet database information to the debug log file."
+msgstr ""
 
 msgid "Enable this option to add extra DVB details to the debug log file."
 msgstr ""
@@ -7682,6 +7701,9 @@ msgstr "PIN girin"
 msgid "Enter text via an attached keyboard"
 msgstr "Ekli bir klavye aracılığıyla metin girin"
 
+msgid "Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space."
+msgstr ""
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the specifications of your LNB."
 msgstr "LNB'nin düşük bant ve yüksek bant arasında geçiş yaptığı frekansı girin. Daha fazla bilgi için LNB'nizin teknik özelliklerine bakın."
 
@@ -7827,6 +7849,12 @@ msgstr "%s kesinleştirme günlükleri alınırken '%s' hatasıyla karşılaşı
 #
 msgid "Error Download Setting"
 msgstr "Hata İndirme Ayarı"
+
+msgid "Error Retry count"
+msgstr ""
+
+msgid "Error Retry delay"
+msgstr ""
 
 msgid "Error code"
 msgstr "Hata kodu"
@@ -8673,7 +8701,7 @@ msgstr "Yedeklemeden hariç tutulacak dosyalar / klasörler"
 msgid "Fill in channel EPGs from the broadcast EPG where there is no IceTV EPG for the channel"
 msgstr "Kanal için IceTV EPG'si olmayan yayın EPG'sinden kanal EPG'lerini doldurun"
 
-msgid "Film-Noir"
+msgid "Film-noir"
 msgstr "Kara film"
 
 msgid "Filter extensions"
@@ -9042,7 +9070,7 @@ msgstr "Galiçyaca"
 msgid "Gambia"
 msgstr "Gambiya"
 
-msgid "Game Show"
+msgid "Game show"
 msgstr "Oyun şovu"
 
 msgid "Ganda"
@@ -9451,6 +9479,9 @@ msgstr "Yükseklik"
 msgid "Help"
 msgstr "Yardım"
 
+msgid "Help Action"
+msgstr ""
+
 msgid "Help Screen Information"
 msgstr "Yardım Ekranı Bilgileri"
 
@@ -9659,7 +9690,7 @@ msgstr "Yatay dönüş hızı"
 msgid "Horror"
 msgstr "Korku"
 
-msgid "Horse Racing"
+msgid "Horse racing"
 msgstr "At yarışı"
 
 msgid "Host"
@@ -9974,6 +10005,9 @@ msgstr "DVB-S ad alanı alt ağını yoksay"
 msgid "Ignore DVB-T namespace sub network"
 msgstr "DVB-T ad alanı alt ağını yoksay"
 
+msgid "Ignore Standby"
+msgstr ""
+
 msgid "Ignore unexpectedly wake up and stay in standby"
 msgstr "Beklenmedik şekilde uyanmayı ihmal et ve beklemede kal"
 
@@ -10106,6 +10140,9 @@ msgstr "SDT, BAT'ı http akışlarına dahil edin"
 
 msgid "Include action map data"
 msgstr "Eylem haritası verilerini dahil et"
+
+msgid "Include bouquet DB data"
+msgstr ""
 
 msgid "Include international data *"
 msgstr "Uluslararası verileri dahil edin *"
@@ -10604,9 +10641,6 @@ msgstr "Kazak"
 
 msgid "Kazakhstan"
 msgstr "Kazakistan"
-
-msgid "Keep EPG history (in minutes)"
-msgstr "EPG geçmişini tut (dakika olarak)"
 
 #
 msgid "Keep service"
@@ -11659,7 +11693,7 @@ msgid "Middle - Lite image"
 msgstr "Orta - Basit resim"
 
 #
-msgid "Mini Series"
+msgid "Mini series"
 msgstr "Mini dizi"
 
 msgid "MiniDLNA"
@@ -12499,6 +12533,9 @@ msgstr "Kayıt sırasında içeriğin şifresini asla çözmeyin. Bu, bireysel z
 msgid "Never decrypt while recording"
 msgstr "Kayıt yaparken asla şifresini çözme"
 
+msgid "Never in Standby"
+msgstr ""
+
 #
 msgid "New"
 msgstr "Yeni"
@@ -12550,7 +12587,7 @@ msgstr "NewDirectory"
 msgid "News"
 msgstr "Haber"
 
-msgid "News/Current Affairs"
+msgid "News/Current affairs"
 msgstr "Haberler/Güncel Olaylar/Sosyal"
 
 msgid "Next"
@@ -13099,12 +13136,18 @@ msgstr "OScam webif'i devre dışı"
 msgid "OSCamInfo Actions"
 msgstr "OSCamInfo Eylemleri"
 
+msgid "OSCamInfo Capability Actions"
+msgstr ""
+
 msgid "OSCamInfo Log Actions"
 msgstr "OSCamInfo Log Eylemleri"
 
 #, python-format
 msgid "OSCamInfo: %s Entitlements for '%s'"
 msgstr "OSCam bilgi: '%s' için %s Yetkilendirmesi"
+
+msgid "OSCamInfo: Capabilities"
+msgstr ""
 
 #, python-format
 msgid "OSCamInfo: Entitlements for '%s'"
@@ -13218,7 +13261,7 @@ msgstr "Sadece HD"
 msgid "Only free scan"
 msgstr "Yanlızca şifresiz arama"
 
-msgid "Only in standby"
+msgid "Only in Standby"
 msgstr "Sadece bekleme modunda"
 
 msgid "Only log debug information of GStreamer category. * means all categories."
@@ -13253,6 +13296,9 @@ msgstr "Buket listesini aç"
 
 msgid "Open Box Portal"
 msgstr "Kutu Portalını Göster"
+
+msgid "Open Capability"
+msgstr ""
 
 msgid "Open EPG"
 msgstr "epg'yi göster ..."
@@ -13584,6 +13630,9 @@ msgstr "PCR PID"
 
 msgid "PDC"
 msgstr "PDC"
+
+msgid "PG - Parental Guidance"
+msgstr ""
 
 msgid "PGS file"
 msgstr "PGS dosyası"
@@ -15076,7 +15125,7 @@ msgstr "Kurmaya hazır mısınız \"%s\"?"
 msgid "Ready to remove \"%s\"?"
 msgstr "Kaldırmaya hazır mısınız \"%s\"?"
 
-msgid "Real Life"
+msgid "Real life"
 msgstr "Gerçek hayat"
 
 msgid "Real or pseudo recordings"
@@ -16008,7 +16057,7 @@ msgstr "Kürek"
 msgid "Rugby"
 msgstr "Ragbi"
 
-msgid "Rugby League"
+msgid "Rugby league"
 msgstr "Rugby Ligi"
 
 msgid "Run"
@@ -16659,6 +16708,9 @@ msgstr "Tüm görüntüleri bir döngü içinde sürekli olarak görüntülemek 
 msgid "Select 'Yes' to disable multi-selection mode after each operation. Select 'No' to leave multi-selection mode active and the selections unchanged."
 msgstr "Her işlemden sonra çoklu seçim modunu devre dışı bırakmak için 'Evet'i seçin. Çoklu seçim modunu etkin ve seçimleri değiştirmeden bırakmak için 'Hayır'ı seçin."
 
+msgid "Select 'Yes' to disable the ServiceHiSilicon plugin to allow use of the default internal media player code."
+msgstr ""
+
 msgid "Select 'Yes' to display a small TV image (PiG - Picture in Graphic) within the EPG screen."
 msgstr "'evet' EPG'de küçük TV ekranı gösterir."
 
@@ -16745,6 +16797,9 @@ msgstr "Dış görünüm verilerinin tüm kullanıcı özelleştirmelerini kald�
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr "Tüm kullanıcı arayüzü verilerini kaldırmak için 'Evet'i seçin. Bu seçeneğin seçilmesi, tüm tuş haritası, menü ve kurulum geçersiz kılma verilerini kaldıracak ve varsayılan tanımları geri yükleyecektir."
+
+msgid "Select 'Yes' to reschedule the task to when the receiver goes in to/out of Standby mode. The state change must happen within the task schedule window or else the task will not be run."
+msgstr ""
 
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
 msgstr "Ağ yapılandırmasını varsayılana sıfırlamak için 'Evet'i seçin. Bu, varsa Ethernet bağlantı noktasını etkinleştirecek ve alıcıyı DHCP kullanacak şekilde ayarlayacaktır. Diğer tüm ağ arayüzleri silinecektir."
@@ -17064,6 +17119,9 @@ msgstr "Görevin ve komut dosyası mesajının ne kadar süreyle görüntülenec
 msgid "Select how long, in seconds, that the volume and mute displays are shown before they automatically hide."
 msgstr ""
 
+msgid "Select how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful for information about an event which has finished."
+msgstr "Varsa, EPG önbelleğinde ne kadar EPG geçmişi tutulacağını seçin. Bu geçmiş veriler EPG görünümlerinden herhangi birinde taranabilir. Bu, yakın zamanda bitmiş bir etkinlik hakkında bilgiye ihtiyaç duyduğunuzda faydalı olabilir."
+
 msgid "Select how often this timer is to be repeated."
 msgstr "Bu zamanlayıcının ne sıklıkta tekrarlanacağını seçin."
 
@@ -17078,6 +17136,9 @@ msgstr ""
 
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr "Uydu çanağının nasıl ayarlanacağını seçin. yani, sabit çanak, tekli LNB, DiSEqC anahtar, konumlandırıcı, vb."
+
+msgid "Select how the schedule is handled with respect to Standby mode."
+msgstr ""
 
 msgid "Select how to activate the Quick EPG mode."
 msgstr "Quick EPG kipini nasıl etkinleştireceğinizi seçin."
@@ -17234,6 +17295,9 @@ msgstr "Eylemi seçin ‘%s‘"
 msgid "Select the action to perform when the timer ends."
 msgstr "Zamanlayıcı sona erdiğinde gerçekleştirilecek eylemi seçin."
 
+msgid "Select the amount of time to wait, after a task error, before trying to run the task again."
+msgstr ""
+
 msgid "Select the animation speed of the button indicators in the help screens. 'Disabled' turns off animation so that indicators jump between buttons."
 msgstr "Yardım ekranındaki düğme göstergelerinin animasyon hızını kontrol edin. 'Devre Dışı', göstergelerin düğmeler arasında geçiş yapması için animasyonu kapatır."
 
@@ -17329,6 +17393,9 @@ msgstr "Daha önce izlenen servislerin görüntülenme sırasını seçin."
 
 msgid "Select the duration of inactivity before the screen saver will be displayed."
 msgstr "Ekran koruyucu için süreyi dakika olarak yapılandırın."
+
+msgid "Select the end time before which this timer can be activated.  After this time the timer won't be activated even if other conditions are met."
+msgstr ""
 
 #, python-format
 msgid "Select the file sort order for the %s column:"
@@ -17426,6 +17493,9 @@ msgstr "Listedeki bir sonraki öğeyi seçin veya imleci sağa hareket ettirin"
 msgid "Select the next item in the list"
 msgstr "Listedeki bir sonraki öğeyi seçin"
 
+msgid "Select the number of times to retry a task if an error occurs when running the task."
+msgstr ""
+
 msgid "Select the preferred service information to display, in addition to the service number, for the service selection pop up screen."
 msgstr ""
 
@@ -17500,6 +17570,9 @@ msgstr "Yükseltme dosyalarının alınacağı kaynak konumu seçin."
 
 msgid "Select the source of the default DNS settings."
 msgstr "Varsayılan DNS ayarlarının kaynağını seçin."
+
+msgid "Select the start time after which this timer can be activated.  Before this time the timer won't be activated even if other conditions are met."
+msgstr ""
 
 msgid "Select the starting/initial column to be activated on File Commander start up."
 msgstr "File Commander başlatıldığında etkinleştirilecek başlangıç/ilk sütunu seçin."
@@ -18341,7 +18414,7 @@ msgstr "Shona Dili"
 msgid "Shopping"
 msgstr "Alışveriş"
 
-msgid "Short Film"
+msgid "Short film"
 msgstr "Kısa film"
 
 msgid "Short filenames"
@@ -18413,6 +18486,9 @@ msgstr "CCcam Bilgilerini Göster"
 
 msgid "Show CI messages"
 msgstr "CI mesajları göster"
+
+msgid "Show Capabilities"
+msgstr ""
 
 msgid "Show Default Backup Files"
 msgstr "Varsayılan yedekleme dosyalarını göster"
@@ -19070,7 +19146,7 @@ msgstr "Film durdurulduğu zaman uyar"
 msgid "Show watch status"
 msgstr "Film listesinde durum simgelerini göster"
 
-msgid "Show/Games show"
+msgid "Show/Game show"
 msgstr "Gösteri Oyunlarını göster"
 
 msgid "Show/Hide Actions"
@@ -19497,7 +19573,7 @@ msgstr "Pürüzsüz"
 msgid "SoC family"
 msgstr "SoC ailesi"
 
-msgid "Soap Opera"
+msgid "Soap opera"
 msgstr "Pembe dizi"
 
 msgid "Soccer"
@@ -19743,6 +19819,9 @@ msgstr "Özel 2"
 msgid "Special Features Settings"
 msgstr "Özel özellikler"
 
+msgid "Special characteristics"
+msgstr ""
+
 msgid "Specify the directory to use when starting Media Player."
 msgstr "Media Player'ı başlatırken kullanılacak dizini belirtin."
 
@@ -19787,6 +19866,9 @@ msgstr "Beklet"
 #
 msgid "Standby / Restart"
 msgstr "Kapatma menüsü"
+
+msgid "Standby execution"
+msgstr ""
 
 msgid "Standby without TV shut down"
 msgstr "TV kapatmadan bekleme"
@@ -19839,6 +19921,9 @@ msgstr "Servisi başlat veya durdur"
 
 msgid "Start recording current event"
 msgstr "Mevcut olayı kaydetmeye başla"
+
+msgid "Start retry"
+msgstr ""
 
 msgid "Start teletext"
 msgstr "Teleteks başlat"
@@ -19921,6 +20006,9 @@ msgstr "Bekleme modunda ekranın durumu"
 
 msgid "Status unavailable!"
 msgstr "Durum mevcut değil!"
+
+msgid "Status:"
+msgstr "Durum:"
 
 msgid "Step"
 msgstr "Adım"
@@ -20107,6 +20195,9 @@ msgstr "Akış Ayarlayıcı Bilgileri"
 msgid "Streaming recording ended"
 msgstr "Akış kaydı sona erdi"
 
+msgid "Streaming recovery delay"
+msgstr ""
+
 #, python-format
 msgid "Streaming tuner information for %s %s"
 msgstr "Akış tuner bilgileri %s %s"
@@ -20209,6 +20300,15 @@ msgstr "Başarılı:"
 
 msgid "Sudan"
 msgstr "Sudan"
+
+msgid "Suitable for ages 12+"
+msgstr ""
+
+msgid "Suitable for ages 15+"
+msgstr ""
+
+msgid "Suitable only for Adults"
+msgstr ""
 
 #
 msgid "Sun"
@@ -20517,7 +20617,7 @@ msgstr "Tacikçe"
 msgid "Tajikistan"
 msgstr "Tacikistan"
 
-msgid "Talk Show"
+msgid "Talk show"
 msgstr "Sohbet programı"
 
 msgid "Tamil"
@@ -21669,6 +21769,9 @@ msgstr "Zamanlayıcı düzenlemesi"
 msgid "Timer editor"
 msgstr "Zamanlayıcı editörü"
 
+msgid "Timer end window"
+msgstr ""
+
 #
 msgid "Timer entry"
 msgstr "Zamanlayıcı girişi"
@@ -21696,6 +21799,9 @@ msgstr "Zamanlayıcı kayıt konumu"
 #
 msgid "Timer selection"
 msgstr "Zamanlayıcı seçimi"
+
+msgid "Timer start window"
+msgstr ""
 
 #
 msgid "Timer type"
@@ -22191,6 +22297,9 @@ msgstr "Cihaz tipi"
 msgid "Type of scan"
 msgstr "Tarama tipi"
 
+msgid "U - Suitable for all"
+msgstr ""
+
 #, python-format
 msgid "UBI slot %s%s"
 msgstr ""
@@ -22225,6 +22334,10 @@ msgstr "USB 3.0 (Arka, dış)"
 
 msgid "USB Stick"
 msgstr "USB Bellek"
+
+#, python-format
+msgid "USB reader %d"
+msgstr ""
 
 #, python-format
 msgid "USB slot %s%s"
@@ -24301,17 +24414,17 @@ msgstr "pip'yi etkinleştir"
 msgid "address:"
 msgstr "adres:"
 
-msgid "adult movie/drama"
+msgid "Adult movie/Drama"
 msgstr "yetişkin filmi/dram"
 
 #
 msgid "advanced"
 msgstr "gelişmiş"
 
-msgid "adventure/western/war"
+msgid "Adventure/Western/War"
 msgstr "macera/kovboy/savaş filmi"
 
-msgid "advertisement/shopping"
+msgid "Advertisement/Shopping"
 msgstr "reklam/alışveriş"
 
 msgid "alpha then oldest"
@@ -24345,7 +24458,7 @@ msgstr "sanat/kültür (genel)"
 msgid "arts/culture (without music, general)"
 msgstr "kültür/sanat (genel, müzik hariç)"
 
-msgid "arts/culture magazine"
+msgid "Arts/Culture magazines"
 msgstr "kültür/sanat dergisi"
 
 msgid "athletics"
@@ -24392,14 +24505,14 @@ msgstr "daha iyi"
 msgid "black"
 msgstr "siyah"
 
-msgid "black & white"
+msgid "Black & White"
 msgstr "siyah-beyaz"
 
 #
 msgid "blue"
 msgstr "mavi"
 
-msgid "broadcasting/press"
+msgid "Broadcasting/Press"
 msgstr "basın/yayın"
 
 #, python-format
@@ -24421,7 +24534,7 @@ msgstr "kart"
 msgid "card reader"
 msgstr "kart okuyucu"
 
-msgid "cartoon/puppets"
+msgid "Cartoons/Puppets"
 msgstr "çizgifilm/kukla"
 
 #
@@ -24486,7 +24599,7 @@ msgstr "sil"
 msgid "delete cut"
 msgstr "kesimi sil"
 
-msgid "detective/thriller"
+msgid "Detective/Thriller"
 msgstr "polisiye/heyecan"
 
 #
@@ -24497,7 +24610,7 @@ msgstr "kapatıldı"
 msgid "disconnected"
 msgstr "bağlı değil"
 
-msgid "discussion/interview/debate"
+msgid "Discussion/Interview/Debate"
 msgstr "tartışma/röportaj/münazara"
 
 msgid "documentary"
@@ -24529,7 +24642,7 @@ msgstr "ecm zamanı:"
 msgid "ecm.info"
 msgstr "ecm.info"
 
-msgid "economics/social advisory"
+msgid "Economics/Social advisory"
 msgstr "ekonomi/sosyal danışmanlık"
 
 msgid "education/information (general)"
@@ -24569,7 +24682,7 @@ msgstr "eğlence (genel)"
 msgid "equal to"
 msgstr "eşittir"
 
-msgid "equestrian"
+msgid "Equestrian"
 msgstr "atlı"
 
 msgid "execute cuts (requires MovieCut plugin)"
@@ -24579,7 +24692,7 @@ msgstr "kesmeleri yürüt (MovieCut eklentisi gerektirir)"
 msgid "exit DVD player or return to file browser"
 msgstr "dvd oynatıcıdan çıkın veya dosya tarayıcısına dönün"
 
-msgid "experimental film/video"
+msgid "Experimental film/video"
 msgstr "deneysel film/video"
 
 msgid "externally loopthrough to"
@@ -24588,7 +24701,7 @@ msgstr "dışarıdan ilmek"
 msgid "failed"
 msgstr "başarısız"
 
-msgid "fashion"
+msgid "Fashion"
 msgstr "moda"
 
 msgid "file can not displayed - file not found"
@@ -24602,13 +24715,13 @@ msgstr "dosya biçimi (BMP, PNG, JPG, GIF)"
 msgid "filename"
 msgstr "dosyaadı"
 
-msgid "film/cinema"
+msgid "Film/Cinema"
 msgstr "film/sinema"
 
-msgid "fine arts"
+msgid "Fine arts"
 msgstr "güzel sanatlar"
 
-msgid "fitness & health"
+msgid "Fitness and Health"
 msgstr "spor ve sağlık"
 
 msgid "flat alphabetic"
@@ -24617,13 +24730,13 @@ msgstr "düz alfabetik"
 msgid "flat alphabetic reverse"
 msgstr "düz alfabetik ters"
 
-msgid "folk/traditional music"
+msgid "Folk/Traditional music"
 msgstr "halk müziği/geleneksel müzik"
 
-msgid "football/soccer"
+msgid "Football/Soccer"
 msgstr "futbol / maç"
 
-msgid "foreign countries/expeditions"
+msgid "Foreign countries/Expeditions"
 msgstr "yabancı ülkeler/seferler"
 
 #
@@ -24641,10 +24754,10 @@ msgstr "boş disk alanı"
 msgid "from"
 msgstr "itibaren"
 
-msgid "further education"
+msgid "Further education"
 msgstr "ileri eğitim"
 
-msgid "game show/quiz/contest"
+msgid "Game show/Quiz/Contest"
 msgstr "oyun gösterisi/yarışma/bilgi yarışması"
 
 msgid "gardening"
@@ -24679,7 +24792,7 @@ msgstr "h:mmAM/PM"
 msgid "h:mmam/pm"
 msgstr "h:mmam/pm"
 
-msgid "handicraft"
+msgid "Handicraft"
 msgstr "elişi"
 
 msgid "handled"
@@ -24773,10 +24886,10 @@ msgstr "uzunluk"
 msgid "lime"
 msgstr "kireç rengi"
 
-msgid "literature"
+msgid "Literature"
 msgstr "edebiyat"
 
-msgid "live broadcast"
+msgid "Live broadcast"
 msgstr "canlı yayın"
 
 #
@@ -24790,17 +24903,17 @@ msgstr "uzun"
 msgid "loopthrough to"
 msgstr "üzerinden bağla"
 
-msgid "magazines/reports/documentary"
+msgid "Magazines/Reports/Documentary"
 msgstr "dergi/rapor/belgesel"
 
 #
 msgid "manual"
 msgstr "el ile"
 
-msgid "martial sports"
+msgid "Martial sports"
 msgstr "savaş sporları"
 
-msgid "medicine/physiology/psychology"
+msgid "Medicine/Physiology/Psychology"
 msgstr "tıp/fizyoloji/psikoloji"
 
 #
@@ -24817,7 +24930,7 @@ msgstr "ay"
 msgid "motor sport"
 msgstr "motor sporları"
 
-msgid "motoring"
+msgid "Motoring"
 msgstr "otomobil"
 
 msgid "move"
@@ -24839,7 +24952,7 @@ msgstr "müzik (genel)"
 msgid "music/ballet/dance (general)"
 msgstr "müzik/bale/dans (genel)"
 
-msgid "musical/opera"
+msgid "Musical/Opera"
 msgstr "müzikal/opera"
 
 msgid "n/a"
@@ -24848,22 +24961,22 @@ msgstr "n/a"
 msgid "name"
 msgstr "isim"
 
-msgid "nature/animals/environment"
+msgid "Nature/Animals/Environment"
 msgstr "doğa/hayvanlar/çevre"
 
-msgid "new media"
+msgid "New media"
 msgstr "yeni medya"
 
 msgid "news (general)"
 msgstr "haberler (genel)"
 
-msgid "news magazine"
+msgid "News magazine"
 msgstr "haber dergisi"
 
 msgid "news/current affairs (general)"
 msgstr "haberler/günlük olaylar (genel)"
 
-msgid "news/weather report"
+msgid "News/Weather report"
 msgstr "haberler/hava durumu"
 
 #
@@ -24940,7 +25053,7 @@ msgstr "paket"
 msgid "packages"
 msgstr "paketler"
 
-msgid "performing arts"
+msgid "Performing arts"
 msgstr "sahne sanatları"
 
 msgid "pid:"
@@ -24962,7 +25075,7 @@ msgstr "eklentiler"
 msgid "pm"
 msgstr "ös"
 
-msgid "popular culture/traditional arts"
+msgid "Popular culture/Traditional arts"
 msgstr "popüler kültür/geleneksel sanatlar"
 
 msgid "pre-school children's program"
@@ -24991,7 +25104,7 @@ msgstr "güvenilir"
 msgid "religion"
 msgstr "din"
 
-msgid "remarkable people"
+msgid "Remarkable people"
 msgstr "dikkat çekici kişiler"
 
 #
@@ -25020,7 +25133,7 @@ msgstr "önceki bölüme geri sar"
 msgid "right"
 msgstr "sağ"
 
-msgid "rock/pop"
+msgid "Rock/Pop"
 msgstr "rok/pop"
 
 msgid "romance"
@@ -25044,7 +25157,7 @@ msgstr ""
 msgid "scan state"
 msgstr "tarama durumu"
 
-msgid "science fiction/fantasy/horror"
+msgid "Science fiction/Fantasy/Horror"
 msgstr "bilimkurgu/fantezi/korku"
 
 msgid "search EPG..."
@@ -25054,10 +25167,10 @@ msgstr "epg’yi arayın ..."
 msgid "select CAId's"
 msgstr "cAId’leri seçin"
 
-msgid "serious music/classic music"
+msgid "Serious music/Classic music"
 msgstr "önemli/klasik müzik"
 
-msgid "serious/classical/religious/historical movie/drama"
+msgid "Serious/Classical/Religious/Historical/Drama"
 msgstr "ciddi/klasik/dini/tarihi film/dram"
 
 msgid "service PIN"
@@ -25100,13 +25213,13 @@ msgstr "geri atla"
 msgid "skip forward"
 msgstr "ileri atla"
 
-msgid "soap/melodrama/folkloric"
-msgstr "soap/melodrama/folkloric"
+msgid "Soap/Melodrama/Folkloric"
+msgstr "Soap/Melodrama/Folkloric"
 
 msgid "social/political issues/economics (general)"
 msgstr "sosyal/politik/ekonomik konular (genel)"
 
-msgid "social/spiritual science"
+msgid "Social/Spiritual sciences"
 msgstr "sosyal/manevi bilimler"
 
 msgid "softcam"
@@ -25127,7 +25240,7 @@ msgstr "spor (genel)"
 msgid "sports (general)"
 msgstr "spor (genel)"
 
-msgid "sports magazine"
+msgid "Sports magazines"
 msgstr "spro dergisi"
 
 #
@@ -25175,7 +25288,7 @@ msgstr "sohbet programı"
 msgid "team sports"
 msgstr "takım sporları"
 
-msgid "technology/natural science"
+msgid "Technology/Natural sciences"
 msgstr "teknoloji/doğa bilimleri"
 
 msgid "teletext"
@@ -25185,7 +25298,7 @@ msgstr "teleteks"
 msgid "template file"
 msgstr "taslak dosya"
 
-msgid "tennis/squash"
+msgid "Tennis/Squash"
 msgstr "tenis/squash"
 
 msgid "text"
@@ -25199,7 +25312,7 @@ msgstr "bu kaydın"
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "zaman, bölüm, ses, altyazı bilgisini aç/kapa"
 
-msgid "tourism/travel"
+msgid "Tourism/Travel"
 msgstr "turizm/seyahat"
 
 msgid "traditional (fast)"
@@ -25241,7 +25354,7 @@ msgstr "bilinmiyor"
 msgid "unknown error"
 msgstr "bilinmeyen hata"
 
-msgid "unpublished"
+msgid "Unpublished"
 msgstr "yayınlanmamış"
 
 #
@@ -25255,7 +25368,7 @@ msgstr "güncelleştirme"
 msgid "using:"
 msgstr "kullanılan:"
 
-msgid "variety show"
+msgid "Variety show"
 msgstr "çeşitli gösteri"
 
 msgid "violet"
@@ -25268,7 +25381,7 @@ msgstr "ci'yi bekle."
 msgid "wait for mmi..."
 msgstr "mmi bekle..."
 
-msgid "water sport"
+msgid "Water sport"
 msgstr "su sporları"
 
 #
@@ -25281,7 +25394,7 @@ msgstr "beyaz"
 msgid "width"
 msgstr "genişlik"
 
-msgid "winter sport"
+msgid "Winter sport"
 msgstr "kış sporu"
 
 msgid "wireless network interface"
@@ -25307,8 +25420,15 @@ msgstr "sarı"
 msgid "yes (keep feeds)"
 msgstr "evet (beslemeleri tut)"
 
+#
+msgid "Languages"
+msgstr "Dil"
+
 msgid "®"
 msgstr "®"
+
+#~ msgid "Current status"
+#~ msgstr "Mevcut durum"
 
 #~ msgid "Black Screen"
 #~ msgstr "Siyah ekran"
@@ -25499,9 +25619,6 @@ msgstr "®"
 #
 #~ msgid "Signal strength:"
 #~ msgstr "Sinyal gücü:"
-
-#~ msgid "Status:"
-#~ msgstr "Durum:"
 
 #
 #~ msgid "Timer selection..."
@@ -26755,10 +26872,6 @@ msgstr "®"
 
 #~ msgid "Force OPKG clean mode"
 #~ msgstr "OPKG temizleme modunu zorla"
-
-#
-#~ msgid "Languages"
-#~ msgstr "Dil"
 
 #~ msgid "Locales"
 #~ msgstr "Yerel ayarlar"

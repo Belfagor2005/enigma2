@@ -9,7 +9,7 @@ from enigma import Misc_Options, RT_HALIGN_CENTER, RT_HALIGN_LEFT, RT_HALIGN_RIG
 
 from keyids import KEYIDS
 from skin import getcomponentTemplateNames, parameters, domScreens
-from Components.config import ConfigBoolean, ConfigClock, ConfigDictionarySet, ConfigDirectory, ConfigFloat, ConfigInteger, ConfigIP, ConfigLocations, ConfigNumber, ConfigPassword, ConfigSelection, ConfigSelectionNumber, ConfigSequence, ConfigSet, ConfigSlider, ConfigSubDict, ConfigSubsection, ConfigText, ConfigYesNo, NoSave, config, configfile
+from Components.config import ConfigBoolean, ConfigClock, ConfigDictionarySet, ConfigDirectory, ConfigFloat, ConfigInteger, ConfigIP, ConfigLocations, ConfigNumber, ConfigPassword, ConfigSelection, ConfigSelectionNumber, ConfigSequence, ConfigSet, ConfigSubDict, ConfigSubsection, ConfigText, ConfigYesNo, NoSave, config, configfile
 from Components.Harddisk import harddiskmanager
 from Components.International import international
 from Components.NimManager import nimmanager
@@ -28,9 +28,9 @@ visuallyImpairedCommentary = "NAR qad"
 def InitUsageConfig():
 	AvailRemotes = [splitext(x)[0] for x in glob("/usr/share/enigma2/hardware/*.xml")]
 	RemoteChoices = []
-	DefaultRemote = BoxInfo.getItem("rcname")
+	DefaultRemote = BoxInfo.getItem("rcname")  # noqa F841
 
-	remoteSelectable = False
+	remoteSelectable = False  # noqa F841
 	if AvailRemotes is not None:
 		for remote in AvailRemotes:
 			pngfile = f"{remote}.png"
@@ -913,7 +913,7 @@ def InitUsageConfig():
 			debugString = "{debugString}Forced +"
 		if (int(elem2) > 0) and (int(elem2) & eDVBFrontend.preferredFrontendPrioHigh):
 			elem2 = int(elem2) - eDVBFrontend.preferredFrontendPrioHigh
-			debugString = "{debugString}High +"
+			debugString = "{debugString}High +"  # noqa F841
 		setPreferredTuner(int(config.usage.frontend_priority_intval.value))
 	config.usage.frontend_priority.addNotifier(PreferredTunerChanged)
 	config.usage.frontend_priority_multiselect.addNotifier(PreferredTunerChanged)
@@ -1308,7 +1308,25 @@ def InitUsageConfig():
 		eEPGCache.getInstance().setEpgmaxdays(config.epg.maxdays.getValue())
 	config.epg.maxdays.addNotifier(EpgmaxdaysChanged)
 
-	config.epg.histminutes = ConfigSelectionNumber(min=0, max=1440, stepwidth=30, default=0, wraparound=True)
+	def displayPeriod(number):
+		for minutes, singular, plural in [
+			(60 * 24 * 7, "%d Week", "%d Weeks"),
+			(60 * 24, "%d Day", "%d Days"),
+			(60, "%d Hour", "%d Hours"),
+			(1, "%d Minute", "%d Minutes")
+		]:
+			value = int(number / minutes)
+			if value:
+				return ngettext(singular, plural, value) % value
+
+	choices = [(0, _("None"))] + [(x, displayPeriod(x)) for x in (
+		[x * 15 for x in range(1, 4)] +  # 15, 30, 45 minutes.
+		[x * 60 for x in range(1, 9)] +  # 60, 120, ..., 480 minutes (1 to 8 hours).
+		[x * 120 for x in range(5, 12)] +  # 600, 720, ..., 1320 minutes (10 to 22 hours).
+		[x * 60 * 24 for x in range(1, 7)] +  # 1440, 2880, ..., 8640 minutes (1 to 6 days).
+		[x * 60 * 24 * 7 for x in range(1, 5)]  # 10080, 20160, ..., 40320 minutes (1 to 4 weeks).
+	)]
+	config.epg.histminutes = ConfigSelection(default=0, choices=choices)
 
 	def EpgHistorySecondsChanged(configElement):
 		eEPGCache.getInstance().setEpgHistorySeconds(config.epg.histminutes.value * 60)
@@ -1374,8 +1392,12 @@ def InitUsageConfig():
 		("ETSI", _("Generic")),
 		("AUS", _("Australia"))
 	]
-	config.misc.epgratingcountry = ConfigSelection(default="", choices=choiceList)
 	config.misc.epggenrecountry = ConfigSelection(default="", choices=choiceList)
+	choiceList.extend([
+		("GBR", _("United Kingdom")),
+		("ITA", _("Italy"))
+	])
+	config.misc.epgratingcountry = ConfigSelection(default="", choices=choiceList)
 
 	def setHDDStandby(configElement):
 		for hdd in harddiskmanager.HDDList():
@@ -2436,6 +2458,8 @@ def InitUsageConfig():
 	] + [(x, ngettext("%d Second", "%d Seconds", x) % x) for x in (2, 3, 4, 5, 10, 20, 30)] + [(x * 60, ngettext("%d Minute", "%d Minutes", x) % x) for x in (1, 2, 5)]
 	config.timeshift.startDelay = ConfigSelection(default=0, choices=choiceList)
 	config.timeshift.stopWhileRecording = ConfigYesNo(default=False)
+	config.timeshift.recoveryBufferDelay = ConfigSelection(default=300, choices=[(x, _("%d ms") % x) for x in range(100, 1500, 100)])
+	config.timeshift.preciseRecovery = ConfigYesNo(default=True)
 
 	defaultPath = resolveFilename(SCOPE_TIMESHIFT)
 	config.timeshift.allowedPaths = ConfigLocations(default=[defaultPath])

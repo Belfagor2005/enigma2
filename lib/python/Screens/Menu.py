@@ -274,14 +274,13 @@ class Menu(Screen, ProtectedScreen):
 					if data:
 						self.menuList.append(data)
 		if self.menuID:
-			for plugin in plugins.getPluginsForMenu(self.menuID):  # Plugins.
+			for plugin, description in plugins.getPluginsForMenuWithDescription(self.menuID):  # Plugins.
 				# print(f"[Menu] DEBUG 1: Plugin data={str(plugin)}.")
 				pluginKey = plugin[PLUGIN_KEY]  # Check if a plugin overrides an existing menu.
 				for entry in self.menuList:
 					if entry[PLUGIN_KEY] == pluginKey:
 						self.menuList.remove(entry)
 						break
-				description = plugins.getDescriptionForMenuEntryID(self.menuID, pluginKey)  # It is assumed that description is already translated by the plugin!
 				if "%s %s" in description:
 					description = description % getBoxDisplayName()
 				image = self.getMenuEntryImage(plugin[PLUGIN_KEY], lastKey)
@@ -699,12 +698,10 @@ class AnimMain(Screen):
 		self.tlist = tlist
 		self.setTitle(menuTitle)
 		self.skinName = "Animmain"
-		ipage = 1
-		list = []
-		nopic = len(tlist)
+		self.ipage = 1
+		# nopic = len(tlist)
 		self.pos = []
 		self.index = 0
-		list = []
 		tlist = []
 		self["label1"] = StaticText()
 		self["label2"] = StaticText()
@@ -748,7 +745,7 @@ class AnimMain(Screen):
 		else:
 			nh = int(float(nop) / 2)
 		self.index = nh
-		i = 0
+		i = 0  # noqa F841
 		self.onShown.append(self.openTest)
 
 	def key_menu(self):
@@ -830,9 +827,8 @@ class IconMain(Screen):
 		self.tlist = tlist
 		self.setTitle(menuTitle)
 		self.skinName = "Iconmain"
-		ipage = 1
-		list = []
-		nopic = len(self.tlist)
+		self.ipage = 1
+		# nopic = len(self.tlist)
 		self.pos = []
 		self.ipage = 1
 		self.index = 0
@@ -840,7 +836,6 @@ class IconMain(Screen):
 		self.indx = []
 		n1 = len(tlist)
 		self.picnum = n1
-		list = []
 		tlist = []
 		self["label1"] = StaticText()
 		self["label2"] = StaticText()
@@ -886,10 +881,10 @@ class IconMain(Screen):
 			"9": self.keyNumberGlobal
 		}, prio=0)
 		self.index = 0
-		i = 0
+		i = 0  # noqa F841
 		self.maxentry = 29
 		self.istart = 0
-		i = 0
+		i = 0  # noqa F841
 		self.onShown.append(self.openTest)
 
 	def key_menu(self):
@@ -947,14 +942,14 @@ class IconMain(Screen):
 			try:
 				dpointer = f"/usr/share/enigma2/{dskin[0]}/pointer.png"
 				self["pointer"].instance.setPixmapFromFile(dpointer)
-			except:
+			except Exception:
 				dpointer = "/usr/share/enigma2/skin_default/pointer.png"
 				self["pointer"].instance.setPixmapFromFile(dpointer)
 		else:
 			try:
 				dpointer = f"/usr/share/enigma2/{dskin[0]}/blank.png"
 				self["pointer"].instance.setPixmapFromFile(dpointer)
-			except:
+			except Exception:
 				dpointer = "/usr/share/enigma2/skin_default/blank.png"
 				self["pointer"].instance.setPixmapFromFile(dpointer)
 

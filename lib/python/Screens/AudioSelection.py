@@ -224,7 +224,7 @@ class AudioSelection(ConfigListScreen, Screen):
 			if BoxInfo.getItem("CanBTAudio"):
 				self.settings.btaudio = ConfigOnOff(default=config.av.btaudio.value)
 				self.settings.btaudio.addNotifier(self.changeBTAudio, initial_call=False)
-				conflist.append(getConfigListEntry(_("Enable BT Audio"), self.settings.btaudio, None))
+				conflist.append(getConfigListEntry(_("Bluetooth Audio"), self.settings.btaudio, None))
 
 			if n > 0:
 				self.audioChannel = service.audioChannel()
@@ -328,7 +328,7 @@ class AudioSelection(ConfigListScreen, Screen):
 								language = _(LanguageCodes[x[4]][0])
 							else:
 								language = x[4]
-					except:
+					except Exception:
 						language = ""
 
 					languagetype = ""
@@ -350,7 +350,7 @@ class AudioSelection(ConfigListScreen, Screen):
 								"SRT file", "VOB file", "PGS file", "WebVTT")
 						try:
 							description = types[x[2]]
-						except:
+						except Exception:
 							description = _("unknown") + ": %s" % x[2]
 						number = str(int(number) + 1)
 
@@ -396,7 +396,7 @@ class AudioSelection(ConfigListScreen, Screen):
 	def subtitlesEnabled(self):
 		try:
 			return self.infobar.subtitle_window.shown
-		except:
+		except Exception:
 			return False
 
 	def enableSubtitle(self, subtitle):

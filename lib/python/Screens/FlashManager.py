@@ -33,7 +33,7 @@ USER_AGENT = {"User-agent": "Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9
 
 
 def checkImageFiles(files):
-	return sum(f.endswith((".nfi", ".tar.xz")) for f in files) == 1 or sum(("kernel" in f and f.endswith(".bin")) or f in {"zImage", "uImage", "root_cfe_auto.bin", "root_cfe_auto.jffs2","oe_kernel.bin", "oe_rootfs.bin", "e2jffs2.img", "rootfs.ubi","rootfs.bin", "rootfs.tar.bz2", "rootfs-one.tar.bz2", "rootfs-two.tar.bz2"} for f in files) >= 2
+	return sum(f.endswith((".nfi", ".tar.xz")) for f in files) == 1 or sum(("kernel" in f and f.endswith(".bin")) or f in {"zImage", "uImage", "root_cfe_auto.bin", "root_cfe_auto.jffs2", "oe_kernel.bin", "oe_rootfs.bin", "e2jffs2.img", "rootfs.ubi", "rootfs.bin", "rootfs.tar.bz2", "rootfs-one.tar.bz2", "rootfs-two.tar.bz2"} for f in files) >= 2
 
 
 class FlashManager(Screen):
@@ -145,7 +145,7 @@ class FlashManager(Screen):
 			except Exception:
 				print("[FlashManager] getImagesList Error: Unable to load json data from URL '%s'!" % feedURL)
 				self.imagesList = {}
-			searchFolders = []
+			# searchFolders = []
 			# Get all folders of /media/ and /media/net/ and only if OpenATV
 			if not index:
 				for media in ["/media/%s" % x for x in listdir("/media")] + (["/media/net/%s" % x for x in listdir("/media/net")] if isdir("/media/net") else []):
@@ -392,6 +392,7 @@ class FlashImage(Screen):
 
 	def checkMedia(self, choice):
 		if choice:
+			self.recordCheck = not MultiBoot.canMultiBoot() or MultiBoot.getCurrentSlotCode() == choice[0]  # Ignore recordCheck if not the current slot
 			def findMedia(paths):
 				def availableSpace(path):
 					if isdir(path) and access(path, W_OK):
@@ -445,7 +446,7 @@ class FlashImage(Screen):
 						self.startBackupSettings(choice)
 					else:
 						self.session.openWithCallback(self.startBackupSettings, MessageBox, _("Warning: There is only a network drive to store the backup. This means the auto restore will not work after the flash. Alternatively, mount the network drive after the flash and perform a manufacturer reset to auto restore."), windowTitle=self.getTitle())
-				except OSError as err:
+				except OSError:
 					self.session.openWithCallback(self.keyCancel, MessageBox, _("Error: Unable to create the required directories on the target device (e.g. USB stick or hard disk)! Please verify device and try again."), type=MessageBox.TYPE_ERROR, windowTitle=self.getTitle())
 			else:
 				self.session.openWithCallback(self.keyCancel, MessageBox, _("Error: Could not find a suitable device! Please remove some downloaded images or attach another device (e.g. USB stick) with sufficient free space and try again."), type=MessageBox.TYPE_ERROR, windowTitle=self.getTitle())
@@ -519,8 +520,8 @@ class FlashImage(Screen):
 						if isfile(flagPath) and getsize(flagPath) == 0:
 							unlink(flagPath)
 			rootFolder = join(self.backupBasePath, "images/config")
-			if choice != "abort" and not self.recordCheck:
-				self.recordCheck = True
+			if choice != "abort" and self.recordCheck:
+				self.recordCheck = False
 				recording = self.session.nav.RecordTimer.isRecording()
 				nextRecordingTime = self.session.nav.RecordTimer.getNextRecordingTime()
 				if recording or (nextRecordingTime > 0 and (nextRecordingTime - time()) < 360):

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-27 15:35+0000\n"
+"POT-Creation-Date: 2025-11-06 08:27+0000\n"
 "PO-Revision-Date: 2021-08-19 12:59+0000\n"
 "Last-Translator: openATV <openatv@gmail.com>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/sr/>\n"
@@ -1722,6 +1722,9 @@ msgstr "<Zadnja lokacija tajmera> "
 msgid "<Select a device>"
 msgstr ""
 
+msgid "<no capabilities found>"
+msgstr ""
+
 msgid "<no log found>"
 msgstr ""
 
@@ -2608,7 +2611,7 @@ msgstr ""
 msgid "Always use smart1080p mode"
 msgstr ""
 
-msgid "American Football"
+msgid "American football"
 msgstr ""
 
 msgid "American Samoa"
@@ -3441,6 +3444,9 @@ msgstr ""
 msgid "Bluetooth"
 msgstr ""
 
+msgid "Bluetooth Audio"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Bluetooth Setup"
@@ -4075,6 +4081,10 @@ msgstr ""
 msgid "Cape Verde"
 msgstr ""
 
+#, python-format
+msgid "Card reader %d"
+msgstr ""
+
 msgid "Cards: "
 msgstr ""
 
@@ -4434,9 +4444,6 @@ msgid "Choose a country scheme for decoding rating information in EPG events."
 msgstr ""
 
 msgid "Choose a label that will identify this device within IceTV services."
-msgstr ""
-
-msgid "Choose how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful when you need information about an event which has recently finished."
 msgstr ""
 
 msgid "Choose how often to connect to IceTV server to check for updates."
@@ -5352,6 +5359,9 @@ msgstr ""
 msgid "Console Utility Packages"
 msgstr ""
 
+msgid "Constcw"
+msgstr ""
+
 msgid "Constellation"
 msgstr ""
 
@@ -5720,7 +5730,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Current Affairs"
+msgid "Current affairs"
 msgstr "Trenutna verzija:"
 
 msgid "Current CEC address"
@@ -5776,9 +5786,6 @@ msgstr ""
 #
 msgid "Current settings:"
 msgstr "Trenutne postavke"
-
-msgid "Current status"
-msgstr ""
 
 msgid "Current time"
 msgstr ""
@@ -6843,6 +6850,9 @@ msgstr "onemoguće mod premeštanja"
 msgid "Disable Picture in Picture"
 msgstr "Isključi Sliku u Slici"
 
+msgid "Disable ServiceHiSilicon"
+msgstr ""
+
 msgid "Disable background scanning"
 msgstr ""
 
@@ -7415,6 +7425,9 @@ msgstr ""
 msgid "EPG filename"
 msgstr ""
 
+msgid "EPG history"
+msgstr ""
+
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -7590,6 +7603,9 @@ msgid "Empty"
 msgstr ""
 
 msgid "Empty file"
+msgstr ""
+
+msgid "Emulator"
 msgstr ""
 
 #
@@ -7808,6 +7824,9 @@ msgid "Enable this option to add MultiBoot information detected during system bo
 msgstr ""
 
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
+msgstr ""
+
+msgid "Enable this option to add bouquet database information to the debug log file."
 msgstr ""
 
 msgid "Enable this option to add extra DVB details to the debug log file."
@@ -8037,6 +8056,9 @@ msgstr "Unesi PIN kod"
 msgid "Enter text via an attached keyboard"
 msgstr ""
 
+msgid "Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space."
+msgstr ""
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the specifications of your LNB."
 msgstr ""
 
@@ -8184,6 +8206,12 @@ msgstr ""
 #, fuzzy
 msgid "Error Download Setting"
 msgstr "Skidanje"
+
+msgid "Error Retry count"
+msgstr ""
+
+msgid "Error Retry delay"
+msgstr ""
 
 msgid "Error code"
 msgstr ""
@@ -9026,7 +9054,7 @@ msgstr ""
 msgid "Fill in channel EPGs from the broadcast EPG where there is no IceTV EPG for the channel"
 msgstr ""
 
-msgid "Film-Noir"
+msgid "Film-noir"
 msgstr ""
 
 msgid "Filter extensions"
@@ -9417,7 +9445,7 @@ msgstr ""
 msgid "Gambia"
 msgstr ""
 
-msgid "Game Show"
+msgid "Game show"
 msgstr ""
 
 #
@@ -9841,6 +9869,9 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
+msgid "Help Action"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Help Screen Information"
@@ -10059,7 +10090,7 @@ msgstr ""
 msgid "Horror"
 msgstr "Greška"
 
-msgid "Horse Racing"
+msgid "Horse racing"
 msgstr ""
 
 msgid "Host"
@@ -10383,6 +10414,9 @@ msgstr ""
 msgid "Ignore DVB-T namespace sub network"
 msgstr ""
 
+msgid "Ignore Standby"
+msgstr ""
+
 msgid "Ignore unexpectedly wake up and stay in standby"
 msgstr ""
 
@@ -10511,6 +10545,9 @@ msgid "Include SDT, BAT in http streams"
 msgstr ""
 
 msgid "Include action map data"
+msgstr ""
+
+msgid "Include bouquet DB data"
 msgstr ""
 
 msgid "Include international data *"
@@ -11041,9 +11078,6 @@ msgid "Kazakh"
 msgstr ""
 
 msgid "Kazakhstan"
-msgstr ""
-
-msgid "Keep EPG history (in minutes)"
 msgstr ""
 
 #
@@ -12156,7 +12190,7 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Mini Series"
+msgid "Mini series"
 msgstr "Kanali"
 
 msgid "MiniDLNA"
@@ -13041,6 +13075,9 @@ msgstr ""
 msgid "Never decrypt while recording"
 msgstr "Sklapanje imena snimljenih datoteka"
 
+msgid "Never in Standby"
+msgstr ""
+
 #
 msgid "New"
 msgstr "Novo"
@@ -13097,7 +13134,7 @@ msgstr ""
 msgid "News"
 msgstr ""
 
-msgid "News/Current Affairs"
+msgid "News/Current affairs"
 msgstr ""
 
 msgid "Next"
@@ -13667,11 +13704,17 @@ msgstr ""
 msgid "OSCamInfo Actions"
 msgstr ""
 
+msgid "OSCamInfo Capability Actions"
+msgstr ""
+
 msgid "OSCamInfo Log Actions"
 msgstr ""
 
 #, python-format
 msgid "OSCamInfo: %s Entitlements for '%s'"
+msgstr ""
+
+msgid "OSCamInfo: Capabilities"
 msgstr ""
 
 #, python-format
@@ -13790,7 +13833,7 @@ msgstr ""
 msgid "Only free scan"
 msgstr "Samo slobodno traženje"
 
-msgid "Only in standby"
+msgid "Only in Standby"
 msgstr ""
 
 msgid "Only log debug information of GStreamer category. * means all categories."
@@ -13828,6 +13871,9 @@ msgid "Open Bouquet selection"
 msgstr "završi uređivanje buketa"
 
 msgid "Open Box Portal"
+msgstr ""
+
+msgid "Open Capability"
 msgstr ""
 
 msgid "Open EPG"
@@ -14188,6 +14234,9 @@ msgstr "PCR PID"
 #, fuzzy
 msgid "PDC"
 msgstr "PIDs"
+
+msgid "PG - Parental Guidance"
+msgstr ""
 
 msgid "PGS file"
 msgstr ""
@@ -15740,7 +15789,7 @@ msgstr ""
 msgid "Ready to remove \"%s\"?"
 msgstr ""
 
-msgid "Real Life"
+msgid "Real life"
 msgstr ""
 
 msgid "Real or pseudo recordings"
@@ -16709,7 +16758,7 @@ msgstr ""
 msgid "Rugby"
 msgstr ""
 
-msgid "Rugby League"
+msgid "Rugby league"
 msgstr ""
 
 msgid "Run"
@@ -17388,6 +17437,9 @@ msgstr ""
 msgid "Select 'Yes' to disable multi-selection mode after each operation. Select 'No' to leave multi-selection mode active and the selections unchanged."
 msgstr ""
 
+msgid "Select 'Yes' to disable the ServiceHiSilicon plugin to allow use of the default internal media player code."
+msgstr ""
+
 msgid "Select 'Yes' to display a small TV image (PiG - Picture in Graphic) within the EPG screen."
 msgstr ""
 
@@ -17473,6 +17525,9 @@ msgid "Select 'Yes' to remove all user customizations of skin data. Selecting th
 msgstr ""
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
+msgstr ""
+
+msgid "Select 'Yes' to reschedule the task to when the receiver goes in to/out of Standby mode. The state change must happen within the task schedule window or else the task will not be run."
 msgstr ""
 
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
@@ -17800,6 +17855,9 @@ msgstr ""
 msgid "Select how long, in seconds, that the volume and mute displays are shown before they automatically hide."
 msgstr ""
 
+msgid "Select how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful for information about an event which has finished."
+msgstr ""
+
 msgid "Select how often this timer is to be repeated."
 msgstr ""
 
@@ -17813,6 +17871,9 @@ msgid "Select how the number buttons will act during seek actions."
 msgstr ""
 
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
+msgstr ""
+
+msgid "Select how the schedule is handled with respect to Standby mode."
 msgstr ""
 
 msgid "Select how to activate the Quick EPG mode."
@@ -17971,6 +18032,9 @@ msgstr ""
 msgid "Select the action to perform when the timer ends."
 msgstr ""
 
+msgid "Select the amount of time to wait, after a task error, before trying to run the task again."
+msgstr ""
+
 msgid "Select the animation speed of the button indicators in the help screens. 'Disabled' turns off animation so that indicators jump between buttons."
 msgstr ""
 
@@ -18065,6 +18129,9 @@ msgid "Select the display sequence of previously visited services."
 msgstr ""
 
 msgid "Select the duration of inactivity before the screen saver will be displayed."
+msgstr ""
+
+msgid "Select the end time before which this timer can be activated.  After this time the timer won't be activated even if other conditions are met."
 msgstr ""
 
 #, python-format
@@ -18163,6 +18230,9 @@ msgstr ""
 msgid "Select the next item in the list"
 msgstr ""
 
+msgid "Select the number of times to retry a task if an error occurs when running the task."
+msgstr ""
+
 msgid "Select the preferred service information to display, in addition to the service number, for the service selection pop up screen."
 msgstr ""
 
@@ -18238,6 +18308,9 @@ msgid "Select the source location from where to obtain the upgrade files."
 msgstr ""
 
 msgid "Select the source of the default DNS settings."
+msgstr ""
+
+msgid "Select the start time after which this timer can be activated.  Before this time the timer won't be activated even if other conditions are met."
 msgstr ""
 
 msgid "Select the starting/initial column to be activated on File Commander start up."
@@ -19085,7 +19158,7 @@ msgid "Shopping"
 msgstr "prebačen"
 
 #, fuzzy
-msgid "Short Film"
+msgid "Short film"
 msgstr "Kratka imena datoteka"
 
 msgid "Short filenames"
@@ -19159,6 +19232,9 @@ msgid "Show CCcam Info"
 msgstr ""
 
 msgid "Show CI messages"
+msgstr ""
+
+msgid "Show Capabilities"
 msgstr ""
 
 msgid "Show Default Backup Files"
@@ -19859,7 +19935,7 @@ msgstr "Način rada kad je film zaustavljen"
 msgid "Show watch status"
 msgstr ""
 
-msgid "Show/Games show"
+msgid "Show/Game show"
 msgstr ""
 
 msgid "Show/Hide Actions"
@@ -20311,7 +20387,7 @@ msgstr ""
 msgid "SoC family"
 msgstr ""
 
-msgid "Soap Opera"
+msgid "Soap opera"
 msgstr ""
 
 msgid "Soccer"
@@ -20555,6 +20631,9 @@ msgstr ""
 msgid "Special Features Settings"
 msgstr ""
 
+msgid "Special characteristics"
+msgstr ""
+
 msgid "Specify the directory to use when starting Media Player."
 msgstr ""
 
@@ -20599,6 +20678,9 @@ msgstr "Spreman"
 #
 msgid "Standby / Restart"
 msgstr "Spreman / restart"
+
+msgid "Standby execution"
+msgstr ""
 
 msgid "Standby without TV shut down"
 msgstr ""
@@ -20654,6 +20736,9 @@ msgid "Start or Stop service"
 msgstr ""
 
 msgid "Start recording current event"
+msgstr ""
+
+msgid "Start retry"
 msgstr ""
 
 msgid "Start teletext"
@@ -20737,6 +20822,9 @@ msgid "Status of the display in standby mode"
 msgstr ""
 
 msgid "Status unavailable!"
+msgstr ""
+
+msgid "Status:"
 msgstr ""
 
 msgid "Step"
@@ -20938,6 +21026,9 @@ msgstr ""
 msgid "Streaming recording ended"
 msgstr "Molim promenite završno vreme snimanja"
 
+msgid "Streaming recovery delay"
+msgstr ""
+
 #, python-format
 msgid "Streaming tuner information for %s %s"
 msgstr ""
@@ -21041,6 +21132,15 @@ msgid "Succeeded:"
 msgstr ""
 
 msgid "Sudan"
+msgstr ""
+
+msgid "Suitable for ages 12+"
+msgstr ""
+
+msgid "Suitable for ages 15+"
+msgstr ""
+
+msgid "Suitable only for Adults"
 msgstr ""
 
 #
@@ -21365,7 +21465,7 @@ msgstr ""
 msgid "Tajikistan"
 msgstr ""
 
-msgid "Talk Show"
+msgid "Talk show"
 msgstr ""
 
 msgid "Tamil"
@@ -22484,6 +22584,9 @@ msgstr ""
 msgid "Timer editor"
 msgstr ""
 
+msgid "Timer end window"
+msgstr ""
+
 #
 msgid "Timer entry"
 msgstr "Unos Tajmera"
@@ -22510,6 +22613,9 @@ msgstr "Lokacija snimanja po tajmeru"
 #
 msgid "Timer selection"
 msgstr "Izbor tajmera "
+
+msgid "Timer start window"
+msgstr ""
 
 #
 #, fuzzy
@@ -23033,6 +23139,9 @@ msgstr ""
 msgid "Type of scan"
 msgstr "Tip skeniranja"
 
+msgid "U - Suitable for all"
+msgstr ""
+
 #, python-format
 msgid "UBI slot %s%s"
 msgstr ""
@@ -23066,6 +23175,10 @@ msgid "USB 3.0 (Back, outer)"
 msgstr ""
 
 msgid "USB Stick"
+msgstr ""
+
+#, python-format
+msgid "USB reader %d"
 msgstr ""
 
 #, python-format
@@ -25123,17 +25236,17 @@ msgstr ""
 msgid "address:"
 msgstr ""
 
-msgid "adult movie/drama"
+msgid "Adult movie/Drama"
 msgstr ""
 
 #
 msgid "advanced"
 msgstr "napredno"
 
-msgid "adventure/western/war"
+msgid "Adventure/Western/War"
 msgstr ""
 
-msgid "advertisement/shopping"
+msgid "Advertisement/Shopping"
 msgstr ""
 
 msgid "alpha then oldest"
@@ -25165,7 +25278,7 @@ msgstr ""
 msgid "arts/culture (without music, general)"
 msgstr ""
 
-msgid "arts/culture magazine"
+msgid "Arts/Culture magazines"
 msgstr ""
 
 msgid "athletics"
@@ -25212,14 +25325,14 @@ msgstr "bolje"
 msgid "black"
 msgstr "Crno "
 
-msgid "black & white"
+msgid "Black & White"
 msgstr ""
 
 #
 msgid "blue"
 msgstr "Plavo"
 
-msgid "broadcasting/press"
+msgid "Broadcasting/Press"
 msgstr ""
 
 #, python-format
@@ -25241,7 +25354,7 @@ msgstr ""
 msgid "card reader"
 msgstr ""
 
-msgid "cartoon/puppets"
+msgid "Cartoons/Puppets"
 msgstr ""
 
 #
@@ -25306,7 +25419,7 @@ msgstr ""
 msgid "delete cut"
 msgstr "obriši rez"
 
-msgid "detective/thriller"
+msgid "Detective/Thriller"
 msgstr ""
 
 #
@@ -25317,7 +25430,7 @@ msgstr "onemogućeno"
 msgid "disconnected"
 msgstr "nepovezan"
 
-msgid "discussion/interview/debate"
+msgid "Discussion/Interview/Debate"
 msgstr ""
 
 msgid "documentary"
@@ -25350,7 +25463,7 @@ msgstr ""
 msgid "ecm.info"
 msgstr ""
 
-msgid "economics/social advisory"
+msgid "Economics/Social advisory"
 msgstr ""
 
 msgid "education/information (general)"
@@ -25390,7 +25503,7 @@ msgstr ""
 msgid "equal to"
 msgstr "jednako"
 
-msgid "equestrian"
+msgid "Equestrian"
 msgstr ""
 
 msgid "execute cuts (requires MovieCut plugin)"
@@ -25400,7 +25513,7 @@ msgstr ""
 msgid "exit DVD player or return to file browser"
 msgstr "Napustite DVD plejer ili se vratite na pretraživač datoteka"
 
-msgid "experimental film/video"
+msgid "Experimental film/video"
 msgstr ""
 
 msgid "externally loopthrough to"
@@ -25409,7 +25522,7 @@ msgstr ""
 msgid "failed"
 msgstr ""
 
-msgid "fashion"
+msgid "Fashion"
 msgstr ""
 
 msgid "file can not displayed - file not found"
@@ -25423,13 +25536,13 @@ msgstr "Formati datoteka (BMP,PNG,JPG,GIF)"
 msgid "filename"
 msgstr "Ime datoteke"
 
-msgid "film/cinema"
+msgid "Film/Cinema"
 msgstr ""
 
-msgid "fine arts"
+msgid "Fine arts"
 msgstr ""
 
-msgid "fitness & health"
+msgid "Fitness and Health"
 msgstr ""
 
 msgid "flat alphabetic"
@@ -25438,13 +25551,13 @@ msgstr ""
 msgid "flat alphabetic reverse"
 msgstr ""
 
-msgid "folk/traditional music"
+msgid "Folk/Traditional music"
 msgstr ""
 
-msgid "football/soccer"
+msgid "Football/Soccer"
 msgstr ""
 
-msgid "foreign countries/expeditions"
+msgid "Foreign countries/Expeditions"
 msgstr ""
 
 #
@@ -25462,10 +25575,10 @@ msgstr "slobodan prostor na disku"
 msgid "from"
 msgstr ""
 
-msgid "further education"
+msgid "Further education"
 msgstr ""
 
-msgid "game show/quiz/contest"
+msgid "Game show/Quiz/Contest"
 msgstr ""
 
 msgid "gardening"
@@ -25500,7 +25613,7 @@ msgstr ""
 msgid "h:mmam/pm"
 msgstr ""
 
-msgid "handicraft"
+msgid "Handicraft"
 msgstr ""
 
 msgid "handled"
@@ -25596,10 +25709,10 @@ msgstr "dužina"
 msgid "lime"
 msgstr ""
 
-msgid "literature"
+msgid "Literature"
 msgstr ""
 
-msgid "live broadcast"
+msgid "Live broadcast"
 msgstr ""
 
 #
@@ -25613,17 +25726,17 @@ msgstr ""
 msgid "loopthrough to"
 msgstr "Prolaz do"
 
-msgid "magazines/reports/documentary"
+msgid "Magazines/Reports/Documentary"
 msgstr ""
 
 #
 msgid "manual"
 msgstr "ručno"
 
-msgid "martial sports"
+msgid "Martial sports"
 msgstr ""
 
-msgid "medicine/physiology/psychology"
+msgid "Medicine/Physiology/Psychology"
 msgstr ""
 
 #
@@ -25641,7 +25754,7 @@ msgstr "Mesec"
 msgid "motor sport"
 msgstr ""
 
-msgid "motoring"
+msgid "Motoring"
 msgstr ""
 
 msgid "move"
@@ -25664,7 +25777,7 @@ msgstr ""
 msgid "music/ballet/dance (general)"
 msgstr ""
 
-msgid "musical/opera"
+msgid "Musical/Opera"
 msgstr ""
 
 msgid "n/a"
@@ -25673,22 +25786,22 @@ msgstr ""
 msgid "name"
 msgstr ""
 
-msgid "nature/animals/environment"
+msgid "Nature/Animals/Environment"
 msgstr ""
 
-msgid "new media"
+msgid "New media"
 msgstr ""
 
 msgid "news (general)"
 msgstr ""
 
-msgid "news magazine"
+msgid "News magazine"
 msgstr ""
 
 msgid "news/current affairs (general)"
 msgstr ""
 
-msgid "news/weather report"
+msgid "News/Weather report"
 msgstr ""
 
 #
@@ -25767,7 +25880,7 @@ msgstr ""
 msgid "packages"
 msgstr ""
 
-msgid "performing arts"
+msgid "Performing arts"
 msgstr ""
 
 msgid "pid:"
@@ -25789,7 +25902,7 @@ msgstr ""
 msgid "pm"
 msgstr ""
 
-msgid "popular culture/traditional arts"
+msgid "Popular culture/Traditional arts"
 msgstr ""
 
 msgid "pre-school children's program"
@@ -25819,7 +25932,7 @@ msgstr ""
 msgid "religion"
 msgstr ""
 
-msgid "remarkable people"
+msgid "Remarkable people"
 msgstr ""
 
 #
@@ -25848,7 +25961,7 @@ msgstr "Premotaj na prethodno poglavlje"
 msgid "right"
 msgstr "desno"
 
-msgid "rock/pop"
+msgid "Rock/Pop"
 msgstr ""
 
 msgid "romance"
@@ -25868,7 +25981,7 @@ msgstr ""
 msgid "scan state"
 msgstr "status skeniranja"
 
-msgid "science fiction/fantasy/horror"
+msgid "Science fiction/Fantasy/Horror"
 msgstr ""
 
 msgid "search EPG..."
@@ -25878,10 +25991,10 @@ msgstr ""
 msgid "select CAId's"
 msgstr "Izaberite CAId-e"
 
-msgid "serious music/classic music"
+msgid "Serious music/Classic music"
 msgstr ""
 
-msgid "serious/classical/religious/historical movie/drama"
+msgid "Serious/Classical/Religious/Historical/Drama"
 msgstr ""
 
 msgid "service PIN"
@@ -25923,13 +26036,13 @@ msgstr "preskoči unazad"
 msgid "skip forward"
 msgstr "preskoči unapred"
 
-msgid "soap/melodrama/folkloric"
+msgid "Soap/Melodrama/Folkloric"
 msgstr ""
 
 msgid "social/political issues/economics (general)"
 msgstr ""
 
-msgid "social/spiritual science"
+msgid "Social/Spiritual sciences"
 msgstr ""
 
 msgid "softcam"
@@ -25950,7 +26063,7 @@ msgstr ""
 msgid "sports (general)"
 msgstr ""
 
-msgid "sports magazine"
+msgid "Sports magazines"
 msgstr ""
 
 #
@@ -25998,7 +26111,7 @@ msgstr ""
 msgid "team sports"
 msgstr ""
 
-msgid "technology/natural science"
+msgid "Technology/Natural sciences"
 msgstr ""
 
 #
@@ -26010,7 +26123,7 @@ msgstr "Obriši"
 msgid "template file"
 msgstr "Šablon datoteka"
 
-msgid "tennis/squash"
+msgid "Tennis/Squash"
 msgstr ""
 
 msgid "text"
@@ -26024,7 +26137,7 @@ msgstr "ovo snimanje"
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "Prebacuj vreme,poglavlje,audio,subtitl informacije"
 
-msgid "tourism/travel"
+msgid "Tourism/Travel"
 msgstr ""
 
 msgid "traditional (fast)"
@@ -26067,7 +26180,7 @@ msgstr "Nepoznato"
 msgid "unknown error"
 msgstr "Nepoznat kanal"
 
-msgid "unpublished"
+msgid "Unpublished"
 msgstr ""
 
 #
@@ -26083,7 +26196,7 @@ msgstr "Ažuriranje"
 msgid "using:"
 msgstr ""
 
-msgid "variety show"
+msgid "Variety show"
 msgstr ""
 
 msgid "violet"
@@ -26096,7 +26209,7 @@ msgstr ""
 msgid "wait for mmi..."
 msgstr "čekam mmi..."
 
-msgid "water sport"
+msgid "Water sport"
 msgstr ""
 
 #
@@ -26110,7 +26223,7 @@ msgstr ""
 msgid "width"
 msgstr ""
 
-msgid "winter sport"
+msgid "Winter sport"
 msgstr ""
 
 msgid "wireless network interface"
@@ -26137,6 +26250,11 @@ msgstr "Žuto"
 #
 msgid "yes (keep feeds)"
 msgstr "Da ( zadrži fidove)"
+
+#
+#, fuzzy
+msgid "Languages"
+msgstr "Jezik"
 
 msgid "®"
 msgstr ""
@@ -26637,11 +26755,6 @@ msgstr ""
 #
 #~ msgid "Trying to download a new packet list. Please wait..."
 #~ msgstr "Pokušavam skinuti novu listu paketa.Molim sačekajte..."
-
-#
-#, fuzzy
-#~ msgid "Languages"
-#~ msgstr "Jezik"
 
 #
 #, fuzzy

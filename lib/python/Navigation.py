@@ -9,7 +9,7 @@ import RecordTimer
 import Scheduler
 import ServiceReference
 from Components.config import config
-from Components.ImportChannels import ImportChannels
+from Components.ImportChannels import ImportChannels  # noqa F401
 from Components.ParentalControl import parentalControl
 from Components.PluginComponent import plugins
 from Components.RecordingConfig import recType
@@ -348,12 +348,13 @@ class Navigation:
 			if ref.flags & eServiceReference.isGroup:
 				oldref = self.currentlyPlayingServiceReference or eServiceReference()
 				playref = getBestPlayableServiceReference(ref, oldref)
-				if not ignoreStreamRelay:
-					playref, isStreamRelay = streamrelay.streamrelayChecker(playref)
-				if not isStreamRelay:
-					playref, wrappererror = self.serviceHook(playref)
-					if wrappererror:
-						return 1
+				if playref:
+					if not ignoreStreamRelay:
+						playref, isStreamRelay = streamrelay.streamrelayChecker(playref)
+					if not isStreamRelay:
+						playref, wrappererror = self.serviceHook(playref)
+						if wrappererror:
+							return 1
 				print(f"[Navigation] Playref is '{str(playref)}'.")
 				if playref and oldref and playref == oldref and not forceRestart:
 					print("[Navigation] Ignore request to play already running service.  (2)")

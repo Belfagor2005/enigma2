@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openATV\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-27 15:35+0000\n"
-"PO-Revision-Date: 2025-08-27 12:02+0000\n"
+"POT-Creation-Date: 2025-11-06 08:27+0000\n"
+"PO-Revision-Date: 2025-10-25 18:22+0000\n"
 "Last-Translator: Mark Stone <grystyle@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 5.13\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 "X-SourceCharset: UTF-8\n"
 "X-Generated: TM2TURK by thawtes\n"
 
@@ -1277,7 +1277,7 @@ msgid "'Handle standby from TV' has a higher priority than 'Handle input from TV
 msgstr "“处理来自电视的待机”比“处理来自电视的输入”具有更高的优先级。"
 
 msgid "'Unscramble & record ECM' gives the option to unscramble afterwards if unscrambling on recording failed. 'Don't unscramble, record ECM' save a scramble recording that can be unscrambled on playback. 'Normal' means unscramble the recording and don't record ECM."
-msgstr "如果在录制时解扰失败，'解扰和录制ECM' 提供之后进行解扰的选项。'不解扰，录制 ECM'则保存加扰录像，可在回放时进行解扰。 “正常”表示解扰录像，但不录制 ECM。"
+msgstr "如果在录制时解扰失败，'解扰和录制ECM' 提供之后进行解扰的选项。'不解扰，录制 ECM'则保存加扰录像，可在播放时进行解扰。 “正常”表示解扰录像，但不录制 ECM。"
 
 msgid "'WeatherPlugin' is not installed!"
 msgstr "'天气插件' 未安装！"
@@ -1542,6 +1542,9 @@ msgstr "<最后一个定时器位置>"
 
 msgid "<Select a device>"
 msgstr "<选择设备>"
+
+msgid "<no capabilities found>"
+msgstr ""
 
 msgid "<no log found>"
 msgstr "<未找到日志>"
@@ -2324,7 +2327,7 @@ msgstr "总是显示频道分组"
 msgid "Always use smart1080p mode"
 msgstr "总是使用 智能1080p 模式"
 
-msgid "American Football"
+msgid "American football"
 msgstr "美式足球"
 
 msgid "American Samoa"
@@ -3087,6 +3090,9 @@ msgstr "蓝色"
 msgid "Bluetooth"
 msgstr "蓝牙"
 
+msgid "Bluetooth Audio"
+msgstr "蓝牙音频"
+
 msgid "Bluetooth Setup"
 msgstr "蓝牙设置"
 
@@ -3125,7 +3131,7 @@ msgstr "需要更新 Bootloader！"
 
 #, python-format
 msgid "Boot slot information for %s %s"
-msgstr "%s %s 引导位置信息"
+msgstr "%s %s 引导槽位信息"
 
 msgid "Boot time"
 msgstr "启动时间"
@@ -3699,6 +3705,10 @@ msgstr "无法找到任何信号...，正在中止！"
 msgid "Cape Verde"
 msgstr "佛得角"
 
+#, python-format
+msgid "Card reader %d"
+msgstr "卡片读卡器 %d"
+
 msgid "Cards: "
 msgstr "卡片："
 
@@ -4025,9 +4035,6 @@ msgstr "选择用于解码 EPG 事件中的评级信息的国家/地区方案。
 
 msgid "Choose a label that will identify this device within IceTV services."
 msgstr "选择可在 IceTV 服务中识别此设备的标签。"
-
-msgid "Choose how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful when you need information about an event which has recently finished."
-msgstr "选择在 EPG 缓存中保留多少 EPG 历史记录（如果有）。 可以在任何 EPG 视图中浏览此历史数据。 当您需要有关最近完成的事件的信息时，这会很有用。"
 
 msgid "Choose how often to connect to IceTV server to check for updates."
 msgstr "选择连接到 IceTV 服务器以检查更新的频率。"
@@ -4440,7 +4447,7 @@ msgid "Configuration mode"
 msgstr "配置模式"
 
 msgid "Configuration options for the HELP screen can be found in 'MENU > Setup > Usage & User Interface > Settings'."
-msgstr "帮助屏幕的配置选项可在“菜单>设置>使用偏好/用户界面>设置”中找到。"
+msgstr "帮助屏幕的配置选项可在“菜单>设置>使用偏好/图形界面>设置”中找到。"
 
 msgid "Configure DNS (name servers)"
 msgstr "配置 DNS（名称服务器）"
@@ -4542,10 +4549,10 @@ msgid "Configure the aspect ratio of the screen."
 msgstr "配置屏幕的画面比例。"
 
 msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
-msgstr "配置在电影回放已经暂停的情况下\"pause\" 键的行为。"
+msgstr "配置在电影播放已经暂停的情况下\"pause\" 键的行为。"
 
 msgid "Configure the behavior when movie playback is manually stopped."
-msgstr "配置手动停止电影回放后的行为。"
+msgstr "配置手动停止电影播放后的行为。"
 
 msgid "Configure the behavior when movie playback is started."
 msgstr "配置影片播放开始后的行为。"
@@ -4887,6 +4894,9 @@ msgstr "控制台软件包"
 msgid "Console Utility Packages"
 msgstr "控制台实用程序包"
 
+msgid "Constcw"
+msgstr "固定控制字"
+
 msgid "Constellation"
 msgstr "星座"
 
@@ -4922,7 +4932,7 @@ msgid "Continue in background"
 msgstr "在后台继续"
 
 msgid "Continue playback"
-msgstr "继续回放"
+msgstr "继续播放"
 
 msgid "Continue playing"
 msgstr "继续播放"
@@ -5232,7 +5242,7 @@ msgstr "当前"
 msgid "Current 1/1"
 msgstr "当前 1/1"
 
-msgid "Current Affairs"
+msgid "Current affairs"
 msgstr "时事"
 
 msgid "Current CEC address"
@@ -5286,9 +5296,6 @@ msgstr "当前模式： %s \n"
 
 msgid "Current settings:"
 msgstr "当前设置："
-
-msgid "Current status"
-msgstr "当前状态"
 
 msgid "Current time"
 msgstr "当前时间"
@@ -6274,6 +6281,9 @@ msgstr "禁用移动模式"
 msgid "Disable Picture in Picture"
 msgstr "禁用画中画"
 
+msgid "Disable ServiceHiSilicon"
+msgstr "禁用 ServiceHiSilicon"
+
 msgid "Disable background scanning"
 msgstr "禁止后台扫描"
 
@@ -6824,6 +6834,9 @@ msgstr "EPG 键模式"
 msgid "EPG filename"
 msgstr "EPG 文件名"
 
+msgid "EPG history"
+msgstr "保留 EPG 历史记录（以分钟为单位）"
+
 msgid ""
 "EPG key : Switch to channel list\n"
 "Ok key : Remove selected channel\n"
@@ -6985,6 +6998,9 @@ msgstr "空"
 
 msgid "Empty file"
 msgstr "空文件"
+
+msgid "Emulator"
+msgstr "仿真器"
 
 msgid "Enable"
 msgstr "启用"
@@ -7188,6 +7204,9 @@ msgstr "启用此选项可将系统启动期间检测到的多系统启动信息
 
 msgid "Enable this option to add action map / remote control mapping data to the debug log file."
 msgstr "启用此选项可将操作映射/远程控制映射数据添加到调试日志文件。"
+
+msgid "Enable this option to add bouquet database information to the debug log file."
+msgstr "启用此选项，可将频道分组数据库信息添加到调试日志文件中。"
 
 msgid "Enable this option to add extra DVB details to the debug log file."
 msgstr "启用此选项可将额外的 DVB 详细信息添加到调试日志文件中。"
@@ -7397,6 +7416,9 @@ msgstr "输入 PIN 码"
 msgid "Enter text via an attached keyboard"
 msgstr "通过连接的键盘输入文本"
 
+msgid "Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space."
+msgstr "输入流媒体错误后要添加到流媒体缓冲区的持续时间。这个额外的缓冲区有助于避免因缓冲区空间不足而导致的进一步流媒体问题。"
+
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the specifications of your LNB."
 msgstr "输入高频头在低频段和高频段之间切换的频率。有关更多信息，请参阅高频头的规格。"
 
@@ -7538,6 +7560,12 @@ msgstr "错误 “%s” 在检索 “%s” 提交日志时遇到！"
 
 msgid "Error Download Setting"
 msgstr "下载设置错误"
+
+msgid "Error Retry count"
+msgstr ""
+
+msgid "Error Retry delay"
+msgstr ""
 
 msgid "Error code"
 msgstr "错误代码"
@@ -8345,7 +8373,7 @@ msgstr "要从备份中排除的文件/文件夹"
 msgid "Fill in channel EPGs from the broadcast EPG where there is no IceTV EPG for the channel"
 msgstr "在没有 IceTV EPG 的广播 EPG 中填写频道 EPG"
 
-msgid "Film-Noir"
+msgid "Film-noir"
 msgstr "黑色电影"
 
 msgid "Filter extensions"
@@ -8691,7 +8719,7 @@ msgstr "加利西亚语"
 msgid "Gambia"
 msgstr "冈比亚"
 
-msgid "Game Show"
+msgid "Game show"
 msgstr "游戏秀"
 
 msgid "Ganda"
@@ -9082,6 +9110,9 @@ msgstr "高度"
 msgid "Help"
 msgstr "帮助"
 
+msgid "Help Action"
+msgstr "帮助操作"
+
 msgid "Help Screen Information"
 msgstr "帮助屏信息"
 
@@ -9280,7 +9311,7 @@ msgstr "水平转动速度"
 msgid "Horror"
 msgstr "恐怖"
 
-msgid "Horse Racing"
+msgid "Horse racing"
 msgstr "赛马"
 
 msgid "Host"
@@ -9585,6 +9616,9 @@ msgstr "忽略 DVB-S 名称空间子网络"
 msgid "Ignore DVB-T namespace sub network"
 msgstr "忽略 DVB-T 名称空间子网络"
 
+msgid "Ignore Standby"
+msgstr ""
+
 msgid "Ignore unexpectedly wake up and stay in standby"
 msgstr "忽略意外唤醒并保持待机状态"
 
@@ -9715,6 +9749,9 @@ msgstr "http 串流中包含 SDT，BAT数据"
 
 msgid "Include action map data"
 msgstr "包含动作映射数据"
+
+msgid "Include bouquet DB data"
+msgstr "包含频道分组数据库数据"
 
 msgid "Include international data *"
 msgstr "包括国际数据*"
@@ -10183,9 +10220,6 @@ msgstr "哈萨克语"
 
 msgid "Kazakhstan"
 msgstr "哈萨克斯坦"
-
-msgid "Keep EPG history (in minutes)"
-msgstr "保留 EPG 历史记录（以分钟为单位）"
 
 msgid "Keep service"
 msgstr "保持频道"
@@ -11183,7 +11217,7 @@ msgstr "中等"
 msgid "Middle - Lite image"
 msgstr "中 - 精简镜像"
 
-msgid "Mini Series"
+msgid "Mini series"
 msgstr "迷你系列"
 
 msgid "MiniDLNA"
@@ -11974,6 +12008,9 @@ msgstr "录制时绝不解密内容。这将全局覆盖各个定时器设置。
 msgid "Never decrypt while recording"
 msgstr "录制时从不解密"
 
+msgid "Never in Standby"
+msgstr ""
+
 msgid "New"
 msgstr "新近"
 
@@ -12022,7 +12059,7 @@ msgstr "新建目录"
 msgid "News"
 msgstr "新闻"
 
-msgid "News/Current Affairs"
+msgid "News/Current affairs"
 msgstr "新闻/时事"
 
 msgid "Next"
@@ -12525,12 +12562,18 @@ msgstr "已禁用 OSCam 网页接口"
 msgid "OSCamInfo Actions"
 msgstr "OSCam信息操作"
 
+msgid "OSCamInfo Capability Actions"
+msgstr ""
+
 msgid "OSCamInfo Log Actions"
 msgstr "OSCam信息日志操作"
 
 #, python-format
 msgid "OSCamInfo: %s Entitlements for '%s'"
 msgstr "OSCam 信息：“%s”的 %s 权利"
+
+msgid "OSCamInfo: Capabilities"
+msgstr ""
 
 #, python-format
 msgid "OSCamInfo: Entitlements for '%s'"
@@ -12638,7 +12681,7 @@ msgstr "仅高清"
 msgid "Only free scan"
 msgstr "仅扫描免费频道"
 
-msgid "Only in standby"
+msgid "Only in Standby"
 msgstr "只在待机"
 
 msgid "Only log debug information of GStreamer category. * means all categories."
@@ -12673,6 +12716,9 @@ msgstr "打开频道分组列表"
 
 msgid "Open Box Portal"
 msgstr "显示机顶盒门户"
+
+msgid "Open Capability"
+msgstr ""
 
 msgid "Open EPG"
 msgstr "打开 EPG"
@@ -12995,6 +13041,9 @@ msgstr "PCR PID"
 
 msgid "PDC"
 msgstr "PDC"
+
+msgid "PG - Parental Guidance"
+msgstr "PG - 家长指导"
 
 msgid "PGS file"
 msgstr "PGS 文件"
@@ -13408,13 +13457,13 @@ msgid "Play the selected service"
 msgstr "播放选择的频道"
 
 msgid "Playback Settings"
-msgstr "回放设置"
+msgstr "播放设置"
 
 msgid "Playback Time:"
 msgstr "播放时间："
 
 msgid "Playback, Recording & Time Shift"
-msgstr "播放、录制及时移"
+msgstr "播放 / 录制 / 时移"
 
 msgid "Playlist"
 msgstr "播放列表"
@@ -14399,7 +14448,7 @@ msgstr "准备好安装 \"%s\" 了吗？"
 msgid "Ready to remove \"%s\"?"
 msgstr "准备好移除 \"%s\" 了吗？"
 
-msgid "Real Life"
+msgid "Real life"
 msgstr "现实生活"
 
 msgid "Real or pseudo recordings"
@@ -15159,13 +15208,13 @@ msgid "Retrieving '%s' log, please wait..."
 msgstr "正在检索“%s”日志，请稍候..."
 
 msgid "Retrieving boot slot information..."
-msgstr "正在检索引导位置信息..."
+msgstr "正在检索引导槽位信息..."
 
 msgid "Retrieving image list, please wait..."
 msgstr "正在检索镜像列表，请稍候..."
 
 msgid "Retrieving image slots - Please wait..."
-msgstr "正在检索镜像位置 - 请稍候..."
+msgstr "正在检索镜像插槽 - 请稍候..."
 
 msgid "Retrieving network server information, please wait..."
 msgstr "正在检索网络服务器信息，请稍候..."
@@ -15266,7 +15315,7 @@ msgstr "赛艇"
 msgid "Rugby"
 msgstr "橄榄球"
 
-msgid "Rugby League"
+msgid "Rugby league"
 msgstr "橄榄球联盟"
 
 msgid "Run"
@@ -15884,6 +15933,9 @@ msgstr "选择“是”可连续循环显示所有图像，选择“否”可显
 msgid "Select 'Yes' to disable multi-selection mode after each operation. Select 'No' to leave multi-selection mode active and the selections unchanged."
 msgstr "选择“是”可在每次操作后禁用多选模式。选择“否”以保持多选模式处于活动状态，选择内容不变。"
 
+msgid "Select 'Yes' to disable the ServiceHiSilicon plugin to allow use of the default internal media player code."
+msgstr "选择“是”将禁用 ServiceHiSilicon 插件，以允许使用默认的内部媒体播放器代码。"
+
 msgid "Select 'Yes' to display a small TV image (PiG - Picture in Graphic) within the EPG screen."
 msgstr "选择“是”以在 EPG 屏幕内显示一个小的电视图像（PiG - 画中画）。"
 
@@ -15970,6 +16022,9 @@ msgstr "选择“是”以删除皮肤数据的所有用户自定义设置。选
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr "选择“是”删除所有用户界面数据。选择此选项将删除所有按键映射、菜单和设置覆盖数据，并恢复默认定义。"
+
+msgid "Select 'Yes' to reschedule the task to when the receiver goes in to/out of Standby mode. The state change must happen within the task schedule window or else the task will not be run."
+msgstr ""
 
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
 msgstr "选择“是”将网络配置重置为默认值。这将启用以太网端口（如果存在），并将接收机设置为使用 DHCP。 所有其他网络接口都将被删除。"
@@ -16116,7 +16171,7 @@ msgid "Select Media Location"
 msgstr "选择媒体位置"
 
 msgid "Select Playback Location"
-msgstr "选择回放位置"
+msgstr "选择播放位置"
 
 msgid "Select Quad Channels"
 msgstr "选择四画面频道"
@@ -16282,6 +16337,9 @@ msgstr "选择弹出任务和脚本消息显示的时长。"
 msgid "Select how long, in seconds, that the volume and mute displays are shown before they automatically hide."
 msgstr "选择音量和静音显示在自动隐藏之前显示的时间长度（以秒为单位）。"
 
+msgid "Select how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful for information about an event which has finished."
+msgstr "选择在 EPG 缓存中保留多少 EPG 历史记录（如果有）。 可以在任何 EPG 视图中浏览此历史数据。 当您需要有关最近完成的事件的信息时，这会很有用。"
+
 msgid "Select how often this timer is to be repeated."
 msgstr "选择此定时器的重复频率。"
 
@@ -16296,6 +16354,9 @@ msgstr "设置数字键在跳转操作时的行为。"
 
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr "选择卫星天线的设置方式。 即固定天线、单高频头、DiSEqC 开关、极轴等。"
+
+msgid "Select how the schedule is handled with respect to Standby mode."
+msgstr ""
 
 msgid "Select how to activate the Quick EPG mode."
 msgstr "选择如何激活快速 EPG 模式。"
@@ -16447,6 +16508,9 @@ msgstr "选择“%s”的操作"
 msgid "Select the action to perform when the timer ends."
 msgstr "选择定时器结束时要执行的操作。"
 
+msgid "Select the amount of time to wait, after a task error, before trying to run the task again."
+msgstr ""
+
 msgid "Select the animation speed of the button indicators in the help screens. 'Disabled' turns off animation so that indicators jump between buttons."
 msgstr "在帮助屏幕中选择按钮指示器的动画速度。 “禁用”关闭动画，以便指示器在按钮之间跳转。"
 
@@ -16481,7 +16545,7 @@ msgid "Select the currently highlighted bouquet"
 msgstr "选择当前突出显示的频道分组"
 
 msgid "Select the currently highlighted locale/language for the user interface"
-msgstr "为用户界面选择当前突出显示的区域设置/语言"
+msgstr "为图形界面选择当前突出显示的区域设置/语言"
 
 msgid "Select the currently highlighted service"
 msgstr "选择当前突出显示的频道"
@@ -16542,6 +16606,9 @@ msgstr "选择以前访问过频道的显示顺序。"
 
 msgid "Select the duration of inactivity before the screen saver will be displayed."
 msgstr "配置屏幕保护程序显示前的持续时间（分钟）。"
+
+msgid "Select the end time before which this timer can be activated.  After this time the timer won't be activated even if other conditions are met."
+msgstr ""
 
 #, python-format
 msgid "Select the file sort order for the %s column:"
@@ -16638,6 +16705,9 @@ msgstr "选择列表中的下一项或向右移动光标"
 msgid "Select the next item in the list"
 msgstr "选择列表中的下一项"
 
+msgid "Select the number of times to retry a task if an error occurs when running the task."
+msgstr ""
+
 msgid "Select the preferred service information to display, in addition to the service number, for the service selection pop up screen."
 msgstr "选择频道选择弹窗中，除频道号外还需显示的信息内容。"
 
@@ -16712,6 +16782,9 @@ msgstr "选择获取升级文件的源位置。"
 
 msgid "Select the source of the default DNS settings."
 msgstr "选择默认 DNS 设置的来源。"
+
+msgid "Select the start time after which this timer can be activated.  Before this time the timer won't be activated even if other conditions are met."
+msgstr ""
 
 msgid "Select the starting/initial column to be activated on File Commander start up."
 msgstr "选择要在文件指挥官启动时激活的起始/初始列。"
@@ -17529,7 +17602,7 @@ msgstr "绍纳"
 msgid "Shopping"
 msgstr "购物"
 
-msgid "Short Film"
+msgid "Short film"
 msgstr "短片"
 
 msgid "Short filenames"
@@ -17600,6 +17673,9 @@ msgstr "显示 CCcam 信息"
 
 msgid "Show CI messages"
 msgstr "显示 CI 消息"
+
+msgid "Show Capabilities"
+msgstr ""
 
 msgid "Show Default Backup Files"
 msgstr "显示默认备份文件"
@@ -18233,7 +18309,7 @@ msgstr "时移停止时显示警告"
 msgid "Show watch status"
 msgstr "显示观看状态"
 
-msgid "Show/Games show"
+msgid "Show/Game show"
 msgstr "显示/游戏秀"
 
 msgid "Show/Hide Actions"
@@ -18542,7 +18618,7 @@ msgstr "从上到下滑动"
 
 #, python-format
 msgid "Slot %d"
-msgstr "位置 %d"
+msgstr "插槽 %d"
 
 #, python-format
 msgid "Slot %s / FBC in %s"
@@ -18554,15 +18630,15 @@ msgstr "插槽 %s/FBC 虚拟 %s"
 
 #, python-format
 msgid "Slot %s: %s"
-msgstr "位置 %s: %s"
+msgstr "插槽 %s: %s"
 
 #, python-format
 msgid "Slot %s: %s (Current image)"
-msgstr "位置 %s: %s （当前镜像）"
+msgstr "插槽 %s: %s （当前镜像）"
 
 #, python-format
 msgid "Slot %s: %s as USB Recovery"
-msgstr "位置 %s: %s 作为 USB 恢复"
+msgstr "插槽 %s: %s 作为 USB 恢复"
 
 #, python-format
 msgid "Slot '%s' %s"
@@ -18639,7 +18715,7 @@ msgstr "平滑"
 msgid "SoC family"
 msgstr "SoC 系列"
 
-msgid "Soap Opera"
+msgid "Soap opera"
 msgstr "肥皂剧"
 
 msgid "Soccer"
@@ -18875,6 +18951,9 @@ msgstr "特殊2"
 msgid "Special Features Settings"
 msgstr "特别功能设置"
 
+msgid "Special characteristics"
+msgstr "特殊属性"
+
 msgid "Specify the directory to use when starting Media Player."
 msgstr "指定启动媒体播放器时要使用的目录。"
 
@@ -18916,6 +18995,9 @@ msgstr "待机"
 
 msgid "Standby / Restart"
 msgstr "待机 / 重启"
+
+msgid "Standby execution"
+msgstr ""
 
 msgid "Standby without TV shut down"
 msgstr "待机而不关闭电视"
@@ -18967,6 +19049,9 @@ msgstr "启动或停止服务"
 
 msgid "Start recording current event"
 msgstr "开始录制当前事件"
+
+msgid "Start retry"
+msgstr ""
 
 msgid "Start teletext"
 msgstr "启动图文电视"
@@ -19046,6 +19131,9 @@ msgstr "启动机顶盒进入待机状态"
 
 msgid "Status unavailable!"
 msgstr "状态不可用！"
+
+msgid "Status:"
+msgstr "状态："
 
 msgid "Step"
 msgstr "步"
@@ -19213,6 +19301,9 @@ msgstr "串流调谐器信息"
 msgid "Streaming recording ended"
 msgstr "流媒体录制结束"
 
+msgid "Streaming recovery delay"
+msgstr "流媒体恢复延迟"
+
 #, python-format
 msgid "Streaming tuner information for %s %s"
 msgstr "%s %s 串流调谐器信息"
@@ -19310,6 +19401,15 @@ msgstr "已成功："
 
 msgid "Sudan"
 msgstr "苏丹"
+
+msgid "Suitable for ages 12+"
+msgstr "适合12岁以上"
+
+msgid "Suitable for ages 15+"
+msgstr "适合15岁以上"
+
+msgid "Suitable only for Adults"
+msgstr "仅适合成人"
 
 msgid "Sun"
 msgstr "周日"
@@ -19602,7 +19702,7 @@ msgstr "塔吉克"
 msgid "Tajikistan"
 msgstr "塔吉克斯坦"
 
-msgid "Talk Show"
+msgid "Talk show"
 msgstr "脱口秀"
 
 msgid "Tamil"
@@ -20116,7 +20216,7 @@ msgstr ""
 
 #, python-format
 msgid "The user interface of your %s %s is restarting"
-msgstr "正在重新启动 %s %s 的用户界面"
+msgstr "正在重新启动 %s %s 的图形界面"
 
 #, python-format
 msgid ""
@@ -20124,7 +20224,7 @@ msgid ""
 "due to an error in StartEnigma.py"
 msgstr ""
 "由于 StartEnigma.py 的错误。\n"
-"%s %s 的用户界面正在重启"
+"%s %s 的图形界面正在重启"
 
 #, python-format
 msgid "The user interface of your %s %s will be stopped to run Kodi"
@@ -20730,6 +20830,9 @@ msgstr "编辑定时器"
 msgid "Timer editor"
 msgstr "定时器编辑器"
 
+msgid "Timer end window"
+msgstr ""
+
 msgid "Timer entry"
 msgstr "定时器条目"
 
@@ -20753,6 +20856,9 @@ msgstr "定时器录制位置"
 
 msgid "Timer selection"
 msgstr "定时器选择"
+
+msgid "Timer start window"
+msgstr ""
 
 msgid "Timer type"
 msgstr "定时器类型"
@@ -21210,6 +21316,9 @@ msgstr "设备类型"
 msgid "Type of scan"
 msgstr "扫描类型"
 
+msgid "U - Suitable for all"
+msgstr "U - 适合所有人"
+
 #, python-format
 msgid "UBI slot %s%s"
 msgstr "UBI 插槽 %s%s"
@@ -21243,6 +21352,10 @@ msgstr "USB 3.0（背面，外部）"
 
 msgid "USB Stick"
 msgstr "U 盘"
+
+#, python-format
+msgid "USB reader %d"
+msgstr "USB 读卡器 %d"
 
 #, python-format
 msgid "USB slot %s%s"
@@ -21800,7 +21913,7 @@ msgid "User defined transponder"
 msgstr "用户定义的转发器"
 
 msgid "User interface settings"
-msgstr "用户界面设置"
+msgstr "图形界面设置"
 
 msgid "User logo:"
 msgstr "用户 LOGO："
@@ -23234,16 +23347,16 @@ msgstr "激活画中画"
 msgid "address:"
 msgstr "地址："
 
-msgid "adult movie/drama"
+msgid "Adult movie/Drama"
 msgstr "成人电影／戏剧"
 
 msgid "advanced"
 msgstr "高级"
 
-msgid "adventure/western/war"
+msgid "Adventure/Western/War"
 msgstr "冒险/西部/战争"
 
-msgid "advertisement/shopping"
+msgid "Advertisement/Shopping"
 msgstr "广告/购物"
 
 msgid "alpha then oldest"
@@ -23277,7 +23390,7 @@ msgstr "艺术/文化（一般）"
 msgid "arts/culture (without music, general)"
 msgstr "艺术/文化（无音乐，常规）"
 
-msgid "arts/culture magazine"
+msgid "Arts/Culture magazines"
 msgstr "艺术/文化杂志"
 
 msgid "athletics"
@@ -23319,13 +23432,13 @@ msgstr "较好"
 msgid "black"
 msgstr "黑色"
 
-msgid "black & white"
+msgid "Black & White"
 msgstr "黑与白"
 
 msgid "blue"
 msgstr "蓝键"
 
-msgid "broadcasting/press"
+msgid "Broadcasting/Press"
 msgstr "广播/新闻"
 
 #, python-format
@@ -23347,7 +23460,7 @@ msgstr "卡片"
 msgid "card reader"
 msgstr "读卡器"
 
-msgid "cartoon/puppets"
+msgid "Cartoons/Puppets"
 msgstr "卡通/木偶"
 
 msgid "chapters"
@@ -23407,7 +23520,7 @@ msgstr "删除"
 msgid "delete cut"
 msgstr "删除剪辑"
 
-msgid "detective/thriller"
+msgid "Detective/Thriller"
 msgstr "侦探/悬疑"
 
 msgid "disabled"
@@ -23416,7 +23529,7 @@ msgstr "已禁用"
 msgid "disconnected"
 msgstr "已断开"
 
-msgid "discussion/interview/debate"
+msgid "Discussion/Interview/Debate"
 msgstr "讨论/面谈/辩论"
 
 msgid "documentary"
@@ -23447,7 +23560,7 @@ msgstr "ECM 时间："
 msgid "ecm.info"
 msgstr "ecm 信息"
 
-msgid "economics/social advisory"
+msgid "Economics/Social advisory"
 msgstr "经济/社会咨询"
 
 msgid "education/information (general)"
@@ -23483,7 +23596,7 @@ msgstr "娱乐(常规)"
 msgid "equal to"
 msgstr "等于"
 
-msgid "equestrian"
+msgid "Equestrian"
 msgstr "马术"
 
 msgid "execute cuts (requires MovieCut plugin)"
@@ -23492,7 +23605,7 @@ msgstr "执行剪切（需要MovieCut插件）"
 msgid "exit DVD player or return to file browser"
 msgstr "退出 DVD 播放器或返回文件浏览器"
 
-msgid "experimental film/video"
+msgid "Experimental film/video"
 msgstr "探索实验电影/视频"
 
 msgid "externally loopthrough to"
@@ -23501,7 +23614,7 @@ msgstr "外部环通到"
 msgid "failed"
 msgstr "失败"
 
-msgid "fashion"
+msgid "Fashion"
 msgstr "时尚"
 
 msgid "file can not displayed - file not found"
@@ -23513,13 +23626,13 @@ msgstr "文件格式 (BMP, PNG, JPG, GIF)"
 msgid "filename"
 msgstr "文件名"
 
-msgid "film/cinema"
+msgid "Film/Cinema"
 msgstr "电影/影院"
 
-msgid "fine arts"
+msgid "Fine arts"
 msgstr "美术"
 
-msgid "fitness & health"
+msgid "Fitness and Health"
 msgstr "健身与健康"
 
 msgid "flat alphabetic"
@@ -23528,13 +23641,13 @@ msgstr "按字母顺序排列"
 msgid "flat alphabetic reverse"
 msgstr "按字母反向顺序"
 
-msgid "folk/traditional music"
+msgid "Folk/Traditional music"
 msgstr "民歌/传统音乐"
 
-msgid "football/soccer"
+msgid "Football/Soccer"
 msgstr "足球运动/足球"
 
-msgid "foreign countries/expeditions"
+msgid "Foreign countries/Expeditions"
 msgstr "外国/探险"
 
 msgid "forward to the next chapter"
@@ -23549,10 +23662,10 @@ msgstr "剩余磁盘空间"
 msgid "from"
 msgstr "从"
 
-msgid "further education"
+msgid "Further education"
 msgstr "继续教育"
 
-msgid "game show/quiz/contest"
+msgid "Game show/Quiz/Contest"
 msgstr "游戏节目/测验/竞赛"
 
 msgid "gardening"
@@ -23585,7 +23698,7 @@ msgstr "12小时制 时:分分:秒秒 上午/下午"
 msgid "h:mmam/pm"
 msgstr "12小时制 时:分分 上午/下午"
 
-msgid "handicraft"
+msgid "Handicraft"
 msgstr "手工艺品"
 
 msgid "handled"
@@ -23672,10 +23785,10 @@ msgstr "长度"
 msgid "lime"
 msgstr "石灰"
 
-msgid "literature"
+msgid "Literature"
 msgstr "文学"
 
-msgid "live broadcast"
+msgid "Live broadcast"
 msgstr "现场直播"
 
 msgid "locked"
@@ -23687,16 +23800,16 @@ msgstr "长按"
 msgid "loopthrough to"
 msgstr "环路输出"
 
-msgid "magazines/reports/documentary"
+msgid "Magazines/Reports/Documentary"
 msgstr "杂志/报告/纪录片"
 
 msgid "manual"
 msgstr "手动"
 
-msgid "martial sports"
+msgid "Martial sports"
 msgstr "武术运动"
 
-msgid "medicine/physiology/psychology"
+msgid "Medicine/Physiology/Psychology"
 msgstr "医学/生理学/心理学"
 
 msgid "min"
@@ -23711,7 +23824,7 @@ msgstr "月"
 msgid "motor sport"
 msgstr "赛车运动"
 
-msgid "motoring"
+msgid "Motoring"
 msgstr "驾驶"
 
 msgid "move"
@@ -23732,7 +23845,7 @@ msgstr "音乐(普通)"
 msgid "music/ballet/dance (general)"
 msgstr "音乐/芭蕾/舞蹈（常规）"
 
-msgid "musical/opera"
+msgid "Musical/Opera"
 msgstr "音乐剧/歌剧"
 
 msgid "n/a"
@@ -23741,22 +23854,22 @@ msgstr "n/a"
 msgid "name"
 msgstr "名称"
 
-msgid "nature/animals/environment"
+msgid "Nature/Animals/Environment"
 msgstr "自然/动物/环境"
 
-msgid "new media"
+msgid "New media"
 msgstr "新媒体"
 
 msgid "news (general)"
 msgstr "新闻(普通)"
 
-msgid "news magazine"
+msgid "News magazine"
 msgstr "新闻杂志"
 
 msgid "news/current affairs (general)"
 msgstr "新闻/时事（常规）"
 
-msgid "news/weather report"
+msgid "News/Weather report"
 msgstr "新闻/天气报告"
 
 msgid "no CAId selected"
@@ -23822,7 +23935,7 @@ msgstr "软件包"
 msgid "packages"
 msgstr "软件包"
 
-msgid "performing arts"
+msgid "Performing arts"
 msgstr "表演艺术"
 
 msgid "pid:"
@@ -23843,7 +23956,7 @@ msgstr "插件"
 msgid "pm"
 msgstr "pm"
 
-msgid "popular culture/traditional arts"
+msgid "Popular culture/Traditional arts"
 msgstr "流行文化/传统艺术"
 
 msgid "pre-school children's program"
@@ -23870,7 +23983,7 @@ msgstr "可靠，重新调整"
 msgid "religion"
 msgstr "宗教"
 
-msgid "remarkable people"
+msgid "Remarkable people"
 msgstr "名人"
 
 msgid "remove after this position"
@@ -23894,7 +24007,7 @@ msgstr "退回上一个章节"
 msgid "right"
 msgstr "右"
 
-msgid "rock/pop"
+msgid "Rock/Pop"
 msgstr "摇滚/流行"
 
 msgid "romance"
@@ -23917,7 +24030,7 @@ msgstr ""
 msgid "scan state"
 msgstr "扫描状态"
 
-msgid "science fiction/fantasy/horror"
+msgid "Science fiction/Fantasy/Horror"
 msgstr "科幻小说/魔幻/惊险"
 
 msgid "search EPG..."
@@ -23926,10 +24039,10 @@ msgstr "搜索 EPG ..."
 msgid "select CAId's"
 msgstr "选择 CAId"
 
-msgid "serious music/classic music"
+msgid "Serious music/Classic music"
 msgstr "严肃音乐/经典音乐"
 
-msgid "serious/classical/religious/historical movie/drama"
+msgid "Serious/Classical/Religious/Historical/Drama"
 msgstr "严肃/经典/宗教/历史影片/戏剧"
 
 msgid "service PIN"
@@ -23968,13 +24081,13 @@ msgstr "快退"
 msgid "skip forward"
 msgstr "快进"
 
-msgid "soap/melodrama/folkloric"
+msgid "Soap/Melodrama/Folkloric"
 msgstr "肥皂 /音乐剧/民俗"
 
 msgid "social/political issues/economics (general)"
 msgstr "社会/政治问题/经济（常规）"
 
-msgid "social/spiritual science"
+msgid "Social/Spiritual sciences"
 msgstr "社会/精神科学"
 
 msgid "softcam"
@@ -23995,7 +24108,7 @@ msgstr "体育(普通)"
 msgid "sports (general)"
 msgstr "体育（常规）"
 
-msgid "sports magazine"
+msgid "Sports magazines"
 msgstr "体育杂志"
 
 msgid "standard"
@@ -24037,7 +24150,7 @@ msgstr "脱口秀"
 msgid "team sports"
 msgstr "团队竞技"
 
-msgid "technology/natural science"
+msgid "Technology/Natural sciences"
 msgstr "技术/自然科学"
 
 msgid "teletext"
@@ -24046,7 +24159,7 @@ msgstr "图文"
 msgid "template file"
 msgstr "模板文件"
 
-msgid "tennis/squash"
+msgid "Tennis/Squash"
 msgstr "网球/壁球"
 
 msgid "text"
@@ -24058,7 +24171,7 @@ msgstr "这段录像"
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "切换时间，章节，音频，字幕信息"
 
-msgid "tourism/travel"
+msgid "Tourism/Travel"
 msgstr "旅游/旅行"
 
 msgid "traditional (fast)"
@@ -24097,7 +24210,7 @@ msgstr "未知"
 msgid "unknown error"
 msgstr "未知错误"
 
-msgid "unpublished"
+msgid "Unpublished"
 msgstr "未发布"
 
 msgid "untestable"
@@ -24109,7 +24222,7 @@ msgstr "更新"
 msgid "using:"
 msgstr "使用："
 
-msgid "variety show"
+msgid "Variety show"
 msgstr "综艺节目"
 
 msgid "violet"
@@ -24121,7 +24234,7 @@ msgstr "等待 CI..."
 msgid "wait for mmi..."
 msgstr "等待 mmi..."
 
-msgid "water sport"
+msgid "Water sport"
 msgstr "水上运动"
 
 msgid "west"
@@ -24133,7 +24246,7 @@ msgstr "白色"
 msgid "width"
 msgstr "宽度"
 
-msgid "winter sport"
+msgid "Winter sport"
 msgstr "冬季运动"
 
 msgid "wireless network interface"
@@ -24157,8 +24270,14 @@ msgstr "黄色"
 msgid "yes (keep feeds)"
 msgstr "是（保留订阅源）"
 
+msgid "Languages"
+msgstr "语言"
+
 msgid "®"
 msgstr "®"
+
+#~ msgid "Current status"
+#~ msgstr "当前状态"
 
 #~ msgid "Black Screen"
 #~ msgstr "黑屏"
@@ -24346,9 +24465,6 @@ msgstr "®"
 
 #~ msgid "Signal strength:"
 #~ msgstr "信号强度："
-
-#~ msgid "Status:"
-#~ msgstr "状态："
 
 #~ msgid "Timer selection..."
 #~ msgstr "定时器选择..."
@@ -25436,9 +25552,6 @@ msgstr "®"
 
 #~ msgid "Error: Unable to process the command!  Please try again later."
 #~ msgstr "错误:无法处理命令.请稍后再试."
-
-#~ msgid "Languages"
-#~ msgstr "语言"
 
 #~ msgid "Locales"
 #~ msgstr "本地"

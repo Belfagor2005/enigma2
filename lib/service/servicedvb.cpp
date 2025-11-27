@@ -27,7 +27,7 @@
 #include <lib/service/servicedvbfcc.h>
 #include "servicepeer.h"
 
-		/* for subtitles */
+/* for subtitles */
 #include <lib/gui/esubtitle.h>
 
 #include <sys/vfs.h>
@@ -1076,6 +1076,7 @@ eDVBServicePlay::eDVBServicePlay(const eServiceReference &ref, eDVBService *serv
 	m_noaudio(false),
 	m_is_stream(ref.path.find("://") != std::string::npos),
 	m_is_pvr(!ref.path.empty() && !m_is_stream),
+	m_pause_position(-1),
 	m_is_paused(0),
 	m_timeshift_enabled(0),
 	m_timeshift_active(0),
@@ -1090,7 +1091,12 @@ eDVBServicePlay::eDVBServicePlay(const eServiceReference &ref, eDVBService *serv
 	m_cutlist_enabled(1),
 	m_subtitle_widget(0),
 	m_subtitle_sync_timer(eTimer::create(eApp)),
-	m_nownext_timer(eTimer::create(eApp))
+	m_nownext_timer(eTimer::create(eApp)),
+	m_precise_recovery_timer(eTimer::create(eApp)),
+	m_stream_corruption_detected(false),
+	m_original_timeshift_delay(0),
+	m_delay_calculated(false),
+    m_recovery_delay_seconds(0)
 {
 #ifdef PASSTHROUGH_FIX
 	m_passthrough_fix_timer = eTimer::create(eApp);
@@ -1104,6 +1110,7 @@ eDVBServicePlay::eDVBServicePlay(const eServiceReference &ref, eDVBService *serv
 #ifdef PASSTHROUGH_FIX
 	CONNECT(m_passthrough_fix_timer->timeout, eDVBServicePlay::forcePassthrough);
 #endif
+	CONNECT(m_precise_recovery_timer->timeout, eDVBServicePlay::startPreciseRecoveryCheck);
 }
 
 eDVBServicePlay::~eDVBServicePlay()
@@ -1258,14 +1265,36 @@ void eDVBServicePlay::serviceEvent(int event)
 		break;
 	}
 	case eDVBServicePMTHandler::eventNoResources:
-	case eDVBServicePMTHandler::eventNoPAT:
 	case eDVBServicePMTHandler::eventNoPATEntry:
-	case eDVBServicePMTHandler::eventNoPMT:
-	case eDVBServicePMTHandler::eventTuneFailed:
 	case eDVBServicePMTHandler::eventMisconfiguration:
 	{
 		eDebug("[eDVBServicePlay] DVB service failed to tune - error %d", event);
 		m_event((iPlayableService*)this, evTuneFailed);
+		break;
+	}
+	case eDVBServicePMTHandler::eventTuneFailed:
+	case eDVBServicePMTHandler::eventNoPAT:
+	case eDVBServicePMTHandler::eventNoPMT:
+	{
+		bool recovery_enabled = eSimpleConfig::getBool("config.timeshift.preciseRecovery", true);
+
+		// Check if timeshift is active and we are not already in a recovery state
+		if (recovery_enabled && m_timeshift_enabled && !m_stream_corruption_detected)
+		{
+			eTrace("[PreciseRecovery] Tune Failed/Signal Loss during timeshift. Initiating recovery.");
+			
+			// 1. Mark that we are entering recovery mode
+			m_stream_corruption_detected = true;
+			
+			// 2. Call the EXACT SAME recovery handler as stream corruption
+			handleEofRecovery(); // This will pause playback and start the recovery timer.
+
+		}
+		else
+		{
+			eDebug("[eDVBServicePlay] DVB service failed to tune - error %d", event);
+			m_event((iPlayableService*)this, evTuneFailed);
+		}
 		break;
 	}
 	case eDVBServicePMTHandler::eventNewProgramInfo:
@@ -1301,12 +1330,121 @@ void eDVBServicePlay::serviceEvent(int event)
 	}
 }
 
+// Helper function to reset all recovery state variables.
+void eDVBServicePlay::resetRecoveryState()
+{
+	m_original_timeshift_delay = 0;
+	m_delay_calculated = false;
+	m_stream_corruption_detected = false;
+	if (m_precise_recovery_timer->isActive())
+		m_precise_recovery_timer->stop();
+}
+
+// Called on stream corruption. The new logic is decoupled from any plugin.
+void eDVBServicePlay::handleEofRecovery()
+{
+    if (m_is_paused)
+    {
+        eTrace("[PreciseRecovery] Recovery skipped: Playback is paused.");
+        return;
+    }
+
+	eTrace("[PreciseRecovery] Corruption detected. Pausing playback, recording continues.");
+
+	if (m_recovery_delay_seconds > 0)
+	{
+		// --- Logic 1: Custom delay is set via API ---
+		// The goal is to enforce the fixed delay provided by the external source (plugin).
+		if (m_record)
+		{
+			pts_t live_pts = 0;
+			if (m_record->getCurrentPCR(live_pts) == 0)
+			{
+				// 1. Use the delay value already stored in our internal variable (in seconds).
+				// 2. Convert it to PTS.
+				pts_t plugin_delay_pts = (pts_t)m_recovery_delay_seconds * 90000;
+				
+				// 3. Calculate the target delay "fingerprint".
+				// Target = (current live clock) - (desired delay duration).
+				m_original_timeshift_delay = live_pts - plugin_delay_pts;
+				m_delay_calculated = true;
+				eTrace("[PreciseRecovery] Custom Delay ACTIVE. Target delay fingerprint set (based on %d sec API delay)", m_recovery_delay_seconds);
+			}
+		}
+	}
+	else
+	{
+		// --- Logic 2: No custom delay (Normal behavior) ---
+		// The goal is to maintain the user's current timeshift delay.
+		if (m_record)
+		{
+			pts_t live_pts = 0, playback_pts = 0;
+			if (m_record->getCurrentPCR(live_pts) == 0 &&
+				getPlayPosition(playback_pts) == 0 &&
+				live_pts > playback_pts)
+			{
+				// This is the original, correct calculation for maintaining the current delay.
+				m_original_timeshift_delay = live_pts - playback_pts;
+				m_delay_calculated = true;
+				eTrace("[PreciseRecovery] Custom Delay INACTIVE. Original delay fingerprint set: %lld PTS", m_original_timeshift_delay);
+			}
+		}
+	}
+
+	// 2. Pause PLAYBACK only.
+	if (m_decoder && !m_is_paused)
+	{
+		m_decoder->pause();
+		m_is_paused = 1;
+	}
+	
+	// 3. Start the monitoring timer.
+	m_precise_recovery_timer->start(100, false); 
+}
+
+void eDVBServicePlay::startPreciseRecoveryCheck() {
+	if (!m_stream_corruption_detected || !m_record || !m_delay_calculated) {
+		m_precise_recovery_timer->stop();
+		return;
+	}
+
+	pts_t live_pts = 0, playback_pts = 0;
+	if (m_record->getCurrentPCR(live_pts) == 0 && getPlayPosition(playback_pts) == 0) {
+		pts_t current_delay = live_pts - playback_pts;
+
+		int recovery_delay_ms = eSimpleConfig::getInt("config.timeshift.recoveryBufferDelay", 300);
+		const pts_t safety_buffer_pts = recovery_delay_ms * 90;
+		const pts_t target_delay_with_buffer = m_original_timeshift_delay + safety_buffer_pts;
+
+		// 4. Check if we have reached the original, fixed target delay plus a safety buffer.
+		if (current_delay >= target_delay_with_buffer) {
+			eTrace("[PreciseRecovery] Target delay reached. Resuming playback.");
+			m_precise_recovery_timer->stop();
+			m_stream_corruption_detected = false;
+
+			// 5. Resume playback.
+			if (m_is_paused) {
+				unpause();
+			}
+
+			m_event((iPlayableService*)this, evSeekableStatusChanged);
+		} else {
+			// Not there yet, keep checking.
+			m_precise_recovery_timer->start(100, false);
+		}
+	} else {
+		// If we can't get reliable readings, try again.
+		m_precise_recovery_timer->start(100, false);
+	}
+}
+
 void eDVBServicePlay::serviceEventTimeshift(int event)
 {
 	switch (event)
 	{
 	case eDVBServicePMTHandler::eventNewProgramInfo:
-		eDebug("[eDVBServicePlay] eventNewProgramInfo TimeshiftS");
+	{
+		eDebug("[eDVBServicePlay] eventNewProgramInfo Timeshift");
 		if (m_timeshift_active)
 		{
 			updateDecoder();
@@ -1334,6 +1472,7 @@ void eDVBServicePlay::serviceEventTimeshift(int event)
 			m_event((iPlayableService*)this, evUpdatedInfo);
 		}
 		break;
+	}
 	case eDVBServicePMTHandler::eventSOF:
 #if 0
 		if (!m_timeshift_file_next.empty())
@@ -1362,6 +1501,12 @@ void eDVBServicePlay::serviceEventTimeshift(int event)
 			m_event((iPlayableService*)this, evSOF);
 		break;
 	case eDVBServicePMTHandler::eventEOF:
+		// Ignore EOF event if we are in the middle of a recovery process.
+		if (m_stream_corruption_detected)
+		{
+			eTrace("[eDVBServicePlay] Ignoring EOF during stream corruption recovery.");
+			break;
+		}
 		if ((!m_is_paused) && (m_skipmode >= 0))
 		{
 			if (m_timeshift_file_next.empty())
@@ -1375,9 +1520,7 @@ void eDVBServicePlay::serviceEventTimeshift(int event)
 			else
 			{
 				eDebug("[eDVBServicePlay] time shift EOF, switch to next file");
-
 				m_first_program_info |= 2;
-
 				eServiceReferenceDVB r = (eServiceReferenceDVB&)m_reference;
 				r.path = m_timeshift_file_next;
 
@@ -1471,7 +1614,7 @@ RESULT eDVBServicePlay::stop()
 		/* m_cutlist_enabled bit 2 is the "don't remember bit" */
 	if (m_is_pvr && ((m_cutlist_enabled & 2) == 0))
 	{
-		pts_t play_position, length;
+		pts_t play_position, length = 0;
 		if (!getPlayPosition(play_position))
 		{
 				/* remove last position */
@@ -1486,7 +1629,7 @@ RESULT eDVBServicePlay::stop()
 					++i;
 			}
 
-			if (getLength(length))
+			if (getLength(length) != 0)
 				length = 0;
 
 			if (length)
@@ -1512,8 +1655,18 @@ RESULT eDVBServicePlay::stop()
 	return 0;
 }
 
-RESULT eDVBServicePlay::setTarget(int target, bool noaudio = false)
+RESULT eDVBServicePlay::setTarget(int target, bool noaudio)
 {
+    // Handle custom recovery delay command (range 10000+)
+    // Example: setTarget(10005) sets a 5-second recovery delay.
+    // setTarget(10000) disables the custom delay.
+    if (target >= 10000 && target < 10100) // Allows up to a 99-second delay
+    {
+        m_recovery_delay_seconds = target - 10000;
+        eTrace("[eDVBServicePlay] setTarget: Custom recovery delay set to %d seconds.", m_recovery_delay_seconds);
+        return 0; // Command processed
+    }
+
 	// start/stop audio
 	if (target == 1000)
 	{
@@ -1539,6 +1692,7 @@ RESULT eDVBServicePlay::setTarget(int target, bool noaudio = false)
 		}
 		return -1;
 	}
+
 	m_is_primary = !target;
 	m_decoder_index = target;
 	m_noaudio = noaudio;
@@ -1671,7 +1825,7 @@ RESULT eDVBServicePlay::seek(ePtr<iSeekableService> &ptr)
 	return -1;
 }
 
-	/* TODO: when time shift is enabled but not active, this doesn't work. */
+/* TODO: when time shift is enabled but not active, this doesn't work. */
 RESULT eDVBServicePlay::getLength(pts_t &len)
 {
 	ePtr<iDVBPVRChannel> pvr_channel;
@@ -1688,6 +1842,7 @@ RESULT eDVBServicePlay::pause()
 	setFastForward_internal(0, m_slowmotion || m_fastforward > 1);
 	if (m_decoder)
 	{
+		m_pause_position = -1;
 		m_slowmotion = 0;
 		m_is_paused = 1;
 		return m_decoder->pause();
@@ -1703,6 +1858,16 @@ RESULT eDVBServicePlay::unpause()
 	{
 		m_slowmotion = 0;
 		m_is_paused = 0;
+        
+        // If a stream corruption event occurred while the user was paused,
+        // its state will be stale. Reset the recovery state machine
+        // so that new corruption events can be handled correctly.
+        if (m_stream_corruption_detected)
+        {
+            eTrace("[PreciseRecovery] User resumed playback. Resetting recovery state.");
+            resetRecoveryState();
+        }
+
 		return m_decoder->play();
 	} else
 		return -1;
@@ -2048,7 +2213,7 @@ int eDVBServicePlay::getInfo(int w)
 		if (m_dvb_service)
 			return m_dvb_service->isDedicated3D();
 		return false;
-	case sHideVBI: 
+	case sHideVBI:
 		if (m_dvb_service) return m_dvb_service->doHideVBI();
 		return false;
 	case sCenterDVBSubs:
@@ -2125,6 +2290,8 @@ int eDVBServicePlay::getInfo(int w)
 		return resIsString;
 	case sDVBState:
 		return m_tune_state;
+	case sIsRecoveringStream:
+		return m_stream_corruption_detected ? 1 : 0;
 	default:
 		break;
 	}
@@ -2141,6 +2308,7 @@ std::string eDVBServicePlay::getInfoString(int w)
 		{
 			ePtr<eDVBService> sRelayServiceOrigSref;
 			eDVBDB::getInstance()->getService(eServiceReferenceDVB(m_reference.alternativeurl), sRelayServiceOrigSref);
+//			eDebug("[eDVBServicePlay] getInfoString m_provider_name %s", sRelayServiceOrigSref->m_provider_name.c_str());
 			m_dvb_service->m_provider_name = std::string(sRelayServiceOrigSref->m_provider_name);
 		}
 		return m_dvb_service->m_provider_name;
@@ -2225,9 +2393,7 @@ int eDVBServicePlay::getCurrentTrack()
 		return 0;
 
 	int max = program.audioStreams.size();
-	int i;
-
-	for (i = 0; i < max; ++i)
+	for (int i = 0; i < max; ++i)
 		if (program.audioStreams[i].pid == m_current_audio_pid)
 			return i;
 
@@ -2744,6 +2910,7 @@ RESULT eDVBServicePlay::startTimeshift()
 	m_record->setTargetFD(m_timeshift_fd);
 	m_record->setTargetFilename(m_timeshift_file);
 	m_record->enableAccessPoints(false); // no need for AP information during shift
+	m_record->connectEvent(sigc::mem_fun(*this, &eDVBServicePlay::recordEvent), m_con_record_event);
 	m_timeshift_enabled = 1;
 
 	updateTimeshiftPids();
@@ -2752,18 +2919,45 @@ RESULT eDVBServicePlay::startTimeshift()
 	return 0;
 }
 
+void eDVBServicePlay::recordEvent(int event) {
+	switch (event) {
+		case iDVBTSRecorder::eventWriteError:
+			eWarning("[eDVBServicePlay] recordEvent write error");
+			return;
+		case iDVBTSRecorder::eventStreamCorrupt: {
+			// Do not re-trigger if a recovery is already in progress.
+			bool recovery_enabled = eSimpleConfig::getBool("config.timeshift.preciseRecovery", true);
+			if (m_stream_corruption_detected || !recovery_enabled)
+				return;
+
+			eWarning("[eDVBServicePlay] recordEvent eventStreamCorrupt, initiating recovery.");
+			m_stream_corruption_detected = true;
+			handleEofRecovery(); // The entire redesigned recovery logic is now centralized here.
+			return;
+		}
+		default:
+			eDebug("[eDVBServicePlay] recordEvent unhandled record event %d", event);
+	}
+}
+
 RESULT eDVBServicePlay::stopTimeshift(bool swToLive)
 {
 	if (!m_timeshift_enabled)
 		return -1;
 
+	// Reset the recovery system state for the next timeshift session.
+	resetRecoveryState();
+	
 	if (swToLive)
 		switchToLive();
 
 	m_timeshift_enabled = 0;
 
-	m_record->stop();
-	m_record = 0;
+	if (m_record)
+	{
+		m_record->stop();
+		m_record = 0;
+	}
 
 	if (m_timeshift_fd >= 0)
 	{
@@ -2905,11 +3099,8 @@ void eDVBServicePlay::setCutList(ePyObject list)
 	if (!PyList_Check(list))
 		return;
 	int size = PyList_Size(list);
-	int i;
-
 	m_cue_entries.clear();
-
-	for (i=0; i<size; ++i)
+	for (int i=0; i<size; ++i)
 	{
 		ePyObject tuple = PyList_GET_ITEM(list, i);
 		if (!PyTuple_Check(tuple))
@@ -3035,6 +3226,9 @@ void eDVBServicePlay::switchToLive()
 
 	eDebug("[eDVBServicePlay] SwitchToLive");
 
+	// Reset the recovery system state.
+	resetRecoveryState();
+	
 	resetTimeshift(0);
 
 	m_is_paused = m_skipmode = m_fastforward = m_slowmotion = 0; /* not supported in live mode */
@@ -3238,10 +3432,7 @@ void eDVBServicePlay::updateDecoder(bool sendSeekableStateChanged)
 		{
 			m_decoder->setTextPID(tpid);
 		}
-
-		if (vpid > 0 && vpid < 0x2000)
-			;
-		else
+		if (vpid <= 0 || vpid >= 0x2000)
 		{
 			std::string value;
 			bool showRadioBackground = eSimpleConfig::getBool("config.misc.showradiopic", true);
@@ -3385,7 +3576,8 @@ void eDVBServicePlay::cutlistToCuesheet()
 
 	pts_t in = 0, out = 0, length = 0;
 
-	getLength(length);
+	if (getLength(length) != 0)
+		length = 0; // Corrected check
 
 	std::multiset<cueEntry>::iterator i(m_cue_entries.begin());
 
@@ -3669,7 +3861,6 @@ void eDVBServicePlay::newSubtitlePage(const eDVBTeletextSubtitlePage &page)
 {
 	if (m_subtitle_widget)
 	{
-		
 		pts_t pts = 0;
 		if (m_decoder)
 			m_decoder->getPTS(0, pts);

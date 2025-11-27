@@ -218,7 +218,7 @@
 		<item level="2" text="Enable Virgin EPG" description="Use Virgin EPG information when it is available.">config.epg.virgin</item>
 		<item level="2" text="Enable OpenTV EPG" description="Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG.">config.epg.opentv</item>
 		<item level="2" text="Maximum number of days in EPG" description="Use for load only x days in EPG.">config.epg.maxdays</item>
-		<item level="2" text="Keep EPG history (in minutes)" description="Choose how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful when you need information about an event which has recently finished.">config.epg.histminutes</item>
+		<item level="2" text="EPG history" description="Select how much EPG history, if any, to keep in the EPG cache. This historic data can be browsed in any of the EPG views. This can be useful for information about an event which has finished.">config.epg.histminutes</item>
 		<item level="2" text="Include EIT in http streams" description="When enabled, EIT data will be included in http streams. This allows a client receiver to show EPG.">config.streaming.stream_eit</item>
 		<item level="2" text="Include AIT in http streams" description="When enabled, AIT data will be included in http streams. This allows a client receiver to use HbbTV.">config.streaming.stream_ait</item>
 		<item level="2" text="Include SDT, BAT in http streams" description="When enabled, SDT, BAT data will be included in http streams.">config.streaming.stream_sdtbat</item>
@@ -517,6 +517,7 @@
 		<item level="2" text="Include DVB details" description="Enable this option to add extra DVB details to the debug log file.">config.crash.debugDVB</item>
 		<item level="2" text="Include teletext details" description="Enable this option to add extra teletext details to the debug log file.">config.crash.debugTeletext</item>
 		<item level="2" text="Include storage device data" description="Enable this option to add storage device information detected during system boot and hot plug events to the debug log file.">config.crash.debugStorage</item>
+		<item level="2" text="Include bouquet DB data" description="Enable this option to add bouquet database information to the debug log file.">config.crash.debugDVBDB</item>
 		<item level="2" text="Limit debug log size (MB)" description="Allows you to set the maximum size of the Debug log size (MB). When that size is reached, a new file will be created.">config.crash.debugloglimit</item>
 		<item level="2" text="Show Log Manager in Extension Menu" description="Allows you to show/hide Log Manager in the Extension Menu screen (BLUE button).">config.logmanager.showinextensions</item>
 		<item level="2" text="Maximum no of days" description="Logs older then the set no of days will be deleted.">config.crash.daysloglimit</item>
@@ -890,11 +891,23 @@
 					<item level="0" text="Sunday" description="Select if this timer activates on a Sunday.">self.timerDay['Sun']</item>
 				</if>
 			</if>
-			<item level="0" text="Start time" description="Select the time when this timer will start.">self.timerStartTime</item>
-			<item level="0" text="Set end time" description="Select 'Yes' if an end time is required for this timer.">self.timerSetEndTime</item>
-			<if conditional="self.timerSetEndTime.value">
-				<item level="0" text="End time" description="Select the time when this timer should end.">self.timerEndTime</item>
+			<if conditional="self.isFunctionTimer()">
+				<item level="0" text="Timer start window" description="Select the start time after which this timer can be activated.  Before this time the timer won't be activated even if other conditions are met.">self.timerStartTime</item>
+				<item level="0" text="Timer end window" description="Select the end time before which this timer can be activated.  After this time the timer won't be activated even if other conditions are met.">self.timerEndTime</item>
 				<item level="0" text="After event" description="Select the action to perform when the timer ends.">self.timerAfterEvent</item>
+			<else />
+				<item level="0" text="Start time" description="Select the time when this timer will start.">self.timerStartTime</item>
+				<item level="0" text="Set end time" description="Select 'Yes' if an end time is required for this timer." conditional="not self.isFunctionTimer()">self.timerSetEndTime</item>
+				<if conditional="self.timerSetEndTime.value">
+					<item level="0" text="End time" description="Select the time when this timer should end.">self.timerEndTime</item>
+					<item level="0" text="After event" description="Select the action to perform when the timer ends.">self.timerAfterEvent</item>
+				</if>
+			</if>
+			<if conditional="self.isFunctionTimer()">
+				<item level="0" text="Standby execution" description="Select how the schedule is handled with respect to Standby mode.">self.timerFunctionStandby</item>
+				<item level="0" text="Start retry" description="Select 'Yes' to reschedule the task to when the receiver goes in to/out of Standby mode. The state change must happen within the task schedule window or else the task will not be run." conditional="self.timerFunctionStandby.value > 0">self.timerFunctionStandbyRetry</item>
+				<item level="0" text="Error Retry count" description="Select the number of times to retry a task if an error occurs when running the task.">self.timerFunctionRetryCount</item>
+				<item level="0" text="Error Retry delay" description="Select the amount of time to wait, after a task error, before trying to run the task again." conditional="self.timerFunctionRetryCount.value > 0">self.timerFunctionRetryDelay</item>
 			</if>
 		</if>
 	</setup>
@@ -997,6 +1010,8 @@
 		<item level="2" text="Time shift checking for free space" description="If the free space is less than setting value, then an attempt is made to delete the old time shift files.">config.timeshift.checkFreeSpace</item>
 		<item level="2" text="Time shift buffer delete after zap" description="Select 'No' to save older events even after zapping or interrupting time shifting.">config.timeshift.deleteAfterZap</item>
 		<item level="2" text="Time shift event based file splitting" description="Select 'No' to make time shift use a single buffer file. Use 'Time shift checking for older files [in minutes]' and 'Time shift checking for free space?' to control the size of the buffer file.">config.timeshift.fileSplitting</item>
+		<item level="2" text="Streaming precise recovery" description="Select 'Yes' to enable handle streaming corruption issues and try to make a precise recovery.">config.timeshift.preciseRecovery</item>
+		<item level="2" text="Streaming recovery delay" description="Enter the duration to be added to the streaming buffer after a streaming error. This extra buffer can help to avoid further streaming issues due to a lack of buffer space." conditional="config.timeshift.preciseRecovery.value">config.timeshift.recoveryBufferDelay</item>
 	</setup>
 	<setup key="Tuner" title="Tuner Settings" level="1">
 		<item level="1" text="Force LNB Power" description="Force LNB Tuner Power settings." requires="ForceLNBPowerChanged">config.tunermisc.forceLnbPower</item>
