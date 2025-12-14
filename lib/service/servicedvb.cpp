@@ -40,6 +40,8 @@
 
 #include <iostream>
 #include <fstream>
+#include <algorithm>
+
 using namespace std;
 
 #ifndef BYTE_ORDER
@@ -1095,8 +1097,7 @@ eDVBServicePlay::eDVBServicePlay(const eServiceReference &ref, eDVBService *serv
 	m_precise_recovery_timer(eTimer::create(eApp)),
 	m_stream_corruption_detected(false),
 	m_original_timeshift_delay(0),
-	m_delay_calculated(false),
-    m_recovery_delay_seconds(0)
+	m_delay_calculated(false)
 {
 #ifdef PASSTHROUGH_FIX
 	m_passthrough_fix_timer = eTimer::create(eApp);
@@ -1276,19 +1277,13 @@ void eDVBServicePlay::serviceEvent(int event)
 	case eDVBServicePMTHandler::eventNoPAT:
 	case eDVBServicePMTHandler::eventNoPMT:
 	{
-		bool recovery_enabled = eSimpleConfig::getBool("config.timeshift.preciseRecovery", true);
-
+		bool recovery_enabled = false; // Disable precise recovery for now
 		// Check if timeshift is active and we are not already in a recovery state
 		if (recovery_enabled && m_timeshift_enabled && !m_stream_corruption_detected)
 		{
 			eTrace("[PreciseRecovery] Tune Failed/Signal Loss during timeshift. Initiating recovery.");
-			
-			// 1. Mark that we are entering recovery mode
 			m_stream_corruption_detected = true;
-			
-			// 2. Call the EXACT SAME recovery handler as stream corruption
-			handleEofRecovery(); // This will pause playback and start the recovery timer.
-
+			handleEofRecovery();
 		}
 		else
 		{
@@ -1330,9 +1325,8 @@ void eDVBServicePlay::serviceEvent(int event)
 	}
 }
 
-// Helper function to reset all recovery state variables.
-void eDVBServicePlay::resetRecoveryState()
-{
+
+void eDVBServicePlay::resetRecoveryState() {
 	m_original_timeshift_delay = 0;
 	m_delay_calculated = false;
 	m_stream_corruption_detected = false;
@@ -1340,66 +1334,31 @@ void eDVBServicePlay::resetRecoveryState()
 		m_precise_recovery_timer->stop();
 }
 
-// Called on stream corruption. The new logic is decoupled from any plugin.
-void eDVBServicePlay::handleEofRecovery()
-{
-    if (m_is_paused)
-    {
-        eTrace("[PreciseRecovery] Recovery skipped: Playback is paused.");
-        return;
-    }
+void eDVBServicePlay::handleEofRecovery() {
+	if (m_is_paused) {
+		return;
+	}
 
 	eTrace("[PreciseRecovery] Corruption detected. Pausing playback, recording continues.");
 
-	if (m_recovery_delay_seconds > 0)
-	{
-		// --- Logic 1: Custom delay is set via API ---
-		// The goal is to enforce the fixed delay provided by the external source (plugin).
-		if (m_record)
-		{
-			pts_t live_pts = 0;
-			if (m_record->getCurrentPCR(live_pts) == 0)
-			{
-				// 1. Use the delay value already stored in our internal variable (in seconds).
-				// 2. Convert it to PTS.
-				pts_t plugin_delay_pts = (pts_t)m_recovery_delay_seconds * 90000;
-				
-				// 3. Calculate the target delay "fingerprint".
-				// Target = (current live clock) - (desired delay duration).
-				m_original_timeshift_delay = live_pts - plugin_delay_pts;
-				m_delay_calculated = true;
-				eTrace("[PreciseRecovery] Custom Delay ACTIVE. Target delay fingerprint set (based on %d sec API delay)", m_recovery_delay_seconds);
-			}
-		}
-	}
-	else
-	{
-		// --- Logic 2: No custom delay (Normal behavior) ---
-		// The goal is to maintain the user's current timeshift delay.
-		if (m_record)
-		{
-			pts_t live_pts = 0, playback_pts = 0;
-			if (m_record->getCurrentPCR(live_pts) == 0 &&
-				getPlayPosition(playback_pts) == 0 &&
-				live_pts > playback_pts)
-			{
-				// This is the original, correct calculation for maintaining the current delay.
-				m_original_timeshift_delay = live_pts - playback_pts;
-				m_delay_calculated = true;
-				eTrace("[PreciseRecovery] Custom Delay INACTIVE. Original delay fingerprint set: %lld PTS", m_original_timeshift_delay);
-			}
+	// Logic: Maintain the user's current timeshift delay (Live - Playback)
+	if (m_record) {
+		pts_t live_pts = 0, playback_pts = 0;
+		if (m_record->getCurrentPCR(live_pts) == 0 && getPlayPosition(playback_pts) == 0 && live_pts > playback_pts) {
+			m_original_timeshift_delay = live_pts - playback_pts;
+			m_delay_calculated = true;
+			eTrace("[PreciseRecovery] Original delay fingerprint set: %lld PTS", m_original_timeshift_delay);
 		}
 	}
 
-	// 2. Pause PLAYBACK only.
-	if (m_decoder && !m_is_paused)
-	{
+	// Pause PLAYBACK only
+	if (m_decoder && !m_is_paused) {
 		m_decoder->pause();
 		m_is_paused = 1;
 	}
-	
-	// 3. Start the monitoring timer.
-	m_precise_recovery_timer->start(100, false); 
+
+	// Start the monitoring timer
+	m_precise_recovery_timer->start(100, false);
 }
 
 void eDVBServicePlay::startPreciseRecoveryCheck() {
@@ -1409,37 +1368,47 @@ void eDVBServicePlay::startPreciseRecoveryCheck() {
 	}
 
 	pts_t live_pts = 0, playback_pts = 0;
-	if (m_record->getCurrentPCR(live_pts) == 0 && getPlayPosition(playback_pts) == 0) {
-		pts_t current_delay = live_pts - playback_pts;
 
-		int recovery_delay_ms = eSimpleConfig::getInt("config.timeshift.recoveryBufferDelay", 300);
-		const pts_t safety_buffer_pts = recovery_delay_ms * 90;
-		const pts_t target_delay_with_buffer = m_original_timeshift_delay + safety_buffer_pts;
+	if (m_record->getCurrentPCR(live_pts) != 0 || getPlayPosition(playback_pts) != 0 || live_pts == 0) {
+		m_precise_recovery_timer->start(100, false);
+		return;
+	}
 
-		// 4. Check if we have reached the original, fixed target delay plus a safety buffer.
-		if (current_delay >= target_delay_with_buffer) {
-			eTrace("[PreciseRecovery] Target delay reached. Resuming playback.");
-			m_precise_recovery_timer->stop();
-			m_stream_corruption_detected = false;
+	pts_t current_delay;
+	if (live_pts >= playback_pts)
+		current_delay = live_pts - playback_pts;
+	else
+		current_delay = (live_pts + 0x200000000LL) - playback_pts;
 
-			// 5. Resume playback.
-			if (m_is_paused) {
-				unpause();
-			}
+	int recovery_delay_ms = eSimpleConfig::getInt("config.timeshift.recoveryBufferDelay", 300);
 
-			m_event((iPlayableService*)this, evSeekableStatusChanged);
-		} else {
-			// Not there yet, keep checking.
-			m_precise_recovery_timer->start(100, false);
+	const pts_t safety_buffer_pts = recovery_delay_ms * 90;
+	pts_t final_target_delay = m_original_timeshift_delay + safety_buffer_pts;
+
+#ifdef ENABLE_TIMESHIFT_HW_LATENCY_FIX
+	const pts_t latency_correction = 2000 * 90;
+
+	if (final_target_delay > latency_correction)
+		final_target_delay -= latency_correction;
+	else
+		final_target_delay = 9000;
+#endif
+
+	if (current_delay >= final_target_delay) {
+		m_precise_recovery_timer->stop();
+		m_stream_corruption_detected = false;
+
+		if (m_is_paused) {
+			unpause();
 		}
+
+		m_event((iPlayableService*)this, evSeekableStatusChanged);
 	} else {
-		// If we can't get reliable readings, try again.
 		m_precise_recovery_timer->start(100, false);
 	}
 }
 
-void eDVBServicePlay::serviceEventTimeshift(int event)
-{
+void eDVBServicePlay::serviceEventTimeshift(int event) {
 	switch (event)
 	{
 	case eDVBServicePMTHandler::eventNewProgramInfo:
@@ -1657,16 +1626,6 @@ RESULT eDVBServicePlay::stop()
 
 RESULT eDVBServicePlay::setTarget(int target, bool noaudio)
 {
-    // Handle custom recovery delay command (range 10000+)
-    // Example: setTarget(10005) sets a 5-second recovery delay.
-    // setTarget(10000) disables the custom delay.
-    if (target >= 10000 && target < 10100) // Allows up to a 99-second delay
-    {
-        m_recovery_delay_seconds = target - 10000;
-        eTrace("[eDVBServicePlay] setTarget: Custom recovery delay set to %d seconds.", m_recovery_delay_seconds);
-        return 0; // Command processed
-    }
-
 	// start/stop audio
 	if (target == 1000)
 	{
@@ -2925,9 +2884,9 @@ void eDVBServicePlay::recordEvent(int event) {
 			eWarning("[eDVBServicePlay] recordEvent write error");
 			return;
 		case iDVBTSRecorder::eventStreamCorrupt: {
+			return; // Disabled for now.
 			// Do not re-trigger if a recovery is already in progress.
-			bool recovery_enabled = eSimpleConfig::getBool("config.timeshift.preciseRecovery", true);
-			if (m_stream_corruption_detected || !recovery_enabled)
+			if (m_stream_corruption_detected)
 				return;
 
 			eWarning("[eDVBServicePlay] recordEvent eventStreamCorrupt, initiating recovery.");
@@ -3136,81 +3095,72 @@ void eDVBServicePlay::setCutListEnable(int enable)
 	cutlistToCuesheet();
 }
 
-void eDVBServicePlay::updateTimeshiftPids()
-{
+void eDVBServicePlay::updateTimeshiftPids() {
 	if (!m_record)
 		return;
 
 	eDVBServicePMTHandler::program program;
-	eDVBServicePMTHandler &h = m_timeshift_active ? m_service_handler_timeshift : m_service_handler;
+	eDVBServicePMTHandler& h = m_timeshift_active ? m_service_handler_timeshift : m_service_handler;
 
 	if (h.getProgramInfo(program))
 		return;
-	else
-	{
-		int timing_pid = -1;
-		int timing_stream_type = -1;
-		iDVBTSRecorder::timing_pid_type timing_pid_type = iDVBTSRecorder::none;
-		std::set<int> pids_to_record;
-		pids_to_record.insert(0); // PAT
-		if (program.pmtPid != -1)
-			pids_to_record.insert(program.pmtPid); // PMT
 
-		if (program.textPid != -1)
-			pids_to_record.insert(program.textPid); // Videotext
+	int timing_pid = -1;
+	int timing_stream_type = -1;
+	iDVBTSRecorder::timing_pid_type timing_pid_type = iDVBTSRecorder::none;
+	std::set<int> pids_to_record;
+	pids_to_record.insert(0); // PAT
+	// PMT
+	if (program.pmtPid != -1)
+		pids_to_record.insert(program.pmtPid);
 
-		for (std::vector<eDVBServicePMTHandler::videoStream>::const_iterator
-			i(program.videoStreams.begin());
-			i != program.videoStreams.end(); ++i)
-		{
-			if (timing_pid == -1)
-			{
-				timing_pid = i->pid;
-				timing_stream_type = i->type;
-				timing_pid_type = iDVBTSRecorder::video_pid;
-			}
-			pids_to_record.insert(i->pid);
+	// Videotext
+	if (program.textPid != -1)
+		pids_to_record.insert(program.textPid);
+
+	// Video-Streams
+	for (const auto& v : program.videoStreams) {
+		if (timing_pid == -1) {
+			timing_pid = v.pid;
+			timing_stream_type = v.type;
+			timing_pid_type = iDVBTSRecorder::video_pid;
 		}
-
-		for (std::vector<eDVBServicePMTHandler::audioStream>::const_iterator
-			i(program.audioStreams.begin());
-			i != program.audioStreams.end(); ++i)
-		{
-			if (timing_pid == -1)
-			{
-				timing_pid = i->pid;
-				timing_stream_type = i->type;
-				timing_pid_type = iDVBTSRecorder::audio_pid;
-			}
-			pids_to_record.insert(i->pid);
-		}
-
-		for (std::vector<eDVBServicePMTHandler::subtitleStream>::const_iterator
-			i(program.subtitleStreams.begin());
-			i != program.subtitleStreams.end(); ++i)
-				pids_to_record.insert(i->pid);
-
-		std::set<int> new_pids, obsolete_pids;
-
-		std::set_difference(pids_to_record.begin(), pids_to_record.end(),
-				m_pids_active.begin(), m_pids_active.end(),
-				std::inserter(new_pids, new_pids.begin()));
-
-		std::set_difference(
-				m_pids_active.begin(), m_pids_active.end(),
-				pids_to_record.begin(), pids_to_record.end(),
-				std::inserter(new_pids, new_pids.begin())
-				);
-
-		for (std::set<int>::iterator i(new_pids.begin()); i != new_pids.end(); ++i)
-			m_record->addPID(*i);
-
-		for (std::set<int>::iterator i(obsolete_pids.begin()); i != obsolete_pids.end(); ++i)
-			m_record->removePID(*i);
-
-		if (timing_pid != -1)
-			m_record->setTimingPID(timing_pid, timing_pid_type, timing_stream_type);
+		pids_to_record.insert(v.pid);
 	}
+
+	// Audio-Streams
+	for (const auto& a : program.audioStreams) {
+		if (timing_pid == -1) {
+			timing_pid = a.pid;
+			timing_stream_type = a.type;
+			timing_pid_type = iDVBTSRecorder::audio_pid;
+		}
+		pids_to_record.insert(a.pid);
+	}
+
+	// Subtitle-Streams
+	for (const auto& s : program.subtitleStreams) {
+		pids_to_record.insert(s.pid);
+	}
+
+	std::set<int> new_pids, obsolete_pids;
+
+	std::set_difference(pids_to_record.begin(), pids_to_record.end(), m_pids_active.begin(), m_pids_active.end(), std::inserter(new_pids, new_pids.begin()));
+
+	std::set_difference(m_pids_active.begin(), m_pids_active.end(), pids_to_record.begin(), pids_to_record.end(), std::inserter(obsolete_pids, obsolete_pids.begin()));
+
+	for (int pid : new_pids) {
+		m_record->addPID(pid);
+	}
+
+	for (int pid : obsolete_pids) {
+		m_record->removePID(pid);
+	}
+
+	// m_pids_active = pids_to_record;
+
+	if (timing_pid != -1)
+		m_record->setTimingPID(timing_pid, timing_pid_type, timing_stream_type);
 }
 
 RESULT eDVBServicePlay::setNextPlaybackFile(const char *f)

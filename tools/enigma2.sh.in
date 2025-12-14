@@ -52,8 +52,8 @@ if [ -x "@bindir@/showiframe" ]; then
 		SEARCHDIRS="@sysconfdir@/enigma2/skin_common @sysconfdir@/enigma2 @datadir@/enigma2/skin_default @datadir@/enigma2 @datadir@"
 	fi
 	for DIR in $SEARCHDIRS; do
-		if [ -d "${DIR}" ] && [ -f "${DIR}/backdrop.mvi" ]; then
-			"@bindir@/showiframe" "${DIR}/backdrop.mvi"
+		if [ -d "${DIR}" ] && [ -f "${DIR}/bootlogo.mvi" ]; then
+			"@bindir@/showiframe" "${DIR}/bootlogo.mvi"
 			break
 		fi
 	done

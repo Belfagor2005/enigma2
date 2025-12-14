@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openATV / enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-06 08:27+0000\n"
+"POT-Creation-Date: 2025-12-06 12:58+0000\n"
 "PO-Revision-Date: 2024-01-13 10:34+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/id/>\n"
@@ -931,10 +931,6 @@ msgstr[0] "%d jam"
 msgstr[1] "%d jam"
 
 #, python-format
-msgid "%d Hours"
-msgstr ""
-
-#, python-format
 msgid "%d MB"
 msgstr "%d MB"
 
@@ -976,10 +972,6 @@ msgstr[0] "%d Menit"
 msgstr[1] "%d Menit"
 
 #, python-format
-msgid "%d Minutes"
-msgstr ""
-
-#, python-format
 msgid "%d Month"
 msgid_plural "%d Months"
 msgstr[0] ""
@@ -1006,10 +998,6 @@ msgid "%d Second"
 msgid_plural "%d Seconds"
 msgstr[0] "%d detik"
 msgstr[1] "%d detik"
-
-#, python-format
-msgid "%d Seconds"
-msgstr ""
 
 #, python-format
 msgid "%d Week"
@@ -1410,7 +1398,7 @@ msgstr "'%s' berisi %d berkas dan %d sub-folder.\n"
 msgid "'Buffer in hours' or 'number of last events'. For deleting older time shift files, the condition which occurred first has priority."
 msgstr "'Buffer dalam jam' atau 'jumlah acara terakhir'. Untuk hapus berkas time shift sebelumnya, kondisi yang terjadi pertama dapat prioritas."
 
-msgid "'Handle standby from TV' has a higher priority than 'Handle input from TV'."
+msgid "'Handle Standby from TV' has a higher priority than 'Handle input from TV'."
 msgstr ""
 
 msgid "'Unscramble & record ECM' gives the option to unscramble afterwards if unscrambling on recording failed. 'Don't unscramble, record ECM' save a scramble recording that can be unscrambled on playback. 'Normal' means unscramble the recording and don't record ECM."
@@ -1486,12 +1474,6 @@ msgstr "/s"
 
 msgid "/sec]"
 msgstr "/dtk]"
-
-msgid "/usr/share/enigma2 directory"
-msgstr "direktori /usr/share/enigma2"
-
-msgid "/var directory"
-msgstr "direktori /var"
 
 msgid "0"
 msgstr "0"
@@ -1963,6 +1945,9 @@ msgstr "Aktifkan konfigurasi alamat-MAC"
 msgid "Activate Picture in Picture"
 msgstr "Aktifkan PiP"
 
+msgid "Activate UP/DOWN buttons for the 'all up/down' functions at the beginning/end of the column."
+msgstr ""
+
 msgid "Activate a way to send individual or specific internal HDMI-CEC commands from the command line."
 msgstr ""
 
@@ -2234,6 +2219,9 @@ msgstr ""
 msgid "Adult Audience, Strong Violence 15+"
 msgstr ""
 
+msgid "Adult movie/Drama"
+msgstr "film dewasa/drama"
+
 msgid "Advanced"
 msgstr "Mahir"
 
@@ -2255,6 +2243,12 @@ msgstr "Pengaturan peningkatan video mahir"
 
 msgid "Adventure"
 msgstr ""
+
+msgid "Adventure/Western/War"
+msgstr "petualangan/barat/perang"
+
+msgid "Advertisement/Shopping"
+msgstr "iklan/belanja"
 
 msgid "Afar"
 msgstr ""
@@ -2327,11 +2321,11 @@ msgstr "Semua umur"
 
 #, fuzzy
 msgid "All events down"
-msgstr "special events"
+msgstr "Special events (Olympic games, World cup, etc.)"
 
 #, fuzzy
 msgid "All events up"
-msgstr "special events"
+msgstr "Special events (Olympic games, World cup, etc.)"
 
 msgid "All files"
 msgstr ""
@@ -2435,13 +2429,13 @@ msgstr ""
 msgid "Alphanumeric"
 msgstr "Alphanumeric"
 
-msgid "Also import at reboot/restart enigma2"
+msgid "Also import at reboot/restart"
 msgstr "Impor juga saat reboot/restart enigma2"
 
 msgid "Also import from the extension menu"
 msgstr "Impor juga dari menu ekstensi"
 
-msgid "Also import when box is leaving standby"
+msgid "Also import when leaving Standby"
 msgstr "Impor juga ketika Rx menuju standby"
 
 msgid "Also on standby"
@@ -2491,11 +2485,11 @@ msgstr "Selalu tampilkan buket"
 msgid "Always use smart1080p mode"
 msgstr "Selalu gunakan mode smart1080p"
 
-#, fuzzy
-msgid "American football"
+msgid "American Samoa"
 msgstr "American Samoa"
 
-msgid "American Samoa"
+#, fuzzy
+msgid "American football"
 msgstr "American Samoa"
 
 msgid "Amharic"
@@ -2511,11 +2505,14 @@ msgstr ""
 msgid "Amount %d / Success %d / Failed %d"
 msgstr ""
 
-msgid "An attempt is made to capture the current TV status. If this is not possible due to incorrect or missing status messages it may cause the receiver to respond unexpectedly. On the other hand, tries to respond better to different operating conditions."
+msgid "An attempt is made to capture the current TV status. If status messages are incorrect or missing, the receiver may respond unexpectedly. Otherwise, it helps the receiver handle different operating conditions more effectively."
 msgstr ""
 
 msgid "An unknown error occurred!"
 msgstr "Terjadi kesalahan tak diketahui!"
+
+msgid "Ancient"
+msgstr ""
 
 msgid "Andorra"
 msgstr "Andorra"
@@ -2553,6 +2550,9 @@ msgstr "Antarctica"
 
 msgid "Antigua and Barbuda"
 msgstr "Antigua and Barbuda"
+
+msgid "Antiques"
+msgstr ""
 
 msgid "Any activity"
 msgstr "Aktifitas apasaja"
@@ -2696,11 +2696,23 @@ msgstr "Armenia"
 msgid "Arrow skip mode"
 msgstr ""
 
+msgid "Art/Literature"
+msgstr ""
+
 msgid "Artist"
 msgstr "Artist"
 
+msgid "Arts"
+msgstr ""
+
 msgid "Arts/Culture"
 msgstr "Arts/Culture"
+
+msgid "Arts/Culture (without music)"
+msgstr "Arts/Culture (without music)"
+
+msgid "Arts/Culture magazines"
+msgstr "Arts/Culture magazines"
 
 msgid "Aruba"
 msgstr "Aruba"
@@ -2935,7 +2947,7 @@ msgstr "Automatic scan for services"
 msgid "Automatic shares access"
 msgstr ""
 
-msgid "Automatically put the TV in standby whenever the receiver goes into standby or deep standby."
+msgid "Automatically put the TV in Standby whenever the receiver goes into Standby or Deep Standby."
 msgstr ""
 
 msgid "Automatically start time shift after"
@@ -3063,17 +3075,11 @@ msgstr "Background delete speed"
 msgid "Background:"
 msgstr "Background"
 
-msgid "Backup"
-msgstr "Backup"
-
 msgid "Backup Location"
 msgstr "Backup Location"
 
 msgid "Backup Log"
 msgstr "Backup Log"
-
-msgid "Backup Mode"
-msgstr "Backup Mode"
 
 msgid "Backup Mode: Flash Online"
 msgstr ""
@@ -3110,8 +3116,8 @@ msgstr "Backup your %s %s settings."
 msgid "Backup your current image"
 msgstr "Backup your current image"
 
-msgid "Backup your current image to HDD or USB. This will make a 1:1 copy of your box"
-msgstr "Backup your current image to HDD or USB. This will make a 1:1 copy of your box"
+msgid "Backup your current image to HDD or USB. This will make a 1:1 copy of your receiver."
+msgstr "Backup your current image to HDD or USB. This will make a 1:1 copy of your receiver."
 
 msgid "Backup your current settings"
 msgstr "Backup your current settings"
@@ -3127,6 +3133,9 @@ msgstr "Bahamas"
 
 msgid "Bahrain"
 msgstr "Bahrain"
+
+msgid "Ballet"
+msgstr ""
 
 #, fuzzy
 msgid "Bambara"
@@ -3241,8 +3250,14 @@ msgstr ""
 msgid "Bitrate"
 msgstr "Bitrate:"
 
+msgid "Set the bitrate of the video encoder. Larger values improve the quality and also increases the file size."
+msgstr ""
+
 msgid "Black"
 msgstr "Black"
+
+msgid "Black & White"
+msgstr "Black & White"
 
 msgid "Black screen"
 msgstr "Black screen"
@@ -3401,6 +3416,9 @@ msgstr ""
 msgid "Broadcast systems"
 msgstr ""
 
+msgid "Broadcasting/Press"
+msgstr "Broadcasting/Press"
+
 msgid "Broadcom"
 msgstr ""
 
@@ -3462,6 +3480,9 @@ msgstr "Burn to medium"
 
 msgid "Burundi"
 msgstr "Burundi"
+
+msgid "Business"
+msgstr ""
 
 msgid "Business & Finance"
 msgstr ""
@@ -3555,9 +3576,6 @@ msgstr ""
 
 msgid "CCcamInfo Mainmenu"
 msgstr "CCcamInfo Mainmenu"
-
-msgid "CF Drive"
-msgstr "CF Drive"
 
 msgid "CH"
 msgstr "CH"
@@ -3908,6 +3926,12 @@ msgstr ""
 msgid "Cartoon"
 msgstr ""
 
+msgid "Cartoons"
+msgstr ""
+
+msgid "Cartoons/Puppets"
+msgstr "Cartoons/Puppets"
+
 msgid "Cascade PiP"
 msgstr "Cascade PiP"
 
@@ -4127,6 +4151,9 @@ msgstr "Chapter"
 msgid "Character device"
 msgstr "Storage Devices"
 
+msgid "Chat show"
+msgstr ""
+
 #, fuzzy
 msgid "Chechen"
 msgstr "Check"
@@ -4173,6 +4200,9 @@ msgstr "Chile"
 #, fuzzy
 msgid "Children's"
 msgstr "Chile"
+
+msgid "Children's/Youth programs"
+msgstr "Children's/Youth programs"
 
 msgid "Children/Youth"
 msgstr "Children/Youth"
@@ -4236,19 +4266,19 @@ msgstr ""
 msgid "Choose the amount of additional slots."
 msgstr ""
 
-msgid "Choose the display formatting style for dates. 'D' / 'DD' is the date and 'M' / 'MM' is the month in digits.  ('DD' and 'MM' have leading zeros for single digit values.) The screen display will be based on your choice but can be influenced by the skin."
+msgid "Choose the display formatting style for dates. 'D'/'DD' is the date and 'M'/'MM' is the month in digits. ('DD' and 'MM' have leading zeros for single digit values.) The screen display will be based on your choice but can be influenced by the skin."
 msgstr ""
 
-msgid "Choose the display formatting style for times. 'H' / 'HH' is the hour for a 24 hour clock, 'h' / 'hh' is the hour for a 12 hour clock, 'mm' is the minutes and 'ss' is the seconds.  ('HH' and 'hh' have leading zeros for single digit values.) The screen display will be based on your choice but can be influenced by the skin."
+msgid "Choose the display formatting style for times. 'H'/'HH' is the hour for a 24 hour clock, 'h'/'hh' is the hour for a 12 hour clock, 'mm' is the minutes and 'ss' is the seconds. ('HH' and 'hh' have leading zeros for single digit values.) The screen display will be based on your choice but can be influenced by the skin."
 msgstr ""
 
 msgid "Choose the fallback font."
 msgstr ""
 
-msgid "Choose the front panel display formatting style for dates. 'D' / 'DD' is the date and 'M' / 'MM' is the month in digits.  ('DD' and 'MM' have leading zeros for single digit values.) The screen display will be based on your choice but can be influenced by the skin."
+msgid "Choose the front panel display formatting style for dates. 'D'/'DD' is the date and 'M'/'MM' is the month in digits. ('DD' and 'MM' have leading zeros for single digit values.) The screen display will be based on your choice but can be influenced by the skin."
 msgstr ""
 
-msgid "Choose the front panel display formatting style for times. 'H' / 'HH' is the hour for a 24 hour clock, 'h' / 'hh' is the hour for a 12 hour clock, 'mm' is the minutes.  ('HH' and 'hh' have leading zeros for single digit values.) The front panel display will be based on your choice but can be influenced any applicable skin."
+msgid "Choose the front panel display formatting style for times. 'H'/'HH' is the hour for a 24 hour clock, 'h'/'hh' is the hour for a 12 hour clock, 'mm' is the minutes. ('HH' and 'hh' have leading zeros for single digit values.) The front panel display will be based on your choice but can be influenced any applicable skin."
 msgstr ""
 
 msgid "Choose the location for crash and debug logs."
@@ -4257,8 +4287,8 @@ msgstr "Choose the location for crash and debug logs."
 msgid "Choose the location where the EPG data will be stored when the %s %s is shut down. The location must be available at boot time."
 msgstr "Choose the location where the EPG data will be stored when the %s %s is shut down. The location must be available at boot time."
 
-msgid "Choose the name of the file that holds the EPG data when the %s %s is shut down. This can be handy to differentiate between several boxes."
-msgstr "Choose the name of the file that holds the EPG data when the %s %s is shut down. This can be handy to differentiate between several boxes."
+msgid "Choose the name of the file that holds the EPG data when the %s %s is shut down. This can be handy to differentiate between several receivers."
+msgstr "Choose the name of the file that holds the EPG data when the %s %s is shut down. This can be handy to differentiate between several receivers."
 
 msgid "Choose the option to correct invalid EPG data."
 msgstr ""
@@ -4350,6 +4380,9 @@ msgstr "Circular right"
 msgid "City"
 msgstr ""
 
+msgid "Classical"
+msgstr ""
+
 msgid "Clean (Just flash and start clean)"
 msgstr ""
 
@@ -4403,7 +4436,7 @@ msgstr "Click the button on your remote you want to change."
 msgid "Client"
 msgstr ""
 
-msgid "Client is streaming from this box!"
+msgid "Client is streaming from this receiver!"
 msgstr ""
 
 msgid "ClientIP"
@@ -4470,6 +4503,9 @@ msgstr ""
 msgid "Close the current screen"
 msgstr ""
 
+msgid "Close the documentation screen"
+msgstr ""
+
 msgid "Close the screen"
 msgstr ""
 
@@ -4489,6 +4525,9 @@ msgid "Close title selection"
 msgstr "Close title selection"
 
 msgid "Cloudflare DNS"
+msgstr ""
+
+msgid "Club/Dance"
 msgstr ""
 
 msgid "Cocos (Keeling) Islands"
@@ -4663,14 +4702,14 @@ msgstr "Configure an additional delay to improve subtitle synchronization."
 msgid "Configure default setting for new timers. Need a restart after changing."
 msgstr "Configure default setting for new timers. Need a restart after changing."
 
-msgid "Configure for which types of recordings a warning about active recordings is shown when attempting to restart the box or the GUI."
-msgstr "Configure for which types of recordings a warning about active recordings is shown when attempting to restart the box or the GUI."
+msgid "Configure for which types of recordings a warning about active recordings is shown when attempting to restart the receiver or the GUI."
+msgstr "Configure for which types of recordings a warning about active recordings is shown when attempting to restart the receiver or the GUI."
 
 msgid "Configure front panel LEDs"
 msgstr ""
 
-msgid "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info"
-msgstr "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info"
+msgid "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info."
+msgstr "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info."
 
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Configure if and how crypto icons will be shown in the channel selection list."
@@ -4690,8 +4729,8 @@ msgstr "Configure if and how wide the service name column will be shown in the c
 msgid "Configure if crypto icons will be shown in the channel selection list."
 msgstr ""
 
-msgid "Configure if epg.dat should be saved at all."
-msgstr "Configure if epg.dat should be saved at all."
+msgid "Configure if 'epg.dat' should be saved at all."
+msgstr "Configure if 'epg.dat' should be saved at all."
 
 msgid "Configure if service picons will be shown in quickzap."
 msgstr "Configure if service picons will be shown in quickzap."
@@ -4726,11 +4765,20 @@ msgstr "Configure the DiSEqC mode for this LNB."
 msgid "Configure the IP address."
 msgstr "Configure the IP address."
 
+msgid "Configure the IP of the fallback remote receiver."
+msgstr "IP Rx jauh terpakai"
+
 msgid ""
 "Configure the Internet connection by adjusting the values shown.\n"
 "\n"
 "When the settings are correct press OK to continue."
 msgstr ""
+
+msgid "Configure the Port of the fallback remote receiver."
+msgstr "Port receiver jauh yg digunakan"
+
+msgid "Configure the URL of the fallback remote receiver."
+msgstr "Alamat URL rx jauh digunakan"
 
 msgid "Configure the alignment of events."
 msgstr "Configure the alignment of events."
@@ -4765,8 +4813,8 @@ msgstr "Configure the brightness level of the front panel display for dimmed ope
 msgid "Configure the brightness level of the front panel display for normal operation."
 msgstr "Configure the brightness level of the front panel display for normal operation."
 
-msgid "Configure the brightness level of the front panel display for standby."
-msgstr "Configure the brightness level of the front panel display for standby."
+msgid "Configure the brightness level of the front panel display for Standby."
+msgstr "Configure the brightness level of the front panel display for Standby."
 
 msgid "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
 msgstr "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
@@ -4832,11 +4880,11 @@ msgstr ""
 msgid "Configure the gateway."
 msgstr "Configure the gateway."
 
-msgid "Configure the hard disk drive to go to standby after the specified idle time when the box is in standby."
-msgstr "Configure the hard disk drive to go to standby after the specified idle time when the box is in standby."
+msgid "Configure the hard disk drive to go to Standby after the specified idle time when the receiver is in Standby."
+msgstr "Configure the hard disk drive to go to Standby after the specified idle time when the receiver is in Standby."
 
-msgid "Configure the hard disk drive to go to standby after the specified idle time."
-msgstr "Configure the hard disk drive to go to standby after the specified idle time."
+msgid "Configure the hard disk drive to go to Standby after the specified idle time."
+msgstr "Configure the hard disk drive to go to Standby after the specified idle time."
 
 msgid "Configure the height of the TrueType font letters used for teletext."
 msgstr "Configure the height of the TrueType font letters used for teletext."
@@ -4895,9 +4943,6 @@ msgstr "Configure the primary EPG language."
 msgid "Configure the refresh rate of the screen."
 msgstr "Configure the refresh rate of the screen."
 
-msgid "Configure the screen resolution for teletext (Not all skins support full-HD teletext)."
-msgstr "Configure the screen resolution for teletext (Not all skins support full-HD teletext)."
-
 msgid "Configure the second audio language."
 msgstr "Configure the second audio language."
 
@@ -4919,8 +4964,8 @@ msgstr "Configure the skip time interval for the '7'/'9' buttons."
 msgid "Configure the slow motion speeds."
 msgstr "Configure the slow motion speeds."
 
-msgid "Configure the source of the frontend data as shown on the infobars. 'Settings' is as stored on the settings. 'Tuner' is as reported by the tuner."
-msgstr "Configure the source of the frontend data as shown on the infobars. 'Settings' is as stored on the settings. 'Tuner' is as reported by the tuner."
+msgid "Configure the source of the frontend data as shown on the InfoBars. 'Settings' is as stored on the settings. 'Tuner' is as reported by the tuner."
+msgstr "Configure the source of the frontend data as shown on the InfoBars. 'Settings' is as stored on the settings. 'Tuner' is as reported by the tuner."
 
 msgid "Configure the speed of the background deletion process. Lower speed will consume less hard disk drive performance."
 msgstr "Configure the speed of the background deletion process. Lower speed will consume less hard disk drive performance."
@@ -4933,6 +4978,9 @@ msgstr "Configure the start coordinate in y of the teletext display area."
 
 msgid "Configure the subtitle delay when timing information is not available."
 msgstr "Configure the subtitle delay when timing information is not available."
+
+msgid "Configure the teletext screen resolution. Note: Full-HD teletext is not supported by all skins."
+msgstr "Configure the teletext screen resolution. Note: Full-HD teletext is not supported by all skins."
 
 msgid "Configure the third audio language."
 msgstr "Configure the third audio language."
@@ -4988,8 +5036,8 @@ msgstr "Configure whether another tuner from the preferred list is allocated for
 msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
 msgstr "Choose whether multi channel sound tracks should be downmixed to stereo."
 
-msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (e.g. EPGrefresh)."
-msgstr "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (e.g. EPGrefresh)."
+msgid "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (like in EPGrefresh)."
+msgstr "Configure whether the 'recording' symbol (in the display skin and LCD skin) is visible for real recordings only or also for streaming and pseudo recordings (like in EPGrefresh)."
 
 msgid "Configure which color format should be used on the SCART output."
 msgstr "Configure which color format should be used on the SCART output."
@@ -5448,10 +5496,6 @@ msgstr ""
 msgid "Current 1/1"
 msgstr ""
 
-#, fuzzy
-msgid "Current affairs"
-msgstr "News Current Affairs"
-
 msgid "Current CEC address"
 msgstr "Current CEC address"
 
@@ -5479,6 +5523,10 @@ msgstr "Current Status:"
 #, python-format
 msgid "Current Temperature (SoC): %s °C"
 msgstr ""
+
+#, fuzzy
+msgid "Current affairs"
+msgstr "News Current Affairs"
 
 msgid "Current crash log"
 msgstr ""
@@ -5629,9 +5677,6 @@ msgstr ""
 msgid "DNS mode"
 msgstr ""
 
-msgid "DNS name or IP address"
-msgstr ""
-
 msgid "DNS suffix"
 msgstr ""
 
@@ -5717,6 +5762,9 @@ msgstr "Cancel"
 
 msgid "Danish"
 msgstr "Danish"
+
+msgid "Darts"
+msgstr ""
 
 msgid "Date"
 msgstr "Date"
@@ -5994,6 +6042,9 @@ msgstr ""
 msgid "Default volume offset"
 msgstr ""
 
+msgid "Default wake-up is 5 minutes before Deep Standby. Adjust if the wake-up is too early or late, e.g., for network drives."
+msgstr "Default wake-up is 5 minutes before Deep Standby. Adjust if the wake-up is too early or late, e.g., for network drives."
+
 #, python-format
 msgid "Default: '%s'."
 msgstr ""
@@ -6162,8 +6213,8 @@ msgstr ""
 msgid "Delete all the text"
 msgstr ""
 
-msgid "Delete and uninstall Plugins. This will remove the Plugin from your box"
-msgstr "Delete and uninstall Plugins. This will remove the Plugin from your box"
+msgid "Delete and uninstall Plugins. This will remove the Plugin from your receiver."
+msgstr "Delete and uninstall Plugins. This will remove the Plugin from your receiver."
 
 msgid "Delete character to left of cursor or select AM times"
 msgstr ""
@@ -6331,9 +6382,6 @@ msgstr ""
 msgid "Deselected packages usually occur because those packaged are incompatible with existing packages. While this is mostly harmless it is possible that your %s %s may experience issues."
 msgstr ""
 
-msgid "Destination of fallback remote receiver"
-msgstr "Alamat URL penggunaan rx dari jauh"
-
 msgid "Destination of fallback remote receiver for ATSC"
 msgstr "Alamat URL penggunaan rx dari jauh"
 
@@ -6343,11 +6391,20 @@ msgstr "Alamat URL penggunaan rx dari jauh"
 msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "Alamat URL penggunaan rx dari jauh"
 
+msgid "Destination of fallback remote receiver."
+msgstr "Alamat URL penggunaan rx dari jauh"
+
 msgid "Detail of GStreamer log."
 msgstr ""
 
 msgid "Details"
 msgstr ""
+
+msgid "Detective"
+msgstr ""
+
+msgid "Detective/Thriller"
+msgstr "Detective/Thriller"
 
 msgid "Development Packages"
 msgstr ""
@@ -6533,8 +6590,17 @@ msgstr "Disabled PiP.\n"
 msgid "Disabled or WPA/WPA2"
 msgstr ""
 
+msgid "Disables timeshift during recording (advisable for USB sticks)."
+msgstr "Disables timeshift during recording (advisable for USB sticks)."
+
 msgid "Disabling Chkroot failed!"
 msgstr ""
+
+msgid "Discussion"
+msgstr ""
+
+msgid "Discussion/Interview/Debate"
+msgstr "Discussion/Interview/Debate"
 
 msgid "Dish"
 msgstr "Dish"
@@ -6585,8 +6651,8 @@ msgstr ""
 msgid "Display selection list as a selection menu"
 msgstr ""
 
-msgid "Display the EIT Now/Next event data in InfoBar."
-msgstr "Display the EIT Now/Next event data in InfoBar."
+msgid "Display the EIT Now/Next event data in the InfoBar."
+msgstr "Display the EIT Now/Next event data in the InfoBar."
 
 msgid "Display the base locales or all locales for a language."
 msgstr ""
@@ -6741,13 +6807,6 @@ msgstr ""
 msgid "Do you want the upgrade guide?"
 msgstr ""
 
-msgid ""
-"Do you want to backup now?\n"
-"After pressing OK, please wait!"
-msgstr ""
-"Do you want to backup now?\n"
-"After pressing OK, please wait!"
-
 msgid "Do you want to backup settings?"
 msgstr ""
 
@@ -6831,6 +6890,9 @@ msgid "Do you want to start a backup now?"
 msgstr ""
 
 msgid "Do you want to update:"
+msgstr ""
+
+msgid "Docudrama"
 msgstr ""
 
 #, fuzzy
@@ -6968,7 +7030,7 @@ msgstr ""
 msgid "Duplicate the current line"
 msgstr ""
 
-msgid "During this time, the transmitter and the recording destination are checked. If the recording destination (eg NAS) does not ready in time for recording, this time can be increased."
+msgid "During this time, the transmitter and recording destination are checked. If the destination (e.g., NAS) isn’t ready in time, this time can be increased."
 msgstr ""
 
 msgid "Dutch"
@@ -7096,9 +7158,15 @@ msgstr "East"
 msgid "East limit set"
 msgstr "East limit set"
 
+msgid "Easy listening"
+msgstr ""
+
 #, fuzzy
 msgid "EasyMedia"
 msgstr "Media"
+
+msgid "Economics/Social advisory"
+msgstr "Economics/Social advisory"
 
 msgid "Ecuador"
 msgstr "Ecuador"
@@ -7187,8 +7255,11 @@ msgid "Education/Information"
 msgstr "Translation Information"
 
 #, fuzzy
-msgid "Education/Science/Factual"
+msgid "Education/Science/Factual topics"
 msgstr "Education/Science/..."
+
+msgid "Educational"
+msgstr ""
 
 msgid "Egypt"
 msgstr "Egypt"
@@ -7256,6 +7327,9 @@ msgstr "Enable Favorite Edit"
 msgid "Enable Focus Animation"
 msgstr "Disable Animations"
 
+msgid "Enable FreeSat EPG"
+msgstr "Enable FreeSat EPG"
+
 msgid "Enable GStreamer debug log *"
 msgstr ""
 
@@ -7302,9 +7376,6 @@ msgstr "Enable Quad PiP"
 
 msgid "Enable Swap at startup"
 msgstr "Enable Swap at startup"
-
-msgid "Enable Up/Down buttons for the 'all up/down' functions (at the beginning/end of the column)?"
-msgstr ""
 
 msgid "Enable VPS"
 msgstr ""
@@ -7387,9 +7458,6 @@ msgstr "Enable digital downmix"
 msgid "Enable fallback remote receiver"
 msgstr "Enable fallback remote receiver"
 
-msgid "Enable freesat EPG"
-msgstr "Enable freesat EPG"
-
 msgid "Enable import timer from fallback tuner"
 msgstr ""
 
@@ -7414,8 +7482,8 @@ msgstr "Enable panic button"
 msgid "Enable preview"
 msgstr "Enable preview"
 
-msgid "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
-msgstr "Enable remote enigma2 receiver to be tried to tune into services that cannot be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner. Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_box:8001."
+msgid "Enable remote receiver to be tried to tune into services that can't be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner). Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_receiver:8001."
+msgstr "Enable remote receiver to be tried to tune into services that can't be tuned into locally (e.g. tuner is occupied or service type is unavailable on the local tuner). Specify complete URL including http:// and port number (normally ...:8001), e.g. http://second_receiver:8001."
 
 msgid "Enable teletext caching"
 msgstr "Enable teletext caching"
@@ -7483,6 +7551,9 @@ msgstr ""
 msgid "Enable to add some extra spacing to the Information screens. This can improve readability."
 msgstr ""
 
+msgid "Enable to always unscramble received HTTP streams. Uses more resources due to demuxers. Streams with 0x100 in the service type are always unscrambled, regardless of this setting."
+msgstr "Enable to always unscramble received HTTP streams. Uses more resources due to demuxers. Streams with 0x100 in the service type are always unscrambled, regardless of this setting."
+
 msgid "Enable to display all True/False, Yes/No, On/Off and Enable/Disable setup options as a graphical switch."
 msgstr ""
 
@@ -7500,6 +7571,12 @@ msgstr "Enabled"
 
 msgid "Enables a feature so that the receiver can decrypt streams (if the ECM data is included in the stream and a valid card is available)."
 msgstr "Enables a feature so that the receiver can decrypt streams (if the ECM data is included in the stream and a valid card is available)."
+
+msgid "Enables sending the same TV commands for Deep Standby as for regular Standby."
+msgstr ""
+
+msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
+msgstr ""
 
 msgid "Encrypted: "
 msgstr "Encrypted: "
@@ -7679,6 +7756,12 @@ msgstr ""
 msgid "Entertainment"
 msgstr "Open Main Menu"
 
+msgid "Entertainment programs for 10 to 16"
+msgstr "Entertainment programs for 10 to 16"
+
+msgid "Entertainment programs for 6 to 14"
+msgstr "Entertainment programs for 6 to 14"
+
 msgid "Entitlements"
 msgstr "Entitlements"
 
@@ -7707,8 +7790,14 @@ msgstr "Equal to"
 msgid "Equatorial Guinea"
 msgstr "Equatorial Guinea"
 
+msgid "Equestrian"
+msgstr "Equestrian"
+
 msgid "Eritrea"
 msgstr "Eritrea"
+
+msgid "Erotic"
+msgstr ""
 
 msgid "Error"
 msgstr "Error"
@@ -8081,6 +8170,9 @@ msgstr "Event View"
 msgid "EventViewEPG Actions"
 msgstr ""
 
+msgid "Events"
+msgstr ""
+
 msgid "Everyday"
 msgstr "Everyday"
 
@@ -8193,6 +8285,9 @@ msgstr ""
 msgid "Expand"
 msgstr ""
 
+msgid "Experimental film/video"
+msgstr "Experimental film/video"
+
 msgid "Experimental mode"
 msgstr "Experimental mode"
 
@@ -8280,6 +8375,9 @@ msgstr ""
 msgid "Extract the package contents"
 msgstr ""
 
+msgid "Extreme"
+msgstr ""
+
 msgid "Extrude from left"
 msgstr "Extrude from left"
 
@@ -8346,6 +8444,9 @@ msgid "Factory Reset"
 msgstr ""
 
 msgid "Factory release"
+msgstr ""
+
+msgid "Factual"
 msgstr ""
 
 msgid "Fade the InfoBar on hide."
@@ -8424,6 +8525,9 @@ msgstr "Faroe Islands"
 msgid "Farsi / Persian"
 msgstr "Persian"
 
+msgid "Fashion"
+msgstr "Fashion"
+
 msgid "Fast"
 msgstr "Fast"
 
@@ -8453,6 +8557,12 @@ msgstr "Favorite Edit"
 
 msgid "Favorites"
 msgstr "Favorites"
+
+msgid "Feature"
+msgstr ""
+
+msgid "Features"
+msgstr ""
 
 msgid "Feed URL"
 msgstr ""
@@ -8613,6 +8723,9 @@ msgstr ""
 msgid "Film-noir"
 msgstr ""
 
+msgid "Film/Cinema"
+msgstr "Film/Cinema"
+
 msgid "Filter extensions"
 msgstr ""
 
@@ -8648,6 +8761,9 @@ msgstr ""
 msgid "Finding available log files, please wait..."
 msgstr ""
 
+msgid "Fine arts"
+msgstr "Fine arts"
+
 msgid "Fine movement"
 msgstr "Fine movement"
 
@@ -8675,6 +8791,9 @@ msgstr "First playable time shift file!"
 #, fuzzy
 msgid "Fishing"
 msgstr "Flashing"
+
+msgid "Fitness and Health"
+msgstr "Fitness and Health"
 
 msgid "Fixed"
 msgstr "Fixed"
@@ -8722,8 +8841,8 @@ msgstr ""
 msgid "Flash directory '%s' not allowed!"
 msgstr ""
 
-msgid "Flash on the fly your your Receiver software."
-msgstr "Flash on the fly your your Receiver software."
+msgid "Flash your receiver software on the fly."
+msgstr "Flash your receiver software on the fly."
 
 msgid "Flash type"
 msgstr ""
@@ -8764,6 +8883,12 @@ msgstr ""
 msgid "Flat by position on remote"
 msgstr "Final position at"
 
+msgid "Folk and Country"
+msgstr ""
+
+msgid "Folk/Traditional music"
+msgstr "Folk/Traditional music"
+
 msgid "Follow instructions on TV"
 msgstr ""
 
@@ -8779,6 +8904,9 @@ msgstr ""
 
 #, fuzzy
 msgid "Football"
+msgstr "Football/Soccer"
+
+msgid "Football/Soccer"
 msgstr "Football/Soccer"
 
 msgid "For how many minutes do you want to record?"
@@ -8812,6 +8940,9 @@ msgstr "disabled"
 #, fuzzy
 msgid "Force enabled"
 msgstr "enabled"
+
+msgid "Foreign countries/Expeditions"
+msgstr "Foreign countries/Expeditions"
 
 msgid "Format"
 msgstr "Format"
@@ -8937,6 +9068,9 @@ msgstr "Full view resolution"
 msgid "FullHD Test"
 msgstr "Small Test"
 
+msgid "Further education"
+msgstr "Further education"
+
 #, fuzzy
 msgid "G"
 msgstr "GB"
@@ -8974,6 +9108,9 @@ msgstr "Gambia"
 #, fuzzy
 msgid "Game show"
 msgstr "Show Games show"
+
+msgid "Game show/Quiz/Contest"
+msgstr "Game show/Quiz/Contest"
 
 #, fuzzy
 msgid "Ganda"
@@ -9076,6 +9213,18 @@ msgstr ""
 
 msgid "Go to standby"
 msgstr "Go to standby"
+
+msgid "Go to the first page of documentation"
+msgstr ""
+
+msgid "Go to the last page of documentation"
+msgstr ""
+
+msgid "Go to the next page of documentation"
+msgstr ""
+
+msgid "Go to the previous page of documentation"
+msgstr ""
 
 msgid "Go up the list"
 msgstr "Go up the list"
@@ -9322,6 +9471,9 @@ msgstr ""
 msgid "Halt"
 msgstr ""
 
+msgid "Handicraft"
+msgstr "Handicraft"
+
 msgid "Handle Python crashes"
 msgstr ""
 
@@ -9329,8 +9481,8 @@ msgstr ""
 msgid "Handle input from TV"
 msgstr "Handle wake up from TV"
 
-msgid "Handle standby from TV"
-msgstr "Handle standby from TV"
+msgid "Handle Standby from TV"
+msgstr "Handle Standby from TV"
 
 msgid "Handle wake up from TV"
 msgstr "Handle wake up from TV"
@@ -9338,11 +9490,11 @@ msgstr "Handle wake up from TV"
 msgid "Hard Disk Settings"
 msgstr "Hard Disk Settings"
 
-msgid "Hard disk standby after"
-msgstr "Hard disk standby after"
+msgid "Hard disk Standby after"
+msgstr "Hard disk Standby after"
 
-msgid "Hard disk standby in box standby after"
-msgstr "Hard disk standby in box standby after"
+msgid "Hard disk Standby in receiver Standby after"
+msgstr "Hard disk Standby in receiver Standby after"
 
 msgid "Harddisk"
 msgstr "Harddisk"
@@ -9501,6 +9653,9 @@ msgstr ""
 msgid "Hindi"
 msgstr ""
 
+msgid "Hip Hop"
+msgstr ""
+
 msgid "Hiri Motu"
 msgstr ""
 
@@ -9559,6 +9714,9 @@ msgstr ""
 
 msgid "Home"
 msgstr "Home"
+
+msgid "Home and Garden"
+msgstr ""
 
 msgid "Homepage"
 msgstr "Homepage"
@@ -9701,9 +9859,6 @@ msgstr ""
 msgid "IP address of the Stream Relay server used to descramble services that can only be decrypted via Stream Relay."
 msgstr ""
 
-msgid "IP of fallback remote receiver"
-msgstr "IP Rx jauh terpakai"
-
 msgid "IPK Installer"
 msgstr "IPK Installer"
 
@@ -9726,6 +9881,9 @@ msgid "ISO speed rating"
 msgstr ""
 
 msgid "ISP"
+msgstr ""
+
+msgid "Ice hockey"
 msgstr ""
 
 msgid "IceTV"
@@ -9816,11 +9974,11 @@ msgstr ""
 msgid "If an action is user-configurable, its help entry will be flagged with a '(C)' suffix."
 msgstr ""
 
-msgid "If enabled and necessary, the plugin will wake up the Receiver from Deep-Standby for the defined starting time to control whether the programme begins earlier."
+msgid "If enabled and necessary, the plugin will wake up the receiver from deep standby for the defined starting time to control whether the programme begins earlier."
 msgstr ""
 
-msgid "If enabled the output resolution of the box will try to match the resolution of the video contents resolution"
-msgstr "If enabled the output resolution of the box will try to match the resolution of the video contents resolution"
+msgid "If enabled the output resolution of the receiver will try to match the resolution of the video contents resolution."
+msgstr "If enabled the output resolution of the receiver will try to match the resolution of the video contents resolution."
 
 msgid "If enabled the video will always be de-interlaced."
 msgstr "If enabled the video will always be de-interlaced."
@@ -9831,10 +9989,10 @@ msgstr "If enabled, AIT data is included in recordings."
 msgid "If enabled, a log will be kept of CEC protocol traffic. The log files are located with the other log files but named 'Enigma2-hdmicec-[date].log'."
 msgstr ""
 
-msgid "If enabled, the new GStreamer playback engine will be used."
+msgid "If enabled, a time window is used to detect wake-ups from Deep Standby triggered by a timer. The default setting is disabled, which uses a special signal from the receiver. However, some devices send an incorrect or no signal, causing wake-up detection to fail."
 msgstr ""
 
-msgid "If enabled, using a time window to detect a wake up from deep standby by a timer. Default setting ist disabled and used a special signal from the receiver. But some devices set a wrong or none signal and the wake up detection can fails."
+msgid "If enabled, the new GStreamer playback engine will be used."
 msgstr ""
 
 msgid "If logs are using the set maximum space used the eldest will be deleted."
@@ -9843,13 +10001,7 @@ msgstr "If logs are using the set maximum space used the eldest will be deleted.
 msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
 msgstr ""
 
-msgid "If set to 'Yes' the same commands will be sent to the TV for deep standby events as are sent during regular standby events."
-msgstr ""
-
-msgid "If set to 'yes', allows you to use timeshift with alternative audio plugins."
-msgstr ""
-
-msgid "If the deep standby workaround is enabled wait until the system time is synchronized. Depending on the requirement the device wake up will continuing after a maximum of 2 minutes."
+msgid "If the Deep Standby workaround is enabled wait until the system time is synchronized. Depending on the requirement the device wake up will continuing after a maximum of 2 minutes."
 msgstr ""
 
 msgid "If the free space is less than setting value, then an attempt is made to delete the old time shift files."
@@ -9906,7 +10058,7 @@ msgstr ""
 msgid "Ignore Standby"
 msgstr ""
 
-msgid "Ignore unexpectedly wake up and stay in standby"
+msgid "Ignore unexpectedly wake up and stay in Standby"
 msgstr ""
 
 msgid "Image Backup"
@@ -9943,14 +10095,14 @@ msgstr ""
 msgid "Immediately restart selected devices."
 msgstr ""
 
-msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
-msgstr "Impor kanal dan/atau EPG dari URL Rx jauh juga ketika Rx itu keluar dari posisi standby"
-
-msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
+msgid "Import channels and/or EPG from remote receiver URL when receiver is booted."
 msgstr "Impor kanal dan/atau EPG dari URL Rx jauh ketika Rx dihidupkan."
 
-msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
+msgid "Import channels and/or EPG from remote receiver URL when receiver or GUI is restarted."
 msgstr "Impor kanal dan/atau EPG dari URL Rx jauh ketika Rx atau enigma2 dimulai ulang"
+
+msgid "Import channels and/or EPG from the remote receiver URL, even when the receiver is coming out of Standby."
+msgstr "Impor kanal dan/atau EPG dari URL Rx jauh juga ketika Rx itu keluar dari posisi standby"
 
 msgid "Import from remote receiver URL"
 msgstr "Impor dari URL Rx jauh"
@@ -9964,7 +10116,7 @@ msgstr "In addition to the check at an event start, a repetitive check can be us
 msgid "In expert mode, configure which tuners will be preferred for recordings, when more than one tuner is available."
 msgstr "In expert mode, configure which tuners will be preferred for recordings, when more than one tuner is available."
 
-msgid "In most cases this should be set to No. Only enable if you have a very specific need."
+msgid "In most cases this should be set to 'No'. Only set to 'Yes' if you have a very specific need."
 msgstr ""
 
 msgid ""
@@ -10028,7 +10180,7 @@ msgstr ""
 msgid "Include MultiBoot data *"
 msgstr ""
 
-msgid "Include SDT, BAT in http streams"
+msgid "Include SDT and BAT in http streams"
 msgstr ""
 
 #, fuzzy
@@ -10130,6 +10282,9 @@ msgstr "Sumberdata depan palang info"
 
 msgid "Information"
 msgstr "Informasi"
+
+msgid "Informational/Educational/School programs"
+msgstr "informasi/pendidikan/program sekolah"
 
 #, fuzzy
 msgid "Infotainment"
@@ -10337,6 +10492,9 @@ msgstr ""
 msgid "Invalid"
 msgstr "Invalid type"
 
+msgid "Invalid Help Page"
+msgstr ""
+
 msgid "Invalid location!"
 msgstr "Invalid location!"
 
@@ -10412,6 +10570,9 @@ msgid "Japanese"
 msgstr "Japan"
 
 msgid "Javanese"
+msgstr ""
+
+msgid "Jazz"
 msgstr ""
 
 msgid "Jersey"
@@ -10691,14 +10852,14 @@ msgstr ""
 msgid "LED Standby"
 msgstr "LED Standby"
 
-msgid "LED brightness during deep standby."
-msgstr "LED brightness during deep standby."
+msgid "LED brightness during Deep Standby."
+msgstr "LED brightness during Deep Standby."
 
 msgid "LED brightness during normal operations."
 msgstr "LED brightness during normal operations."
 
-msgid "LED brightness during standby."
-msgstr "LED brightness during standby."
+msgid "LED brightness during Standby."
+msgstr "LED brightness during Standby."
 
 msgid "LIRC remote"
 msgstr ""
@@ -10734,6 +10895,10 @@ msgstr ""
 
 msgid "Language selection"
 msgstr "Language selection"
+
+#, fuzzy
+msgid "Languages"
+msgstr "Language"
 
 #, fuzzy
 msgid "Lao"
@@ -10948,6 +11113,9 @@ msgstr "List/Fav"
 msgid "Lists reloaded!"
 msgstr "Lists reloaded!"
 
+msgid "Literature"
+msgstr "Literature"
+
 msgid "Lithuania"
 msgstr "Lithuania"
 
@@ -10960,6 +11128,9 @@ msgstr ""
 #, fuzzy
 msgid "Live TV Actions"
 msgstr "Quick Actions"
+
+msgid "Live broadcast"
+msgstr "Live broadcast"
 
 msgid "Load"
 msgstr "Load"
@@ -10982,8 +11153,8 @@ msgstr ""
 msgid "Loading slot information, please wait..."
 msgstr ""
 
-msgid "Local box"
-msgstr "Local box"
+msgid "Local receiver"
+msgstr "Local receiver"
 
 msgid "Local date/time"
 msgstr ""
@@ -10993,6 +11164,9 @@ msgstr ""
 
 msgid "Local network"
 msgstr "Local network"
+
+msgid "Local or Regional"
+msgstr ""
 
 msgid "Local time"
 msgstr ""
@@ -11221,6 +11395,12 @@ msgstr "New Caledonia"
 msgid "Madagascar"
 msgstr "Madagascar"
 
+msgid "Magazine"
+msgstr ""
+
+msgid "Magazines/Reports/Documentary"
+msgstr "Magazines/Reports/Documentary"
+
 msgid "Magenta"
 msgstr ""
 
@@ -11236,7 +11416,7 @@ msgstr ""
 msgid "Make"
 msgstr ""
 
-msgid "Make it possible to manually initiate the channels import and/or EPG via the extension menu"
+msgid "Make it possible to manually initiate the channels import and/or EPG via the extension menu."
 msgstr "Memungkinkan untuk secara manual mengawali impor kanal dan/atau EPG lewat menu ekstensi"
 
 msgid "Make this mark an 'in' point"
@@ -11289,7 +11469,7 @@ msgstr ""
 msgid "Manage Plugins"
 msgstr ""
 
-msgid "Manage Plugins. This will remove/install Plugins on your box"
+msgid "Manage Plugins. This will remove/install Plugins on your receiver."
 msgstr ""
 
 msgid "Manage and explore directories and files."
@@ -11371,6 +11551,9 @@ msgstr "Marshall Islands"
 #, fuzzy
 msgid "Marshallese"
 msgstr "Marshall Islands"
+
+msgid "Martial sports"
+msgstr "Martial sports"
 
 msgid "Martinique"
 msgstr "Martinique"
@@ -11454,6 +11637,9 @@ msgstr "MediaPlayer"
 #, fuzzy
 msgid "Medical"
 msgstr "Media"
+
+msgid "Medicine/Physiology/Psychology"
+msgstr "Medicine/Physiology/Psychology"
 
 msgid "Medium is not a writeable DVD!"
 msgstr "Medium is not a writeable DVD!"
@@ -11673,15 +11859,20 @@ msgstr ""
 msgid "Most recent last"
 msgstr ""
 
-#, fuzzy
-msgid "Motor Sport"
-msgstr "motor sport"
-
 msgid "Motor command retries"
 msgstr "Motor command retries"
 
 msgid "Motor running timeout"
 msgstr "Motor running timeout"
+
+msgid "Motor sport"
+msgstr ""
+
+msgid "Motoring"
+msgstr "Motoring"
+
+msgid "Motors"
+msgstr ""
 
 msgid "Mount"
 msgstr "Mount"
@@ -12101,6 +12292,9 @@ msgstr "Music/Ballet/Dance"
 msgid "Musical"
 msgstr "Musical/Opera"
 
+msgid "Musical/Opera"
+msgstr "Musical/Opera"
+
 msgid "Mute"
 msgstr "Mute"
 
@@ -12183,6 +12377,9 @@ msgstr "Namibia"
 msgid "Narration"
 msgstr ""
 
+msgid "National music"
+msgstr ""
+
 msgid "Native"
 msgstr "Native"
 
@@ -12195,6 +12392,9 @@ msgstr ""
 #, fuzzy
 msgid "Nature"
 msgstr "Literature"
+
+msgid "Nature/Animals/Environment"
+msgstr "Nature/Animals/Environment"
 
 msgid "Nauru"
 msgstr "Nauru"
@@ -12388,6 +12588,9 @@ msgstr "Select Folders"
 msgid "New event info"
 msgstr "Event Info"
 
+msgid "New media"
+msgstr "media baru"
+
 #, fuzzy
 msgid "New password"
 msgstr "Katakunci"
@@ -12414,9 +12617,21 @@ msgstr ""
 msgid "News"
 msgstr ""
 
+msgid "News and Weather"
+msgstr ""
+
+msgid "News magazine"
+msgstr "News magazine"
+
 #, fuzzy
 msgid "News/Current affairs"
 msgstr "News Current Affairs"
+
+msgid "News/Documentary"
+msgstr ""
+
+msgid "News/Weather report"
+msgstr "News/Weather report"
 
 msgid "Next"
 msgstr "Next"
@@ -12511,6 +12726,9 @@ msgstr "No cable tuner found!"
 
 msgid "No card inserted!"
 msgstr "No card inserted!"
+
+msgid "No category"
+msgstr ""
 
 #, fuzzy
 msgid "No channel"
@@ -13286,12 +13504,15 @@ msgstr "OpenVPN"
 msgid "OpenViX Packages"
 msgstr ""
 
+msgid "Opera"
+msgstr ""
+
 #, fuzzy
-msgid "Operating LED status in deep standby mode"
+msgid "Operating LED status in Deep Standby"
 msgstr "Power LED state during deep-standby/standby."
 
 #, fuzzy
-msgid "Operating LED status in standby mode"
+msgid "Operating LED status in Standby"
 msgstr "Power LED state during deep-standby/standby."
 
 msgid "Operating LED status while running"
@@ -13307,11 +13528,11 @@ msgstr ""
 msgid "Option"
 msgstr "Encryption"
 
-msgid "Option to disable picons on the Infobar."
-msgstr "Option to disable picons on the Infobar."
+msgid "Option to disable picons on the InfoBar."
+msgstr "Option to disable picons on the InfoBar."
 
-msgid "Option to enable the Hardware Standby Timer."
-msgstr "Option to enable the Hardware Standby Timer."
+msgid "Option to enable the hardware Standby timer."
+msgstr "Option to enable the hardware Standby timer."
 
 msgid "Optional parameter"
 msgstr ""
@@ -13606,9 +13827,6 @@ msgstr ""
 msgid "Password"
 msgstr "Katakunci"
 
-msgid "Password (httpuser)"
-msgstr ""
-
 msgid "Password (httpwd)"
 msgstr "Katakunci (httpwd)"
 
@@ -13673,6 +13891,9 @@ msgstr ""
 
 msgid "Perform the upgrade?"
 msgstr ""
+
+msgid "Performing arts"
+msgstr "Performing arts"
 
 msgid "Permanently delete all recordings in the trashcan?"
 msgstr "Permanently delete all recordings in the trashcan?"
@@ -13780,6 +14001,9 @@ msgid "Pixel Test"
 msgstr "Kleiner Test"
 
 msgid "Pixels\n"
+msgstr ""
+
+msgid "Plano-stereoscopic"
 msgstr ""
 
 msgid "Platform"
@@ -14193,6 +14417,12 @@ msgstr "Polarization"
 msgid "Polish"
 msgstr "Polish"
 
+msgid "Politics"
+msgstr ""
+
+msgid "Popular culture/Traditional arts"
+msgstr "Popular culture/Traditional arts"
+
 msgid "Popup"
 msgstr "Popup"
 
@@ -14213,9 +14443,6 @@ msgstr "Port D"
 
 msgid "Port number for the Stream Relay server used to descramble services that can only be decrypted via Stream Relay."
 msgstr ""
-
-msgid "Port of fallback remote receiver"
-msgstr "Port receiver jauh yg digunakan"
 
 msgid "Portugal"
 msgstr "Portugal"
@@ -14257,7 +14484,7 @@ msgid "Power"
 msgstr "Power"
 
 #, fuzzy
-msgid "Power LED State in Deep-Standby"
+msgid "Power LED State in Deep Standby"
 msgstr "Power LED State in Deep-Standby/Standby"
 
 #, fuzzy
@@ -14268,11 +14495,11 @@ msgid "Power LED can be turned on or off here."
 msgstr ""
 
 #, fuzzy
-msgid "Power LED state during deep-standby."
+msgid "Power LED state during Deep Standby."
 msgstr "Power LED state during deep-standby/standby."
 
 #, fuzzy
-msgid "Power LED state during standby."
+msgid "Power LED state during Standby."
 msgstr "Power LED state during deep-standby/standby."
 
 msgid "Power On Display"
@@ -14280,6 +14507,9 @@ msgstr "Power On Display"
 
 msgid "Power threshold in mA"
 msgstr "Power threshold in mA"
+
+msgid "Pre-school children's programs"
+msgstr "Pre-school children's programs"
 
 msgid "Predefined"
 msgstr "Predefined"
@@ -14554,8 +14784,8 @@ msgstr ""
 msgid "Profile"
 msgstr "Profile"
 
-msgid "Profile: Local box"
-msgstr "Profile: Local box"
+msgid "Profile: Local receiver"
+msgstr "Profile: Local receiver"
 
 msgid "Program"
 msgstr "Program"
@@ -14677,8 +14907,8 @@ msgstr "Puerto Rico"
 msgid "Purge"
 msgstr ""
 
-msgid "Purge 'Trash' after (days)"
-msgstr "Purge 'Trash' after (days)"
+msgid "Purge 'Trash' after"
+msgstr "Purge 'Trash' after"
 
 msgid "Purge Deleted User Bouquets"
 msgstr "Purge Deleted User Bouquets"
@@ -14695,11 +14925,11 @@ msgstr ""
 msgid "Pushto / Pashto"
 msgstr ""
 
-msgid "Put TV in standby"
-msgstr "Put TV in standby"
+msgid "Put TV in Standby"
+msgstr "Put TV in Standby"
 
-msgid "Put your AV Receiver in standby"
-msgstr "Put your AV Receiver in standby"
+msgid "Put your AV Receiver in Standby"
+msgstr "Put your AV Receiver in Standby"
 
 msgid "Python"
 msgstr ""
@@ -14835,6 +15065,9 @@ msgstr "Merah lama"
 msgid "RF Output Settings"
 msgstr "RF Output Settings"
 
+msgid "Racing"
+msgstr ""
+
 msgid "Radio"
 msgstr ""
 
@@ -14863,8 +15096,8 @@ msgstr "Re-enter new PIN"
 msgid "Read Only"
 msgstr ""
 
-msgid "Read Userdata from oscam.conf"
-msgstr "Read Userdata from oscam.conf"
+msgid "Read Userdata from 'oscam.conf'"
+msgstr "Read Userdata from 'oscam.conf'"
 
 msgid "Read/Write"
 msgstr ""
@@ -15126,8 +15359,8 @@ msgstr ""
 msgid "Refresh"
 msgstr ""
 
-msgid "Refresh every (in hours)"
-msgstr "Refresh every (in hours)"
+msgid "Refresh every x hours"
+msgstr "Refresh every x hours"
 
 msgid "Refresh rate"
 msgstr "Refresh rate"
@@ -15145,8 +15378,8 @@ msgstr ""
 msgid "Refresh the update-able package list"
 msgstr ""
 
-msgid "Regard deep standby as standby"
-msgstr "Regard deep standby as standby"
+msgid "Regard Deep Standby as Standby"
+msgstr "Regard Deep Standby as Standby"
 
 msgid "Region"
 msgstr "Region"
@@ -15167,6 +15400,9 @@ msgstr ""
 #, fuzzy
 msgid "Religion"
 msgstr "religion"
+
+msgid "Religious"
+msgstr ""
 
 msgid "Reload Bookmarks"
 msgstr ""
@@ -15210,6 +15446,9 @@ msgstr "Progress bar left"
 msgid "Remaining minutes/Progress bar right"
 msgstr "Progress bar right"
 
+msgid "Remarkable people"
+msgstr "Remarkable people"
+
 msgid "Remember last service in PiP"
 msgstr "Remember last service in PiP"
 
@@ -15225,8 +15464,8 @@ msgstr ""
 msgid "Remote Control Code Settings"
 msgstr "Remote Control Code"
 
-msgid "Remote box"
-msgstr "Remote box"
+msgid "Remote receiver"
+msgstr "Remote receiver"
 
 msgid "Remote control information"
 msgstr ""
@@ -15466,6 +15705,9 @@ msgstr "Required medium type:"
 msgid "Rereading partition table"
 msgstr "Rereading partition table"
 
+msgid "Select 'Yes' to reschedule the task to run when the receiver enters or exits Standby. The state change must occur within the task's scheduled window or the task will not be run."
+msgstr ""
+
 msgid "Reserved"
 msgstr "Reserved"
 
@@ -15616,8 +15858,8 @@ msgstr "Restore your %s %s with a new firmware."
 msgid "Restore your backups by date."
 msgstr "Restore your backups by date."
 
-msgid "Restore your settings back from a backup. After restore the box will restart to activated the new settings"
-msgstr "Restore your settings back from a backup. After restore the box will restart to activated the new settings"
+msgid "Restore your settings back from a backup. After restore the receiver will restart to activated the new settings."
+msgstr "Restore your settings back from a backup. After restore the receiver will restart to activated the new settings."
 
 msgid "Restoring..."
 msgstr "Restoring..."
@@ -15685,6 +15927,9 @@ msgstr "Reverse bouquet buttons"
 msgid "Reverse list"
 msgstr "Reverse list"
 
+msgid "Review"
+msgstr ""
+
 msgid "Rewind"
 msgstr "Rewind"
 
@@ -15720,6 +15965,9 @@ msgstr ""
 
 msgid "Right, wrapped"
 msgstr "Right, wrapped"
+
+msgid "Rock/Pop"
+msgstr "Rock/Pop"
 
 msgid "Roll-off"
 msgstr "Roll-off"
@@ -16034,8 +16282,8 @@ msgstr "Save and stop"
 msgid "Save directory on EXIT"
 msgstr "Save directory on EXIT"
 
-msgid "Save every (in hours)"
-msgstr "Save every (in hours)"
+msgid "Save every x hours"
+msgstr "Save every x hours"
 
 #, python-format
 msgid "Save image as '%s'"
@@ -16173,10 +16421,10 @@ msgstr[1] ""
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Scans default lamedbs sorted by satellite with a connected dish positioner"
 
-msgid "Scheduled load of epg.dat"
+msgid "Scheduled load of 'epg.dat'"
 msgstr ""
 
-msgid "Scheduled save of epg.dat"
+msgid "Scheduled save of 'epg.dat'"
 msgstr ""
 
 msgid "Scheduler"
@@ -16200,14 +16448,17 @@ msgstr "Scheduler log"
 msgid "Scheduler standby"
 msgstr "PewaktuDaya Standby"
 
-msgid "Sci-Fi"
-msgstr ""
-
 msgid "Science"
 msgstr ""
 
 msgid "Science & Tech"
 msgstr ""
+
+msgid "Science fiction"
+msgstr ""
+
+msgid "Science fiction/Fantasy/Horror"
+msgstr "sains fiksi/fantasi/horror"
 
 msgid "Scope"
 msgstr ""
@@ -16486,9 +16737,6 @@ msgstr ""
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr ""
 
-msgid "Select 'Yes' to reschedule the task to when the receiver goes in to/out of Standby mode. The state change must happen within the task schedule window or else the task will not be run."
-msgstr ""
-
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
 msgstr ""
 
@@ -16642,8 +16890,8 @@ msgstr "Select Quad Channels"
 msgid "Select Satellites"
 msgstr "Select Satellites"
 
-msgid "Select SeekBar to be activated by arrow L/R (long) or << >> (long)."
-msgstr "Select SeekBar to be activated by arrow L/R (long) or << >> (long)."
+msgid "Select SeekBar to be activated by arrow LEFT/RIGHT (long) or << >> (long)."
+msgstr "Select SeekBar to be activated by arrow LEFT/RIGHT (long) or << >> (long)."
 
 msgid "Select Shares"
 msgstr ""
@@ -16718,7 +16966,7 @@ msgstr ""
 msgid "Select a script to run:"
 msgstr "Select a script to run:"
 
-msgid "Select a time, when in Standby mode, after which the descramble can proceed."
+msgid "Select a time, when in Standby, after which the descramble can proceed."
 msgstr ""
 
 msgid "Select a time, when in Standby, before which descramble can proceed."
@@ -16809,7 +17057,7 @@ msgstr ""
 msgid "Select how quickly the dish should move between satellites."
 msgstr ""
 
-msgid "Select how the arrow ('UP', 'DOWN', 'LEFT', and 'RIGHT') buttons will act during seek actions."
+msgid "Select how the arrow buttons 'UP', 'DOWN', 'LEFT' or 'RIGHT' will act during seek actions."
 msgstr ""
 
 msgid "Select how the number buttons will act during seek actions."
@@ -16818,14 +17066,14 @@ msgstr ""
 msgid "Select how the satellite dish is set up. i.e. fixed dish, single LNB, DiSEqC switch, positioner, etc."
 msgstr ""
 
-msgid "Select how the schedule is handled with respect to Standby mode."
+msgid "Select how the schedule is handled with respect to Standby."
 msgstr ""
 
 msgid "Select how to activate the Quick EPG mode."
 msgstr "Select how to activate the Quick EPG mode."
 
-msgid "Select how your box will upgrade."
-msgstr "Select how your box will upgrade."
+msgid "Select how your receiver will upgrade."
+msgstr "Select how your receiver will upgrade."
 
 msgid "Select if an end time is required."
 msgstr ""
@@ -17040,7 +17288,7 @@ msgstr ""
 msgid "Select the delay before the timer activates."
 msgstr ""
 
-msgid "Select the delay to use when closing a Stream Relay service before reallocating the tuner for another service. Using '0' is only recommended for boxes with multiple satellite tuners."
+msgid "Select the delay to use when closing a Stream Relay service before reallocating the tuner for another service. Using '0' is only recommended for receivers with multiple satellite tuners."
 msgstr ""
 
 msgid "Select the delay to wait after pressing more digit buttons to select a new service."
@@ -17070,7 +17318,7 @@ msgstr ""
 msgid "Select the duration of inactivity before the screen saver will be displayed."
 msgstr "Select the duration of inactivity before the screen saver will be displayed."
 
-msgid "Select the end time before which this timer can be activated.  After this time the timer won't be activated even if other conditions are met."
+msgid "Select the end time before which this timer can be activated. After this time the timer won't be activated even if other conditions are met."
 msgstr ""
 
 #, python-format
@@ -17245,7 +17493,7 @@ msgstr ""
 msgid "Select the source of the default DNS settings."
 msgstr ""
 
-msgid "Select the start time after which this timer can be activated.  Before this time the timer won't be activated even if other conditions are met."
+msgid "Select the start time after which this timer can be activated. Before this time the timer won't be activated even if other conditions are met."
 msgstr ""
 
 msgid "Select the starting/initial column to be activated on File Commander start up."
@@ -17280,7 +17528,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Select the time zone within the area or region."
-msgstr "Set the time to hide the infobar."
+msgstr "Set the time to hide the InfoBar."
 
 msgid "Select the timer from the fallback tuner by default"
 msgstr "Ketika diaktifkan, pewaktu dari penala digunakan diimpor"
@@ -17339,8 +17587,8 @@ msgstr ""
 msgid "Select what do do after the timer zap has completed."
 msgstr ""
 
-msgid "Select what should be done when the %s %s was boot-up, normal playing or goto standby."
-msgstr "Select what should be done when the %s %s was boot-up, normal playing or goto standby."
+msgid "Select what should be done when the %s %s was boot-up, normal playing or goto Standby."
+msgstr "Select what should be done when the %s %s was boot-up, normal playing or goto Standby."
 
 msgid "Select what should be done when the %s %s was shutdown incorrectly, or after the Power was lost."
 msgstr "Select what should be done when the %s %s was shutdown incorrectly, or after the Power was lost."
@@ -17360,8 +17608,8 @@ msgstr "Select what you want the OK button to activate."
 msgid "Select what you want the TV button to activate."
 msgstr "Select what you want the TV button to activate."
 
-msgid "Select what you want the Up/Down button to activate."
-msgstr "Select what you want the Up/Down button to activate."
+msgid "Select what you want the UP/DOWN button to activate."
+msgstr "Select what you want the UP/DOWN button to activate."
 
 msgid "Select where the recording should be saved."
 msgstr ""
@@ -17474,6 +17722,12 @@ msgstr "Serbian"
 
 msgid "Serial No"
 msgstr "Serial No"
+
+msgid "Serious music/Classic music"
+msgstr "Serious music/Classic music"
+
+msgid "Serious/Classical/Religious/Historical/Drama"
+msgstr "Serious/Classical/Religious/Historical/Drama"
 
 msgid "Server down"
 msgstr "Server down"
@@ -17688,6 +17942,9 @@ msgstr "Set fixed"
 msgid "Set fps for external subtitles"
 msgstr "Set fps for external subtitles"
 
+msgid "Set how long the second InfoBar stays visible. The second InfoBar also disappears when you press 'OK'."
+msgstr "Set how long the second InfoBar stays visible. The second InfoBar also disappears when you press 'OK'."
+
 msgid "Set interface as the default Interface"
 msgstr "Set interface as the default Interface"
 
@@ -17719,7 +17976,7 @@ msgstr ""
 msgid "Set the UP/DOWN button skip percentage for the SeekBar."
 msgstr ""
 
-msgid "Set the User ID of the OpenWebif from your fallback tuner"
+msgid "Set the User ID of the OpenWebif from your fallback tuner."
 msgstr "Atur ID Pengguna OpenWebif dari penala terpakai anda"
 
 #, fuzzy
@@ -17747,23 +18004,26 @@ msgstr "Set the default sorting method."
 msgid "Set the delay time between repeated loops, this is used by software renderer in some skins."
 msgstr "Set the delay time between repeated loops, this is used by software renderer in some skins."
 
+msgid "Set the hostname or IP address."
+msgstr ""
+
 msgid "Set the jump-size of the SeekBar."
 msgstr "Set the jump-size of the SeekBar."
 
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr ""
 
-msgid "Set the password of the OpenWebif from your fallback tuner"
+msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Atur katakunci OpenWebif dari penala terpakai anda"
 
-msgid "Set the port of the OpenWebif from your fallback tuner"
+msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Atur port OpenWebif dari penala terpakai anda"
 
 msgid "Set the position of the recording icons."
 msgstr "Set the position of the recording icons."
 
-msgid "Set the screen type you get on pressing 'OK' when the info bar shows to 2nd infobar Lite or event info."
-msgstr "Set the screen type you get on pressing 'OK' when the info bar shows to 2nd infobar Lite or event info."
+msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
+msgstr "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 
 msgid "Set the scrolling speed of text on the front display, this is used by software renderer in some skins."
 msgstr "Set the scrolling speed of text on the front display, this is used by software renderer in some skins."
@@ -17786,16 +18046,13 @@ msgid ""
 "Press YELLOW to set the time zone via geolocation."
 msgstr ""
 
-msgid "Set the time to hide the infobar."
-msgstr "Set the time to hide the infobar."
-
-msgid "Set the time to hide the second infobar. The bar also disappears on pressing 'OK'."
-msgstr "Set the time to hide the second infobar. The bar also disappears on pressing 'OK'."
+msgid "Set the time to hide the InfoBar."
+msgstr "Set the time to hide the InfoBar."
 
 msgid "Set the time to wait for execute the default action in shutdown, standby or restart messages, e.g. used in RecordTimer, Scheduler, SleepTimer etc."
 msgstr ""
 
-msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at (0,0) and the bottom right is at (1260,700). Note that the position is the top left of the spinner and not the centre of the spinner."
+msgid "Set the top left location of the busy spinner. The coordinates are scaled such that the top left is at 0,0 and the bottom right is at 1260,700. Note that the position is the top left of the spinner and not the centre of the spinner."
 msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
@@ -17830,23 +18087,23 @@ msgstr ""
 msgid "Set time options"
 msgstr ""
 
-msgid "Set to 'Disabled' to replace underscore characters, '_', in file and directory names with spaces."
+msgid "Set to 'Disabled' to replace underscore characters '_' in file and directory names with spaces."
 msgstr ""
 
-msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby mode before shutting down."
+msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby before shutting down."
 msgstr ""
 
 msgid "Set to 'Enabled' to descramble queued scrambled recordings in Standby."
 msgstr ""
 
-msgid "Set to 'Yes', to enable automatic recording of the background timeshift buffer."
+msgid "Set to 'Yes', to enable automatic recording of the background time shift buffer."
 msgstr ""
 
-msgid "Set to the desired primetime (hour)."
-msgstr "Set to the desired primetime (hour)."
+msgid "Set to the desired primetime hour."
+msgstr "Set to the desired primetime hour."
 
-msgid "Set to the desired primetime (minutes."
-msgstr "Set to the desired primetime (minutes."
+msgid "Set to the desired primetime minutes."
+msgstr "Set to the desired primetime minutes."
 
 msgid "Set to what you want the button to do."
 msgstr "Set to what you want the button to do."
@@ -17875,7 +18132,7 @@ msgstr ""
 msgid "Setting Restored "
 msgstr "Setting Restored "
 
-msgid "Setting a password is strongly advised if your STB is open to the Internet. You must set a password in order to be able to use network services like FTP, Telnet or SSH."
+msgid "Setting a password is strongly advised if your receiver is open to the Internet. You must set a password in order to be able to use network services like FTP, Telnet or SSH."
 msgstr ""
 
 msgid "Settings"
@@ -18067,15 +18324,15 @@ msgstr ""
 msgid "Shopping"
 msgstr "zapping"
 
-#, fuzzy
-msgid "Short film"
-msgstr "Short filenames"
-
 msgid "Short filenames"
 msgstr "Short filenames"
 
 msgid "Short filenames with time"
 msgstr "Short filenames with time"
+
+#, fuzzy
+msgid "Short film"
+msgstr "Short filenames"
 
 msgid "Should the crash counter be reset to prevent a restart?"
 msgstr ""
@@ -18162,6 +18419,9 @@ msgstr ""
 msgid "Show Driver packages"
 msgstr ""
 
+msgid "Show EIT Now/Next event data in the InfoBar"
+msgstr "Show EIT Now/Next event data in the InfoBar"
+
 msgid "Show EPG"
 msgstr "Show EPG"
 
@@ -18219,8 +18479,8 @@ msgstr ""
 msgid "Show Media Player in Main Menu"
 msgstr "Show Media Player in Main Menu"
 
-msgid "Show Media playback Remaining/Elapsed as"
-msgstr "Show Media playback Remaining/Elapsed as"
+msgid "Show Media playback remaining/elapsed as"
+msgstr "Show Media playback remaining/elapsed as"
 
 msgid "Show Merlin EPG Center"
 msgstr "Show Merlin EPG Center"
@@ -18384,7 +18644,7 @@ msgstr "Show channel numbers in channel selection"
 msgid "Show channel selection"
 msgstr "Show channel selection"
 
-msgid "Show chapter positions for supported video files. (gstreamer version must be greather than 1)"
+msgid "Show chapter positions for supported video files."
 msgstr ""
 
 msgid "Show columns"
@@ -18570,10 +18830,10 @@ msgstr ""
 msgid "Show next system information screen"
 msgstr ""
 
-msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
+msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete."
 msgstr "Tampilkan pemberitahuan saat impor kanal dan/atau EPG dari URL Rx jauh tidak selesai"
 
-msgid "Show notification when import channels and/or EPG from remote receiver URL is completed"
+msgid "Show notification when import channels and/or EPG from remote receiver URL is completed."
 msgstr "Tampilkan pemberitahuan saat impor kanal dan/atau EPG dari URL Rx jauh telah selesai"
 
 msgid "Show notification when import channels was not successful"
@@ -18582,8 +18842,8 @@ msgstr "Tampilkan pemberitahuan saat impor kanal tidak berhasil"
 msgid "Show notification when import channels was successful"
 msgstr "Tampilkan pemberitahuan saat impor kanal berhasil"
 
-msgid "Show or hide the extended description, (skin dependent)."
-msgstr "Show or hide the extended description, (skin dependent)."
+msgid "Show or hide the extended description. This functionality may be skin dependent."
+msgstr "Show or hide the extended description. This functionality may be skin dependent."
 
 #, fuzzy
 msgid "Show parting lines"
@@ -18735,9 +18995,6 @@ msgstr ""
 msgid "Show the CCcam Info Screen"
 msgstr ""
 
-msgid "Show the EIT Now/Next data in the InfoBar."
-msgstr "Show the EIT Now/Next data in the InfoBar."
-
 msgid "Show the Logs Settings screen"
 msgstr ""
 
@@ -18804,6 +19061,9 @@ msgstr ""
 msgid "Show/Hide focus bar"
 msgstr "Show/Hide focus bar"
 
+msgid "Showbiz"
+msgstr ""
+
 msgid "Showiframe"
 msgstr ""
 
@@ -18816,8 +19076,8 @@ msgstr "Shows available plugins. Here you can download and install them"
 msgid "Shows available softcams. Here you can download and install them"
 msgstr "Shows available softcams. Here you can download and install them"
 
-msgid "Shows live tv or informations on LCD."
-msgstr "Shows live tv or informations on LCD."
+msgid "Shows live TV or informations on LCD."
+msgstr "Shows live TV or informations on LCD."
 
 msgid "Shows the icons when new/unseen, else will not show an icon."
 msgstr "Shows the icons when new/unseen, else will not show an icon."
@@ -19202,17 +19462,32 @@ msgstr "Smartcard PIN"
 msgid "Smooth"
 msgstr "Smooth"
 
+msgid "Snooker/Pool"
+msgstr ""
+
 msgid "SoC family"
+msgstr ""
+
+msgid "Soap"
 msgstr ""
 
 msgid "Soap opera"
 msgstr ""
 
+msgid "Soap/Melodrama/Folkloric"
+msgstr "Soap/Melodrama/Folkloric"
+
 msgid "Soccer"
 msgstr ""
 
+msgid "Social/Political issues/Economics"
+msgstr "Social/Political issues/Economics"
+
 msgid "Social/Political/Economics"
 msgstr "Social/Political/Economics"
+
+msgid "Social/Spiritual sciences"
+msgstr "Social/Spiritual sciences"
 
 msgid "Society & Culture"
 msgstr ""
@@ -19284,7 +19559,7 @@ msgstr "Somalia"
 msgid "Somalia"
 msgstr "Somalia"
 
-msgid "Some TVs can't switch to the correct input if another HDMI port is active. This setting sets the TV to standby before the switch. (If the TV does not turn back on it may require a slower transmission interval or the repetition of the wake-up command.)"
+msgid "Some TVs can't switch to the correct input if another HDMI port is active. This setting puts the TV into Standby before switching. If the TV does not turn back on, a slower transmission interval or repeating the wake-up command may be required."
 msgstr ""
 
 #, fuzzy
@@ -19311,15 +19586,6 @@ msgstr "Sorry no backups found!"
 
 msgid "Sorry uShare Config is Missing"
 msgstr "Sorry uShare Config is Missing"
-
-msgid ""
-"Sorry your Backup destination does not exist\n"
-"\n"
-"Please choose an other one."
-msgstr ""
-"Sorry your Backup destination does not exist\n"
-"\n"
-"Please choose an other one."
 
 #, python-format
 msgid "Sorry, %s has not been installed!"
@@ -19386,6 +19652,9 @@ msgstr ""
 msgid "Sotho, Southern"
 msgstr "South Sudan"
 
+msgid "Soul/Rhythm and Blues"
+msgstr ""
+
 msgid "Sound"
 msgstr "Sound"
 
@@ -19450,6 +19719,9 @@ msgstr "Special Features Settings"
 msgid "Special characteristics"
 msgstr ""
 
+msgid "Special events (Olympic games, World cup, etc.)"
+msgstr "Special events (Olympic games, World cup, etc.)"
+
 msgid "Specify the directory to use when starting Media Player."
 msgstr ""
 
@@ -19474,6 +19746,9 @@ msgstr "Sports"
 
 msgid "Sports"
 msgstr "Sports"
+
+msgid "Sports magazines"
+msgstr "Sports magazines"
 
 msgid "Sri Lanka"
 msgstr "Sri Lanka"
@@ -19623,10 +19898,10 @@ msgstr ""
 msgid "Status of the display during operation"
 msgstr ""
 
-msgid "Status of the display in deep standby"
+msgid "Status of the display in Deep Standby"
 msgstr ""
 
-msgid "Status of the display in standby mode"
+msgid "Status of the display in Standby"
 msgstr ""
 
 msgid "Status unavailable!"
@@ -19727,9 +20002,6 @@ msgstr "Stopped"
 
 msgid "Stopping Softcam"
 msgstr "Stopping Softcam"
-
-msgid "Stops time shift being used if a recording is in progress. (Advisable for USB sticks.)"
-msgstr "Stops time shift being used if a recording is in progress. (Advisable for USB sticks.)"
 
 msgid "Storage / Disk Information"
 msgstr ""
@@ -20095,8 +20367,8 @@ msgstr ""
 msgid "Symmetrical skips"
 msgstr ""
 
-msgid "Sync NTP every (minutes)"
-msgstr "Sync NTP every (minutes)"
+msgid "Sync NTP every"
+msgstr "Sync NTP every"
 
 msgid "Sync failure moving back to origin!"
 msgstr "Sync failure moving back to origin!"
@@ -20261,6 +20533,15 @@ msgstr ""
 msgid "Tatar"
 msgstr "Qatar"
 
+msgid "Team sports (excluding Football)"
+msgstr "Team sports (excluding Football)"
+
+msgid "Technology"
+msgstr ""
+
+msgid "Technology/Natural sciences"
+msgstr "Technology/Natural sciences"
+
 msgid "Teletext"
 msgstr "Teletext"
 
@@ -20340,6 +20621,9 @@ msgstr ""
 msgid "Tennis"
 msgstr "Finnish"
 
+msgid "Tennis/Squash"
+msgstr "Tennis/Squash"
+
 msgid "Terrestrial"
 msgstr "Terrestrial"
 
@@ -20407,11 +20691,11 @@ msgstr ""
 msgid "The %s %s is shutting down. Please wait..."
 msgstr ""
 
-msgid "The %s %s reads the stored EPG data every (hours)."
-msgstr "The %s %s reads the stored EPG data every (hours)."
+msgid "The %s %s reads the stored EPG data every x hours."
+msgstr "The %s %s reads the stored EPG data every x hours."
 
-msgid "The %s %s stores the EPG data every (hours)."
-msgstr "The %s %s stores the EPG data every (hours)."
+msgid "The %s %s stores the EPG data every x hours."
+msgstr "The %s %s stores the EPG data every x hours."
 
 #, python-format
 msgid "The %s %s will reboot within 1 seconds."
@@ -20580,15 +20864,12 @@ msgstr ""
 msgid "The backup succeeded. We will now continue to explain the upgrade process."
 msgstr ""
 
-msgid "The bitrate of the video encoder. Larger value improves quality and increases file size."
-msgstr ""
-
 msgid ""
 "The channel may support VPS\n"
 " Do you want to enable VPS?"
 msgstr ""
 
-msgid "The command to wake from standby will be sent multiple times."
+msgid "The command to wake from Standby will be sent multiple times."
 msgstr ""
 
 msgid ""
@@ -20597,9 +20878,6 @@ msgid ""
 msgstr ""
 "The default backup selection cannot be changed.\n"
 "Please use the 'additional' and 'excluded' backup selection."
-
-msgid "The default settings are 5 minutes earlier to wake up from deep standby. It possibly may be necessary to change this. (e.g.: the actual wake-up time is inaccurate or to late, waiting to a network-drive, etc.)"
-msgstr "The default settings are 5 minutes earlier to wake up from deep standby. It possibly may be necessary to change this. (e.g.: the actual wake-up time is inaccurate or to late, waiting to a network-drive, etc.)"
 
 msgid "The default settings are wake up time - 5 minutes and timer begin time + 5 minutes. This setting changed the time window before the wake up time. So can be detected a wake up by a timer even at very early starting receivers."
 msgstr "The default settings are wake up time - 5 minutes and timer begin time + 5 minutes. This setting changed the time window before the wake up time. So can be detected a wake up by a timer even at very early starting receivers."
@@ -20814,11 +21092,11 @@ msgstr "This DVD RW medium is already formatted - reformatting will erase all co
 msgid "This Option allows you to switch Audio to BT Speakers."
 msgstr "This option allows you to Power Off the display."
 
-msgid "This allows you change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
-msgstr "This allows you change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
+msgid "This allows you to change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
+msgstr "This allows you to change the font size relative to skin size, so 1 increases by 1 point size, and -1 decreases by 1 point size."
 
-msgid "This allows you change the number of rows shown."
-msgstr "This allows you change the number of rows shown."
+msgid "This allows you to change the number of rows shown."
+msgstr "This allows you to change the number of rows shown."
 
 msgid "This allows you to set the maximum number of digits in a service number, up to 5."
 msgstr "This allows you to set the maximum number of digits in a service number, up to 5."
@@ -20833,7 +21111,7 @@ msgstr "This option allows you to hide and sorting of the menus"
 msgid "This function is not available as processing of large files may take too long to run on this hardware."
 msgstr ""
 
-msgid "This is a workaround for some devices that wake up again after switching to standby. The wake up command's from other devices will be ignored for few seconds."
+msgid "This is a workaround for devices that wake up immediately after entering Standby. Wake-up commands from other devices are ignored for a few seconds."
 msgstr ""
 
 #, python-format
@@ -20894,36 +21172,11 @@ msgstr "This option allows you can config the Colordepth for UHD"
 msgid "This option allows you can force the HLG Modes for UHD"
 msgstr "This option allows you can config the Colordepth for UHD"
 
-msgid "This option allows you choose how to display remaining time, or elapsed time, or both."
-msgstr "This option allows you choose how to display remaining time, or elapsed time, or both."
-
-msgid "This option allows you choose how to display the remaining/elapsed time for live tv."
-msgstr "This option allows you choose how to display the remaining/elapsed time for live tv."
-
-msgid "This option allows you choose how to display the remaining/elapsed time for media playback."
-msgstr "This option allows you choose how to display the remaining/elapsed time for media playback."
-
-#, fuzzy
-msgid "This option allows you choose if the display shows the time or nothing in Standby."
-msgstr "This option allows you to choose how to display elapsed time, as + or -."
-
-msgid "This option allows you choose if the display shows the time, channel number or nothing during operation."
-msgstr ""
-
-msgid "This option allows you choose the background color of transparent picons."
-msgstr "This option allows you choose the background color of transparent picons."
-
-msgid "This option allows you choose the option for Subservice indicator or selection."
-msgstr ""
-
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "This option allows you enable smoothing filter to control the dithering process."
 
 msgid "This option allows you enable the vertical scaler dejagging."
 msgstr "This option allows you enable the vertical scaler dejagging."
-
-msgid "This option allows you set the layout view (Text or Graphics)."
-msgstr "This option allows you set the layout view (Text or Graphics)."
 
 msgid "This option allows you to Power Off the display."
 msgstr "This option allows you to Power Off the display."
@@ -20976,21 +21229,46 @@ msgstr "This option allows you to choose how to display SD progressive 24Hz on y
 msgid "This option allows you to choose how to display elapsed time, as + or -."
 msgstr "This option allows you to choose how to display elapsed time, as + or -."
 
+msgid "This option allows you to choose how to display the remaining time, the elapsed time, or both."
+msgstr "This option allows you to choose how to display the remaining time, the elapsed time, or both."
+
 msgid "This option allows you to choose how to display standard definition video on your TV."
 msgstr "This option allows you to choose how to display standard definition video on your TV."
 
-msgid "This option allows you to choose what the first button press jumps to in channel list screen, (so pressing '2' jumps to 'A' or '2' first), when 'Quick Actions' preset actions are performed. "
-msgstr "This option allows you to choose what the first button press jumps to in channel list screen, (so pressing '2' jumps to 'A' or '2' first), when 'Quick Actions' preset actions are performed. "
+msgid "This option allows you to choose how to display the remaining/elapsed time for live TV."
+msgstr "This option allows you to choose how to display the remaining/elapsed time for live TV."
+
+msgid "This option allows you to choose how to display the remaining/elapsed time for media playback."
+msgstr "This option allows you to choose how to display the remaining/elapsed time for media playback."
+
+#, fuzzy
+msgid "This option allows you to choose if the display shows the time or nothing in Standby."
+msgstr "This option allows you to choose how to display elapsed time, as + or -."
+
+msgid "This option allows you to choose if the display shows the time, channel number or nothing during operation."
+msgstr ""
+
+msgid "This option allows you to choose the background color of transparent picons."
+msgstr "This option allows you to choose the background color of transparent picons."
+
+msgid "This option allows you to choose the option for Subservice indicator or selection."
+msgstr ""
+
+msgid "This option allows you to choose what the first button press jumps to in channel list screen, (so pressing '2' jumps to 'A' or '2' first), when 'Quick Actions' preset actions are performed."
+msgstr "This option allows you to choose what the first button press jumps to in channel list screen, (so pressing '2' jumps to 'A' or '2' first), when 'Quick Actions' preset actions are performed."
 
 #, fuzzy
 msgid "This option allows you to choose whether or not to display genre information for the event."
-msgstr "This option allows you choose how to display the remaining/elapsed time for live tv."
+msgstr "This option allows you to choose how to display the remaining/elapsed time for live TV."
 
 msgid "This option allows you to enable 3D Surround Sound."
 msgstr "This option allows you to enable 3D Surround Sound."
 
 msgid "This option allows you to set offset values for different Letterbox resolutions."
 msgstr ""
+
+msgid "This option allows you to set the layout view (Text or Graphics)."
+msgstr "This option allows you to set the layout view (Text or Graphics)."
 
 msgid "This option allows you to the SNR as a percentage (not all receivers support this)."
 msgstr "This option allows you to the SNR as a percentage (not all receivers support this)."
@@ -21091,6 +21369,9 @@ msgid "This sets the prefix for each line in the debug log. The 'Boot time' is t
 msgstr ""
 
 msgid "This setting allows the tuner configuration to be a duplication of another configured tuner."
+msgstr ""
+
+msgid "This setting can help improve signal quality or prevent issues with longer HDMI cables."
 msgstr ""
 
 msgid "This setting depends on your cable provider and location. If you don't know the correct setting refer to the menu in the official cable receiver, or get it from your cable provider, or seek help via Internet forum."
@@ -21219,8 +21500,8 @@ msgid "Time delay of the shutdown messages"
 msgstr ""
 
 #, fuzzy
-msgid "Time delay until standby or deep standby"
-msgstr "Regard deep standby as standby"
+msgid "Time delay until Standby or Deep Standby"
+msgstr "Regard Deep Standby as Standby"
 
 msgid "Time for next LCD scrolling"
 msgstr "Time for next LCD scrolling"
@@ -21561,6 +21842,9 @@ msgstr ""
 msgid "Total:"
 msgstr "Total:"
 
+msgid "Tourism/Travel"
+msgstr "Tourism/Travel"
+
 msgid "Track"
 msgstr "Track"
 
@@ -21609,6 +21893,9 @@ msgstr ""
 
 #, python-format
 msgid "Transponder information for '%s'"
+msgstr ""
+
+msgid "Transport"
 msgstr ""
 
 msgid "Transport Stream ID (TSID)"
@@ -21849,14 +22136,17 @@ msgstr ""
 msgid "UHD Test"
 msgstr "Small Test"
 
+msgid "UP/DOWN button mode"
+msgstr "UP/DOWN button mode"
+
+msgid "UP/DOWN buttons also for 'all up/down'"
+msgstr ""
+
 msgid "UP80  (keymap.u80)"
 msgstr "UP80  (keymap.u80)"
 
 msgid "URL"
 msgstr ""
-
-msgid "URL of fallback remote receiver"
-msgstr "Alamat URL rx jauh digunakan"
 
 msgid "USALS"
 msgstr "USALS"
@@ -21869,9 +22159,6 @@ msgstr ""
 
 msgid "USB 3.0 (Back, outer)"
 msgstr ""
-
-msgid "USB Stick"
-msgstr "USB Stick"
 
 #, python-format
 msgid "USB reader %d"
@@ -21911,6 +22198,9 @@ msgstr "Unattended upgrade without GUI"
 #, fuzzy
 msgid "Undefined"
 msgstr "User defined"
+
+msgid "Under 5"
+msgstr ""
 
 msgid "Undetermined"
 msgstr "Undetermined"
@@ -22018,6 +22308,9 @@ msgstr "Unmount"
 msgid "Unpack File"
 msgstr ""
 
+msgid "Unpublished"
+msgstr "Unpublished"
+
 msgid "Unscramble and record ECM"
 msgstr "Unscramble and record ECM"
 
@@ -22050,12 +22343,6 @@ msgid "Up / Active"
 msgstr ""
 
 msgid "Up to 50 Mbps"
-msgstr ""
-
-msgid "Up/Down button mode"
-msgstr "Up/Down button mode"
-
-msgid "Up/Down buttons also for 'all up/down'."
 msgstr ""
 
 msgid "Update"
@@ -22093,8 +22380,8 @@ msgstr ""
 msgid "Update/Backup your firmware, Backup/Restore settings"
 msgstr "Update/Backup your firmware, Backup/Restore settings"
 
-msgid "Update/Backup/Restore your box"
-msgstr "Update/Backup/Restore your box"
+msgid "Update/Backup/Restore your receiver"
+msgstr "Update/Backup/Restore your receiver"
 
 msgid "Updated"
 msgstr ""
@@ -22550,6 +22837,9 @@ msgstr "Vanuatu"
 msgid "Variety"
 msgstr "Variety show"
 
+msgid "Variety show"
+msgstr "Variety show"
+
 #, fuzzy
 msgid "Various"
 msgstr "Previous"
@@ -22879,8 +23169,8 @@ msgstr "Waiting for partition"
 msgid "Wake up"
 msgstr "Wake up"
 
-msgid "Wake up TV from standby"
-msgstr "Wake up TV from standby"
+msgid "Wake up TV from Standby"
+msgstr "Wake up TV from Standby"
 
 msgid "Wake up from Deep-Standby is allowed"
 msgstr ""
@@ -22891,8 +23181,8 @@ msgstr "Wake up time before a timer begins [mins]"
 msgid "Wake up to standby"
 msgstr "Wake up to standby"
 
-msgid "Wake up your AV Receiver from standby"
-msgstr "Wake up your AV Receiver from standby"
+msgid "Wake up your AV Receiver from Standby"
+msgstr "Wake up your AV Receiver from Standby"
 
 msgid "Wallis and Futuna"
 msgstr "Wallis and Futuna"
@@ -22935,6 +23225,12 @@ msgstr "Warning: no LNB; using factory defaults."
 
 msgid "Watch movies..."
 msgstr "Watch movies..."
+
+msgid "Water sport"
+msgstr "Water sport"
+
+msgid "Watersports"
+msgstr ""
 
 #, fuzzy
 msgid "Weather"
@@ -23053,37 +23349,13 @@ msgstr ""
 msgid "When 'Enabled', the timer view will show the free space on the target device. This will wake the device from sleep mode."
 msgstr ""
 
-msgid "When enabled the PiP can be closed by the exit button."
-msgstr "When enabled the PiP can be closed by the exit button."
-
-msgid "When enabled the receiver will automatically be switched off."
-msgstr ""
-
-msgid "When enabled the receiver will automatically be switched on."
-msgstr ""
-
-msgid "When enabled the receiver will automatically return to standby when the TV is turned off."
-msgstr ""
-
-msgid "When enabled the receiver will automatically wake from standby when the TV is turned on."
-msgstr ""
-
-msgid "When enabled the timer from the fallback tuner is imported"
-msgstr "Ketika diaktifkan, pewaktu dari penala digunakan diimpor"
-
-msgid "When enabled the timer from the fallback tuner is the default timer"
-msgstr "Ketika diaktifkan, pewaktu dari penala digunakan diimpor"
-
-msgid "When enabled you can customize the OpenWebIf settings for the fallback tuner"
-msgstr "Ketika diaktifkan, anda bisa menyesuaikan setelan OpenWebif pada penala digunakan"
-
 msgid "When enabled, AIT data will be included in http streams. This allows a client receiver to use HbbTV."
 msgstr "When enabled, AIT data will be included in http streams. This allows a client receiver to use HbbTV."
 
 msgid "When enabled, EIT data will be included in http streams. This allows a client receiver to show EPG."
 msgstr "When enabled, EIT data will be included in http streams. This allows a client receiver to show EPG."
 
-msgid "When enabled, SDT, BAT data will be included in http streams."
+msgid "When enabled, SDT and BAT data will be included in http streams."
 msgstr ""
 
 msgid "When enabled, a pop up message will be shown when a movie has finished and the next one will start."
@@ -23104,11 +23376,11 @@ msgstr "When enabled, a recording is allowed to abort streaming, when there are 
 msgid "When enabled, a recording is allowed to interrupt live TV, when there are no free tuners."
 msgstr "When enabled, a recording is allowed to interrupt live TV, when there are no free tuners."
 
+msgid "When set to 'Yes' a specific Softcam can be assigned to each encrypted service."
+msgstr ""
+
 msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the time shift."
 msgstr "When enabled, a warning will be displayed and the user will get an option to stop or to continue the time shift."
-
-msgid "When enabled, always unscramble receiving http streams. This takes up more resources (unscrambling demuxers), only enable if necessary. Individual streams are always unscrambled if 0x100 is added to the service type, regardless of this setting."
-msgstr "When enabled, always unscramble receiving http streams. This takes up more resources (unscrambling demuxers), only enable if necessary. Individual streams are always unscrambled if 0x100 is added to the service type, regardless of this setting."
 
 msgid "When enabled, authentication is required to watch http streams."
 msgstr "When enabled, authentication is required to watch http streams."
@@ -23167,11 +23439,23 @@ msgstr "When enabled, teletext pages will be cached, allowing faster access."
 msgid "When enabled, teletext subtitles will be displayed at their original position."
 msgstr "When enabled, teletext subtitles will be displayed at their original position."
 
+msgid "When enabled, the PiP can be closed by pressing the EXIT button."
+msgstr "When enabled, the PiP can be closed by pressing the EXIT button."
+
 msgid "When enabled, the VCR SCART option will be shown on the main menu."
 msgstr "When enabled, the VCR SCART option will be shown on the main menu."
 
 msgid "When enabled, the length of each recording will be shown in the movie list (this might cause some additional loading time)."
 msgstr "When enabled, the length of each recording will be shown in the movielist (this might cause some additional loading time)."
+
+msgid "When enabled, the receiver will automatically be switched off."
+msgstr ""
+
+msgid "When enabled, the receiver will automatically be switched on."
+msgstr ""
+
+msgid "When enabled, the receiver will automatically return to Standby when the TV is turned off."
+msgstr ""
 
 msgid "When enabled, the receiver will automatically use the audio track which you selected before."
 msgstr "When enabled, the receiver will automatically use the audio track which you selected before."
@@ -23179,11 +23463,20 @@ msgstr "When enabled, the receiver will automatically use the audio track which 
 msgid "When enabled, the receiver will automatically use the subtitles which you selected before."
 msgstr "When enabled, the receiver will automatically use the subtitles which you selected before."
 
+msgid "When enabled, the receiver will automatically wake from Standby when the TV is turned on."
+msgstr ""
+
 msgid "When enabled, the receiver will select an AC3 track (when available)."
 msgstr "When enabled, the receiver will select an AC3 track (when available)."
 
 msgid "When enabled, the receiver will select an AC3+ track (when available)."
 msgstr "When enabled, the receiver will select an AC3+ track (when available)."
+
+msgid "When enabled, the timer from the fallback tuner is imported."
+msgstr "Ketika diaktifkan, pewaktu dari penala digunakan diimpor"
+
+msgid "When enabled, the timer from the fallback tuner is the default timer."
+msgstr "Ketika diaktifkan, pewaktu dari penala digunakan diimpor"
 
 msgid "When enabled, this setting has more weight than 'Preferred tuner for recordings'."
 msgstr "Ketika diaktifkan, setelan ini punya bobot lebih daripada 'Penala pilihan untuk merekam'."
@@ -23196,6 +23489,9 @@ msgstr "When enabled, time shift starts automatically in background after specif
 
 msgid "When enabled, use DHCP for the IP configuration."
 msgstr "When enabled, use DHCP for the IP configuration."
+
+msgid "When enabled, you can customize the OpenWebIf settings for the fallback tuner."
+msgstr "Ketika diaktifkan, anda bisa menyesuaikan setelan OpenWebif pada penala digunakan"
 
 msgid "When enabled, your receiver will detect activity on the VCR SCART input."
 msgstr "When enabled, your receiver will detect activity on the VCR SCART input."
@@ -23212,17 +23508,11 @@ msgstr ""
 msgid "When nonzero, a zap timer will stop the nominated period after the ending time indicated in the EPG."
 msgstr ""
 
-msgid "When receiver wakes from standby it will command the TV to switch to the HDMI input to which the receiver is connected."
-msgstr ""
-
 msgid "When set each folder will show the previous state used, when off the default values will be shown."
 msgstr "When set each folder will show the previous state used, when off the default values will be shown."
 
 msgid "When set the PIG will return to live after a movie has stopped playing."
 msgstr "When set the PIG will return to live after a movie has stopped playing."
-
-msgid "When set to 'Yes' a specific Softcam can be assigned to each encrypted service."
-msgstr ""
 
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
 msgstr "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
@@ -23233,14 +23523,17 @@ msgstr "When the content has an aspect ratio of 4:3, choose whether to scale/str
 msgid "When the input cursor reaches this point (percentage of the width, from either side) scroll the text to the cursor."
 msgstr ""
 
-msgid "When the receiver wakes from standby or deep standby it will send a command to the TV to bring it out of standby."
+msgid "When the receiver wakes from Standby or Deep Standby it will send a command to the TV to bring it out of Standby."
+msgstr ""
+
+msgid "When the receiver wakes from Standby, it will switch the TV to the HDMI input connected to the receiver."
 msgstr ""
 
 msgid "When the red box is correctly visible press the GREEN button to save the settings and exit."
 msgstr ""
 
-msgid "When tuned to a service the system will normally scan the transponder for any changes and save them. Only set to 'yes' if you're absolutely sure what you're doing."
-msgstr "When tuned to a service the system will normally scan the transponder for any changes and save them. Only set to 'yes' if you're absolutely sure what you're doing."
+msgid "When tuned to a service, the system normally scans the transponder for changes and saves them. Enable only if you know what you’re doing."
+msgstr "When tuned to a service, the system normally scans the transponder for changes and saves them. Enable only if you know what you’re doing."
 
 msgid "When yes, VPS will be enabled on instant records (stop after current event), if the channel supports VPS."
 msgstr ""
@@ -23269,9 +23562,8 @@ msgstr "Width"
 msgid "Width / Height"
 msgstr ""
 
-#, fuzzy
-msgid "Winter Sports"
-msgstr "Winter sport"
+msgid "Winter sports"
+msgstr "Winter sports"
 
 msgid "Wipe"
 msgstr ""
@@ -23327,16 +23619,13 @@ msgstr "With this option you can hide Job Tasks from the Extension Menu screen (
 msgid "With this option you can switch off the display during operation."
 msgstr ""
 
-msgid "With this option you can switch off the display in Deep Standby Mode."
+msgid "With this option you can switch off the display in Deep Standby."
 msgstr ""
 
-msgid "With this option you can switch off the display in Standby Mode."
+msgid "With this option you can switch off the display in Standby."
 msgstr ""
 
 msgid "With this option you can switch the LED color or deactivate the LED."
-msgstr ""
-
-msgid "With this setting, you can probably improve the signal quality or eliminate problems that can occur with longer HDMI cables."
 msgstr ""
 
 msgid "Without pop up"
@@ -23353,6 +23642,12 @@ msgstr ""
 
 msgid "Workaround for old tuner driver."
 msgstr "Workaround for old tuner driver."
+
+msgid "World Affairs"
+msgstr ""
+
+msgid "World cultures"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -23390,6 +23685,9 @@ msgstr ""
 
 msgid "XBox 360 support"
 msgstr "XBox 360 support"
+
+msgid "XML Help Actions"
+msgstr ""
 
 msgid "XPicon, ZZZPicon"
 msgstr ""
@@ -23501,7 +23799,7 @@ msgstr "You can have the list sorted by time or alphanumerical."
 msgid "You can only burn Dreambox recordings!"
 msgstr "You can only burn Dreambox recordings!"
 
-msgid "You can skip this function and turn off the TV when you wake the receiver from standby and immediately switch back to standby."
+msgid "You can skip this function and turn off the TV when you wake the receiver from Standby and immediately switch back to Standby."
 msgstr ""
 
 #, python-format
@@ -23539,6 +23837,9 @@ msgstr "You have to create a Swap File before to activate the autostart."
 #, python-format
 msgid "You have to wait %s!"
 msgstr "You have to wait %s!"
+
+msgid "You managed to jump to an invalid page. Stop it :-)"
+msgstr ""
 
 msgid "You must set at least one command!"
 msgstr ""
@@ -23866,17 +24167,8 @@ msgstr "aktifkanPiP"
 msgid "address:"
 msgstr "alamat:"
 
-msgid "Adult movie/Drama"
-msgstr "film dewasa/drama"
-
 msgid "advanced"
 msgstr "mahir"
-
-msgid "Adventure/Western/War"
-msgstr "petualangan/barat/perang"
-
-msgid "Advertisement/Shopping"
-msgstr "iklan/belanja"
 
 msgid "alpha then oldest"
 msgstr "alfa lalu terlama"
@@ -23895,26 +24187,6 @@ msgstr "sg"
 
 msgid "aqua"
 msgstr ""
-
-msgid ""
-"are you sure you want to restore\n"
-"following backup:\n"
-msgstr ""
-"anda yakin ingin memulihkan\n"
-"berkas cadangan berikut:\n"
-
-#, fuzzy
-msgid "arts/culture (general)"
-msgstr "arts/culture (without music, general)"
-
-msgid "arts/culture (without music, general)"
-msgstr "arts/culture (without music, general)"
-
-msgid "Arts/Culture magazines"
-msgstr "Arts/Culture magazines"
-
-msgid "athletics"
-msgstr "athletics"
 
 #, python-format
 msgid "audio track (%s) format"
@@ -23939,9 +24211,6 @@ msgstr "back"
 msgid "background image"
 msgstr "background image"
 
-msgid "ballet"
-msgstr "ballet"
-
 #, python-format
 msgid "bc%d"
 msgstr "bc%d"
@@ -23952,14 +24221,8 @@ msgstr "better"
 msgid "black"
 msgstr "black"
 
-msgid "Black & White"
-msgstr "Black & White"
-
 msgid "blue"
 msgstr "blue"
-
-msgid "Broadcasting/Press"
-msgstr "Broadcasting/Press"
 
 #, python-format
 msgid "burn audio track (%s)"
@@ -23980,31 +24243,14 @@ msgstr "card"
 msgid "card reader"
 msgstr "card reader"
 
-msgid "Cartoons/Puppets"
-msgstr "Cartoons/Puppets"
-
 msgid "chapters"
 msgstr "chapters"
-
-#, fuzzy
-msgid "children's (general)"
-msgstr "children's/youth program (general)"
-
-msgid "children's/youth program (general)"
-msgstr "children's/youth program (general)"
 
 msgid "clip overscan / letterbox borders"
 msgstr "clip overscan / letterbox borders"
 
 msgid "close share view"
 msgstr "close share view"
-
-msgid "comedy"
-msgstr "comedy"
-
-#, fuzzy
-msgid "comedy (general)"
-msgstr "movie/drama (general)"
 
 msgid "config menu"
 msgstr "config menu"
@@ -24015,15 +24261,8 @@ msgstr "confirmed"
 msgid "connected"
 msgstr "connected"
 
-msgid "cooking"
-msgstr "cooking"
-
 msgid "copy"
 msgstr "copy"
-
-#, fuzzy
-msgid "current affairs (general)"
-msgstr "news/current affairs (general)"
 
 msgid "date"
 msgstr ""
@@ -24043,28 +24282,11 @@ msgstr "delete"
 msgid "delete cut"
 msgstr "delete cut"
 
-msgid "Detective/Thriller"
-msgstr "Detective/Thriller"
-
 msgid "disabled"
 msgstr "disabled"
 
 msgid "disconnected"
 msgstr "disconnected"
-
-msgid "Discussion/Interview/Debate"
-msgstr "Discussion/Interview/Debate"
-
-msgid "documentary"
-msgstr "documentary"
-
-#, fuzzy
-msgid "documentary (general)"
-msgstr "documentary"
-
-#, fuzzy
-msgid "drama (general)"
-msgstr "movie/drama (general)"
 
 msgid "eMMC"
 msgstr "eMMC"
@@ -24085,16 +24307,6 @@ msgstr "ecm time:"
 msgid "ecm.info"
 msgstr "ecm.info"
 
-msgid "Economics/Social advisory"
-msgstr "Economics/Social advisory"
-
-#, fuzzy
-msgid "education/information (general)"
-msgstr "education/science/factual topics (general)"
-
-msgid "education/science/factual topics (general)"
-msgstr "education/science/factual topics (general)"
-
 msgid "embedded"
 msgstr ""
 
@@ -24107,24 +24319,8 @@ msgstr "enabled"
 msgid "end cut here"
 msgstr "end cut here"
 
-msgid "enigma2 and network"
-msgstr "enigma2 and network"
-
-msgid "entertainment (10-16 year old)"
-msgstr "entertainment (10-16 year old)"
-
-msgid "entertainment (6-14 year old)"
-msgstr "entertainment (6-14 year old)"
-
-#, fuzzy
-msgid "entertainment (general)"
-msgstr "entertainment (6-14 year old)"
-
 msgid "equal to"
 msgstr "equal to"
-
-msgid "Equestrian"
-msgstr "Equestrian"
 
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "execute cuts (requires MovieCut plugin)"
@@ -24132,17 +24328,11 @@ msgstr "execute cuts (requires MovieCut plugin)"
 msgid "exit DVD player or return to file browser"
 msgstr "exit DVD player or return to file browser"
 
-msgid "Experimental film/video"
-msgstr "Experimental film/video"
-
 msgid "externally loopthrough to"
 msgstr "externally loopthrough to"
 
 msgid "failed"
 msgstr "failed"
-
-msgid "Fashion"
-msgstr "Fashion"
 
 msgid "file can not displayed - file not found"
 msgstr "file can not displayed - file not found"
@@ -24153,29 +24343,11 @@ msgstr "fileformats (BMP, PNG, JPG, GIF)"
 msgid "filename"
 msgstr "filename"
 
-msgid "Film/Cinema"
-msgstr "Film/Cinema"
-
-msgid "Fine arts"
-msgstr "Fine arts"
-
-msgid "Fitness and Health"
-msgstr "Fitness and Health"
-
 msgid "flat alphabetic"
 msgstr "flat alphabetic"
 
 msgid "flat alphabetic reverse"
 msgstr "flat alphabetic reverse"
-
-msgid "Folk/Traditional music"
-msgstr "Folk/Traditional music"
-
-msgid "Football/Soccer"
-msgstr "Football/Soccer"
-
-msgid "Foreign countries/Expeditions"
-msgstr "Foreign countries/Expeditions"
 
 msgid "forward to the next chapter"
 msgstr "forward to the next chapter"
@@ -24188,15 +24360,6 @@ msgstr "free diskspace"
 
 msgid "from"
 msgstr "from"
-
-msgid "Further education"
-msgstr "Further education"
-
-msgid "Game show/Quiz/Contest"
-msgstr "Game show/Quiz/Contest"
-
-msgid "gardening"
-msgstr "gardening"
 
 msgid "get the cards' server"
 msgstr "get the cards' server"
@@ -24224,9 +24387,6 @@ msgstr ""
 
 msgid "h:mmam/pm"
 msgstr ""
-
-msgid "Handicraft"
-msgstr "Handicraft"
 
 msgid "handled"
 msgstr "handled"
@@ -24264,13 +24424,6 @@ msgstr ""
 msgid "increase uphop by 1"
 msgstr "increase uphop by 1"
 
-msgid "information/education/school program"
-msgstr "informasi/pendidikan/program sekolah"
-
-#, fuzzy
-msgid "infotainment (general)"
-msgstr "sports (general)"
-
 msgid "init module"
 msgstr "init module"
 
@@ -24287,9 +24440,6 @@ msgstr "Instant record"
 msgid "internally loopthrough to"
 msgstr "internally loopthrough to"
 
-msgid "jazz"
-msgstr "jazz"
-
 msgid "jump back to the previous title"
 msgstr "jump back to the previous title"
 
@@ -24299,26 +24449,14 @@ msgstr "jump forward to the next title"
 msgid "jump to chapter by number"
 msgstr "jump to chapter by number"
 
-msgid "languages"
-msgstr "languages"
-
 msgid "left"
 msgstr "left"
-
-msgid "leisure hobbies (general)"
-msgstr "leisure hobbies (general)"
 
 msgid "length"
 msgstr "length"
 
 msgid "lime"
 msgstr ""
-
-msgid "Literature"
-msgstr "Literature"
-
-msgid "Live broadcast"
-msgstr "Live broadcast"
 
 msgid "locked"
 msgstr "locked"
@@ -24329,17 +24467,8 @@ msgstr "long"
 msgid "loopthrough to"
 msgstr "loopthrough to"
 
-msgid "Magazines/Reports/Documentary"
-msgstr "Magazines/Reports/Documentary"
-
 msgid "manual"
 msgstr "manual"
-
-msgid "Martial sports"
-msgstr "Martial sports"
-
-msgid "Medicine/Physiology/Psychology"
-msgstr "Medicine/Physiology/Psychology"
 
 #, fuzzy
 msgid "min"
@@ -24351,59 +24480,17 @@ msgstr ""
 msgid "month"
 msgstr "month"
 
-msgid "motor sport"
-msgstr "motor sport"
-
-msgid "Motoring"
-msgstr "Motoring"
-
 msgid "move"
 msgstr "move"
 
-#, fuzzy
-msgid "movie (general)"
-msgstr "movie/drama (general)"
-
-msgid "movie/drama (general)"
-msgstr "movie/drama (general)"
-
 msgid "multi"
 msgstr "multi"
-
-#, fuzzy
-msgid "music (general)"
-msgstr "sports (general)"
-
-msgid "music/ballet/dance (general)"
-msgstr "music/ballet/dance (general)"
-
-msgid "Musical/Opera"
-msgstr "Musical/Opera"
 
 msgid "n/a"
 msgstr "n/a"
 
 msgid "name"
 msgstr ""
-
-msgid "Nature/Animals/Environment"
-msgstr "Nature/Animals/Environment"
-
-msgid "New media"
-msgstr "media baru"
-
-#, fuzzy
-msgid "news (general)"
-msgstr "sports (general)"
-
-msgid "News magazine"
-msgstr "News magazine"
-
-msgid "news/current affairs (general)"
-msgstr "news/current affairs (general)"
-
-msgid "News/Weather report"
-msgstr "News/Weather report"
 
 msgid "no CAId selected"
 msgstr "no CAId selected"
@@ -24461,17 +24548,11 @@ msgstr "on READ ONLY medium."
 msgid "orange"
 msgstr ""
 
-msgid "original language"
-msgstr "original language"
-
 msgid "package"
 msgstr ""
 
 msgid "packages"
 msgstr ""
-
-msgid "Performing arts"
-msgstr "Performing arts"
 
 msgid "pid:"
 msgstr "pid:"
@@ -24491,12 +24572,6 @@ msgstr ""
 msgid "pm"
 msgstr "pm"
 
-msgid "Popular culture/Traditional arts"
-msgstr "Popular culture/Traditional arts"
-
-msgid "pre-school children's program"
-msgstr "pre-school children's program"
-
 msgid "provid:"
 msgstr "provid:"
 
@@ -24515,12 +24590,6 @@ msgstr "reliable"
 #, fuzzy
 msgid "reliable, retune"
 msgstr "reliable"
-
-msgid "religion"
-msgstr "religion"
-
-msgid "Remarkable people"
-msgstr "Remarkable people"
 
 msgid "remove after this position"
 msgstr "remove after this position"
@@ -24543,12 +24612,6 @@ msgstr "rewind to the previous chapter"
 msgid "right"
 msgstr "right"
 
-msgid "Rock/Pop"
-msgstr "Rock/Pop"
-
-msgid "romance"
-msgstr "romance"
-
 msgid "rose"
 msgstr ""
 
@@ -24566,20 +24629,11 @@ msgstr ""
 msgid "scan state"
 msgstr "scan state"
 
-msgid "Science fiction/Fantasy/Horror"
-msgstr "sains fiksi/fantasi/horror"
-
 msgid "search EPG..."
 msgstr "search EPG..."
 
 msgid "select CAId's"
 msgstr "select CAId's"
-
-msgid "Serious music/Classic music"
-msgstr "Serious music/Classic music"
-
-msgid "Serious/Classical/Religious/Historical/Drama"
-msgstr "Serious/Classical/Religious/Historical/Drama"
 
 msgid "service PIN"
 msgstr "service PIN"
@@ -24599,9 +24653,6 @@ msgstr "show all cards"
 msgid "show all tags"
 msgstr "show all tags"
 
-msgid "show/game show (general)"
-msgstr "show/game show (general)"
-
 msgid "shuffle"
 msgstr "shuffle"
 
@@ -24617,37 +24668,11 @@ msgstr "skip backward"
 msgid "skip forward"
 msgstr "skip forward"
 
-msgid "Soap/Melodrama/Folkloric"
-msgstr "Soap/Melodrama/Folkloric"
-
-msgid "social/political issues/economics (general)"
-msgstr "social/political issues/economics (general)"
-
-msgid "Social/Spiritual sciences"
-msgstr "Social/Spiritual sciences"
-
 msgid "softcam"
 msgstr ""
 
 msgid "softcams"
 msgstr ""
-
-#, fuzzy
-msgid "special (general)"
-msgstr "sports (general)"
-
-msgid "special events"
-msgstr "special events"
-
-#, fuzzy
-msgid "sport (general)"
-msgstr "sports (general)"
-
-msgid "sports (general)"
-msgstr "sports (general)"
-
-msgid "Sports magazines"
-msgstr "Sports magazines"
 
 msgid "standard"
 msgstr "standard"
@@ -24682,24 +24707,12 @@ msgstr "switch to the next subtitle language"
 msgid "system:"
 msgstr "system:"
 
-msgid "talk show"
-msgstr "talk show"
-
-msgid "team sports"
-msgstr "team sports"
-
-msgid "Technology/Natural sciences"
-msgstr "Technology/Natural sciences"
-
 #, fuzzy
 msgid "teletext"
 msgstr "Teletext"
 
 msgid "template file"
 msgstr "template file"
-
-msgid "Tennis/Squash"
-msgstr "Tennis/Squash"
 
 msgid "text"
 msgstr ""
@@ -24709,9 +24722,6 @@ msgstr "this recording"
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "toggle time, chapter, audio, subtitle info"
-
-msgid "Tourism/Travel"
-msgstr "Tourism/Travel"
 
 msgid "traditional (fast)"
 msgstr "traditional (fast)"
@@ -24750,9 +24760,6 @@ msgstr "unknown"
 msgid "unknown error"
 msgstr "unknown error"
 
-msgid "Unpublished"
-msgstr "Unpublished"
-
 #, fuzzy
 msgid "untestable"
 msgstr "enable"
@@ -24763,9 +24770,6 @@ msgstr "update"
 msgid "using:"
 msgstr "using:"
 
-msgid "Variety show"
-msgstr "Variety show"
-
 msgid "violet"
 msgstr ""
 
@@ -24775,9 +24779,6 @@ msgstr ""
 msgid "wait for mmi..."
 msgstr "wait for mmi..."
 
-msgid "Water sport"
-msgstr "Water sport"
-
 msgid "west"
 msgstr "west"
 
@@ -24786,9 +24787,6 @@ msgstr ""
 
 msgid "width"
 msgstr "width"
-
-msgid "Winter sport"
-msgstr "Winter sport"
 
 msgid "wireless network interface"
 msgstr "wireless network interface"
@@ -24812,12 +24810,176 @@ msgstr "yellow"
 msgid "yes (keep feeds)"
 msgstr "yes (keep feeds)"
 
-#, fuzzy
-msgid "Languages"
-msgstr "Language"
-
 msgid "®"
 msgstr ""
+
+#, fuzzy
+#~ msgid "arts/culture (general)"
+#~ msgstr "Arts/Culture (without music)"
+
+#, fuzzy
+#~ msgid "children's (general)"
+#~ msgstr "Children's/Youth programs"
+
+#, fuzzy
+#~ msgid "comedy (general)"
+#~ msgstr "movie/drama (general)"
+
+#, fuzzy
+#~ msgid "current affairs (general)"
+#~ msgstr "news/current affairs (general)"
+
+#, fuzzy
+#~ msgid "documentary (general)"
+#~ msgstr "documentary"
+
+#, fuzzy
+#~ msgid "drama (general)"
+#~ msgstr "movie/drama (general)"
+
+#, fuzzy
+#~ msgid "education/information (general)"
+#~ msgstr "education/science/factual topics (general)"
+
+#, fuzzy
+#~ msgid "entertainment (general)"
+#~ msgstr "Entertainment programs for 6 to 14"
+
+#, fuzzy
+#~ msgid "infotainment (general)"
+#~ msgstr "sports (general)"
+
+#, fuzzy
+#~ msgid "movie (general)"
+#~ msgstr "movie/drama (general)"
+
+#~ msgid "movie/drama (general)"
+#~ msgstr "movie/drama (general)"
+
+#, fuzzy
+#~ msgid "music (general)"
+#~ msgstr "sports (general)"
+
+#, fuzzy
+#~ msgid "news (general)"
+#~ msgstr "sports (general)"
+
+#, fuzzy
+#~ msgid "special (general)"
+#~ msgstr "sports (general)"
+
+#, fuzzy
+#~ msgid "sport (general)"
+#~ msgstr "sports (general)"
+
+#~ msgid "/usr/share/enigma2 directory"
+#~ msgstr "direktori /usr/share/enigma2"
+
+#~ msgid "/var directory"
+#~ msgstr "direktori /var"
+
+#~ msgid "Backup"
+#~ msgstr "Backup"
+
+#~ msgid "Backup Mode"
+#~ msgstr "Backup Mode"
+
+#~ msgid "CF Drive"
+#~ msgstr "CF Drive"
+
+#~ msgid ""
+#~ "Do you want to backup now?\n"
+#~ "After pressing OK, please wait!"
+#~ msgstr ""
+#~ "Do you want to backup now?\n"
+#~ "After pressing OK, please wait!"
+
+#~ msgid ""
+#~ "Sorry your Backup destination does not exist\n"
+#~ "\n"
+#~ "Please choose an other one."
+#~ msgstr ""
+#~ "Sorry your Backup destination does not exist\n"
+#~ "\n"
+#~ "Please choose an other one."
+
+#~ msgid "USB Stick"
+#~ msgstr "USB Stick"
+
+#~ msgid ""
+#~ "are you sure you want to restore\n"
+#~ "following backup:\n"
+#~ msgstr ""
+#~ "anda yakin ingin memulihkan\n"
+#~ "berkas cadangan berikut:\n"
+
+#~ msgid "enigma2 and network"
+#~ msgstr "enigma2 and network"
+
+#, fuzzy
+#~ msgid "Motor Sport"
+#~ msgstr "motor sport"
+
+#, fuzzy
+#~ msgid "Winter Sports"
+#~ msgstr "Winter sports"
+
+#~ msgid "athletics"
+#~ msgstr "athletics"
+
+#~ msgid "ballet"
+#~ msgstr "ballet"
+
+#~ msgid "comedy"
+#~ msgstr "comedy"
+
+#~ msgid "cooking"
+#~ msgstr "cooking"
+
+#~ msgid "documentary"
+#~ msgstr "documentary"
+
+#~ msgid "education/science/factual topics (general)"
+#~ msgstr "education/science/factual topics (general)"
+
+#~ msgid "gardening"
+#~ msgstr "gardening"
+
+#~ msgid "jazz"
+#~ msgstr "jazz"
+
+#~ msgid "languages"
+#~ msgstr "languages"
+
+#~ msgid "leisure hobbies (general)"
+#~ msgstr "leisure hobbies (general)"
+
+#~ msgid "motor sport"
+#~ msgstr "motor sport"
+
+#~ msgid "music/ballet/dance (general)"
+#~ msgstr "music/ballet/dance (general)"
+
+#~ msgid "news/current affairs (general)"
+#~ msgstr "news/current affairs (general)"
+
+#~ msgid "original language"
+#~ msgstr "original language"
+
+#~ msgid "religion"
+#~ msgstr "religion"
+
+#~ msgid "romance"
+#~ msgstr "romance"
+
+#~ msgid "show/game show (general)"
+#~ msgstr "show/game show (general)"
+
+#~ msgid "sports (general)"
+#~ msgstr "sports (general)"
+
+#~ msgid "talk show"
+#~ msgstr "talk show"
 
 #, fuzzy
 #~ msgid "Seek back short"
