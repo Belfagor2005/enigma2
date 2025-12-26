@@ -15002,7 +15002,7 @@ msgstr ""
 msgid "Select the shifted character set for the next character only"
 msgstr ""
 
-msgid "Select the source of the default DNS settings."
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
 msgstr ""
 
 msgid "Select the time delay before the button starts repeating."
@@ -18075,7 +18075,7 @@ msgstr ""
 msgid "This is the currently selected locale.  [%s]"
 msgstr ""
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."

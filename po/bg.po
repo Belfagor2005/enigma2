@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openATV / enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-06 12:58+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2023-08-06 06:22+0000\n"
 "Last-Translator: Salif Mehmed <mail@salif.eu>\n"
 "Language-Team: Bulgarian <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/bg/>\n"
@@ -1902,9 +1902,6 @@ msgstr ""
 msgid "Add ZapTimer"
 msgstr ""
 
-msgid "Add a DNS entry"
-msgstr "Добавяне на запис в DNS"
-
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr ""
 
@@ -2119,6 +2116,9 @@ msgid "After recording"
 msgstr "След записа"
 
 msgid "After zap"
+msgstr ""
+
+msgid "Aggregate data only"
 msgstr ""
 
 msgid "Akan"
@@ -2379,6 +2379,9 @@ msgstr "Скорост на анимация"
 
 msgid "Animations"
 msgstr "Анимации"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Антарктида"
@@ -3069,9 +3072,6 @@ msgstr ""
 
 msgid "Bitrate"
 msgstr "Скорост на предаване"
-
-msgid "Set the bitrate of the video encoder. Larger values improve the quality and also increases the file size."
-msgstr "Битрейт на видео енкодера. По-голямата стойност подобрява качеството и увеличава размера на файла."
 
 msgid "Black"
 msgstr "Черен"
@@ -4326,9 +4326,6 @@ msgstr ""
 msgid "Close title selection"
 msgstr "Затвори избора на име"
 
-msgid "Cloudflare DNS"
-msgstr ""
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4437,9 +4434,6 @@ msgstr ""
 msgid "Common Setup Actions"
 msgstr "Общи действия за настройка"
 
-msgid "Comodo Secure DNS"
-msgstr ""
-
 msgid "Comoros"
 msgstr ""
 
@@ -4508,6 +4502,9 @@ msgstr ""
 msgid "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info."
 msgstr "Конфигурирайте как се изграждат имена на файлове за запис. Стандартно: Дата Час - Канал - Заглавие Много много кратко: Заглавие Много кратко: Заглавие - Дата Час Кратко с времето: Дата Час - Кратко заглавие: Дата - Дълго заглавие: Дата Час - Канал - Заглавие - Информация"
 
+msgid "Configure if 'epg.dat' should be saved at all."
+msgstr "Конфигурирайте ако epg.dat трябва да бъде запазен във всичко."
+
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Конфигурирайте дали и как ще се показват крипто икони в списъка с избраните канали."
 
@@ -4525,9 +4522,6 @@ msgstr "Конфигурирайте дали и как широчината н�
 
 msgid "Configure if crypto icons will be shown in the channel selection list."
 msgstr ""
-
-msgid "Configure if 'epg.dat' should be saved at all."
-msgstr "Конфигурирайте ако epg.dat трябва да бъде запазен във всичко."
 
 msgid "Configure if service picons will be shown in quickzap."
 msgstr "Конфигурирайте дали сервизните пикони ще бъде показани в quickzap."
@@ -4604,14 +4598,14 @@ msgstr "Конфигуриране на поведението при дости
 msgid "Configure the border width of the subtitles. The dark border makes the subtitles easier to read on a light background."
 msgstr "Конфигуриране на граничната широчина на субтитрите. Тъмната границата прави субтитрите по-лесно да се четат на светъл фон."
 
+msgid "Configure the brightness level of the front panel display for Standby."
+msgstr "Конфигуриране на нивото на яркост на дисплея на предния панел за standby."
+
 msgid "Configure the brightness level of the front panel display for dimmed operation."
 msgstr "Конфигуриране на нивото на яркост на дисплея на предния панел за затъмнена операция."
 
 msgid "Configure the brightness level of the front panel display for normal operation."
 msgstr "Конфигуриране на нивото на яркост на дисплея на предния панел за нормална операция."
-
-msgid "Configure the brightness level of the front panel display for Standby."
-msgstr "Конфигуриране на нивото на яркост на дисплея на предния панел за standby."
 
 msgid "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
 msgstr "Конфигуриране на цвета на външните субтитрите, алтернативни (нормални в бяло, курсив в жълто, получер в циан, долна черта в зелено), бял или жълт."
@@ -5449,19 +5443,22 @@ msgstr "DMM за напреднали"
 msgid "DMM normal"
 msgstr "DMM нормален"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr "Действия на DNS (Сървър за динамични имена)"
-
 msgid "DNS Settings"
 msgstr "DNS настройки"
 
 msgid "DNS data source"
 msgstr "DNS източник на данни"
 
-msgid "DNS mode"
+msgid "DNS protocol mode"
 msgstr ""
 
 msgid "DNS suffix"
+msgstr ""
+
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
 msgstr ""
 
 msgid ""
@@ -5749,9 +5746,6 @@ msgstr "Декриптиране и родителски контрол"
 msgid "Deep Standby"
 msgstr "Дълбок режим на готовност"
 
-msgid "Deep standby"
-msgstr ""
-
 msgid "Default"
 msgstr "По подразразбиране"
 
@@ -5834,9 +5828,6 @@ msgstr ""
 
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "Определете допълнително забавяне в милисекунди преди началото на http(s) потоци."
-
-msgid "Define the DNS suffix."
-msgstr ""
 
 msgid "Define the custom mountpoint for the device."
 msgstr ""
@@ -7020,6 +7011,9 @@ msgstr "Образование"
 msgid "Education/Information"
 msgstr "Образование/информация"
 
+msgid "Education/Science/Factual"
+msgstr ""
+
 msgid "Education/Science/Factual topics"
 msgstr "Образование/наука/факти"
 
@@ -7223,6 +7217,9 @@ msgstr "Активиране импорт на таймери от резерв�
 msgid "Enable intro screen"
 msgstr "Разрешаване на интро екран"
 
+msgid "Enable monitoring UI"
+msgstr ""
+
 msgid "Enable multiple bouquets"
 msgstr "Разрешаване на няколко букета"
 
@@ -7333,9 +7330,6 @@ msgstr "Разрешаване на функцията, така че прием
 
 msgid "Enables sending the same TV commands for Deep Standby as for regular Standby."
 msgstr "Ако е зададено на „Да“, същите команди ще бъдат изпращани към телевизора за събития в режим на дълбока готовност, както се изпращат по време на редовни събития в режим на готовност."
-
-msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
-msgstr ""
 
 msgid "Encrypted: "
 msgstr "Криптирано: "
@@ -8582,9 +8576,6 @@ msgstr ""
 msgid "Flash directory '%s' not allowed!"
 msgstr "Флаш на директорията „%s“ не е разрешена!"
 
-msgid "Flash your receiver software on the fly."
-msgstr "Онлоайн флаш на софтуера на приемника."
-
 msgid "Flash type"
 msgstr "Тип флашване"
 
@@ -8594,6 +8585,9 @@ msgstr ""
 #, python-format
 msgid "Flash your %s %s and reboot now?"
 msgstr ""
+
+msgid "Flash your receiver software on the fly."
+msgstr "Онлоайн флаш на софтуера на приемника."
 
 #, python-format
 msgid "FlashExpander on boot is '%s'.  FlashExpander status is '%s'."
@@ -8958,9 +8952,6 @@ msgstr "Злато"
 msgid "Golf"
 msgstr "Голф"
 
-msgid "Google DNS"
-msgstr ""
-
 msgid "Goto"
 msgstr "Отиди на"
 
@@ -9189,11 +9180,11 @@ msgstr ""
 msgid "Handle Python crashes"
 msgstr "Отстраняване на сривове на Python"
 
-msgid "Handle input from TV"
-msgstr "Управлявайте входа от телевизора"
-
 msgid "Handle Standby from TV"
 msgstr "Работете в режим на готовност от телевизора"
+
+msgid "Handle input from TV"
+msgstr "Управлявайте входа от телевизора"
 
 msgid "Handle wake up from TV"
 msgstr "Работи със събуждане от TВ"
@@ -9690,6 +9681,9 @@ msgid "If logs are using the set maximum space used the eldest will be deleted."
 msgstr "Ако дневницитеи зползват определеното максимално използвано пространство, най-старите ще бъдат изтрити."
 
 msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
+msgstr ""
+
+msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
 msgstr ""
 
 msgid "If the Deep Standby workaround is enabled wait until the system time is synchronized. Depending on the requirement the device wake up will continuing after a maximum of 2 minutes."
@@ -10528,11 +10522,14 @@ msgstr "LED режим на готовност"
 msgid "LED brightness during Deep Standby."
 msgstr "LED яркост по време на дълбока готовност."
 
+msgid "LED brightness during Standby."
+msgstr "LED яркост по време на готовност."
+
 msgid "LED brightness during normal operations."
 msgstr "LED яркост по време на нормални операции."
 
-msgid "LED brightness during Standby."
-msgstr "LED яркост по време на готовност."
+msgid "LED color during Deep Standby."
+msgstr ""
 
 msgid "LIRC remote"
 msgstr ""
@@ -10821,9 +10818,6 @@ msgstr "Информацията се зарежда, моля изчакайт�
 msgid "Loading slot information, please wait..."
 msgstr ""
 
-msgid "Local receiver"
-msgstr "Местен приемник"
-
 msgid "Local date/time"
 msgstr "Местна дата/час"
 
@@ -10835,6 +10829,9 @@ msgstr "Местна мрежа"
 
 msgid "Local or Regional"
 msgstr ""
+
+msgid "Local receiver"
+msgstr "Местен приемник"
 
 msgid "Local time"
 msgstr "Местно време"
@@ -11482,6 +11479,15 @@ msgstr ""
 msgid "Mongolian"
 msgstr ""
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr ""
 
@@ -11631,12 +11637,6 @@ msgstr ""
 
 msgid "Move only highlighted file"
 msgstr ""
-
-msgid "Move the current DNS entry down one line"
-msgstr "Премести текущия DNS запис надолу с един ред"
-
-msgid "Move the current DNS entry up one line"
-msgstr "Премести текущия DNS запис нагоре с един ред"
 
 msgid "Move the current bookmark down"
 msgstr ""
@@ -12561,12 +12561,6 @@ msgstr "Не е флашнато"
 msgid "None"
 msgstr "Нито един"
 
-msgid "NordVPN Secure DNS"
-msgstr ""
-
-msgid "NordVPN Smart DNS"
-msgstr ""
-
 msgid "Norfolk Island"
 msgstr ""
 
@@ -12889,6 +12883,15 @@ msgstr "Премести чинията бързо преди този час."
 msgid "Only on startup"
 msgstr "Само при стартиране"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Отваряне"
 
@@ -13068,12 +13071,6 @@ msgstr "Отворете изгледа на EPG за единичен серв�
 
 msgid "Open with File Commander"
 msgstr "Отворете с File Commander"
-
-msgid "OpenDNS FamilyShield"
-msgstr "Отворете DNS FamilyShield"
-
-msgid "OpenDNS Home"
-msgstr "Отворете началната страница на DNS"
 
 msgid "OpenPLi Packages"
 msgstr ""
@@ -14298,6 +14295,9 @@ msgstr "Праймтайм минута"
 msgid "Priority"
 msgstr "Приоритет"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "грешка при стартиране на сканирането"
 
@@ -14499,15 +14499,6 @@ msgstr ""
 
 msgid "Quad PiP is not available."
 msgstr "Quad PiP не е наличен."
-
-msgid "Quad9 DNS"
-msgstr ""
-
-msgid "Quad9 ECS DNS"
-msgstr ""
-
-msgid "Quad9 Unsecured DNS"
-msgstr ""
 
 msgid "Quechua"
 msgstr ""
@@ -14990,14 +14981,14 @@ msgstr "Настройки на бутона за дистанционно уп�
 msgid "Remote Control Code Settings"
 msgstr "Код за дистанционно управление"
 
-msgid "Remote receiver"
-msgstr "Дистанционна кутия"
-
 msgid "Remote control information"
 msgstr "Информация за дистанционно управление"
 
 msgid "Remote control type"
 msgstr "Тип дистанционно управление"
+
+msgid "Remote receiver"
+msgstr "Дистанционна кутия"
 
 msgid "Remove"
 msgstr "Премахване"
@@ -15053,9 +15044,6 @@ msgstr "Премахване на сервиза"
 
 msgid "Remove Terrestrial Services"
 msgstr "премахнете наземните сервизи"
-
-msgid "Remove a DNS entry"
-msgstr "Премахване на запис в DNS"
 
 msgid "Remove a mark"
 msgstr "Премахване на маркировка"
@@ -15230,9 +15218,6 @@ msgstr "Необходим тип носител:"
 
 msgid "Rereading partition table"
 msgstr "Препрочитане на таблицата на дяловете"
-
-msgid "Select 'Yes' to reschedule the task to run when the receiver enters or exits Standby. The state change must occur within the task's scheduled window or the task will not be run."
-msgstr ""
 
 msgid "Reserved"
 msgstr "Запазено"
@@ -16178,6 +16163,9 @@ msgstr ""
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr ""
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "Изберете „Да“, за да разрешите редактирането на настройките на това устройство. Избирането на „Не“ нулира настройките на устройствата до техните стойности по подразбиране."
 
@@ -16192,6 +16180,9 @@ msgstr "Ако е зададено 'да', можете да прегледат�
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Когато е разрешено, enigma2 ще зареди несвързаните потребителски букети. Това означава, че потребителските букети, които са налични, но не са включени в bouquets.tv или bouquets.radio, пак ще бъдат заредени. Това ви позволява например да запазите собствения си потребителски букет, докато инсталираните настройки са надстроени"
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr ""
@@ -16246,6 +16237,9 @@ msgstr "Изберете „Да“, за да премахнете всички
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr "Изберете „Да“, за да премахнете всички данни от потребителския интерфейс. Избирането на тази опция ще премахне всички данни за отмяна на клавиатурата, менюто и настройките и ще възстанови дефинициите по подразбиране."
+
+msgid "Select 'Yes' to reschedule the task to run when the receiver enters or exits Standby. The state change must occur within the task's scheduled window or the task will not be run."
+msgstr ""
 
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
 msgstr "Изберете „Да“, за да нулирате мрежовата конфигурация до фабричните. Това ще активира Ethernet порта, ако съществува, и ще настрои приемника да използва DHCP. Всички останали мрежови интерфейси ще бъдат изтрити."
@@ -16685,6 +16679,9 @@ msgstr ""
 msgid "Select the AI-Powered Translation target language."
 msgstr ""
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr "Изберете източника на DNS настройките по подразбиране."
+
 msgid "Select the No / False response"
 msgstr "Изберете отговора Не / Фалшива"
 
@@ -16889,9 +16886,6 @@ msgstr "Изберете производителя на вашето SCR уст
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "Изберете метода за възстановяване на разделителната способност на екрана и буфера на рамката, когато напускате телетекста."
 
-msgid "Select the mode of the DNS."
-msgstr ""
-
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "Изберете номера на модела на вашето Unicable устройство. Ако номерът на модела не е в списъка, задайте „SCR“ на „defined от потребителя“ и въведете параметрите на устройството ръчно в съответствие със спецификациите му."
 
@@ -16997,9 +16991,6 @@ msgstr ""
 
 msgid "Select the source location from where to obtain the upgrade files."
 msgstr ""
-
-msgid "Select the source of the default DNS settings."
-msgstr "Изберете източника на DNS настройките по подразбиране."
 
 msgid "Select the start time after which this timer can be activated. Before this time the timer won't be activated even if other conditions are met."
 msgstr ""
@@ -17121,6 +17112,9 @@ msgstr "Изберете какво искате да активирате с б
 msgid "Select where the recording should be saved."
 msgstr ""
 
+msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Изберете безжична мрежа"
 
@@ -17237,6 +17231,15 @@ msgstr "сериозен/класически/религиозен/истори�
 
 msgid "Server down"
 msgstr "Сървърът не работи"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Сървъри"
@@ -17480,6 +17483,9 @@ msgstr "Задайте потребителското име на OpenWebif от
 msgid "Set the aspect ratio of the service picons."
 msgstr "Задайте съотношението на иконите за услуги."
 
+msgid "Set the bitrate of the video encoder. Larger values improve the quality and also increases the file size."
+msgstr "Битрейт на видео енкодера. По-голямата стойност подобрява качеството и увеличава размера на файла."
+
 msgid "Set the default location for your instant recordings. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Задайте местоположението по подразбиране за вашите моментални записи. Натиснете \"OK\", за да добавите нови местоположения, изберете ляво/дясно, за да изберете съществуващо местоположение."
 
@@ -17510,14 +17516,23 @@ msgstr "Задайте размера на скока на seekbar."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr ""
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Задайте паролата на OpenWebif от вашия резервен тунер"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "Задайте порта на OpenWebif от вашия резервен тунер"
 
 msgid "Set the position of the recording icons."
 msgstr "Задайте позицията на иконите за запис"
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Задайте типа на екрана,който вие получавате върху натискане на 'ОК', когато инфобара се показва до 2-ри инфобар Lite или информация за събитие."
@@ -17554,6 +17569,9 @@ msgstr ""
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Задайте типа на индикацията за прогрес в екрана за избор на канал."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -19190,6 +19208,9 @@ msgstr "специални събития"
 msgid "Specify the directory to use when starting Media Player."
 msgstr ""
 
+msgid "Specify the network DNS suffix to be applied when only the host name is provided. This helps the DNS resolver find the requested host."
+msgstr ""
+
 msgid "Speed"
 msgstr "Скорост"
 
@@ -20159,7 +20180,7 @@ msgstr ""
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr ""
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr ""
 
 msgid ""
@@ -20557,7 +20578,7 @@ msgstr "Това е избраният в момента език.  [%s]"
 msgid "This is the currently selected locale.  [%s]"
 msgstr "Това е текущо избраният локал.   [%s]"
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -20656,11 +20677,11 @@ msgstr "Тази опция ви позволява да изберете как
 msgid "This option allows you to choose how to display elapsed time, as + or -."
 msgstr "Тази опция ви позволява да избирате как да се показва изминалото време  като + или -"
 
-msgid "This option allows you to choose how to display the remaining time, the elapsed time, or both."
-msgstr "Тази опция ви позволява да изберете как се показва оставащо/изтекло време или и двете."
-
 msgid "This option allows you to choose how to display standard definition video on your TV."
 msgstr "Тази опция ви позволява да изберете как да се показва стандартната разделителна видео способност на вашия ТВ."
+
+msgid "This option allows you to choose how to display the remaining time, the elapsed time, or both."
+msgstr "Тази опция ви позволява да изберете как се показва оставащо/изтекло време или и двете."
 
 msgid "This option allows you to choose how to display the remaining/elapsed time for live TV."
 msgstr "Тази опция ви позволява да изберете как се показва оставащо/изтекло време за live tv."
@@ -21866,8 +21887,20 @@ msgstr ""
 msgid "Use DHCP"
 msgstr "Използване на DHCP"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "Използвате ли деинтерлейсинг за 1080i видеосигнал?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "Използване на информацията за EIT EPG, когато е налице."
@@ -21893,6 +21926,9 @@ msgstr "Използване на MHW EPG информация когато е �
 msgid "Use Netmed EPG information when it is available."
 msgstr "Използване на Netmed EPG информация когато е на разположение."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr ""
 
@@ -21915,6 +21951,9 @@ msgid "Use Virgin EPG information when it is available."
 msgstr "Използване на Virgin EPG информация когато е на разположение."
 
 msgid "Use Zap timer end times"
+msgstr ""
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
 msgstr ""
 
 msgid "Use a gateway"
@@ -21983,8 +22022,17 @@ msgstr ""
 msgid "Use official channel numbering"
 msgstr "Използване на официално номериране на канали"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Използване само за Wake on WLan (WoW)"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "Използване на оригиналната позиция на DVB субтитри"
@@ -22756,9 +22804,6 @@ msgstr "Когато е разрешено, записът може да пре�
 msgid "When enabled, a recording is allowed to interrupt live TV, when there are no free tuners."
 msgstr "Когато е разрешено, записът може да прекрати телевизията на живо, когато няма свободни тунери."
 
-msgid "When set to 'Yes' a specific Softcam can be assigned to each encrypted service."
-msgstr ""
-
 msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the time shift."
 msgstr "Когато е разрешено, ще се покаже предупреждение и потребителят ще получи опция за спиране или продължаване на timeshift."
 
@@ -22894,6 +22939,9 @@ msgstr "Когато е настроен всяка папка ще се поя�
 msgid "When set the PIG will return to live after a movie has stopped playing."
 msgstr "Когато зададете PIG ще се върне на живо, след като филмът е спрял да се възпроизвежда."
 
+msgid "When set to 'Yes' a specific Softcam can be assigned to each encrypted service."
+msgstr ""
+
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
 msgstr "Когато съдържанието има съотношение 16: 9, изберете дали да мащабирате/разтегляте картината."
 
@@ -22940,6 +22988,9 @@ msgid "Width"
 msgstr "Широчина"
 
 msgid "Width / Height"
+msgstr ""
+
+msgid "Winter sport"
 msgstr ""
 
 msgid "Winter sports"
@@ -24169,6 +24220,27 @@ msgstr "да (запази фийдове)"
 
 msgid "®"
 msgstr ""
+
+#~ msgid "Add a DNS entry"
+#~ msgstr "Добавяне на запис в DNS"
+
+#~ msgid "DNS (Dynamic Name Server) Actions"
+#~ msgstr "Действия на DNS (Сървър за динамични имена)"
+
+#~ msgid "Move the current DNS entry down one line"
+#~ msgstr "Премести текущия DNS запис надолу с един ред"
+
+#~ msgid "Move the current DNS entry up one line"
+#~ msgstr "Премести текущия DNS запис нагоре с един ред"
+
+#~ msgid "Remove a DNS entry"
+#~ msgstr "Премахване на запис в DNS"
+
+#~ msgid "OpenDNS FamilyShield"
+#~ msgstr "Отворете DNS FamilyShield"
+
+#~ msgid "OpenDNS Home"
+#~ msgstr "Отворете началната страница на DNS"
 
 #~ msgid "Password (httpuser)"
 #~ msgstr "Парола (httpuser)"

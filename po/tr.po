@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Apachi70 (OpenATV),(Teamblue)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-06 12:58+0000\n"
+"POT-Creation-Date: 2025-12-26 15:56+0000\n"
 "PO-Revision-Date: 2025-04-14 12:33+0000\n"
 "Last-Translator: tanerkaderli <taner.kaderli@live.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/openatv/enigma2-7-0-po/tr/>\n"
@@ -1942,9 +1942,6 @@ msgstr "Zap + Kayıt Zamanlayıcısı Ekle"
 msgid "Add ZapTimer"
 msgstr "Zap Zamanlayıcı Ekle"
 
-msgid "Add a DNS entry"
-msgstr "DNS girişi ekleyin"
-
 msgid "Add a RADIO service to the Volume Offset list"
 msgstr ""
 
@@ -2177,6 +2174,9 @@ msgstr "Kayıttan Sonra"
 
 msgid "After zap"
 msgstr "Zaptan sonra"
+
+msgid "Aggregate data only"
+msgstr ""
 
 msgid "Akan"
 msgstr "İrade"
@@ -2448,6 +2448,9 @@ msgstr "Animasyon Hızı"
 
 msgid "Animations"
 msgstr "Animasyon"
+
+msgid "Anonymize client IPs"
+msgstr ""
 
 msgid "Antarctica"
 msgstr "Antarktika"
@@ -3175,9 +3178,6 @@ msgstr "Bislamaca"
 #
 msgid "Bitrate"
 msgstr "Bitrate"
-
-msgid "Set the bitrate of the video encoder. Larger values improve the quality and also increases the file size."
-msgstr "Video kodlayıcının bit hızı. Daha büyük değer kaliteyi artırır ve dosya boyutunu artırır."
 
 msgid "Black"
 msgstr "Siyah"
@@ -4478,9 +4478,6 @@ msgstr "Bu ekranı kapatın"
 msgid "Close title selection"
 msgstr "Başlık seçimini kapat"
 
-msgid "Cloudflare DNS"
-msgstr "Bulut Parlaması DNS"
-
 msgid "Club/Dance"
 msgstr ""
 
@@ -4596,9 +4593,6 @@ msgstr "Genel Ayarlar"
 msgid "Common Setup Actions"
 msgstr "CI (Ortak Arayüz) Kurulumu"
 
-msgid "Comodo Secure DNS"
-msgstr "Kullanışlı Güvenli DNS"
-
 msgid "Comoros"
 msgstr "Komorlar"
 
@@ -4670,6 +4664,9 @@ msgstr "Ön panel LED'lerini yapılandırma"
 msgid "Configure how recording filenames are constructed. Standard: Date Time - Channel - Title Very very short: Title Very short: Title - Date Time Short with time: Date Time - Title Short: Date - Title Long: Date Time - Channel - Title - Info."
 msgstr "Dosya adlarının nasıl oluşturulduğunu yapılandırın. Standart: Tarih Saat - Kanal - Başlık Çok kısa: Başlık Çok kısa: Başlık - Tarih Saat Saatin kısa: Tarih Saat - Başlık Kısa: Tarih - Başlık Uzun: Tarih Saat - Kanal - Başlık - Bilgi"
 
+msgid "Configure if 'epg.dat' should be saved at all."
+msgstr "Epg.dat'ın hiç kaydedilmemesi gerekip gerekmediğini yapılandırın."
+
 msgid "Configure if and how crypto icons will be shown in the channel selection list."
 msgstr "Kanal seçim listesinde kripto simgelerinin gösterilip gösterilmeyeceğini ve nasıl yapılandırılacağını yapılandırın."
 
@@ -4687,9 +4684,6 @@ msgstr "Kanal seçim listesinde servis adı sütununun ne kadar ve ne kadar gös
 
 msgid "Configure if crypto icons will be shown in the channel selection list."
 msgstr "Şifreleme simgeleri kanal listesinde görünsün mü diye ayarlayın."
-
-msgid "Configure if 'epg.dat' should be saved at all."
-msgstr "Epg.dat'ın hiç kaydedilmemesi gerekip gerekmediğini yapılandırın."
 
 msgid "Configure if service picons will be shown in quickzap."
 msgstr "Servis pikonlarının quickzap ile gösterilip gösterilmeyeceğini yapılandırın."
@@ -4773,14 +4767,14 @@ msgstr "Film oynatma sırasında filmin sonuna gelince davranışı yapılandır
 msgid "Configure the border width of the subtitles. The dark border makes the subtitles easier to read on a light background."
 msgstr "Altyazı sınır genişliğini yapılandır. Koyu sınır aydınlık arkaplanda altyazı okumayı kolaylaştırır."
 
+msgid "Configure the brightness level of the front panel display for Standby."
+msgstr "Bekleme için ön panel ekranının parlaklık düzeyini yapılandırın."
+
 msgid "Configure the brightness level of the front panel display for dimmed operation."
 msgstr "Kısık çalışma için ön panel ekranının parlaklık seviyesini yapılandırın."
 
 msgid "Configure the brightness level of the front panel display for normal operation."
 msgstr "Normal çalışma için ön panel ekranının parlaklık seviyesini yapılandırın."
-
-msgid "Configure the brightness level of the front panel display for Standby."
-msgstr "Bekleme için ön panel ekranının parlaklık düzeyini yapılandırın."
 
 msgid "Configure the color of the external subtitles, alternative (normal in white, italic in yellow, bold in cyan, underscore in green), white or yellow."
 msgstr "Altyazı rengini belirleyin, seçenekler (siyah normal, sarı italik, camgöbeği dik, yeşil altı çizili) beyaz veya sarı."
@@ -5652,20 +5646,23 @@ msgstr "DMM gelismis"
 msgid "DMM normal"
 msgstr "DMM normal"
 
-msgid "DNS (Dynamic Name Server) Actions"
-msgstr "DNS (Dinamik Ad Sunucusu) Eylemleri"
-
 msgid "DNS Settings"
 msgstr "DNS Ayarları"
 
 msgid "DNS data source"
 msgstr "DNS veri kaynağı"
 
-msgid "DNS mode"
+msgid "DNS protocol mode"
 msgstr "DNS modu"
 
 msgid "DNS suffix"
 msgstr "DNS son eki"
+
+msgid "DNSCrypt"
+msgstr ""
+
+msgid "DNSCrypt Resolver"
+msgstr ""
 
 msgid ""
 "DO NOT POWER OFF YOUR DEVICE WHILE UPDATING!\n"
@@ -5963,9 +5960,6 @@ msgstr "Şifre Çözme ve Ebeveyn Kontrolü"
 msgid "Deep Standby"
 msgstr "Derin Uyku"
 
-msgid "Deep standby"
-msgstr "Derin bekleme"
-
 #
 msgid "Default"
 msgstr "Varsayılan"
@@ -6052,9 +6046,6 @@ msgstr "Bu Hizmet İçin Softcam'i Tanımlayın"
 
 msgid "Define additional delay in milliseconds before start of http(s) streams."
 msgstr "Http(s) akışlarının başlamasından önce milisaniye cinsinden ek gecikme tanımlayın."
-
-msgid "Define the DNS suffix."
-msgstr "DNS son ekini tanımlayın."
 
 msgid "Define the custom mountpoint for the device."
 msgstr ""
@@ -7303,6 +7294,9 @@ msgstr "Eğitim"
 msgid "Education/Information"
 msgstr "Eğitim bilgisi"
 
+msgid "Education/Science/Factual"
+msgstr ""
+
 msgid "Education/Science/Factual topics"
 msgstr "Eğitim / bilim / gerçeklere dayanan konular (genel)"
 
@@ -7515,6 +7509,9 @@ msgstr "Yedek ayarlayıcıdan içe aktarma zamanlayıcısını etkinleştir"
 msgid "Enable intro screen"
 msgstr "Giriş ekranını etkinleştir"
 
+msgid "Enable monitoring UI"
+msgstr ""
+
 #
 msgid "Enable multiple bouquets"
 msgstr "Çoklu buket kullanımını etkinleştir"
@@ -7627,9 +7624,6 @@ msgstr "Bir alıcının akışları çözebileceği bir özelliği etkinleştiri
 
 msgid "Enables sending the same TV commands for Deep Standby as for regular Standby."
 msgstr "'evet' olarak ayarlanırsa, normal bekleme olayları sırasında gönderildiği gibi, derin bekleme olayları için aynı komutlar TV'ye gönderilir."
-
-msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
-msgstr "'Evet' olarak ayarlanırsa, timeshift'i alternatif ses eklentileriyle kullanmanıza olanak tanır."
 
 #
 msgid "Encrypted: "
@@ -8934,9 +8928,6 @@ msgstr "Ayarları ve seçili eklentileri flaşla ve geri yükle (Kullanıcıya s
 msgid "Flash directory '%s' not allowed!"
 msgstr "Dizini '%s' yazılabilir değil!"
 
-msgid "Flash your receiver software on the fly."
-msgstr "Uçan Flash'ı, Receiver yazılımınız."
-
 msgid "Flash type"
 msgstr "Flaş türü"
 
@@ -8946,6 +8937,9 @@ msgstr "Kullanılan flaş"
 #, python-format
 msgid "Flash your %s %s and reboot now?"
 msgstr "Inizi flaşlayın ve %s %s şimdi yeniden başlatın?"
+
+msgid "Flash your receiver software on the fly."
+msgstr "Uçan Flash'ı, Receiver yazılımınız."
 
 #, python-format
 msgid "FlashExpander on boot is '%s'.  FlashExpander status is '%s'."
@@ -9335,9 +9329,6 @@ msgstr "Altın"
 msgid "Golf"
 msgstr "Golf"
 
-msgid "Google DNS"
-msgstr "Google DNS"
-
 msgid "Goto"
 msgstr "Git"
 
@@ -9575,11 +9566,11 @@ msgstr "elişi"
 msgid "Handle Python crashes"
 msgstr "Python çökmeleriyle baş et"
 
-msgid "Handle input from TV"
-msgstr "TV'den girişi ele al"
-
 msgid "Handle Standby from TV"
 msgstr "Bekleme TV'den idare edilsin"
+
+msgid "Handle input from TV"
+msgstr "TV'den girişi ele al"
 
 msgid "Handle wake up from TV"
 msgstr "Uyanma TV'den idare edilsin"
@@ -10100,6 +10091,9 @@ msgstr "Günlükler kullanılan maksimum alanı kullanıyorsa, en büyük siline
 
 msgid "If possible, x minutes before a timer starts VPS-Plugin will control whether the programme begins earlier. (0 disables feature)"
 msgstr "Mümkünse, bir zamanlayıcı başlamadan x dakika önce VPS-Plugin programın daha erken başlayıp başlamayacağını kontrol edecektir. (0 özelliği devre dışı bırakır)"
+
+msgid "If set to 'Yes', allows the use of time shift with alternative audio plugins."
+msgstr "'Evet' olarak ayarlanırsa, timeshift'i alternatif ses eklentileriyle kullanmanıza olanak tanır."
 
 msgid "If the Deep Standby workaround is enabled wait until the system time is synchronized. Depending on the requirement the device wake up will continuing after a maximum of 2 minutes."
 msgstr "'Derin bekleme geçici çözümü' etkinse, sistem saati eşitlenene kadar bekler. Gereksinime bağlı olarak, uyandırma aygıtları en fazla 2 dakika sonra devam eder."
@@ -10975,11 +10969,14 @@ msgstr "LED Bekleme"
 msgid "LED brightness during Deep Standby."
 msgstr "Derin bekleme sırasında LED parlaklığı."
 
+msgid "LED brightness during Standby."
+msgstr "Bekleme sırasında LED parlaklığı."
+
 msgid "LED brightness during normal operations."
 msgstr "Normal işlemler sırasında LED parlaklığı."
 
-msgid "LED brightness during Standby."
-msgstr "Bekleme sırasında LED parlaklığı."
+msgid "LED color during Deep Standby."
+msgstr ""
 
 msgid "LIRC remote"
 msgstr "LIRC uzaktan kumanda"
@@ -11295,9 +11292,6 @@ msgstr "Bilgi yükleniyor, lütfen bekleyin..."
 msgid "Loading slot information, please wait..."
 msgstr "Slot bilgileri yükleniyor, lütfen bekleyin..."
 
-msgid "Local receiver"
-msgstr "Yerel kutu"
-
 msgid "Local date/time"
 msgstr "Yerel tarih/saat"
 
@@ -11310,6 +11304,9 @@ msgstr "Yerel Ağ"
 
 msgid "Local or Regional"
 msgstr ""
+
+msgid "Local receiver"
+msgstr "Yerel kutu"
 
 msgid "Local time"
 msgstr "Yerel zaman"
@@ -11989,6 +11986,15 @@ msgstr "Moğolistan"
 msgid "Mongolian"
 msgstr "Moğolca"
 
+msgid "Monitoring UI password"
+msgstr ""
+
+msgid "Monitoring UI port"
+msgstr ""
+
+msgid "Monitoring UI username"
+msgstr ""
+
 msgid "Montenegro"
 msgstr "Karadağ"
 
@@ -12147,12 +12153,6 @@ msgstr "Taşıma işi sıraya alındı."
 
 msgid "Move only highlighted file"
 msgstr "Yalnızca vurgulanan dosyayı taşı"
-
-msgid "Move the current DNS entry down one line"
-msgstr "Geçerli DNS girişini bir satır aşağı taşı"
-
-msgid "Move the current DNS entry up one line"
-msgstr "Geçerli DNS girişini bir satır yukarı taşı"
 
 msgid "Move the current bookmark down"
 msgstr "Geçerli yer işaretini aşağı taşı"
@@ -13150,12 +13150,6 @@ msgstr "Flaşlanmıyor"
 msgid "None"
 msgstr "Yok"
 
-msgid "NordVPN Secure DNS"
-msgstr "NordVPN Güvenli DNS"
-
-msgid "NordVPN Smart DNS"
-msgstr "NordVPN Smart DNS"
-
 msgid "Norfolk Island"
 msgstr "Norfolk Adası"
 
@@ -13495,6 +13489,15 @@ msgstr "Çanağı sadece bu saatten önce hızlıca hareket ettirin."
 msgid "Only on startup"
 msgstr "Sadece başlangıçta"
 
+msgid "Only use DNS servers implementing the DNS-over-HTTPS protocol. This causes DNS lookups to be made via the encrypted HTTPS protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the DNSCrypt protocol."
+msgstr ""
+
+msgid "Only use DNS servers implementing the Oblivious DNS-over-HTTPS protocol. This adds another layer of privacy by adding a proxy layer to the DNS-over-HTTPS request."
+msgstr ""
+
 msgid "Open"
 msgstr "Aç"
 
@@ -13679,12 +13682,6 @@ msgstr "Tekli kanal EPG göster"
 
 msgid "Open with File Commander"
 msgstr "Dosya Komutu ile Aç"
-
-msgid "OpenDNS FamilyShield"
-msgstr "OpenDNS FamilyShield"
-
-msgid "OpenDNS Home"
-msgstr "OpenDNS Ana Sayfası"
 
 msgid "OpenPLi Packages"
 msgstr "OpenPLi Paketleri"
@@ -14992,6 +14989,9 @@ msgstr "Seçkin zaman dakika"
 msgid "Priority"
 msgstr "Öncelik"
 
+msgid "Privacy level"
+msgstr ""
+
 msgid "Problem starting scan"
 msgstr "taramayı başlatma hatası"
 
@@ -15199,15 +15199,6 @@ msgstr "Quad PiP kanalı "
 
 msgid "Quad PiP is not available."
 msgstr "Quad PiP mevcut değil."
-
-msgid "Quad9 DNS"
-msgstr "Quad9 DNS"
-
-msgid "Quad9 ECS DNS"
-msgstr "Quad9 ECS DNS"
-
-msgid "Quad9 Unsecured DNS"
-msgstr "Quad9 Güvenli Olmayan DNS"
 
 msgid "Quechua"
 msgstr "Quechua Dili"
@@ -15714,14 +15705,14 @@ msgstr "Uzaktan Kumanda Düğmesi Ayarları"
 msgid "Remote Control Code Settings"
 msgstr "Uzaktan Kumanda Kodu"
 
-msgid "Remote receiver"
-msgstr "Uzak kutu"
-
 msgid "Remote control information"
 msgstr "Uzaktan kumanda bilgileri"
 
 msgid "Remote control type"
 msgstr "Uzaktan kumanda tipi"
+
+msgid "Remote receiver"
+msgstr "Uzak kutu"
 
 #
 msgid "Remove"
@@ -15786,9 +15777,6 @@ msgstr "Kanalı Kaldır"
 
 msgid "Remove Terrestrial Services"
 msgstr "Karasal hizmetleri kaldır"
-
-msgid "Remove a DNS entry"
-msgstr "DNS girişini kaldırın"
 
 #
 msgid "Remove a mark"
@@ -15978,9 +15966,6 @@ msgstr "İstenen ortam tipi:"
 
 msgid "Rereading partition table"
 msgstr "Bölüntü tablosu tekrar okunuyor"
-
-msgid "Select 'Yes' to reschedule the task to run when the receiver enters or exits Standby. The state change must occur within the task's scheduled window or the task will not be run."
-msgstr ""
 
 msgid "Reserved"
 msgstr "Ayrılmış"
@@ -16981,6 +16966,9 @@ msgstr "Bilinmeyen dosyaları File Commander dosya görüntüleyicisinde görün
 msgid "Select 'Yes' to enable AI-Powered Translation for all teletext and DVB subtitles."
 msgstr ""
 
+msgid "Select 'Yes' to enable DNS entry rotation. This rotation changes the order in which the list of DNS servers is used and can avoid issues if a DNS server in the list becomes unavailable."
+msgstr ""
+
 msgid "Select 'Yes' to enable editing of this device's settings. Selecting 'No' resets the devices settings to their default values."
 msgstr "Bu cihazın ayarlarının düzenlenmesini etkinleştirmek için 'Evet'i seçin. 'Hayır'ın seçilmesi, cihaz ayarlarını varsayılan değerlerine sıfırlar."
 
@@ -16995,6 +16983,9 @@ msgstr "Eğer 'evet' ayarlanırsa kanal listesinde kanal önizlemesi görüntül
 
 msgid "Select 'Yes' to enable the loading of unlinked user bouquets. That is, user bouquets that are not included in the bouquets.tv or bouquets.radio files will be loaded. This allows you to, for example, create bouquets that do not conflict with, or get replaced by, bouquets that came from settings packages."
 msgstr "Etkinleştirildiğinde, enigma2, bağlantısız kullanıcı önyüklemelerini yükler. Bu, mevcut olan ancak buketler.tv veya buketler.radio dosyalarına dahil olmayan kullanıcı buketlerinin yükleneceği anlamına gelir. Bu, örneğin kurulu ayarlar yükseltilirken kendi kullanıcı buketinizi korumanıza izin verir"
+
+msgid "Select 'Yes' to enable the monitoring UI web interface for the DNSCrypt subsystem."
+msgstr ""
 
 msgid "Select 'Yes' to enable use of the LEFT/RIGHT buttons to move PageUp/PageDown when the LEFT/RIGHT buttons are otherwise undefined. This provides legacy navigation for users who prefer it."
 msgstr "SOL/SAĞ düğmeleri başka türlü tanımlanmadığında SayfaYukarı/SayfaAşağı hareket etmek için SOL/SAĞ düğmelerinin kullanılmasını etkinleştirmek için 'Evet'i seçin. Bu, tercih eden kullanıcılar için eski navigasyonu sağlar."
@@ -17049,6 +17040,9 @@ msgstr "Dış görünüm verilerinin tüm kullanıcı özelleştirmelerini kald�
 
 msgid "Select 'Yes' to remove all user interface data. Selecting this option will remove all key map, menu and setup override data and restore the default definitions."
 msgstr "Tüm kullanıcı arayüzü verilerini kaldırmak için 'Evet'i seçin. Bu seçeneğin seçilmesi, tüm tuş haritası, menü ve kurulum geçersiz kılma verilerini kaldıracak ve varsayılan tanımları geri yükleyecektir."
+
+msgid "Select 'Yes' to reschedule the task to run when the receiver enters or exits Standby. The state change must occur within the task's scheduled window or the task will not be run."
+msgstr ""
 
 msgid "Select 'Yes' to reset network configuration to the default. This will enable the Ethernet port if it exists and set the receiver to use DHCP. All other network interfaces will be deleted."
 msgstr "Ağ yapılandırmasını varsayılana sıfırlamak için 'Evet'i seçin. Bu, varsa Ethernet bağlantı noktasını etkinleştirecek ve alıcıyı DHCP kullanacak şekilde ayarlayacaktır. Diğer tüm ağ arayüzleri silinecektir."
@@ -17500,6 +17494,9 @@ msgstr "%s girişini seçin"
 msgid "Select the AI-Powered Translation target language."
 msgstr "Yapay zeka destekli tercüme dilini ayarlayın."
 
+msgid "Select the DNS server(s) that will be used to lookup the host name to resolve the IP address."
+msgstr "Varsayılan DNS ayarlarının kaynağını seçin."
+
 msgid "Select the No / False response"
 msgstr "Hayır / Yanlış yanıtını seçin"
 
@@ -17704,9 +17701,6 @@ msgstr "SCR cihazınızın üreticisini seçin. Üretici listelenmemişse, 'SCR'
 msgid "Select the method of restoring screen resolution and framebuffer when leaving teletext."
 msgstr "Teletext'ten çıkarken ekran çözünürlüğünü ve çerçeveyi geri yükleme yöntemini seçin."
 
-msgid "Select the mode of the DNS."
-msgstr "DNS modunu seçin."
-
 msgid "Select the model number of your Unicable device. If the model number is not listed, set 'SCR' to 'User defined' and enter the device parameters manually according to its specifications."
 msgstr "Unicable cihazınızın model numarasını seçin. Model numarası listelenmemişse, 'SCR' yi 'kullanıcı tanımlı' olarak ayarlayın ve cihaz parametrelerini özellik tablosuna göre manuel olarak girin."
 
@@ -17816,9 +17810,6 @@ msgstr "Menü girişlerinin sıralama düzenini seçin. Kullanıcı tanımlı me
 
 msgid "Select the source location from where to obtain the upgrade files."
 msgstr "Yükseltme dosyalarının alınacağı kaynak konumu seçin."
-
-msgid "Select the source of the default DNS settings."
-msgstr "Varsayılan DNS ayarlarının kaynağını seçin."
 
 msgid "Select the start time after which this timer can be activated. Before this time the timer won't be activated even if other conditions are met."
 msgstr ""
@@ -17943,6 +17934,9 @@ msgstr "Etkinleştirmek için Yukarı / Aşağı düğmelerini istediğinizi se�
 
 msgid "Select where the recording should be saved."
 msgstr "Kaydın nereye kaydedileceğini seçin."
+
+msgid "Select whether IPv4, IPv6, or both protocols should be used. If both are enabled then which should be preferred."
+msgstr "DNS modunu seçin."
 
 #
 msgid "Select wireless network"
@@ -18069,6 +18063,15 @@ msgstr "ciddi/klasik/dini/tarihi film/dram"
 
 msgid "Server down"
 msgstr "Sunucu çökmesi"
+
+msgid "Server must not enforce its own blocklist. Some servers may implement their own blacklists to block sites for parental control, ad blocking, etc. reasons."
+msgstr ""
+
+msgid "Server must not log user queries (declarative). This can improve the privacy of DNS lookups by not not logging the request on the server providing the data."
+msgstr ""
+
+msgid "Server must support DNS Security Extensions (DNSSEC). This is a data signing option that protects the integrity of the DNS data against compromises like cache poisoning."
+msgstr ""
 
 msgid "Servers"
 msgstr "Sunucular"
@@ -18320,6 +18323,9 @@ msgstr "edek ayarlayıcınızdan OpenWebif'in Kullanıcı Kimliğini ayarlayın"
 msgid "Set the aspect ratio of the service picons."
 msgstr "Servis pikonlarının en boy oranını ayarlayın."
 
+msgid "Set the bitrate of the video encoder. Larger values improve the quality and also increases the file size."
+msgstr "Video kodlayıcının bit hızı. Daha büyük değer kaliteyi artırır ve dosya boyutunu artırır."
+
 msgid "Set the default location for your instant recordings. Press 'OK' to add new locations, press 'LEFT'/'RIGHT' to select from previously defined locations."
 msgstr "Anlık kayıtlarınızın varsayılan konumunu belirtin. Yeni konumlar eklemek için 'OK' e basın, mevcut konumlardan birini seçmek için sağ/sol tuşlarını kullanın."
 
@@ -18350,14 +18356,23 @@ msgstr "Arama çubuğunun atlama boyunu belirleyin."
 msgid "Set the number of lines to be saved for 'stout' and 'sterr' output in scripts."
 msgstr "Komut dosyalarında 'stout' ve 'sterr' çıktısı için kaydedilecek satır sayısını ayarlayın."
 
+msgid "Set the password for the monitoring UI web interface."
+msgstr ""
+
 msgid "Set the password of the OpenWebif from your fallback tuner."
 msgstr "Yedek ayarlayıcınızdan OpenWebif'in şifresini ayarlayın"
+
+msgid "Set the port address (8080-9999) for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner."
 msgstr "OpenWebif'in bağlantı noktasını yedek ayarlayıcınızdan ayarlayın"
 
 msgid "Set the position of the recording icons."
 msgstr "Kayıt simgelerinin konumunu ayarla"
+
+msgid "Set the privacy level for the monitoring UI web interface."
+msgstr ""
 
 msgid "Set the screen type you see on pressing 'OK' when the InfoBar shows the second InfoBar Lite or event info."
 msgstr "Bilgi çubuğu 2. bilgi çubuğuna veya olay bilgisine ulaştığında, 'Tamam' düğmesine basarken aldığınız ekran tipini ayarlayın."
@@ -18397,6 +18412,9 @@ msgstr "Meşgul döndürücünün sol üst konumunu ayarlayın. Koordinatlar, so
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr "Kanal seçim ekranındaki ilerleme işaretinin tipini belirleyin."
+
+msgid "Set the username for the monitoring UI web interface."
+msgstr ""
 
 #, python-format
 msgid "Set the volume level for the '%s' service."
@@ -20098,6 +20116,9 @@ msgstr "özel olaylar"
 msgid "Specify the directory to use when starting Media Player."
 msgstr "Media Player'ı başlatırken kullanılacak dizini belirtin."
 
+msgid "Specify the network DNS suffix to be applied when only the host name is provided. This helps the DNS resolver find the requested host."
+msgstr "DNS son ekini tanımlayın."
+
 msgid "Speed"
 msgstr "Hiz"
 
@@ -21126,7 +21147,7 @@ msgstr "'%s' dosyası alınamıyor, lütfen daha sonra tekrar deneyin."
 msgid "The AI mode used for translating languages. You can choose the one that gives the most accurate translation for your target language."
 msgstr ""
 
-msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the the Internet connection upload speed selected."
+msgid "The AI-Powered Translation service will be optimized to provide the best performance based on the Internet connection upload speed selected."
 msgstr ""
 
 msgid ""
@@ -21558,7 +21579,7 @@ msgstr "Bu, şu anda seçili olan dildir. [%s]"
 msgid "This is the currently selected locale.  [%s]"
 msgstr "Bu, şu anda seçili yerel ayardır. [%s]"
 
-msgid "This is the initial / default volume offset applied to any services added the the volume adjust list."
+msgid "This is the initial / default volume offset applied to any services added to the volume adjust list."
 msgstr "Bu, ses düzeyi ayarlama listesine eklenen herhangi bir hizmete uygulanan ilk / varsayılan ses düzeyi ofsetidir."
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
@@ -21657,11 +21678,11 @@ msgstr "Bu seçenek, TV'nizde SD aşamalı 24Hz'nin nasıl görüntüleneceğini
 msgid "This option allows you to choose how to display elapsed time, as + or -."
 msgstr "Bu seçenek, geçen süreyi + veya - olarak nasıl göstereceğinizi seçmenize izin verir-"
 
-msgid "This option allows you to choose how to display the remaining time, the elapsed time, or both."
-msgstr "Bu seçenek kalan zaman, geçen zaman veya her ikisinin de gösterilme seçiminin yapılmasını sağlar."
-
 msgid "This option allows you to choose how to display standard definition video on your TV."
 msgstr "Bu seçenek, standart tanımlı videoların TV’nizde nasıl görüntüleneceğini seçmenizi sağlar."
+
+msgid "This option allows you to choose how to display the remaining time, the elapsed time, or both."
+msgstr "Bu seçenek kalan zaman, geçen zaman veya her ikisinin de gösterilme seçiminin yapılmasını sağlar."
 
 msgid "This option allows you to choose how to display the remaining/elapsed time for live TV."
 msgstr "Bu seçenek, canlı TV için kalan / geçen süreyi nasıl görüntüleyeceğinizi seçmenizi sağlar."
@@ -22938,8 +22959,20 @@ msgstr "AutoCam kullan"
 msgid "Use DHCP"
 msgstr "DHCP Kullan"
 
+msgid "Use DNS cache"
+msgstr ""
+
+msgid "Use DNS rotation"
+msgstr ""
+
+msgid "Use DNSCrypt servers"
+msgstr ""
+
 msgid "Use Deinterlacing for 1080i Videosignal?"
 msgstr "1080i Videosignal için Deinterlacing kullanın?"
+
+msgid "Use DoH servers"
+msgstr ""
 
 msgid "Use EIT EPG information when it is available."
 msgstr "Varsa EIT EPG bilgisini kullan."
@@ -22965,6 +22998,9 @@ msgstr "Varsa MHW EPG bilgisini kullan."
 msgid "Use Netmed EPG information when it is available."
 msgstr "Varsa Netmed EPG bilgisini kullan."
 
+msgid "Use ODoH servers"
+msgstr ""
+
 msgid "Use OpenTV EPG. Requires tuning to specific transponder to absorb EPG."
 msgstr "OpenTV EPG kullanın. EPG'yi emmek için belirli bir aktarıcıya ayarlama gerektirir."
 
@@ -22988,6 +23024,9 @@ msgstr "Mevcut olduğunda Virgin EPG bilgilerini kullanın."
 
 msgid "Use Zap timer end times"
 msgstr "Zap zamanlayıcı bitiş zamanlarını kullanın"
+
+msgid "Use a DNS cache to locally store recent DNS lookups to improve performance, reduce latency and outgoing traffic."
+msgstr ""
 
 #
 msgid "Use a gateway"
@@ -23060,8 +23099,17 @@ msgstr "Geleneksel navigasyon kullanın"
 msgid "Use official channel numbering"
 msgstr "Resmi kanal numaralama kullan"
 
+msgid "Use only DNSSEC servers"
+msgstr ""
+
 msgid "Use only for Wake on WLan (WoW)"
 msgstr "Yalnızca WLan'da (WoW) Wake için kullanın"
+
+msgid "Use only no-filter servers"
+msgstr ""
+
+msgid "Use only no-log servers"
+msgstr ""
 
 msgid "Use original DVB subtitle position"
 msgstr "Orijinal DVB altyazı konumunu kullan"
@@ -23904,9 +23952,6 @@ msgstr "Etkinleştirildiğinde, serbest tuner olmadığında kayıt akışını 
 msgid "When enabled, a recording is allowed to interrupt live TV, when there are no free tuners."
 msgstr "Etkinleştirildiğinde, serbest tuner olmadığında bir kaydın canlı TV'yi kesmesine izin verilir."
 
-msgid "When set to 'Yes' a specific Softcam can be assigned to each encrypted service."
-msgstr "'Evet' olarak ayarlandığında, her şifreli servise belirli bir Softcam atanabilir."
-
 msgid "When enabled, a warning will be displayed and the user will get an option to stop or to continue the time shift."
 msgstr "Etkinleşince, bir uyarı görünür, kullanıcı devam eder veya zamankaydırmayı durdurur."
 
@@ -24042,6 +24087,9 @@ msgstr "Ayarlandığında her klasör bir önceki durumda gösterilir, kapatıld
 msgid "When set the PIG will return to live after a movie has stopped playing."
 msgstr "Ayarlanırsa, izlenen film durdurulduğunda PIG canlı yayına döner."
 
+msgid "When set to 'Yes' a specific Softcam can be assigned to each encrypted service."
+msgstr "'Evet' olarak ayarlandığında, her şifreli servise belirli bir Softcam atanabilir."
+
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
 msgstr "İçerik 16:9 görüntü oranındaysa, resmin uzatılıp uzatılmayacağını seçiniz."
 
@@ -24091,6 +24139,9 @@ msgstr "Genişlik"
 
 msgid "Width / Height"
 msgstr "Genişlik / Yükseklik"
+
+msgid "Winter sport"
+msgstr ""
 
 msgid "Winter sports"
 msgstr "kış sporu"
@@ -25436,6 +25487,54 @@ msgstr "evet (beslemeleri tut)"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Add a DNS entry"
+#~ msgstr "DNS girişi ekleyin"
+
+#~ msgid "DNS (Dynamic Name Server) Actions"
+#~ msgstr "DNS (Dinamik Ad Sunucusu) Eylemleri"
+
+#~ msgid "Deep standby"
+#~ msgstr "Derin bekleme"
+
+#~ msgid "Move the current DNS entry down one line"
+#~ msgstr "Geçerli DNS girişini bir satır aşağı taşı"
+
+#~ msgid "Move the current DNS entry up one line"
+#~ msgstr "Geçerli DNS girişini bir satır yukarı taşı"
+
+#~ msgid "Remove a DNS entry"
+#~ msgstr "DNS girişini kaldırın"
+
+#~ msgid "Cloudflare DNS"
+#~ msgstr "Bulut Parlaması DNS"
+
+#~ msgid "Comodo Secure DNS"
+#~ msgstr "Kullanışlı Güvenli DNS"
+
+#~ msgid "NordVPN Secure DNS"
+#~ msgstr "NordVPN Güvenli DNS"
+
+#~ msgid "NordVPN Smart DNS"
+#~ msgstr "NordVPN Smart DNS"
+
+#~ msgid "OpenDNS FamilyShield"
+#~ msgstr "OpenDNS FamilyShield"
+
+#~ msgid "OpenDNS Home"
+#~ msgstr "OpenDNS Ana Sayfası"
+
+#~ msgid "Google DNS"
+#~ msgstr "Google DNS"
+
+#~ msgid "Quad9 DNS"
+#~ msgstr "Quad9 DNS"
+
+#~ msgid "Quad9 ECS DNS"
+#~ msgstr "Quad9 ECS DNS"
+
+#~ msgid "Quad9 Unsecured DNS"
+#~ msgstr "Quad9 Güvenli Olmayan DNS"
 
 #, python-format
 #~ msgid "%d Seconds"
