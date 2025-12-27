@@ -66,7 +66,7 @@ except ImportError:
 
 try:
     import pickle
-except:
+except BaseException:
     from six.moves import cPickle as pickle
 
 
@@ -436,23 +436,23 @@ def sanitizeFilename(filename):
 def get_external_ip():
     try:
         return popen('curl -s ifconfig.me').readline().strip()
-    except:
+    except BaseException:
         pass
     try:
         return requests.get('https://v4.ident.me').text.strip()
-    except:
+    except BaseException:
         pass
     try:
         return requests.get('https://api.ipify.org').text.strip()
-    except:
+    except BaseException:
         pass
     try:
         return requests.get('https://api.myip.com/').json().get("ip", "")
-    except:
+    except BaseException:
         pass
     try:
         return requests.get('https://checkip.amazonaws.com').text.strip()
-    except:
+    except BaseException:
         pass
     return None
 

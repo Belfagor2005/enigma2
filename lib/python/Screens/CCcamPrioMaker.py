@@ -126,7 +126,7 @@ class CCPrioMaker(Screen):
 		self.ecmTimer = eTimer()
 		try:
 			self.hideTimer_conn = self.hideTimer.timeout.connect(self.parseEcmInfo)
-		except:
+		except BaseException:
 			self.hideTimer.callback.append(self.parseEcmInfo)
 		self.hideTimer.start(200, 1)
 		self.__event_tracker = ServiceEventTracker(

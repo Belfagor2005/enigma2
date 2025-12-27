@@ -176,5 +176,5 @@ class OrganizerNewmenu(Screen):
 		try:
 			msg = selected.split()[1]
 			self.session.open(MessageBox, "\n%s \n\n%s" % (msg, text), MessageBox.TYPE_INFO)
-		except:
+		except BaseException:
 			pass

@@ -5,7 +5,6 @@
 
 from Components.ActionMap import ActionMap, NumberActionMap
 from Components.config import (
-	# ConfigDirectory,
 	ConfigIP,
 	ConfigInteger,
 	ConfigPassword,
@@ -54,9 +53,7 @@ PY3 = sys.version_info.major >= 3
 global NAMEBIN
 
 config.NcamInfo = ConfigSubsection()
-# config.NcamInfo.showInExtensions = ConfigYesNo(default=False)
 config.NcamInfo.userdatafromconf = ConfigYesNo(default=True)
-# config.NcamInfo.usehostname = ConfigYesNo(default=False)
 config.NcamInfo.autoupdate = ConfigYesNo(default=False)
 config.NcamInfo.username = ConfigText(default="username", fixed_size=False, visible_width=12)
 config.NcamInfo.password = ConfigPassword(default="password", fixed_size=False)
@@ -101,7 +98,7 @@ def getIfConfig(ifname):
 	try:
 		for k, v in infos.items():
 			ifreq[k] = _ifinfo(sock, v, ifname)
-	except:
+	except BaseException:
 		pass
 	sock.close()
 	return ifreq
