@@ -499,10 +499,7 @@ class CrashLogScreen(Screen):
 		if self.in_confirm_mode:
 			return
 
-		original_list = self.list.copy()
-
 		info_items = []
-
 		info_items.append(("=" * 50, "", None, ""))
 		info_items.append(("CRASHLOG VIEWER - INFO", "", None, ""))
 		info_items.append(("=" * 50, "", None, ""))
