@@ -82,8 +82,13 @@ class OpenScript(Screen):
 			'red': self.close
 		}
 
-		self["actions"] = ActionMap(['OkCancelActions', 'ColorActions'],
-									self.original_actions, -1)
+		self["actions"] = ActionMap(
+			[
+				'OkCancelActions',
+				'ColorActions'
+			],
+			self.original_actions, -1
+		)
 		self.onShown.append(self.refresh_list)
 
 	def refresh_list(self):

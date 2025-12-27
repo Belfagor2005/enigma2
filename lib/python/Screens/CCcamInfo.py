@@ -479,17 +479,20 @@ def CCcamShareListEntry(hostname, type, caid, system, uphops, maxdown):
 def CCcamShareViewListEntry(caidprovider, providername, numberofcards, numberofreshare):
 	screenwidth = getDesktop(0).size().width()
 	if screenwidth and screenwidth == 1920:
-		res = [(caidprovider, providername, numberofcards),
-			   MultiContentEntryText(pos=(10, 5), size=(800, 35), font=1, text=providername),
-			   MultiContentEntryText(pos=(1050, 5), size=(50, 35), font=1, text=numberofcards, flags=RT_HALIGN_RIGHT),
-			   MultiContentEntryText(pos=(1100, 5), size=(50, 35), font=1, text=numberofreshare, flags=RT_HALIGN_RIGHT)]
-		return res
+		res = [
+			(caidprovider, providername, numberofcards),
+			MultiContentEntryText(pos=(10, 5), size=(800, 35), font=1, text=providername),
+			MultiContentEntryText(pos=(1050, 5), size=(50, 35), font=1, text=numberofcards, flags=RT_HALIGN_RIGHT),
+			MultiContentEntryText(pos=(1100, 5), size=(50, 35), font=1, text=numberofreshare, flags=RT_HALIGN_RIGHT)
+		]
 	else:
-		res = [(caidprovider, providername, numberofcards),
-			   MultiContentEntryText(pos=(0, 0), size=(430, 20), font=0, text=providername),
-			   MultiContentEntryText(pos=(430, 0), size=(50, 20), font=0, text=numberofcards, flags=RT_HALIGN_RIGHT),
-			   MultiContentEntryText(pos=(480, 0), size=(50, 20), font=0, text=numberofreshare, flags=RT_HALIGN_RIGHT)]
-		return res
+		res = [
+			(caidprovider, providername, numberofcards),
+			MultiContentEntryText(pos=(0, 0), size=(430, 20), font=0, text=providername),
+			MultiContentEntryText(pos=(430, 0), size=(50, 20), font=0, text=numberofcards, flags=RT_HALIGN_RIGHT),
+			MultiContentEntryText(pos=(480, 0), size=(50, 20), font=0, text=numberofreshare, flags=RT_HALIGN_RIGHT)
+		]
+	return res
 
 
 def CCcamConfigListEntry(file):
@@ -549,29 +552,35 @@ class CCcamInfoMain(Screen):
 			print("[CCcamInfo] %s not found" % CFG)
 			searchConfig()
 		self.url = "http://127.0.0.1:16001"
-		self["actions"] = NumberActionMap(["CCcamInfoActions"],
-										  {"1": self.keyNumberGlobal,
-										   "2": self.keyNumberGlobal,
-										   "3": self.keyNumberGlobal,
-										   "4": self.keyNumberGlobal,
-										   "5": self.keyNumberGlobal,
-										   "6": self.keyNumberGlobal,
-										   "7": self.keyNumberGlobal,
-										   "8": self.keyNumberGlobal,
-										   "9": self.keyNumberGlobal,
-										   "0": self.keyNumberGlobal,
-										   "red": self.red,
-										   "green": self.green,
-										   "yellow": self.yellow,
-										   "blue": self.blue,
-										   "menu": self.menu,
-										   "info": self.info,
-										   "ok": self.okClicked,
-										   "cancel": self.close,
-										   "up": self.up,
-										   "down": self.down,
-										   "left": self.left,
-										   "right": self.right}, -2)
+		self["actions"] = NumberActionMap(
+			[
+				"CCcamInfoActions"
+			],
+			{
+				"1": self.keyNumberGlobal,
+				"2": self.keyNumberGlobal,
+				"3": self.keyNumberGlobal,
+				"4": self.keyNumberGlobal,
+				"5": self.keyNumberGlobal,
+				"6": self.keyNumberGlobal,
+				"7": self.keyNumberGlobal,
+				"8": self.keyNumberGlobal,
+				"9": self.keyNumberGlobal,
+				"0": self.keyNumberGlobal,
+				"red": self.red,
+				"green": self.green,
+				"yellow": self.yellow,
+				"blue": self.blue,
+				"menu": self.menu,
+				"info": self.info,
+				"ok": self.okClicked,
+				"cancel": self.close,
+				"up": self.up,
+				"down": self.down,
+				"left": self.left,
+				"right": self.right
+			}, -2
+		)
 
 		self.onLayoutFinish.append(self.updateMenuList)
 
@@ -1020,8 +1029,15 @@ class CCcamInfoEcmInfoSelection(Screen):
 			if x.endswith('.info') and x.startswith('ecm'):
 				items.append(x)
 		self["list"] = MenuList(items)
-
-		self["actions"] = ActionMap(["CCcamInfoActions"], {"ok": self.ok, "cancel": self.close}, -1)
+		self["actions"] = ActionMap(
+			[
+				"CCcamInfoActions"
+			],
+			{
+				"ok": self.ok,
+				"cancel": self.close
+			}, -1
+		)
 
 	def ok(self):
 		self.close(self["list"].getCurrent())
@@ -1033,7 +1049,9 @@ class CCcamInfoInfoScreen(Screen):
 		self.setTitle(set_title)
 		self["text"] = ScrollLabel(info)
 		self["actions"] = ActionMap(
-			["CCcamInfoActions"],
+			[
+				"CCcamInfoActions"
+			],
 			{
 				"ok": self.close,
 				"cancel": self.close,
@@ -1095,7 +1113,15 @@ class CCcamShareViewMenu(Screen, HelpableScreen):
 
 		self.onLayoutFinish.append(self.getProviders)
 		self["key_red"] = Label(_("Cancel"))
-		self["actions"] = ActionMap(["CCcamInfoActions"], {"cancel": self.close, "red": self.close}, -1)
+		self["actions"] = ActionMap(
+			[
+				"CCcamInfoActions"
+			],
+			{
+				"cancel": self.close,
+				"red": self.close
+			}, -1
+		)
 
 	def exit(self):
 		if self.working is False:
@@ -1312,7 +1338,17 @@ class CCcamInfoSubMenu(Screen):
 		self["info"] = Label()
 		self["key_green"] = Label(_("info"))
 		self["key_red"] = Label(_("Cancel"))
-		self["actions"] = ActionMap(["CCcamInfoActions"], {"ok": self.okClicked, "cancel": self.close, "red": self.close, "green": self.okClicked}, -1)
+		self["actions"] = ActionMap(
+			[
+				"CCcamInfoActions"
+			],
+			{
+				"ok": self.okClicked,
+				"cancel": self.close,
+				"red": self.close,
+				"green": self.okClicked
+			}, -1
+		)
 
 		self["list"].onSelectionChanged.append(self.showInfo)
 		self.onLayoutFinish.append(self.showInfo)
@@ -1359,7 +1395,17 @@ class CCcamInfoServerMenu(Screen):
 		self["list"] = CCcamList(items)
 		self["info"] = Label()
 		self["key_red"] = Label(_("Cancel"))
-		self["actions"] = ActionMap(["CCcamInfoActions"], {"ok": self.okClicked, "cancel": self.close, "red": self.close, "green": self.okClicked}, -1)
+		self["actions"] = ActionMap(
+			[
+				"CCcamInfoActions"
+			],
+			{
+				"ok": self.okClicked,
+				"cancel": self.close,
+				"red": self.close,
+				"green": self.okClicked
+			}, -1
+		)
 		self["list"].onSelectionChanged.append(self.showInfo)
 		self.onLayoutFinish.append(self.showInfo)
 
@@ -1404,8 +1450,15 @@ class CCcamInfoProfileSetup(Setup):
 		config.cccaminfo.username.value = profile.username
 		config.cccaminfo.password.value = profile.password
 		config.cccaminfo.port.value = profile.port
-
-		self["actions"] = ActionMap(["CCcamInfoActions"], {"ok": self.okClicked, "cancel": self.close}, -2)
+		self["actions"] = ActionMap(
+			[
+				"CCcamInfoActions"
+			],
+			{
+				"ok": self.okClicked,
+				"cancel": self.close
+			}, -2
+		)
 
 	def okClicked(self):
 		self.close(CCcamInfoRemoteBox(config.cccaminfo.name.value, config.cccaminfo.ip.value, config.cccaminfo.username.value, config.cccaminfo.password.value, config.cccaminfo.port.value))
@@ -1430,7 +1483,9 @@ class CCcamInfoRemoteBoxMenu(Screen):
 		self["key_blue"] = Label(_("Edit"))
 		self["list"] = MenuList([])
 		self["actions"] = ActionMap(
-			["CCcamInfoActions"],
+			[
+				"CCcamInfoActions"
+			],
 			{
 				"cancel": self.exit,
 				"ok": self.profileSelected,
@@ -1438,8 +1493,7 @@ class CCcamInfoRemoteBoxMenu(Screen):
 				"green": self.new,
 				"yellow": self.location,
 				"blue": self.edit
-			},
-			-1
+			}, -1
 		)
 		self.onLayoutFinish.append(self.readProfiles)
 
@@ -1558,22 +1612,22 @@ class CCcamInfoShareInfo(Screen):
 		self.uphops = -1
 		self.maxdown = -1
 		self.working = True
-
 		self["key_red"] = Label(_("Uphops +"))
 		self["key_green"] = Label(_("Uphops -"))
 		self["key_yellow"] = Label(_("Maxdown +"))
 		self["key_blue"] = Label(_("Maxdown -"))
 		self["list"] = CCcamShareList([])
 		self["actions"] = ActionMap(
-			["CCcamInfoActions"],
+			[
+				"CCcamInfoActions"
+			],
 			{
 				"cancel": self.exit,
 				"red": self.uhopsPlus,
 				"green": self.uhopsMinus,
 				"yellow": self.maxdownPlus,
 				"blue": self.maxdownMinus
-			},
-			-1
+			}, -1
 		)
 		self.onLayoutFinish.append(self.readShares)
 
@@ -1696,7 +1750,9 @@ class CCcamInfoConfigSwitcher(Screen):
 		self["key_blue"] = Label(_("Content"))
 		self["list"] = CCcamConfigList([])
 		self["actions"] = ActionMap(
-			["CCcamInfoActions"],
+			[
+				"CCcamInfoActions"
+			],
 			{
 				"ok": self.activate,
 				"cancel": self.close,
@@ -1704,8 +1760,7 @@ class CCcamInfoConfigSwitcher(Screen):
 				"green": self.activate,
 				"yellow": self.rename,
 				"blue": self.showContent
-			},
-			-1
+			}, -1
 		)
 		self.onLayoutFinish.append(self.showConfigs)
 
@@ -1811,15 +1866,16 @@ class CCcamInfoMenuConfig(Screen):
 		self["list"] = CCcamConfigList([])
 		self.getBlacklistedMenuEntries()
 		self["actions"] = ActionMap(
-			["CCcamInfoActions"],
+			[
+				"CCcamInfoActions"
+			],
 			{
 				"ok": self.changeState,
 				"cancel": self.close,
 				"red": self.close,
 				"green": self.save,
 				"yellow": self.location
-			},
-			-1
+			}, -1
 		)
 		self.onLayoutFinish.append(self.showConfigs)
 
