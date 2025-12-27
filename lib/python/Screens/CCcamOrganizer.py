@@ -39,10 +39,8 @@ class OrganizerMenu(Screen):
 			return
 		global returnValue
 		returnValue = self["myMenu"].l.getCurrentSelection() and self["myMenu"].l.getCurrentSelection()[1]
-		# if returnValue is "five":
 		if returnValue == "five":
 			self.Revert()
-		# elif returnValue is "exit":
 		elif returnValue == "exit":
 			self.close(None)
 		else:
@@ -59,7 +57,6 @@ class OrganizerMenu(Screen):
 					if line.startswith("#FC:"):
 						line = line.replace("#FC:", "C:")
 					lines.append(line)
-			# Write the modified lines back to the file
 			with open("/etc/CCcam.cfg", "w") as f:
 				f.writelines(lines)
 
@@ -90,12 +87,10 @@ class OrganizerNewmenu(Screen):
 		try:
 			with open(self.CFG, "r") as f:
 				for line in f:
-					# Per "two" o "four": linee valide normali
 					if returnValue in ("two", "four") and (line.startswith("C:") or line.startswith("C :")):
 						parts = line.split()
 						if len(parts) > 1:
 							menu_list.append((_(parts[1]), line))
-					# Per "tree": linee commentate speciali
 					elif returnValue == "tree" and (line.startswith("#!C:") or line.startswith("#!C :")):
 						parts = line.split()
 						if len(parts) > 1:
@@ -108,13 +103,10 @@ class OrganizerNewmenu(Screen):
 		Screen.__init__(self, session)
 		self.setTitle(_("CCcam Organizer"))
 		self["Newmenu"] = MenuList(menu_list)
-		# if returnValue is "two":
 		if returnValue == "two":
 			self["Actions"] = ActionMap(["SetupActions"], {"ok": self.delete, "cancel": self.close}, -2)
-		# elif returnValue is "tree":
 		elif returnValue == "tree":
 			self["Actions"] = ActionMap(["SetupActions"], {"ok": self.undelete, "cancel": self.close}, -2)
-		# elif returnValue is "four":
 		elif returnValue == "four":
 			self["Actions"] = ActionMap(["SetupActions"], {"ok": self.FindFakes, "cancel": self.close}, -2)
 
